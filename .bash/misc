@@ -1,0 +1,10 @@
+# Misc -*- mode: shell-script -*-
+#
+#
+export EC2_HOME=~/.ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=pk-4PY3G77Y2CUDUALQDY25LJJMNSCHQLN2.pem
+export EC2_CERT=cert-4PY3G77Y2CUDUALQDY25LJJMNSCHQLN2.pem
+export JAVA_HOME=/usr/lib/jvm/java-6-sun/jre
+
+export OOO_FORCE_DESKTOP="gnome soffice-beta"

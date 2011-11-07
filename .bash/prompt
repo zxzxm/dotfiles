@@ -1,0 +1,32 @@
+# -*- mode:  shell-script -*-
+
+export PROMPT_COMMAND='history -a'
+
+if [ "$TERM" != 'dumb' ] && [ -n "$BASH" ]; then
+    # define some colors
+    COLOR1="\[\033[0;00m\]"			# default term's color
+    COLOR2="\[\033[0;31m\]"			# red
+    COLOR3="\[\033[0;32m\]"			# green
+    COLOR4="\[\033[0;33m\]"			# brown
+    COLOR5="\[\033[0;36m\]"			# cyan
+    COLOR6="\[\033[0;37m\]"			# light grey
+    COLOR7="\[\033[0;30m\]"			# dark grey
+    COLOR8="\[\033[0;31m\]"			# light red  -> root
+    COLOR9="\[\033[0;34m\]"			# light blue -> normal user
+    
+    # working directory
+    DIR="$COLOR9[\w]$COLOR1"
+    
+    # usr@host
+    USR="$COLOR8\u$COLOR6@$COLOR6\h$COLOR1"
+    
+    # build the prompts
+    export PS1="$COLOR1$USR $DIR $COLOR1
+$ "
+    export PS2="$COLOR3==>$COLOR1 "
+    #export PS4="$COLOR1[$COLOR2\T$COLOR1] "
+else
+    PS1="\u@\h \w $ "
+    PS2="> "
+
+fi

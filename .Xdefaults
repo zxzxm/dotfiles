@@ -1,0 +1,196 @@
+!------------------------------------------------------------------!
+! XFT                                                              !
+!------------------------------------------------------------------!
+Xft.dpi:                        96
+Xft.autohint:                   0
+Xft.antialias:                  1
+Xft.rgba:                       rgb
+Xft.lcdfilter:                  lcddefault
+Xft.hinting:                    1
+Xft.hintstyle:                  hintfull
+
+!------------------------------------------------------------------!
+! Emacs                                                            !
+!------------------------------------------------------------------!
+
+Emacs.pointerColor:             orange
+!Emacs.FontBackend:             xft
+!Emacs.geometry:                100x56+0+0
+!Emacs.font:                    Inconsolata-13
+!
+!Multixterm*font:               xft:Arial:pixelsize=8
+
+!------------------------------------------------------------------!
+! Xterm                                                            !
+!------------------------------------------------------------------!
+XTerm*faceName:                 DejaVu Sans Mono:size=9
+XTerm*termName:                 xterm-256color
+XTerm*dynamicColors:            on
+XTerm*allowSendEvents:          true
+XTerm*utf8:                     2
+
+!------------------------------------------------------------------!
+! URxvt                                                            !
+!------------------------------------------------------------------!
+URxvt*font:                     xft:DejaVu Sans Mono-10
+!URxvt*font:                     xft:Ubuntu Mono:pixelsize=15
+
+Urxvt.depth:                    32
+!URxvt.colorDB:                  white
+!URxvt.colorIT:                  green
+URxvt*termName:                 rxvt-unicode
+
+URxvt.urgentOnBell: True
+URxvt*saveLines:                32767
+URxvt*scrollBar:                false
+URxvt*scrollBar_right:          false
+URxvt*skipScroll:               false
+URxvt*jumpScroll:               true
+URxvt*loginShell:               true
+URxvt*shading:                  10
+URxvt*fading:                   40
+!URxvt*transparent:              true
+!URxvt*inheritPixmap:            true
+URxvt*secondaryScroll:          true
+URxvt*visualBell:               true
+
+! Perl extensions to rxvt
+!URxvt.perl-ext:                 default,url-select,keyboard_select
+URxvt.perl-ext:                 default,url-select
+
+URxvt.keysym.M-u:               perl:url-select:select_next
+!URxvt.keysym.M-Escape:          perl:keyboard-select:activate
+!URxvt.keysym.M-s:               perl:keyboard-select:search
+!
+URxvt*urlLauncher:            firefox
+URxvt.underlineURLs:          true
+!
+!URxvt.matcher.button:     1
+!URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+!!URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
+!URxvt.matcher.launcher.2: gvim +$2 $1
+!URxvt.matcher.launcher.2:  emacsclient -n -c $1
+
+!------------------------------------------------------------------!
+! COLORS
+!------------------------------------------------------------------!
+!
+!black
+*color0:               #353535
+*color8:               #666666
+
+!red
+*color1:               #C73737
+*color9:               #EE6363
+
+!green
+*color2:               #79a035
+*color10:              #9ACD32
+
+!brown/yellow
+*color3:               #DAA520
+*color11:              #FFC125
+
+!blue
+*color4:               #6F99B4
+*color12:              #7C96B0
+
+!magenta
+*color5:               #8B7B8B
+*color13:              #D8BFD8
+
+!cyan
+*color6:               #A7A15E
+*color14:              #F0E68C
+
+!white
+*color7:               #DDDDDD
+*color15:              #FFFFFF
+
+*background:           #1c1c1c
+*foreground:           #DDDDDD
+
+! Bio Standard
+
+!URxvt*foreground:       #B4B4B4
+
+! black
+!URxvt*color0:           #000000
+!URxvt*color8:           #808080
+
+! red
+!URxvt*color1:           #A36666
+!URxvt*color9:           #D78787
+
+! green
+!URxvt*color2:           #429942
+!URxvt*color10:          #87D787
+
+! yellow
+!URxvt*color3:           #D7AF87
+!URxvt*color11:          #FFFFAF
+
+! blue
+!URxvt*color4:           #AFAFD7
+!URxvt*color12:          #AFD7FF
+
+! ! magenta
+!URxvt*color5:           #A872A8
+!URxvt*color13:          #D7AFD7
+
+! cyan
+!URxvt*color6:           #00A8AB
+!URxvt*color14:          #00C8CC
+
+! white
+!URxvt*color7:           #D0D0D0
+!URxvt*color15:          #EFEFEF
+
+!Theme Ten
+!*background:       #121212
+!*foreground:       #B4B4B4
+!*color0:     rgb:00/00/00
+!*color1:     rgb:98/56/5e
+!*color2:     rgb:66/82/5d
+!*color3:     rgb:96/91/76
+!*color4:     rgb:4d/65/85
+!*color5:     rgb:96/73/95
+!*color6:     rgb:5f/7f/7b
+!*color7:     rgb:b3/b3/b3
+!*color8:     rgb:73/73/73
+!*color9:     rgb:cf/a3/a9
+!*color10:    rgb:ca/f7/bb
+!*color11:    rgb:ff/f8/bc
+!*color12:    rgb:83/a3/be
+!*color13:    rgb:bb/a9/cf
+!*color14:    rgb:96/cc/cc
+!*color15:    rgb:ff/ff/ff
+!
+! Zenburn
+!XTerm*background:       #3f3f3f
+!XTerm*foreground:       #dcdccc
+! black + red
+!XTerm*color0:          #3f3f3f
+!XTerm*color0:           #1E2320
+!XTerm*color1:           #705050
+! green + yellow
+!XTerm*color2:           #60b48a
+!XTerm*color3:           #dfaf8f
+! blue + purple
+!XTerm*color4:           #506070
+!XTerm*color5:           #dc8cc3
+! cyan + white
+!XTerm*color6:           #8cd0d3
+!XTerm*color7:           #dcdccc
+! bright-black + bright-red
+!XTerm*color8:           #709080
+!XTerm*color9:           #dca3a3
+! bright-green + bright-yellow
+!XTerm*color10:          #c3bf9f
+!XTerm*color11:          #f0dfaf
+!! bright-blue + bright-purple
+!XTerm*color12:          #94bff3
+!XTerm*color13:          #ec93d3
+! bright-cyan + bright-white
+!XTerm*color14:          #93e0e3
+!XTerm*color15:          #ffffff

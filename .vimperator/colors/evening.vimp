@@ -1,0 +1,61 @@
+" ==VimperatorColorSchema==
+" name: evening
+" ==/VimperatorColorSchema==
+
+hi Hint      font-family: helvetica; font-size: 10px; font-weight: normal; color: lightyellow; background-color: black; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 5px;
+	 
+hi HintElem    background-color: #535D6C;    color: white;
+hi HintActive    background-color: orange;  color: black;
+
+hi StatusLine           color: #333;     background: #ddd;
+
+hi Normal               color: #ddd;     background: #333;
+hi InfoMsg              color: #ddd;     background: #333;
+hi ModeMsg              color: #ddd;     background: #333;
+hi MoreMsg              color: limegreen;background: #333;
+hi LineNr               color: yellow;   background: #333;
+hi Question             color: limegreen;background: #333;
+hi WarningMsg           color: yellow;   background: #333;
+hi NonText                               background: #333;
+
+hi CompItem[selected]   color: #333;     background: Khaki;
+
+hi Title                color: Orchid;
+hi Indicator            color: DodgerBlue;
+hi String               color: Orchid;
+hi Number               color: Orchid;
+hi Object               color: SkyBlue;
+hi Function             color: Khaki;
+hi URL                  color: GreenYellow;
+
+hi TabNumber            color: DarkOrange;
+hi TabText              color: #CFCFCF;
+
+style about:blank html { background-color:#333; }
+style -name tab chrome://* <<EOM
+#content { background-color: #ddd; } /* tabbar */
+.tabs-alltabs-button { padding: 0 !important; }   
+.tabs-container { height: 30px; border-bottom:2px solid #333; }
+.tabs-container > stack {display:none;} /* remove tab selection menu */
+.tabbrowser-tab {
+    -moz-appearance: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -moz-border-radius-topleft:0 !important;
+    -moz-border-radius-topright:0 !important;
+    -moz-border-radius-bottomright:0 !important;
+    -moz-border-radius-bottomleft:0 !important;
+    border: none !important;
+    background-image:none !important;
+    background-color: #535D6C !important;
+
+}
+.tabbrowser-tab[selected="true"] > .hbox { background-color: #DDD !important; }
+.tabbrowser-tab[selected="true"] > .tab-text { color: #333 !important; }
+EOM
+
+"style -name statusbar chrome://* <<EOM
+"#status-bar statusbarpanel { padding: 0 1px !important; }
+"statusbarpanel > * { margin: 0 !important; padding:0 !important; }
+"EOM
+

@@ -1,0 +1,39 @@
+# Aliases -*- mode: shell-script -*-
+alias ls='ls --color=auto -hGF'
+alias ll='ls -Alh'
+alias l1='ls -1'
+alias crontab='EDITOR=vi VISUAL=vi crontab'
+alias e='emacsclient -n'
+alias df='df -h'
+alias top='xtitle Processes on $HOSTNAME && htop'
+alias make='xtitle Making $(basename $PWD) ; make'
+alias svn='EDITOR=vi VISUAL=vi svn'
+
+alias diff='colordiff'
+
+# Arch stuff
+#alias msgs='sudo tail -f /var/log/messages.log | loco'
+#alias ds='dpkg -s'
+#alias ss='pacman -Ss '
+#alias up='sudo pacman -Syu'
+#alias dv='dpkg -s $@ | grep ^Version:'
+#alias dl='pacman -Ql '
+#alias di='dpkg -l | grep $@'
+#alias inst='sudo aptitude install '
+#
+# Ubuntu stuff
+alias msgs='sudo tail -f /var/log/messages | loco'
+alias ds='dpkg -s'
+alias ss='apt-cache search '
+alias up='sudo aptitude update;sudo aptitude safe-upgrade'
+alias dv='dpkg -s $@ | grep ^Version:'
+alias dl='dpkg -L'
+alias di='dpkg -l | grep $@'
+alias inst='sudo aptitude install'
+#
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+#

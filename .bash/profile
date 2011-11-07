@@ -1,0 +1,92 @@
+#!/bin/bash
+# -*- mode: shell-script -*-
+
+HISTFILE=~/.bash/history
+HISTIGNORE="[   ]*:&:[bf]g:exit"
+HISTFILESIZE=10000
+HISTCONTROL=ignoreboth
+HISTTIMEFORMAT='%T %F: '
+
+PATH1=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+PATH2=${JAVA_HOME}/bin:${HOME}/bin:${ORACLE_HOME}
+PATH3=/usr/bin/perlbin/core:/usr/bin/perlbin/vendor:/var/lib/gems/1.8/bin/
+PATH=$PATH1:$PATH2:$PATH3
+
+CDPATH=".:..:../..:~:~/Work:~/Work/Projects:~/emacs"
+
+INFOPATH=/usr/share/info:
+
+RUBYOPT=rubygems
+
+LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:/usr/X11R6/lib
+#LIBPATH=/usr/lib:/usr/local/lib:/usr/X11R6/lib
+
+DISPLAYNAME=`echo $HOSTNAME | tr [a-z] [A-Z]`
+
+EDITOR=emacs VISUAL=emacs FCEDIT=emacs
+
+ORACLE_HOME=/opt/oracle
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ORACLE_HOME}
+TNS_ADMIN=/home/thermans/.oracle
+
+GREP_OPTIONS="--color=auto"
+GREP_COLOR="0;32"
+
+INPUTRC=~/.inputrc
+
+export INTEL_BATCH=1
+
+# SSH Agent
+#/usr/bin/keychain --nogui --quiet ~/.ssh/id_rsa
+#[[ -f $HOME/.keychain/$HOSTNAME-sh ]] && source $HOME/.keychain/$HOSTNAME-sh
+
+MONO_EXTERNAL_ENCODINGS="iso8859-1:UTF-8"
+
+#MOZILLA_FIVE_HOME=/usr/lib/mozilla
+#MOZ_DISABLE_PANGO=1
+
+# Need two ^D to exit shell.
+IGNOREEOF=1
+
+NCFTPDIR=/home/thermans/.ncftp
+#LC_ALL=C
+
+# --- Bash options ----------------------------
+# Fix minor errors in command line
+shopt -s cdspell
+# If history command no longer exists check path
+shopt -s checkhash
+# Append to the history file instead of overwrite
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+# Save multi-line commands as one line in history
+shopt -s cmdhist
+# Allow variables in cd completion
+shopt -s cdable_vars
+# Adjust window size automatically
+shopt -s checkwinsize
+# Allow re-editing of history search
+shopt -s histreedit
+# --------------------------------------------
+
+complete -d cd
+
+BROWSER="/usr/bin/firefox"
+
+# Use vim for manpages
+export PAGER="/bin/sh -c \"unset PAGER;col -b -x | view -c 'set ft=man nomod nolist' -c 'map q :q<CR>' -c 'map <SPACE> <C-D>' -c 'map b <C-U>' -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+
+LESS='-R -i -X -n -M -P%t?f%f :stdin .?pb%pb\%:?lbLine %lb:?bbByte %bb:-...'
+LESSOPEN="| lesspipe %s"
+
+#TZ=EST5EDT
+
+export HOME VISUAL EDITOR MAIL SHELL PATH INFOPATH LD_LIBRARY_PATH 
+export LIBPATH JAVA_HOME NCFTPDIR RUBYOPT
+export CDPATH PAGER BROWSER LESS LESSOPEN TERMCAP LC_ALL IGNOREEOF
+export HISTIGNORE HISTFILESIZE HISTFILE HISTTIMEFORMAT HISTCONTROL
+export GREP_OPTIONS GREP_COLOR
+export ORACLE_HOME TNS_ADMIN
+export MONO_EXTERNAL_ENCODINGS MOZILLA_FIVE_HOME
+
+umask 022

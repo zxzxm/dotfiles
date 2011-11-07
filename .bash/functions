@@ -1,0 +1,117 @@
+# Bash functions  -*- mode: shell-script -*-
+
+pacsearch() {
+   echo -e "$(pacman -Ss "$@" | sed \
+     -e 's#^core/.*#\\033[1;31m&\\033[0;37m#g' \
+     -e 's#^extra/.*#\\033[0;32m&\\033[0;37m#g' \
+     -e 's#^community/.*#\\033[1;35m&\\033[0;37m#g' \
+     -e 's#^.*/.* [0-9].*#\\033[0;36m&\\033[0;37m#g' ) \
+     \033[0m"
+}
+
+# Mkdir and CD into it.
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
+# Calculator
+c () { echo "$*" | bc -l; }
+
+pg()
+{
+	ps -ef | grep $1 | grep -v grep
+}
+
+# cd to bookmarked directory
+function cdbm { cd "`bm $1`"; }
+
+term()
+{
+    echo $TERM
+    if [  $# -gt 0 ]; then
+	TERM=$1
+	export TERM
+	tset
+	echo "New TERM: " $1
+    fi
+}
+
+xtitle ()
+{
+	case "$TERM" in
+	    xterm*|rxvt*)
+		echo -n -e "\033]0;${DISPLAYNAME}:$*\007"
+		;;
+	    *)
+		;;
+	esac
+}
+
+mkdir ()
+{
+    command mkdir -p "$@"
+}
+
+function man ()
+{
+  for i ; do
+        xtitle The $(basename $1|tr -d .[:digit:]) manual
+          command man "$i"
+    done
+}
+
+cd ()
+{
+	    builtin cd "$@" && xtitle $PWD
+}
+
+bigcat () 
+{ 
+  while read line1; do 
+      cat $line1 
+  done 
+}
+
+watch()
+{
+	if [ $# -ne 1 ] ; then
+		tail -f nohup.out
+	else
+		tail -f $1
+	fi
+}
+
+function chmog()
+{
+	if [ $# -ne 4 ] ; then
+		echo "usage: chmog mode owner group file"
+		return 1
+	else
+		chmod $1 $4
+		chown $2 $4
+		chgrp $3 $4
+	fi
+}
+
+
+datestring()
+{
+  date +%y%m%d
+}
+
+# make a tar ball
+backup()
+{
+  /bin/tar zcvf $(basename $1)-$(datestring).tar.gz $1
+}
+
+# lss : ls summary
+summary()
+{
+  echo "$(ls -l $* | wc -l) files : $(du -sh $* | awk '{print $1}')"
+}
+
+# lls = list followed by summary
+lls()
+{
+  ll;
+  summary;
+}

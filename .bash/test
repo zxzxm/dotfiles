@@ -1,0 +1,16 @@
+set_prompt ()
+   {
+     local SAVE_CRS=`tput sc 2> /dev/null`
+     local RESET_CRS=`tput rc 2> /dev/null`
+     local CLOCKPOS=`tput cup 0 $(($HZ-10)) 2> /dev/null`
+     local FOREG=`tput setaf 6 2> /dev/null` #4
+     local ALT_FOREG=`tput setaf 3 2> /dev/null` #4
+     local BACKG=`tput setab 0 2> /dev/null` #6
+     local NORMAL=`tput sgr0 2> /dev/null`
+     local BOLD=`tput bold 2> /dev/null`
+ 
+     PS1="\[${NORMAL}${SAVE_CRS}${CLOCKPOS}${FOREG}${BACKG}${BOLD} \@
+ ${RESET_CRS}${BOLD}${ALT_FOREG}\]\u\[${NORMAL}\]@\h:\w\$ "
+   }
+   set_prompt
+ 
