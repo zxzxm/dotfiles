@@ -1,0 +1,41 @@
+loadplugins '\.(js|penta)$'
+group user
+
+set mapleader=","
+
+set guioptions=BMCs
+set showtabline=multitab
+
+set hintkeys='asdfg;lkjh'
+
+" highlighted search matches
+set hlfind
+nmap <silent> <CR> :nohlfind<CR>
+
+" Don't close browser when you close the last tab
+:set! browser.tabs.closeWindowWithLastTab=false
+
+" Keys
+map <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
+map <Leader>n :toolbartoggle Navigation Toolbar<CR>
+map <Leader>m :toolbartoggle Menu Bar<CR>
+
+
+colorscheme ambiance
+
+"{{{ PassKeys
+set passkeys+='mail\.google\.com':c/jkhnpovuelxsfra#`[]z?*nrtgidIU+-=<Tab><Return>
+set passkeys+='mail\.google\.com/tasks/canvas':<Tab><S-Tab><Return>
+set passkeys+='groups\.google\.com/forum':glmo<Enter>j<S-j>k<S-k>n<S-n>p<S-p>ufh<S-a>rc/?<Esc><Return>
+set passkeys+='google\.com/reader':jkvnpbumoaAXNOVPJK?gehtl<Return>
+set passkeys+='plus\.google\.com':jk<Return><Tab>
+set passkeys+='twitter\.com':jk<Space>/.frtmn?ghrpu<Return>
+set passkeys+='rememberthemilk\.com/home/f':trsjkdhyucpgfinalez1234<Return>
+set passkeys+='www\.google\.com/calendar':dwmxajkcnqetp?<Del>s12345<Return>
+set passkeys+='duckduckgo\.com/':\!l'o<C-Return>jkh<Esc>\'v/rs1<Return>
+set passkeys+='github\.com/':s?tl<Return>
+set passkeys+='facebook\.com':<Left><Right>
+set passkeys+='flickr\.com':lf<Left><Right>
+"}}}
+
+" vim: set ft=pentadactyl :
