@@ -321,3 +321,5 @@ lazy fmaps -u='www\.rememberthemilk\.com/home' -events=vkeypress t c p d f g s u
 "            .insertBefore(bookPanel, document.getElementById("security-button"));
 "})();
 "EOF
+
+" vim: filetype=vim :

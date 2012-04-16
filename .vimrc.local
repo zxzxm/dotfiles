@@ -1,2 +1,9 @@
 set nonumber
 set shell=bash
+
+color wombat
+
+set t_ti=t_e=
+
+" Add local plugin directories
+set runtimepath=~/.vim_local,~/.vim,$VIMRUNTIME

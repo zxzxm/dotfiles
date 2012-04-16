@@ -1,7 +1,8 @@
+" Load host or OS specific stuff in ~/.mypentadactyl
+set runtimepath=~/.mypentadactyl,~/.pentadactyl
+
 loadplugins '\.(js|penta)$'
 group user
-
-set mapleader=","
 
 set guioptions=BMCs
 set showtabline=multitab
@@ -12,16 +13,18 @@ set hintkeys='asdfg;lkjh'
 set hlfind
 nmap <silent> <CR> :nohlfind<CR>
 
+set defsearch=duckduckgo
+
+set titlestring="Firefox"
+
 " Don't close browser when you close the last tab
 :set! browser.tabs.closeWindowWithLastTab=false
 
 " Keys
-map <Leader>b :toolbartoggle Bookmarks Toolbar<CR>
-map <Leader>n :toolbartoggle Navigation Toolbar<CR>
-map <Leader>m :toolbartoggle Menu Bar<CR>
-
-
-colorscheme ambiance
+map ,b :toolbartoggle Bookmarks Toolbar<CR>
+map ,n :toolbartoggle Navigation Toolbar<CR>
+map ,m :toolbartoggle Menu Bar<CR>
+map ,w :toolbartoggle Web Developer Toolbar<CR>
 
 "{{{ PassKeys
 set passkeys+='mail\.google\.com':c/jkhnpovuelxsfra#`[]z?*nrtgidIU+-=<Tab><Return>
@@ -33,9 +36,11 @@ set passkeys+='twitter\.com':jk<Space>/.frtmn?ghrpu<Return>
 set passkeys+='rememberthemilk\.com/home/f':trsjkdhyucpgfinalez1234<Return>
 set passkeys+='www\.google\.com/calendar':dwmxajkcnqetp?<Del>s12345<Return>
 set passkeys+='duckduckgo\.com/':\!l'o<C-Return>jkh<Esc>\'v/rs1<Return>
-set passkeys+='github\.com/':s?tl<Return>
+" set passkeys+='github\.com/':s?tl<Return>
 set passkeys+='facebook\.com':<Left><Right>
 set passkeys+='flickr\.com':lf<Left><Right>
 "}}}
+
+:source ~/.my.penta
 
 " vim: set ft=pentadactyl :

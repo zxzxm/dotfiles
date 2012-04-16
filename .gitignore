@@ -1,5 +1,9 @@
 .hg*
 .zsh/histfile
+.bash/history
 .vim/yankring_history_v2.txt
 .vimperator/info/default/history-command
+.pentadactyl/info/default/register-ring
+.pentadactyl/info/default/command-history
 *~
+TAGS

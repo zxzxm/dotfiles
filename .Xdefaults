@@ -9,6 +9,8 @@ Xft.lcdfilter:                  lcddefault
 Xft.hinting:                    1
 Xft.hintstyle:                  hintfull
 
+Xcursor.theme:                  Neutral
+
 !------------------------------------------------------------------!
 ! Emacs                                                            !
 !------------------------------------------------------------------!
@@ -23,24 +25,27 @@ Emacs.pointerColor:             orange
 !------------------------------------------------------------------!
 ! Xterm                                                            !
 !------------------------------------------------------------------!
-XTerm*faceName:                 DejaVu Sans Mono:size=9
-XTerm*termName:                 xterm-256color
-XTerm*dynamicColors:            on
-XTerm*allowSendEvents:          true
-XTerm*utf8:                     2
+! XTerm*faceName:                 DejaVu Sans Mono:size=9
+! XTerm*termName:                 xterm-256color
+! XTerm*dynamicColors:            on
+! XTerm*allowSendEvents:          true
+! XTerm*utf8:                     2
 
 !------------------------------------------------------------------!
 ! URxvt                                                            !
 !------------------------------------------------------------------!
-URxvt*font:                     xft:DejaVu Sans Mono-10
-!URxvt*font:                     xft:Ubuntu Mono:pixelsize=15
+URxvt*font:                     xft:DejaVu Sans Mono-9
+URxvt*boldFont:                 xft:DejaVu Sans Mono-9
+URxvt.talicFont:                xft:DejaVu Sans Mono-9
+URxvt.bolditalicFont:           xft:DejaVu Sans Mono-9
 
+URxvt*letterSpace:              -1
 Urxvt.depth:                    32
 !URxvt.colorDB:                  white
 !URxvt.colorIT:                  green
 URxvt*termName:                 rxvt-unicode
 
-URxvt.urgentOnBell: True
+URxvt.urgentOnBell:             True
 URxvt*saveLines:                32767
 URxvt*scrollBar:                false
 URxvt*scrollBar_right:          false
@@ -56,7 +61,7 @@ URxvt*visualBell:               true
 
 ! Perl extensions to rxvt
 !URxvt.perl-ext:                 default,url-select,keyboard_select
-URxvt.perl-ext:                 default,url-select
+URxvt.perl-ext:                 default,matcher,url-select
 
 URxvt.keysym.M-u:               perl:url-select:select_next
 !URxvt.keysym.M-Escape:          perl:keyboard-select:activate
@@ -65,7 +70,7 @@ URxvt.keysym.M-u:               perl:url-select:select_next
 URxvt*urlLauncher:            firefox
 URxvt.underlineURLs:          true
 !
-!URxvt.matcher.button:     1
+URxvt.matcher.button:     1
 !URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 !!URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
 !URxvt.matcher.launcher.2: gvim +$2 $1

@@ -1,7 +1,7 @@
 require 'rubygems' unless defined? Gem
 require 'irb/completion'
 #require 'irb/ext/save-history'
-require 'interactive_editor'
+#require 'interactive_editor'
 require "bond"
 require 'looksee'
 require 'wirble'
@@ -33,7 +33,8 @@ Wirble.colorize
 #  end
 #end
 
-Bond.start :readline => :ruby
+#Bond.start :readline => :ruby
+Bond.start
 
 #alias q exit
 #
