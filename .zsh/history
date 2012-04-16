@@ -1,623 +1,3 @@
-: 1265746403:0;vi \#hi.rb\#
-: 1265746407:0;rm \#hi.rb\#
-: 1265746644:0;prompt -l
-: 1265746655:0;cd vim-unimpaired
-: 1265746658:0;cd do
-: 1265746667:0;vi unimpaired.txt
-: 1265746845:0;man zsh-lovers
-: 1265747235:0;ls -al perl
-: 1265747245:0;ls -ald p*
-: 1265747248:0;ls -ald pe*
-: 1265747447:0;sudo port -v update outdated
-: 1265747455:0;sudo port -v upgrade outdated
-: 1265747626:0;tar ztvf ../Downloads/zsh-lovers_0.8.3.tar.gz
-: 1265747630:0;tar zxvf ../Downloads/zsh-lovers_0.8.3.tar.gz
-: 1265747633:0;cd zsh-lovers
-: 1265747643:0;vi zsh.vim
-: 1265747747:0;LLfg
-: 1265747754:0;LL
-: 1265747774:0;myip -r
-: 1265747787:0;myrouter
-: 1265747799:0;locate myip
-: 1265747807:0;man myip
-: 1265748020:0;small
-: 1265748026:0;smartfont
-: 1265748030:0;semifont
-: 1265748037:0;tiny
-: 1265748085:0;screen
-: 1265748186:0;agoogle
-: 1265748200:0;echo $BROWSER
-: 1276175033:0;vi mysql-macports.plugin.zsh
-: 1276175159:0;vi rails.plugin.zsh
-: 1276175293:0;vi ruby.plugin.zsh
-: 1276175303:0;vi git.plugin.zsh
-: 1276175316:0;vi textmate.plugin.zsh
-: 1276175535:0;cd ~/Dropbox/src/oh-my-zsh
-: 1276175573:0;cd /usr/local
-: 1276175640:0;cd the
-: 1276175898:0;grep -r comparguments *
-: 1276175909:0;grep -r _arguments *
-: 1276176021:0;plug
-: 1276176022:0;nq
-: 1276194160:0;ps -ef | grep start
-: 1276194177:0;launctl list
-: 1276194186:0;launchctl list| grep start
-: 1276194203:0;ps aux | grep start
-: 1276194207:0;launchctl stop org.x.startx
-: 1276279308:0;telnet phobos.appl.com 80
-: 1276279317:0;telnet phobos.appl.com 443
-: 1276279328:0;telnet albert.appl.com 443
-: 1276279333:0;telnet albert.appl.com 80
-: 1276279347:0;telnet phobos.apple.com 443
-: 1276279353:0;telnet phobos.apple.com 80
-: 1276453047:0;locate glenwoodpaws
-: 1276453056:0;mdfind glenwoodpaws
-: 1276453058:0;mdfind glenwood
-: 1276453147:0;mdfind paws
-: 1276453156:0;mdfind Paws
-: 1276453169:0;cd Dropbox/src/Glenwood\ Pool
-: 1276453172:0;cd glenwoodpool.org
-: 1276453202:0;cd glenwood2
-: 1276453224:0;s -al glenwood_drupal/images
-: 1276453229:0;ls -al glenwood_drupal/images
-: 1276453231:0;ls -al glenwood_drupal/
-: 1276453238:0;cd glenwood_drupal/
-: 1276510490:0;cd .Trashes
-: 1276510497:0;sudo .s
-: 1276510500:0;sudo ls
-: 1276510504:0;sudo ls -l
-: 1276547684:0;ls -al /Library/LaunchAgents
-: 1276547702:0;ls -al /Library/LaunchDaemons
-: 1276547712:0;ls -al /etc/mach_init
-: 1276547714:0;ls -al /etc/mach_init*
-: 1276547738:0;ps -awww
-: 1276547742:0;ps -auwww
-: 1276547751:0;ps -xawww
-: 1276547769:0;ps aux | grep iE thermans
-: 1276547772:0;ps aux | grep -iE thermans
-: 1276548192:0;launchctl -l
-: 1276548201:0;launchctl list | grep vox
-: 1276548214:0;launchctl stop com.voxeo.vmanager
-: 1276548221:0;launchctl delete com.voxeo.vmanager
-: 1276548224:0;launchctl 
-: 1276567520:0;vi functions.zsh
-: 1276567531:0;zsh_stats
-: 1276567539:0;grep fpath *
-: 1276567544:0;grep -r fpath *
-: 1276567564:0;/opt/local/bin/git
-: 1276567566:0;/opt/local/bin/git pull
-: 1276567697:0;cat .easter-egg
-: 1276567880:0;fork
-: 1276567881:0;vi key-bindings.zsh
-: 1276567926:0;vi appearance.zsh
-: 1276567953:0;vi history.zsh
-: 1276567978:0;FX
-: 1276567980:0;vi spectrum.zsh
-: 1276568056:0;echo "^[[38;05;214mHello, World"
-: 1276568089:0;autoload spectrum
-: 1276568091:0;spectrum
-: 1276568134:0;source spectrum.zsh
-: 1276568137:0;autoload spectrum && spectrum
-: 1276568145:0;echo "$FX[italic]$FX[underline]$BG[020]Hello, World"
-: 1276568157:0;echo "$FG[214]Hello, World"
-: 1276568184:0;PROMPT='%253F%n@%m%f %156F%~%f %253F%#%f '
-: 1276568197:0;ls kdkd
-: 1276568213:0;rm cdv_notchecked_20100326.txt
-: 1276568265:0;git clone http://github.com/mxcl/homebrew.git
-: 1276568271:0;/opt/local/bin/git clone http://github.com/mxcl/homebrew.git
-: 1276568343:0;which brew 
-: 1276607494:0;sudo chmog g+w local
-: 1276607499:0;sudo chmod g+w local
-: 1276607559:0;sudo chgrp staff local
-: 1276609409:0;cd src/emacs-starter-kit-eschulte
-: 1276610680:0;find . -name "lastfm*"
-: 1276612688:0;ls backups
-: 1276625056:0;telnet msv-wch-i08 8080
-: 1276722450:0;cd "/Volumes/MyStuff/Music/Import/Serj Tankian"
-: 1276722476:0;rm fodi_hitchens_full.mp3
-: 1276782204:0;locate
-: 1276782209:0;locate kathleen
-: 1276782478:0;mdfind kathleen.jpg
-: 1276782486:0;mdfind kathleen
-: 1276887308:0;locate Big
-: 1276887384:0;locate F5
-: 1276890811:0;locate xmonad
-: 1276890828:0;ls -al /usr/local/bin/xmonad
-: 1276895723:0;sudo chown -R /usr/local
-: 1276895729:0;sudo chown -R thermans /usr/local
-: 1276896663:0;wget http://hackage.haskell.org/platform/2010.1.0.0/haskell-platform-2010.1.0.1-i386.dmg
-: 1276896670:0;/opt/local/bin/wget http://hackage.haskell.org/platform/2010.1.0.0/haskell-platform-2010.1.0.1-i386.dmg
-: 1276897515:0;which ghci
-: 1276897564:0;/usr/bin/cabal
-: 1276897674:0;export USERWM=`which xmonad`
-: 1276897813:0;exec $USERWM
-: 1276898512:0;rm xmonad xmobar
-: 1276898517:0;ls -al cabal
-: 1276898623:0;rm xmonad-i386-darwin xmonad.hi xmonad.o
-: 1276898627:0;rm xmonad.errors
-: 1276994637:0;telnet wise.co.bw
-: 1276994639:0;telnet wise.co.bw 110
-: 1276994645:0;telnet mail.wise.co.bw 110
-: 1277125101:0;grep -ri path *
-: 1277125318:0;./cabal update
-: 1277125398:0;bin/cabal install xmonad
-: 1277126107:0;bin/cabal list xmobar
-: 1277126119:0;which xmobar
-: 1277126333:0;bin/cabal clean
-: 1277126339:0;bin/cabal clean xmobar
-: 1277126344:0;bin/cabal --help
-: 1277126453:0;bin/cabal check xmobar
-: 1277126457:0;bin/cabal check 
-: 1277126475:0;bin/cabal install xmobar
-: 1277126537:0;find . -name sys
-: 1277126542:0;find . 
-: 1277126664:0;brew install mtl
-: 1277126673:0;bin/cabal list
-: 1277126859:0;bin/cabal list mtl
-: 1277126866:0;bin/cabal list vfs
-: 1277126899:0;bin/cabal update
-: 1277126911:0;bin/cabal install gtk2hs
-: 1277126921:0;bin/cabal install vfs
-: 1277126934:0;bin/cabal 
-: 1277126947:0;./cabal --help
-: 1277126974:0;./cabal info xmobar
-: 1277127018:0;brew install xmobar with_utf8
-: 1277127038:0;./cabal install xmobar with_utf8
-: 1277127188:0;cd xmobar
-: 1277127191:0;cd 0.11.1
-: 1277127225:0;ls lib
-: 1277127237:0;find . -name dist
-: 1277127249:0;vi ~/.xmonad/xmonad.hs
-: 1277127267:0;/opt/local/bin/port -v install xmobar
-: 1277127402:0;locate sys/vfs.h
-: 1277127417:0;find . -name StatFS.hsc
-: 1277127429:0;./cabal install xmobar 
-: 1277127457:0;vi ../config
-: 1277127494:0;cat ../logs/build.log
-: 1277127544:0;tar ztvf ~/.cabal/packages/hackage.haskell.org/xmobar/0.11.1/xmobar-0.11.1.tar.gz
-: 1277127646:0;runhaskell Setup.lhs install
-: 1277127692:0;~/.cabal/bin/cabal check xmobar.cabal
-: 1277127695:0;~/.cabal/bin/cabal check 
-: 1277127743:0;ci StatFS.hsc
-: 1277127762:0;cat StatFS.hsc,v
-: 1277127772:0;head StatFS.hsc,v
-: 1277127888:0;tar zxvf ~/.cabal/packages/hackage.haskell.org/xmobar/0.11.1/xmobar-0.11.1.tar.gz
-: 1277127896:0;~/.cabal/bin/cabal install
-: 1277129456:0;sudo port -v install xmobar
-: 1277129541:0;ls -al x*
-: 1277129622:0;sudo port -v install dzen
-: 1277129690:0;brew uninstall dmenu
-: 1277130032:0;kill 6861
-: 1277130047:0;kill 6748
-: 1277130052:0;kill -9 6748
-: 1277130063:0;exec ~/.cabal/bin/xmonad
-: 1277130080:0;ps -aux | grep X
-: 1277130151:0;kill 7182
-: 1277130157:0;kill -9 7182
-: 1277130164:0;urxvtd
-: 1277130393:0;.cabal/bin/xmonad
-: 1277130414:0;cat xmonad.errors
-: 1277130430:0;~/.cabal/bin/xmonad --recompile
-: 1277132503:0;runhaskell web.hs
-: 1277132510:0;vi web.hs
-: 1277132578:0;ghci web.hs
-: 1277132595:0;ghc --make web.hs
-: 1277132727:0;rmweb.o
-: 1277132734:0;ghc web.o
-: 1277132738:0;ghc web.hs
-: 1277147029:0;cd Dropbox/src/emacs
-: 1277147100:0;chmod 755 autogen.sh configure
-: 1277147237:0;chmod 755  /Users/thermans/Dropbox/src/emacs/move-if-change
-: 1277147269:0;chmod 755 make-dist mkinstalldirs update-subdirs install-sh
-: 1277147302:0;./configure --without-dbus --with-ns
-: 1277221484:0;cd Dropbox/src/emacs-fullscreen
-: 1277221566:0;chmod 755 configure install-sh autogen.sh make-dist mkinstalldirs move-if-change update-subdirs
-: 1277388697:0;ls -ald E*
-: 1277388705:0;ls -al Espresso.app
-: 1277474299:0;scp tim.zsh-theme hermanst@yangon.dreamhost.com:.oh-my-zsh/themes
-: 1277474671:0;mkdir mnt
-: 1277474695:0;sshfs hermanst@yangon.dreamhost.com:swimfortim mnt
-: 1277482043:0;cp ../Pictures/Swim4Tim.png .
-: 1277482477:0;cp ../Pictures/Swim4Tim.html .
-: 1277482483:0;cp ../Pictures/Swim4Tim.css .
-: 1277482654:0;view ._Swim4Tim.css
-: 1277586832:0;brew install vifm
-: 1277586859:0;brew info tintin
-: 1277586905:0;ls -1 
-: 1277586909:0;ls -1 | dmenu
-: 1277586951:0;git clone git://vifm.git.sourceforge.net/gitroot/vifm/vifm  
-: 1277587032:0;./vifm
-: 1277587088:0;brew list --unbrewed
-: 1277912085:0;locate textmate
-: 1277912901:0;mv swim4tim.p* Desktop
-: 1277915302:0;cd Sites/glenwood
-: 1277915308:0;cd Sites/glenwoodreal/images
-: 1277915325:0;scp tiled_water.jpg nkosi:
-: 1277924882:0;cd ../../swimfortim
-: 1277924900:0;mv ~/Desktop/swim4tim.png .
-: 1277926898:0;prlsrvctl
-: 1277926904:0;prlsrvctl user list
-: 1277990834:0;prlctl suspend {a621d7cd-eb7d-49ec-a898-de0e1edf8982} 
-: 1278352106:0;svn co http://svn.openstreetmap.org/applications/editors/josm/plugins/wmsplugin
-: 1278352228:0;cd Downloads/webkit-image-r13262-qt-4.5-osx10.5.6
-: 1278352249:0;locate QtCore
-: 1278352986:0;pkg-config --cflags QtCore
-: 1278353002:0;vi sources.cfg
-: 1278353036:0;moc webkit-image.cpp > webkit-image.h
-: 1278353169:0;cd /Developer
-: 1278353179:0;cd SDKs
-: 1278353238:0;ls /usr/bin/moc
-: 1278353240:0;ls -al /usr/bin/moc
-: 1278353252:0;cd ~/src/wmsplugin
-: 1278353284:0;export PATH=/home/thermans/.cabal/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/X11/bin
-: 1278353291:0;which make
-: 1278353294:0;which moc
-: 1278353313:0;pkg-config --cflags QtCore QtGui QtWebKit QtNetwork
-: 1278353336:0;cd /Developer/usr/bin/
-: 1278353356:0;find . -name "*uninstall*"
-: 1278353368:0;cd Tools
-: 1278353377:0;sudo ./uninstall-qt.py
-: 1278361527:0;cd src/wmsplugin
-: 1278361565:0;cd ~/Downloads/webkit-image-r13262-qt-4.5-osx10.5.6
-: 1278361568:0;./webkit-image
-: 1278361574:0;file webkit-image
-: 1278361586:0;sudo cp webkit-image /usr/local/bin
-: 1278361618:0;which webkit-image
-: 1278361795:0;which firefox
-: 1278361798:0;firefox
-: 1278361808:0;cd /Applications/Firefox.app
-: 1278361820:0;ls -al firefox-bin
-: 1278361824:0;ls -al fi*
-: 1278362525:0;cd Memeo
-: 1278363623:0;webkit-image www.hermans.net
-: 1278363637:0;rm com.mulgasoft.emacsplus_3.3.1.zip
-: 1278363643:0;rxvt
-: 1278384822:0;bin/go mss-wch-h01
-: 1278384890:0;bin/go nmq-ch-c01
-: 1278384893:0;bin/go nmq-wch-c01
-: 1278384983:0;bin/go vsr-pot-b05
-: 1278385060:0;bin/go vsr-pot-b01
-: 1278385090:0;bin/go vsr-pot-b02
-: 1278385124:0;bin/go vsr-pot-b03
-: 1278385185:0;bin/go vsr-wch-b03
-: 1278385287:0;bin/go vsr-wch-h02
-: 1278409933:0;bin/go sip-pot-b01
-: 1278420056:0;mv IMG_0858.JPG Tim_Belly_Flop.jpg
-: 1278420063:0;scp Tim_Belly_Flop.jpg nkosi:
-: 1278441550:0;mv IMG_0818.JPG JoshHobbit.jpg
-: 1278441559:0;scp JoshHobbit.jpg nkosi:
-: 1278456066:0;go vsr-pot-f04
-: 1278456072:0;bin/go vsr-pot-f04
-: 1278456169:0;bin/go vsr-pot-e05
-: 1278456215:0;bin/go vsr-pot-e03
-: 1278554499:0;open -a Xee
-: 1278633541:0;cd ../Documents/Azureus\ Downloads
-: 1278633611:0;open -a Movist
-: 1278633633:0;open -a VLC ~/Documents/Azureus\ Downloads/Katy\ Perry\ -\ Hot\ N\ Cold.mp3
-: 1278633717:0;open -a Audacity
-: 1278691734:0;libmp3lame
-: 1278691737:0;locate libmp3lame
-: 1278691753:0;cd /opt/local/lib/
-: 1278691757:0;ls -al libmp3*
-: 1278691834:0;cd /usr/local/lib/audacity/
-: 1278695220:0;ls -al K*
-: 1278695231:0;scp Katy\ Perry\ -\ Hot\ N\ Cold\ -\ Short.mp3 nkosi:Desktop
-: 1278758789:0;bin/go web-pot-a01
-: 1278758884:0;bin/go web-pot-a02
-: 1278846232:0;bin/go web-wch-a03
-: 1278846348:0;bin/go web-pot-a03
-: 1278846526:0;bin/go web-pot-a04
-: 1278897393:0;brew search urxvt
-: 1278897406:0;brew install urxvt
-: 1278897523:0;cd Documents/Azureus\ Downloads
-: 1278897532:0;cd Now\ Dance\ 2008\ \ 2cd\'s
-: 1278897538:0;cd CD\ 1
-: 1278897572:0;brew search picard
-: 1278899325:0;mp3info 05.\ Track\ 5.mp3
-: 1278899328:0;mp3info 01.\ Track\ 1.mp3
-: 1278900035:0;;s =a;
-: 1278900353:0;telnet 0 8000
-: 1278900361:0;telnet 127.0.0.1 8000
-: 1279205289:0;cd Dropbox/src/vimperator-labs
-: 1279205294:0;cd downloads
-: 1279219865:0;locate audacity
-: 1279219882:0;cd /usr/local/lib/audacity/.
-: 1279219892:0;cd audacity
-: 1279302716:0;open -a PlaySound /System/Library/Sounds/Purr.aiff
-: 1279302721:0;open -a Playsound /System/Library/Sounds/Purr.aiff
-: 1279302740:0;ls ~/Applications
-: 1279302834:0;cd /Applications/Utilities/Play\ Sound.app
-: 1279302861:0;./Play\ Sound /System/Library/Sounds/Purr.aiff
-: 1279508363:0;./vpn
-: 1279508436:0;./go mds-wch-a02
-: 1279592421:0;go mss-pot-g01
-: 1279592427:0;bin/go mss-pot-g01
-: 1279592760:0;bin/go cfg-pot-a01-clus
-: 1279593128:0;bin/go mss-pot-g02
-: 1279593207:0;bin/go drc-pot-h01
-: 1279593214:0;bin/go drc-pot-h02
-: 1279677033:0;go mss-pot-g02
-: 1279677195:0;go mss-pot-h01
-: 1279677218:0;vi ../.vimrc
-: 1279677922:0;find . -name functions
-: 1279678090:0;echo $ftath
-: 1279678130:0;source -x .zshrc
-: 1279678133:0;man source
-: 1279678153:0;zsh -x .zshrc
-: 1279678650:0;hash -r
-: 1279679074:0;brew list zsh
-: 1279679347:0;cp brew.plugin.zsh brew.plugin.zsh.bak
-: 1279679365:0;source brew.plugin.zsh
-: 1279679433:0;locate _arguments
-: 1279679448:0;/usr/share/zsh/4.3.9/functions/_arguments
-: 1279679475:0;cd /usr/share/zsh
-: 1279679518:0;cd ../site-functions
-: 1279679525:0;cd 4.3.9
-: 1279679543:0;cat _arguments
-: 1279679552:0;zsh -x _arguments
-: 1279679582:0;chmod 755 _arguments
-: 1279679585:0;sudo chmod 755 _arguments
-: 1279679652:0;mvim brew.plugin.zsh
-: 1279679677:0;mvim osx.plugin.zsh
-: 1279679688:0;mvim rails.plugin.zsh
-: 1279679696:0;mvim git.plugin.zsh
-: 1279679709:0;mvim mysql-macports.plugin.zsh
-: 1279679716:0;mvim lighthouse.plugin.zsh
-: 1279679837:0;locate _fink
-: 1279679852:0;mvim /usr/share/zsh/4.3.9/functions/_fink
-: 1279680082:0;vi b.zsh
-: 1279680100:0;zsh -x b.zsh
-: 1279680109:0;rm b.zsh
-: 1279680256:0;zsh -x brew.plugin.zsh
-: 1279680491:0;locate _git
-: 1279680500:0;view /usr/share/zsh/4.3.9/functions/_git
-: 1279680812:0;git --:q
-: 1279680818:0;mvim /usr/share/zsh/4.3.9/functions/_git
-: 1279681045:0;mvim .zshrc
-: 1279681289:0;/usr/share/zsh/4.3.9/functions/_arguments -S 
-: 1279681314:0;/usr/share/zsh/4.3.9/functions/_arguments -s
-: 1279681322:0;/usr/share/zsh/4.3.9/functions/_arguments -s 'foo'
-: 1279681335:0;mvim /usr/share/zsh/4.3.9/functions/_arguments
-: 1279681402:0;mvim /usr/share/zsh/4.3.9/functions/_ports
-: 1279681751:0;rake --version
-: 1279731160:0;scp IMG_1137.JPG nkosi:
-: 1279764421:0;go mss-pot-c02
-: 1279764817:0;bindkey -M menuselect '\e^M' accept-and-menu-complete 
-: 1279764835:0;mk\
-jkksks
-: 1279765202:0;ls -al /usr/share/vim/vim72/macros/less.sh
-: 1279765216:0;/usr/share/vim/vim72/macros/less.sh
-: 1279765243:0;/usr/share/vim/vim72/macros/less.sh bad
-: 1279765252:0;/usr/share/vim/vim72/macros/less.sh web.hs
-: 1279765263:0;less web.hs
-: 1279765277:0;/usr/share/vim/vim72/macros/less.sh xmonad.hs
-: 1279765294:0;/usr/share/vim/vim72/macros/less.sh fields.txt
-: 1279765422:0;caption always "%3n %t%? (%u)%?%?: %h%?"
-: 1279766685:0;vi /usr/local/bin/padre
-: 1279766696:0;perl /usr/local/bin/padre
-: 1279766710:0;cpan File::Which
-: 1279766779:0;view /opt/local/bin/cpan
-: 1279766961:0;brew list perl
-: 1279767002:0;brew install perl
-: 1279767065:0;locate cpan
-: 1279767075:0;/usr/bin/cpan
-: 1279767261:0;padre
-: 1279768039:0;brew search banshee
-: 1279798582:0;go mss-pot-b02
-: 1279916803:0;which pler
-: 1279916814:0;/usr/bin/perl
-: 1279916819:0;/usr/bin/perl -v
-: 1279916827:0;ls -al /usr/bin/perl
-: 1279916836:0;sudo port uninstall perl
-: 1279916843:0;sudo port selfupdate
-: 1279916902:0;ping rsync.macports.org
-: 1279916955:0;grep rsync /etc/services
-: 1279916972:0;telnet rsync.macports.org 873
-: 1279917330:0;cat histfile
-: 1279917345:0;cd ../Bundle
-: 1279917354:0;head Metadata
-: 1279917360:0;view Metadata
-: 1280151009:0;locate formmail.pl
-: 1280159089:0;ls /Applications/F*
-: 1280164772:0;ps aux | grep wine
-: 1280184476:0;locate twilight
-: 1280493769:0;git clone http://github.com/scrooloose/nerdcommenter.git
-: 1280493774:0;cd nerdcommenter
-: 1280493953:0;cd ../nerdtree
-: 1280493972:0;rake install
-: 1280494112:0;man autojump
-: 1280494127:0;cd macports
-: 1280494134:0;svn status
-: 1280494165:0;less HACKING
-: 1280495027:0;cd port
-: 1280495034:0;./port
-: 1280495087:0;port selfupdate
-: 1280495094:0;port -v selfupdate
-: 1280500835:0;go mss-wch-c01
-: 1280502425:0;sudo port -v selfupdate
-: 1280503639:0;sudo make uninstall
-: 1280503657:0;sudo port install dircolors
-: 1280503673:0;sudo make 
-: 1280503712:0;mvim src/dep_map_clean.tcl
-: 1280503740:0;ls *dep*tcl
-: 1280503750:0;ls -al *tcl
-: 1280503757:0;mvim upgrade_sources_conf_default.tcl
-: 1280503782:0;cd .svn
-: 1280503786:0;cat entries
-: 1280503826:0;svn co http://svn.macports.org/repository/macports
-: 1280504016:0;sudo rm -r macports
-: 1280504111:0;sudo port install coreutils
-: 1280504214:0;sudo port installed
-: 1280504222:0;sudo port installed > myports.txt
-: 1280504235:0;sudo port -vf uninstall installed
-: 1280505816:0;sudo port clean --work --archive all
-: 1280512625:0;brew list coreutils
-: 1280512632:0;brew search coreutils
-: 1280512803:0;brew install coreutils --aliases
-: 1280512828:0;which gls
-: 1280512907:0;svn
-: 1280512911:0;which svn
-: 1280512917:0;which cvs
-: 1280512947:0;wget
-: 1280512968:0;cd /usr/local/Cellar/ccache/2.4/libexec
-: 1280513035:0;brew search haml
-: 1280513044:0;sqlite3
-: 1280513050:0;which sqlite3
-: 1280513164:0;brew install w3m
-: 1280513251:0;cd /opt/local/bin
-: 1280513258:0;ls -alF
-: 1280513264:0;ls -al sqlite3
-: 1280513268:0;ls -al sqlite
-: 1280513273:0;rm sqlite
-: 1280513276:0;sudo rm sqlite
-: 1280513290:0;ls -al pydoc
-: 1280513294:0;ls -al pydoc2.6
-: 1280513307:0;file vrome
-: 1280513310:0;vi vrome
-: 1280513323:0;vrome
-: 1280513344:0;ls -al Library/Frameworks
-: 1280513348:0;ls -al Library/Frameworks/Python.framework
-: 1280513357:0;ls -al Library/Frameworks/Python.framework/Versions
-: 1280513401:0;bzr
-: 1280513406:0;brew install bzr
-: 1280513431:0;brew search osxutils
-: 1280513472:0;man ccache 
-: 1280513482:0;ccache -C
-: 1280513555:0;ccache -Z
-: 1280513557:0;ccache -z
-: 1280513566:0;cat stats
-: 1280513611:0;sudo ccache -s
-: 1280513614:0;sudo ccache -C
-: 1280513767:0;convert
-: 1280513776:0;brew search ImageMagick
-: 1280513820:0;brew install colordiff
-: 1280513940:0;vi ~/.bashrc
-: 1280513963:0;cd .bash
-: 1280513966:0;grep opt *
-: 1280513976:0;vi profile
-: 1280513993:0;grep -r PATH *
-: 1280514011:0;grep -r path *
-: 1280514039:0;cd .ccache
-: 1280514057:0;sudo ccache -z
-: 1280514059:0;ccache -s
-: 1280514091:0;ls -ald .ccache
-: 1280514097:0;sudo chown -R thermans .ccache
-: 1280514180:0;gdircolors
-: 1280514192:0;ls -h
-: 1280514195:0;ls --help
-: 1280514217:0;grep -r ls *
-: 1280514294:0;alias | grep ls
-: 1280514362:0;--
-: 1280514394:0;mv .zshrc .z
-: 1280514465:0;ls -al usr
-: 1280514468:0;ls -al usr/share
-: 1280514472:0;ls -al usr/share/man
-: 1280514475:0;ls -al usr/share/man/man3
-: 1280514484:0;sudo rm -r usr
-: 1280514494:0;cd man3
-: 1280514503:0;sudo rm -r share
-: 1280514519:0;sudo rm -r lib
-: 1280514524:0;cd perl5
-: 1280514531:0;cat .modulebuildrc
-: 1280514536:0;ls -al plugin
-: 1280514546:0;rm -r plugin
-: 1280514550:0;rm ProggyClean.pcf.zip
-: 1280514557:0;rm subscribersah
-: 1280514562:0;./web
-: 1280514569:0;file web
-: 1280514578:0;./web --help
-: 1280514586:0;rm web
-: 1280514618:0;ls -al icons.zip
-: 1280514622:0;unzip -l icons.zip
-: 1280514626:0;rm icons.zip
-: 1280514647:0;mv TwinFood.rtf fields.txt spayhoney.jpg Documents
-: 1280514656:0;rm web.h*
-: 1280514664:0;cat foo.json
-: 1280514668:0;rm foo.json
-: 1280514677:0;w3m YATMCS.html
-: 1280514693:0;rm bad
-: 1280514715:0;open -a Zee garnett-sitting.jpg 
-: 1280514720:0;ls /Applications
-: 1280514730:0;open -a Xee garnett-sitting.jpg 
-: 1280514832:0;autoload -U zsh-mime-setup
-: 1280514900:0;zsh-mime-setup
-: 1280514902:0;garnett-sitting.jpg
-: 1280514932:0;alias -s jpg="open -a Xee"
-: 1280514978:0;zsh-mime-handler 
-: 1280514980:0;zsh-mime-handler --help
-: 1280515036:0;wget http://www.bash2zsh.com/zsh_refcard/refcard.pdf
-: 1280515043:0;refcard.pdf
-: 1280515052:0;open -a Preview refcard.pdf
-: 1280515090:0;vi example.zsh
-: 1280515210:0;./garnett-sitting.jpg
-: 1280515218:0;foo.pdf
-: 1280515234:0;locate mailcap
-: 1280515263:0;which dircolors
-: 1280515337:0;cd /usr/local/Cellar/coreutils/8.5
-: 1280515364:0;gdir
-: 1280515422:0;for x in `ls -1`\
-do\
-foo=`sed 's/^g//' $x
-: 1280515433:0;for x in `ls -1`\
-do\
-foo=`sed 's/^g//' $x`\
-echo $foo\
-done
-: 1280515474:0;for x in `ls -1`\
-do\
-foo=`echo $x | sed 's/^g//'`\
-echo $foo\
-done
-: 1280515487:0;ls -1
-: 1280515514:0;echo g[ | sed 's/^g//'
-: 1280515519:0;echo "g[" | sed 's/^g//'
-: 1280515530:0;for x in `ls -1`\
-do\
-foo=`echo "$x" | sed 's/^g//'`\
-echo $foo\
-done
-: 1280515565:0;for x in `ls -1`\
-do\
-foo=`echo "$x" | sed 's/^g//'`\
-echo $foo\
-echo "alias ${foo}=${x}" >> /tmp/alias\
-done
-: 1280515569:0;vi /tmp/alias
-: 1280515676:0;alias -s
-: 1280515701:0;du --version
-: 1280515704:0;gdu --version
-: 1280515819:0;ls -ald Ruby
-: 1280516334:0;mv .gem .g
-: 1280516349:0;vi .gem
-: 1280516371:0;colordiff .g .gemrc
-: 1280516384:0;diff .g  .gemrc
-: 1280516389:0;cat.g
-: 1280516392:0;cat .g
-: 1280516395:0;cd .g
-: 1280516408:0;mv .g .gem
-: 1280516419:0;mv .gemrc .g
-: 1280516428:0;ruby -C$HOME -ryaml -e "\
-gemrc = YAML::load_file('.gemrc') rescue {}\
-gemrc['gem'] = '-n/usr/local/bin'\
-YAML::dump(gemrc, File.new('.gemrc', 'w'))"
-: 1280516438:0;rm .gemrc
-: 1280516443:0;mv .g .gemrc
-: 1280516509:0;file * | grep ruby
-: 1280516626:0;ls darwin-thread-multi-2level
-: 1280516630:0;ls darwin-thread-multi-2level/Bundle
-: 1280516644:0;cd Python
-: 1280516648:0;cd 2.6
-: 1280516652:0;ls -al site-packages
-: 1280516655:0;cd site-packages
-: 1280516705:0;gem list > mygems
-: 1280516715:0;sudo gem list > sudogems
-: 1280516722:0;diff mygems sudogems
-: 1280516728:0;colordiff mygems sudogems
-: 1280516749:0;view sudogems
-: 1280516807:0;sudo gem update --system
-: 1280516866:0;gem list | grep haml
-: 1280516876:0;gem list | grep sprout
-: 1280516896:0;ls -1 > ~/mygems
 : 1280516941:0;mv annabeth\ adoption.jpg Documents
 : 1280516947:0;mv rebecca\ adoption.gif Documents
 : 1280516951:0;vi mygems
@@ -688,7 +68,6 @@ YAML::dump(gemrc, File.new('.gemrc', 'w'))"
 : 1280524040:0;ls -al Library
 : 1280524098:0;sudo port -f uninstall installed
 : 1280524111:0;cd .macports
-: 1280524115:0;cat history
 : 1280524162:0;ls /Library/Tcl/macports1.0
 : 1280524166:0;ls -al /Library/Tcl/macports1.0
 : 1280524183:0;sudo rm -rf \\
@@ -798,7 +177,6 @@ YAML::dump(gemrc, File.new('.gemrc', 'w'))"
 : 1280682338:0;ls -al blueprint
 : 1280682409:0;cp
 : 1280682416:0;alias | grep cp
-: 1280682426:0;unalias cp
 : 1280682438:0;vi ~/.oh-my-zsh/custom/aliases.zsh
 : 1280682462:0;source ~/.oh-my-zsh/custom/aliases.zsh
 : 1280682471:0;cp settings.example.yml settings.yml
@@ -1426,7 +804,6 @@ done
 : 1282681025:0;./configure --with-ns --without-dbus
 : 1282684689:0;grep therm /etc/passwd
 : 1282684701:0;id
-: 1282684727:0;groups
 : 1282753587:0;diffmerge mvim ~/Downloads/MacVim-7_3-53/mvim
 : 1282753596:0;vi mvim
 : 1282754120:0;defaults
@@ -1532,7 +909,6 @@ done
 : 1283449679:0;ps aux | grep aspell
 : 1283449734:0;rm thermans.el~
 : 1283449909:0;../magit
-: 1283449979:0;bzr status
 : 1283449995:0;rm nxhtml-loaddefs.el*
 : 1283450068:0;rm nxhtml-loaddefs.el.*
 : 1283450194:0;rm -r nxhtml
@@ -1603,7 +979,6 @@ done
 : 1283550103:0;vi .jumanjirc
 : 1283550119:0;cd .config/
 : 1283551265:0;locate input_hinting
-: 1283551431:0;cd vimperator-labs
 : 1283551452:0;find . -name "input_hinting*"
 : 1283619373:0;cp xmonad.hs xmonad.hs.bak
 : 1283619377:0;mv ~/xmonad.hs .
@@ -1642,7 +1017,6 @@ done
 : 1283884214:0;diffmerge oh-my-zsh.sh ~/Dropbox/src/oh-my-zsh/oh-my-zsh.sh
 : 1283884267:0;cp oh-my-zsh.sh ~/.oh-my-zsh
 : 1283884293:0;.
-: 1283884299:0;ss
 : 1283884505:0;cd tools
 : 1283884542:0;../tools
 : 1283884544:0;vi check_for_upgrade.sh
@@ -1790,7 +1164,6 @@ done
 : 1286394470:0;/Applications/Wireshark.app/Contents/MacOS/Wireshark
 : 1286394500:0;brew search
 : 1286394508:0;brew search /wire/
-: 1286394526:0;brew install wireshark
 : 1286394756:0;brew info vala
 : 1286395211:0;mv ~/Desktop/readline-6.1.tar.gz .
 : 1286397417:0;mv ~/Desktop/readline61-001 001-homebrew.diff
@@ -1834,7 +1207,6 @@ done
 : 1286472999:0;cd src/autojump
 : 1286473006:0;less README.rst
 : 1286473071:0;zsh install.zsh
-: 1286473153:0;vi aliases.zsh
 : 1286473181:0;rm example.zsh
 : 1286473225:0;jumpstat
 : 1286473236:0;j src
@@ -2060,7 +1432,6 @@ done
 : 1287575039:0;cp -r ftdetect ~/.vim/bundle/pentadactyl
 : 1287575048:0;cp -r syntax ~/.vim/bundle/pentadactyl
 : 1287575122:0;cd melodactyl
-: 1287575128:0;less install.rdf
 : 1287575171:0;echo $PROFILE
 : 1287575188:0;ls ~/.mozilla
 : 1287575209:0;ls ~/Library/Application\ Support/Firefox/Profiles
@@ -2132,7 +1503,6 @@ done
 : 1287610413:0;scp mss-wch-b01:/tmp/Logansport.failed.txt .
 : 1287610620:0;cd ~/Documents/Microsoft\ User\ Data/Outlook\ Script\ Menu\ Items
 : 1287610641:0;mv Cleanup\ Outlook\\cc.workflow Cleanup\ System\ Messages\\cc.workflow
-: 1287631017:0;hg status
 : 1287631068:0;hg log
 : 1287631082:0;hg log | head -100
 : 1287776722:0;ping nkosi
@@ -2164,7 +1534,6 @@ done
 : 1288018882:0;/usr/bin/vi
 : 1288018908:0;cd bundle
 : 1288018914:0;rm -r gundo.vim
-: 1288018920:0;vi ~/.pentadactylrc
 : 1288107531:0;scp *resized* nkosi:
 : 1288216948:0;cd ../Music/Amazon\ MP3
 : 1288216975:0;scp -r The\ Dillinger\ Escape\ Plan nkosi:Music/Amazon\ MP3/
@@ -2254,7 +1623,6 @@ done
 : 1289847433:0;vi sass/application.sass
 : 1289847470:0;vi application.css
 : 1289849598:0;mv application.html.erb /tmp
-: 1289852545:0;rails console
 : 1289863691:0;locate episodes
 : 1289863734:0;cd src/railscasts-episodes/episode-228
 : 1289863739:0;cd src/railscasts-episodes/
@@ -2271,7 +1639,6 @@ done
 : 1289864516:0;grep -r column *
 : 1289864745:0;cd store/public/images
 : 1289864764:0;cp *gif ~/Dropbox/src/gw/public/images
-: 1289868452:0;rails server
 : 1289946078:0;scp Kathleen\ W-9\ Form.pdf nkosi:Desktop
 : 1290266802:0;rails d
 : 1290266902:0;rails g migration ModifyFieldInIndividuals birthday:date
@@ -2553,7 +1920,6 @@ done
 : 1293057656:0;rm -r easytag-2.1.6
 : 1293058038:0;cp -r ~/Music/iTunes/iTunes\ Media/Audiobooks/Keith\ Richards .
 : 1293058518:0;cd Keith\ Richards
-: 1293058759:0;s
 : 1293059046:0;mp4
 : 1293059092:0;cd tmp/Keith\ Richards
 : 1293059109:0;id3info Life\ -\ Disc\ 16\ Track\ 02.m4a
@@ -2668,7 +2034,6 @@ done
 : 1295294806:0;git clone https://github.com/walter/aquamacs-emacs-starter-kit.git
 : 1295294839:0;ln -s ~/src/aquamacs-emacs-starter-kit 
 : 1295294957:0;grep linum *
-: 1295294979:0;view init.el
 : 1295294989:0;grep linum *.el
 : 1295295000:0;less line-num.el
 : 1295295472:0;git clone https://github.com/jstewart/aquamacs-emacs-starter-kit.git jstewart-aquamacs-starter-kit
@@ -2743,7 +2108,6 @@ done
 : 1296056263:0;/usr/local/Cellar/emacs/HEAD/Emacs.app
 : 1296060100:0;gem update rails
 : 1296063175:0;cat .hgtags
-: 1296064122:0;cd ~/Dropbox/dotfiles
 : 1296064135:0;rm \#.vimrc\#
 : 1296073592:0;git clone git://github.com/rails
 : 1296073600:0;git clone git://github.com/rails/rails.git
@@ -2839,10 +2203,7 @@ done
 : 1296341728:0;vi install.rdf
 : 1296342777:0;locate jquery-ui
 : 1296342814:0;cp ~/Dropbox/src/wishes/public/javascripts/jquery-ui.min.js .
-: 1296527900:0;cd im
-: 1296527904:0;cd Pidgin
 : 1296527910:0;cd aim/timlhermans
-: 1296527923:0;cd %5bcomcastvoicemail%5d
 : 1296527941:0;../herndonvm
 : 1296527942:0;grep -i racon *
 : 1296528828:0;rm -r emacs
@@ -2887,10 +2248,7 @@ done
 : 1296574497:0;scp nkosi:.backups/vim/application.sass\\\~ .
 : 1296574504:0;mv application.sass\~ application.sass
 : 1296574545:0;mv application.sass ~/tmp
-: 1296579302:0;ls -al OfflineCache
-: 1296579308:0;ls -al Cache
 : 1296579318:0;rm -r Firefox
-: 1296579895:0;cd Firefox
 : 1296579899:0;cd Profiles
 : 1296579902:0;cd j6i9a20x.default
 : 1296605847:0;tac foo.txt
@@ -2989,7 +2347,6 @@ done
 : 1296961038:0;ls ../../
 : 1296961058:0;view anything-config.el
 : 1296961144:0;grep anything-c-adaptive-history *
-: 1296961150:0;rm anything-c-adaptive-history
 : 1296961153:0;ls -al cache
 : 1296961177:0;grep ac-comphist.dat *
 : 1296961188:0;view auto-complete.el
@@ -3108,7 +2465,6 @@ done
 : 1297354660:0;ls -al `which idle`
 : 1297354679:0;ls -al idle
 : 1297354691:0;ln -s ../Cellar/python/2.7.1/bin/hg
-: 1297354703:0;cd ~/Dropbox/src/dactyl
 : 1297354716:0;rm -r dactyl
 : 1297354725:0;hg clone https://dactyl.googlecode.com/hg/ dactyl
 : 1297354763:0;cat BREAKING_CHANGES
@@ -3121,7 +2477,6 @@ done
 : 1297360030:0;find . -name "cookies.js"
 : 1297360034:0;find . -name "cookies*"
 : 1297360163:0;cd .pentadactyl/
-: 1297360179:0;mkdir plugins
 : 1297360188:0;mv ~/Downloads/http-headers-dev.js .
 : 1297360872:0;cd Dropbox/src/admin/public/javascripts
 : 1297360887:0;mv ~/Downloads/jquery.isotope.min.js .
@@ -3240,7 +2595,6 @@ done
 : 1298402319:0;sudo -R chown thermans:staff local
 : 1298402325:0;sudo chown -R thermans:staff local
 : 1298402352:0;mkdir local/bin
-: 1298402363:0;which npm
 : 1298402381:0;ls -al local/bin
 : 1298402909:0;ffmpeg
 : 1298402915:0;ffmpeg -h
@@ -3251,7 +2605,6 @@ done
 : 1298403104:0;lame --help
 : 1298403130:0;ffmpeg -b 192k -i /Volumes/Hardcore\ Will\ Never\ Die,\ But\ You\ Will\ \[Disc\ 2\]/1\ Music\ For\ A\ Forgotten\ Future\ \(The\ Singing\ Mountain\).aiff music.mp3
 : 1298403359:0;ls -alh music.mp3
-: 1298403370:0;brew search mp3
 : 1298403408:0;scp music.mp3 nkosi:
 : 1298407780:0;wc -l Londonderry.failed.txt
 : 1298407800:0;ls -al L*
@@ -3336,7 +2689,6 @@ done
 : 1298647095:0;vi emacs-config-tinyhotlist.el
 : 1298647116:0;rm -r xmobar-0.12
 : 1298647130:0;cd .cabal/.
-: 1298647134:0;cd logs
 : 1298647139:0;tail build.log
 : 1298647147:0;cat build.log
 : 1298647164:0;ld -al
@@ -4214,7 +3566,6 @@ done
 : 1301779576:0;j /Users/thermans/Dropbox/src/gwupdate
 : 1301779952:0;rvm remove 1.9.2
 : 1301780682:0;rm -r vendor/mac
-: 1301780835:0;cd vendor
 : 1301780840:0;cd mac/ruby/1.9.1/
 : 1301780873:0;rvm gemset user global
 : 1301780913:0;rvm remove ruby-1.9.2-p0
@@ -4672,7 +4023,6 @@ done
 : 1302100786:0;diffmerge Makefile /tmp/Makefile
 : 1302100827:0;diffmerge /tmp/Makefile Makefile
 : 1302100862:0;rm -r homebrew
-: 1302100865:0;y
 : 1302100882:0;rm -r NiftyCube
 : 1302100899:0;ls -al Starter
 : 1302100906:0;cd Starter
@@ -4894,7 +4244,6 @@ done
 : 1302609696:0;brew search ghc
 : 1302610221:0;brew install haskell-platform
 : 1302611562:0;cd ~/.ghc/i386-darwin-6.12.3/package.conf.d
-: 1302612011:0;vi .xinitrc
 : 1302612030:0;vi .Xmodmap
 : 1302612071:0;dmenu -g 22
 : 1302612267:0;tail xmonad.errors
@@ -5113,7 +4462,6 @@ done
 : 1304544223:0;node help 
 : 1304544230:0;npm help
 : 1304544250:0;npm outdated
-: 1304544556:0;brew --config
 : 1304544578:0;brew --cache
 : 1304544588:0;cd Library/Caches/Homebrew
 : 1304544634:0;du -sh Homebrew
@@ -5133,8 +4481,6 @@ done
 : 1304545652:0;vi .npmrc
 : 1304545664:0;npm help folders
 : 1304545677:0;npm help root
-: 1304545692:0;brew search npm
-: 1304545708:0;curl http://npmjs.org/install.sh | sh
 : 1304545867:0;npm install http-console
 : 1304545899:0;http-console glenwoodpool.org
 : 1304545937:0;http-console www.glenwoodpool.org
@@ -5147,7 +4493,6 @@ done
 : 1304546895:0;npm instal http
 : 1304546904:0;npm install http
 : 1304546913:0;npm search http
-: 1304547031:0;telnet localhost 8080
 : 1304547064:0;rm server.js
 : 1304547384:0;auto-complete
 : 1304547453:0;cd /Applications/Emacs.app/Contents/MacOS/bin/
@@ -5169,7 +4514,6 @@ done
 : 1304559921:0;cd ~/.emacs.d/thermans
 : 1304559924:0;grep undo *
 : 1304559941:0;grep undo thermans.el
-: 1304559988:0;cd Dropbox/emacs
 : 1304559991:0;grep redo *
 : 1304624568:0;man screen
 : 1304624620:0;screen -d -r
@@ -5189,7 +4533,6 @@ done
 : 1304942731:0;man nginx
 : 1304942842:0;cd /usr/local/etc/nginx/
 : 1304942852:0;vi nginx.conf.default
-: 1304946827:0;cd /srv
 : 1304946875:0;cd share
 : 1304946901:0;find . -name index.html
 : 1304946930:0;w3m ./Cellar/nginx/1.0.1/html/index.html
@@ -5203,21 +4546,16 @@ done
 : 1304947128:0;ls opt
 : 1304947160:0;mkdir www
 : 1304947162:0;cd www
-: 1304947186:0;mkdir html
 : 1304947188:0;mkdir logs
-: 1304947203:0;vi /usr/local/etc/nginx/nginx.conf
 : 1304947288:0;cp /usr/local/Cellar/nginx/1.0.1/html/50x.html .
 : 1304947291:0;vi 50x.html
 : 1304947312:0;kill 63569
 : 1304947316:0;ps aux | grep nginx
-: 1304947320:0;nginx
 : 1304947349:0;cp /usr/local/Cellar/nginx/1.0.1/html/index.html .
 : 1304947410:0;unzip -l ~/Documents/sencha-touch-1.1.0.zip
 : 1304947415:0;unzip ~/Documents/sencha-touch-1.1.0.zip
 : 1304947428:0;mv sencha-touch-1.1.0 sencha
-: 1304947648:0;cd examples
 : 1304947760:0;cd guide
-: 1304947978:0;go mds-wch-a02
 : 1304954457:0;j Sw25
 : 1304954477:0;open S25\ VM\ Blast\ List\ Minneapolis\ Wave\ 1.xlsx
 : 1304954791:0;vi Workbook1.txt
@@ -5651,7 +4989,6 @@ done
 : 1306553360:0;tail -100 log/development
 : 1306554010:0;rvm ruby-1.8.7-head
 : 1306554045:0;rvm gemset create photos
-: 1306554057:0;gem install rails
 : 1306554121:0;rails photobooth
 : 1306554137:0;rails new photobooth
 : 1306554142:0;cd photobooth
@@ -5736,7 +5073,6 @@ done
 : 1306728534:0;ls -al mysql.glenwoodpool.net.sql
 : 1306728544:0;scp mysql.glenwoodpool.net.sql 192.168.13.7:
 : 1306734443:0;ls -al pics.tar
-: 1306759120:0;cat .ssh/id_rsa.pub
 : 1306759758:0;snmpwalk -c tibaza 192.168.1.1 .system
 : 1306759851:0;snmpwalk -c tibaza 192.168.1.1 1.3.6.1.2.1.2.2.1.10.1
 : 1306759865:0;snmpwalk -c tibaza 192.168.1.1 1.3.6.1.2.1.2.2.1.16.1
@@ -5762,7 +5098,6 @@ done
 : 1306851284:0;brew install z
 : 1306851307:0;vi .oh-my-zsh/custom/autojump.zsh
 : 1306851320:0;vi .oh-my-zsh/custom/z.sh
-: 1306851373:0;brew --prefix
 : 1306851382:0;cd /usr/local/etc/profile.d
 : 1306851388:0;vi z.sh
 : 1306851439:0;mv z.sh z.zsh
@@ -5770,7 +5105,6 @@ done
 : 1306851458:0;z 8
 : 1306851463:0;z -l
 : 1306851475:0;z th
-: 1306851482:0;cd /Users/
 : 1306851485:0;cd /home
 : 1306851493:0;z therm
 : 1306851527:0;cd .z
@@ -5924,7 +5258,6 @@ done
 : 1307462035:0;ls *zsh
 : 1307462049:0;mv *.zsh .oh-my-zsh/custom
 : 1307462095:0;mv ~/tim.zsh-theme .
-: 1307462397:0;npm
 : 1307462421:0;cd Dropbox/src/members
 : 1307462425:0;etr
 : 1307499914:0;ssh mss-wch-i01.westchester.pa.bo.comcast.net
@@ -6077,7 +5410,6 @@ done
 : 1307671195:0;cat color-theme-twilight.el
 : 1307671251:0;cd site-lisp/yasnippet
 : 1307671257:0;cd ./
-: 1307671283:0;sudo rm -r .git
 : 1307671299:0;sudo rm -r site-lisp/sunrise-commander
 : 1307671357:0;sudo rm -r site-lisp/twilight-emacs
 : 1307671362:0;sudo rm -r site-lisp/twit
@@ -6086,7 +5418,6 @@ done
 : 1307671396:0;cp /tmp/sunrise-commander/*.el .
 : 1307671439:0;cd ../twilight
 : 1307671735:0;grep tab *
-: 1307672104:0;ls -l
 : 1307706779:0;cd Various\ -\ Putumayo\ Presents\ Samba\ Bossa\ Nova\ \[2002\]\ \[FLAC\]
 : 1307706792:0;open pastafari-release.png
 : 1307706813:0;ls ~/bin
@@ -6287,7 +5618,6 @@ done
 : 1307987696:0;cat places.el
 : 1307987715:0;cd Library/Application\ Support/Aquamacs\ Emacs
 : 1307987719:0;cat scratch\ buffer
-: 1307987733:0;cat tramp
 : 1307987741:0;rm -r elpa
 : 1307988482:0;vi /tmp/foo.el
 : 1307989240:0;cd .aquamacs/a
@@ -6406,7 +5736,6 @@ done
 : 1308019040:0;vi ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 : 1308019053:0;cp color* ../../
 : 1308019332:0;cd ../..
-: 1308019336:0;cd ../cache
 : 1308019346:0;rm ac-comphist.dat anything-history bmk-bmenu-state.el
 : 1308019408:0;ls -al ac*
 : 1308019518:0;cat anything-c-adaptive-history
@@ -6499,7 +5828,6 @@ done
 : 1308086037:0;git rm --cached site-lisp/packages/.status.el
 : 1308086042:0;git rm --cached site-lisp/packages/ack
 : 1308086049:0;git rm -r --cached site-lisp/packages/ack
-: 1308086059:0;vi .gitignore
 : 1308086124:0;git commit -a -m "Added smex, cleaned up
 : 1308086126:0;git commit -a -m "Added smex, cleaned up"
 : 1308086140:0;mv aquamacs-emacs-starter-kit /var/tmp
@@ -6603,7 +5931,6 @@ done
 : 1308155924:0;cd janus
 : 1308156106:0;cd /tmp/
 : 1308156129:0;rm v.log vilog
-: 1308156136:0;vi ~/.vimrc
 : 1308156153:0;vim Gemfile
 : 1308156243:0;vi v.log
 : 1308156622:0;cj janus
@@ -6617,7 +5944,6 @@ done
 : 1308157773:0;cd vim-css-color
 : 1308157846:0;cd after
 : 1308157847:0;ls a
-: 1308157851:0;ls syntax
 : 1308157861:0;cd /tmp/vim-css-color
 : 1308157865:0;cd after/syntax
 : 1308157877:0;rm after/syntax/css.vim
@@ -6626,7 +5952,6 @@ done
 : 1308158035:0;git clone https://github.com/ap/vim-css-color.git
 : 1308158044:0;diffmerge vim-css-color vim-css-color-orig
 : 1308158075:0;cd vim-css-color/after
-: 1308158079:0;cd syntax
 : 1308158087:0;cp css.vim ~/.vim/after/syntax
 : 1308158097:0;mv v.log v.orig
 : 1308158105:0;vim --startuptime v.log Gemfile
@@ -6671,7 +5996,6 @@ done
 : 1308753348:0;rake db:migrate:status
 : 1308753455:0;rails g model checkin_logs household_id:integer individual_id:integer
 : 1308753469:0;cat db/migrate/20110622143743_create_checkin_logs.rb
-: 1308753476:0;rake db:migrate
 : 1308753574:0;cd ../checkin
 : 1308753579:0;ls -ald checkin
 : 1308753582:0;ls -ald frontdesk
@@ -6697,9 +6021,6 @@ done
 : 1308760077:0;ls -alrt ~/Downloads
 : 1308760086:0;unzip -l ~/Downloads/JXv3.2.1deploy.zip
 : 1308760091:0;unzip ~/Downloads/JXv3.2.1deploy.zip
-: 1308760093:0;cd jxplorer
-: 1308760128:0;zsh jxplorer.sh
-: 1308760159:0;vi jxplorer.sh
 : 1308760192:0;cd jars
 : 1308760213:0;ls -al ~/Applications/JXplorer.app/Contents/Resources/Java/*.jar
 : 1308760224:0;cd ~/Applications/JXplorer.app/Contents/Resources/Java/
@@ -6772,7 +6093,6 @@ done
 : 1308837511:0;unzip -l GitHub\ for\ Mac\ 1.0.zip
 : 1308837535:0;unzip ~/Downloads/GitHub\ for\ Mac\ 1.0.zip
 : 1308858571:0;cd aquamacs-emacs-starter-kit/
-: 1308858575:0;grep indent *
 : 1308858864:0;scp -r Various\ -\ Putumayo\ Presents\ Samba\ Bossa\ Nova\ \[2002\]\ \[FLAC\] nkosi:
 : 1308858933:0;scp -r Learn\ Spanish\ Fast\ \&\ Easy\ with\ Michel\ Thomas\ -\ Audio\ Book nkosi:
 : 1308858998:0;scp -r Putumayo\ Presents-Republica\ Dominicana\ 2000 nkosi:
@@ -6871,7 +6191,6 @@ done
 : 1309359040:0;kill 501
 : 1309359045:0;kill 12202
 : 1309359047:0;kill 12203
-: 1309361708:0;ls -alret
 : 1309361717:0;unzip -l Low\ Point\ -\ Kogumaza.zip
 : 1309361724:0;unzip Low\ Point\ -\ Kogumaza.zip
 : 1309362077:0;tar ztvf zsh-lovers_0.8.3.tar.gz
@@ -6890,8 +6209,6 @@ done
 : 1309368005:0;brew info zlib
 : 1309368010:0;brew info lzlib
 : 1309368035:0;brew search port
-: 1309368125:0;cd /opt
-: 1309368462:0;cd local
 : 1309368480:0;cd src/Scribus
 : 1309368515:0;export PATH=/opt/local/bin:$PATH
 : 1309368541:0;cd OSX-package
@@ -7012,10 +6329,8 @@ done
 : 1309527347:0;ls -alh Sublime\ Text\ 2\ Build\ 2076.dmg
 : 1309528059:0;cd ~/Dropbox/Glenwood/Gazette
 : 1309528077:0;mvim E-Newsletter.2003-Issue\ 4.txt
-: 1309529051:0;cd ~/Dropbox/src/janus
 : 1309529315:0;j Gaze
 : 1309529679:0;cat Rakefile
-: 1309529680:0;cd plugin
 : 1309529686:0;view endwise.vim
 : 1309530005:0;mvim E-Newsletter.2003-Issue\ 5.txt
 : 1309530073:0;cp E-Newsletter.2003-Issue\ 5.txt E-Newsletter.2003-Issue\ 5.html
@@ -7126,7 +6441,6 @@ done
 : 1309704508:0;cat macosx-clipboard
 : 1309704546:0;cpanm Mac::Pasteboard
 : 1309704562:0;cat ~/.cpanm/build.log
-: 1309704618:0;bg
 : 1309704703:0;view searchable-scrollback
 : 1309704763:0;view digital-clock
 : 1309704845:0;view option-popup
@@ -7149,7 +6463,6 @@ done
 : 1309706018:0;vi staff.html
 : 1309706031:0;rm staff.html
 : 1309706042:0;npm list installed
-: 1309706062:0;npm list
 : 1309815920:0;git stage app/stylesheets/partials/_page.scss
 : 1309815932:0;git stage app/views/households/waitlist.html.haml
 : 1309815948:0;git stage app/views/home/index.html.haml
@@ -7191,7 +6504,6 @@ done
 : 1310432033:0;cd Library/Application\ Support/Firefox
 : 1310432040:0;cd Profiles/j6i9a20x.default
 : 1310432433:0;mvim .pentadactylrc
-: 1310432545:0;cd .pentadactyl/colors
 : 1310432555:0;cp mac.penta mac.orig
 : 1310432792:0;vi gvimrc
 : 1310433839:0;vi .vimrc.local.before
@@ -7216,7 +6528,6 @@ done
 : 1310493457:0;file iWork\ \'09\ Install\ DVD.cdr
 : 1310494615:0;cd .Trash
 : 1310494863:0;cd /Volumes/ESC01_19
-: 1310506925:0;vi .vimrc.local
 : 1310506937:0;vi .gvimrc.local
 : 1310507310:0;ls -al .gvimrc
 : 1310507350:0;mvim .gvimrc
@@ -7257,7 +6568,6 @@ done
 : 1310761808:0;cd Library/Logs/DiagnosticReports
 : 1310761820:0;view Dock_2011-07-15-162524_mac.crash
 : 1310761932:0;ps -ef | grep Fire
-: 1310761936:0;ps -ef | grep fire
 : 1310761939:0;ps -ef | grep Dock
 : 1310761995:0;kill 74149
 : 1310781793:0;gp mss-wch-i01
@@ -7265,7 +6575,6 @@ done
 : 1310843293:0;cd Elmore\ Leonard
 : 1310843296:0;cd Split\ Images
 : 1310843314:0;file 5-18\ 5-02\ Split\ Images_Chapter\ 12.m4a
-: 1310923215:0;vi .pentadactylrc
 : 1310923872:0;cd .pentadactyl
 : 1310923874:0;cd colors
 : 1310923881:0;mvim mac.orig
@@ -7312,7 +6621,6 @@ done
 : 1310939555:0;vi .gitmodules
 : 1310939587:0;git stage .gitmodules
 : 1310939593:0;git commit -a -m "Moving to all el-get"
-: 1310939636:0;git submodules init
 : 1310939754:0;cat ../aquamacs-emacs-starter-kit.hold/.gitmodules
 : 1310939878:0;cat site-lisp/packages/el-get/recipes/markdown-mode.el
 : 1310939911:0;cat site-lisp/packages/el-get/recipes/color-theme-zenburn.el
@@ -7352,7 +6660,6 @@ done
 : 1310942549:0;/Applications/Aquamacs.app/Contents/MacOS/emacs --version
 : 1310942553:0;/Applications/Aquamacs.app/Contents/MacOS/emacs
 : 1310942641:0;emacs --version
-: 1310942645:0;emacs
 : 1310942682:0;cd .aquamacs/aquamacs-emacs-starter-kit/site-lisp/packages/magit
 : 1310942877:0;which emacs
 : 1310942950:0;wget http://opensource.apple.com/source/emacs/emacs-70/emacs/lisp/international/subst-ksc.el\?txt
@@ -7382,7 +6689,6 @@ done
 : 1310943691:0;PATH=/Applications/Aquamacs.app/Contents/MacOS:$PATH make docs
 : 1310943699:0;view Makefile
 : 1310944175:0;cd /usrbin
-: 1310944177:0;cd /usr/bin
 : 1310944180:0;ls -al emacs*
 : 1310944192:0;sudo rm emacs
 : 1310944199:0;sudo mv emacs.orig emacs
@@ -7440,8 +6746,6 @@ done
 : 1310955234:0;git cd ..
 : 1310955245:0;mv aquamacs-emacs-starter-kit aquamacs-emacs-starter-kit.hold
 : 1310955269:0;git clone git@github.com:nedludd/aquamacs-emacs-starter-kit.git
-: 1310955284:0;git submodule init
-: 1310955288:0;git submodule update
 : 1310955557:0;cp customizations.el foo.el
 : 1310955559:0;vi customizations.el
 : 1310956323:0;cat .ignore
@@ -7515,7 +6819,6 @@ done
 : 1311012333:0;ls -
 : 1311012339:0;grep menu *
 : 1311012376:0;vi anything-config.el
-: 1311089117:0;cd Dropbox
 : 1311089125:0;cd preview-oh-my-zsh-themes
 : 1311089261:0;osascript -e 'tell application "iTerm" -e 'tell application "System Events" to tell process "iTerm" to keystroke "t" using command down' -e 'end tell'
 : 1311089298:0;osascript -e 'tell application "iTerm"' -e 'tell application "System Events" to tell process "iTerm" to keystroke "t" using command down' -e 'end tell'
@@ -7568,7 +6871,6 @@ done
 : 1311255269:0;vi bin/weather.sh
 : 1311255397:0;vi .xmomad/xmonad.hs
 : 1311255477:0;cabal install xmonad-contrib
-: 1311258199:0;startx
 : 1311258289:0;dzen2
 : 1311258309:0;~/bin/weather.sh | dzen2
 : 1311258399:0;go adm-pot-a02
@@ -7732,7 +7034,6 @@ done
 : 1314734165:0;scp 616+4Y-GfQL._SS500_.jpg nkosi:
 : 1314734383:0;cd ../QS_mp3
 : 1314734388:0;gile *
-: 1314734391:0;file *
 : 1314734590:0;rm -r QS_mp3/
 : 1314734596:0;rm qs.tar
 : 1314735469:0;scp nkosi:qs2.tar .
@@ -7747,8 +7048,6 @@ done
 : 1314820904:0;rm -r Sublime\ Text\ 2
 : 1314820997:0;cd Installed\ Packages
 : 1314840778:0;ssh msv-wch-g05
-: 1314840851:0;vi bin/go
-: 1314840923:0;jh
 : 1314840972:0;ssh web-pot-g05.potomac.co.ndcwest.comcast.net
 : 1314840987:0;ssh web-pot-g05.sys.comcast.net
 : 1314841017:0;ssh jumphost
@@ -7909,7 +7208,6 @@ done
 : 1315313870:0;./student_manual.pdf
 : 1315316132:0;brew install python3
 : 1315316300:0;ln -s /usr/local/Cellar/macvim/7.3-61/MacVim.app
-: 1315319741:0;ssh hermans.net
 : 1315319793:0;scp indaba:Download/torrents/qs.tar .
 : 1315319806:0;scp indaba:Downloads/torrents/qs.tar .
 : 1315337223:0;tar tvf df.tar
@@ -7935,7 +7233,6 @@ done
 : 1315338144:0;cd ige-mac-integration-0.9.8
 : 1315338191:0;./configure
 : 1315339443:0;cd tmp/QS_mp3
-: 1315339447:0;mp3info
 : 1315339454:0;mp4info 01-Neal\ Stephenson\ -\ Harper\ audio\ presents\ Quicksilver.mp3
 : 1315351520:0;brew clean
 : 1315409115:0;cd \$RECYCLE.BIN
@@ -7943,11 +7240,9 @@ done
 : 1315409147:0;du -sh Import
 : 1315409166:0;du -sh Amazon\ MP3
 : 1315409193:0;scp -r Import nkosi:Music/temp
-: 1315411891:0;cd Import
 : 1315411903:0;cd Various\ Artists
 : 1315422411:0;scp nkosi:Mavis\\\ Beacon\\\ 17.dmg .
 : 1315495696:0;npm -v
-: 1315495703:0;node -v
 : 1315495728:0;rm -r ige-mac-integration-0.9.8
 : 1315495735:0;sudo rm -r ige-mac-integration-0.9.8
 : 1315495753:0;rm -r qs.tar
@@ -8101,7 +7396,6 @@ done
 : 1315938874:0;find . -name "*pbproj"
 : 1315938904:0;cmake Xcode
 : 1315939385:0;cp Dropbox/Public/timiscool.mov .
-: 1315941479:0;cat /etc/hosts
 : 1315942107:0;cat botswana.administrative.osm
 : 1315943956:0;cd ../Documents
 : 1315943957:0;ls *kml
@@ -8123,8 +7417,6 @@ done
 : 1315945871:0;mv aliases aliases.txt
 : 1316012756:0;cd ../Music
 : 1316012774:0;cat sentinel
-: 1316012799:0;ls -al Previous\ iTunes\ Libraries
-: 1316012812:0;cd Library/Application\ Support
 : 1316012822:0;cd Anulum
 : 1316012828:0;cat iTunes.plist
 : 1316012853:0;ls -al Aquamacs\ Emacs*
@@ -8152,7 +7444,6 @@ done
 : 1316016684:0;cd JXplorer.app
 : 1316016691:0;cd Resources
 : 1316016696:0;cd Java/
-: 1316016704:0;vi jxconfig.txt
 : 1316016730:0;cat bookmarks.txt
 : 1316016740:0;cat quicksearch.txt
 : 1316016748:0;cat connections.txt
@@ -8181,8 +7472,6 @@ done
 : 1316028034:0;cd ~/bin
 : 1316028058:0;unalias ls
 : 1316028069:0;man ls
-: 1316028128:0;brew info coreutils
-: 1316028150:0;view /usr/local/Cellar/coreutils/8.12/aliases
 : 1316028268:0;if [ $OSTYPE == "darwin" ]; then\
 echo \
 echo foo\
@@ -8191,7 +7480,6 @@ fi
 echo \
 echo foo\
 fi
-: 1316028286:0;echo $OSTYPE
 : 1316028309:0;if [[ $OSTYPE ~ "darwin*" ]]; then\
 echo \
 echo foo\
@@ -8267,7 +7555,6 @@ fi
 : 1316096937:0;rvm list known
 : 1316096951:0;rvm install 1.9.2-p180
 : 1316098446:0;cd ../members
-: 1316098463:0;l s-al
 : 1316098469:0;gem uninstall rmagick
 : 1316098478:0;bundle install
 : 1316110154:0;cd ../connect
@@ -8283,25 +7570,17 @@ fi
 : 1316118437:0;cd ~/Dropbox/src/
 : 1316118440:0;cd members
 : 1316118454:0;touch tmp/restart.txt
-: 1316119235:0;ps -ef
 : 1316121564:0;brew outdating
-: 1316121579:0;brew install nginx
 : 1316121605:0;brew info nginx
 : 1316121632:0;ls Library/LaunchAgents
 : 1316121647:0;cp /usr/local/Cellar/nginx/1.0.6/org.nginx.nginx.plist ~/Library/LaunchAgents/
 : 1316121653:0;launchctl load -w ~/Library/LaunchAgents/org.nginx.nginx.plist
-: 1316121658:0;ps -ef | grep ngin
 : 1316121693:0;cd /usr/local/Cellar/nginx/1.0.6
-: 1316121697:0;cd html
 : 1316121702:0;view index.html
 : 1316121717:0;cd ../logs
-: 1316121775:0;cd /usr/local/etc/nginx
-: 1316121782:0;vi nginx.conf
 : 1316121871:0;cd /www/html
-: 1316121874:0;vi index.html
 : 1316121921:0;cd sencha
 : 1316179992:0;cd ../Dropbox/src/aquamacs-emacs
-: 1316180187:0;cd ~/src
 : 1316180193:0;git clone https://github.com/davidswelt/aquamacs-emacs.git
 : 1316180244:0;git clone --depth 1 https://github.com/davidswelt/aquamacs-emacs.git
 : 1316180548:0;grep -r .ignore *
@@ -8320,7 +7599,6 @@ fi
 : 1316482104:0;brew mirror-check
 : 1316482112:0;brew mirror-check git
 : 1316482142:0;brew upgrade ack
-: 1316482149:0;brew upgrade gnutls
 : 1316482505:0;brew upgrade macvim
 : 1316483767:0;brew linkapps
 : 1316483848:0;brew help clean
@@ -8352,7 +7630,6 @@ fi
 : 1316484723:0;sudo easy_install extras
 : 1316484775:0;brew search pygments
 : 1316484784:0;brew search Pygments
-: 1316518641:0;brew upgrade node
 : 1316518717:0;brew search ocaml
 : 1316518934:0;z src
 : 1316518966:0;brew install ocaml
@@ -8384,7 +7661,6 @@ fi
 : 1316524718:0;ls -al mvim
 : 1316524725:0;cd ../Cellar/macvim/7.3-62
 : 1316524729:0;ls ..
-: 1316524860:0;vi ~/.vimrc.local
 : 1316524887:0;ls -ald .vim
 : 1316524895:0;vi ../.janus.rake
 : 1316524958:0;mvim .vimrc
@@ -8445,10 +7721,8 @@ fi
 : 1316541841:0;cd Scripts
 : 1316541846:0;cat version.txt
 : 1316542273:0;vi ~/.inputrc
-: 1316542745:0;cd .oh-my-zsh
 : 1316542783:0;vi termsupport.zsh
 : 1316542865:0;head termsupport.zsh
-: 1316542877:0;vi ~/.zshrc
 : 1316543160:0;echo $TERM_PROGRAM
 : 1316543416:0;cat .zlogin
 : 1316543425:0;./set_title_tab
@@ -8533,7 +7807,6 @@ fi
 : 1317329096:0;mv delicious-20110929.htm delicious-bookmarks.html
 : 1317329109:0;sudo vi /private/etc/hosts
 : 1317506243:0;brew info google-js-test
-: 1317506338:0;brew upgrade nginx
 : 1317506823:0;brew upgrade git
 : 1317508618:0;rvm info
 : 1317508630:0;rvm list
@@ -8551,7 +7824,6 @@ fi
 : 1317509344:0;rm .rvmrc
 : 1317509369:0;find . -name .rvmrc
 : 1317509388:0;find . -name .rvmrc -exec rm {} \;
-: 1317509422:0;which ruby
 : 1317509428:0;irb -v
 : 1317509468:0;cd /usr/lib/ruby/
 : 1317509490:0;find gems
@@ -8576,7 +7848,6 @@ fi
 : 1317645116:0;cd Library/Application\ Support/Sublime\ Text\ 2
 : 1317645136:0;cd SublimeCodeIntel
 : 1317735330:0;brew upgrade zeromq
-: 1317735425:0;brew install mercurial
 : 1317735440:0;easy_install
 : 1317735468:0;sudo easy_install pip
 : 1317735476:0;pip
@@ -8585,20 +7856,13 @@ fi
 : 1317735644:0;hg
 : 1317735654:0;hg clone ssh://hg@bitbucket.org/phromo/darkroom-mode
 : 1317736603:0;rm -r darkroom-mode
-: 1317736609:0;hg clone ssh://hg@bitbucket.org/thermans/darkroom-mode
-: 1317736616:0;cd darkroom-mode
 : 1317741756:0;cd Dropbox/src/dactyl
-: 1317741764:0;hg pull
-: 1317741782:0;hg update
 : 1317742038:0;/Applications/Firefox.app/Contents/MacOS/firefox
-: 1317742410:0;npm ls
-: 1317742417:0;npm update
 : 1317742457:0;npm install spine
 : 1317742484:0;npm install hem
 : 1317742567:0;npm install spine -g
 : 1317742588:0;cd .bin
 : 1317742599:0;cd ../spine
-: 1317742613:0;npm 
 : 1317742623:0;npm uninstall spine
 : 1317742629:0;ls -al node_modules
 : 1317742640:0;ls -al /usr/local/lib/node_modules
@@ -8627,7 +7891,6 @@ fi
 : 1317744754:0;cd ~/node_modules/.bin
 : 1317744756:0;ls 
 : 1317744776:0;coffee
-: 1317744865:0;mate .
 : 1317756936:0;cd ~/Dropbox/src/members
 : 1317759832:0;git clone git://github.com/sstephenson/rbenv.git .rbenv
 : 1317760002:0;git clone git://github.com/sstephenson/ruby-build.git
@@ -8667,7 +7930,6 @@ fi
 : 1317776227:0;ls .gem/bin
 : 1317776232:0;mkdir .gem
 : 1317776251:0;mkdir bin
-: 1317776279:0;cat .z
 : 1317776282:0;z .gem
 : 1317776332:0;vi /usr/local/bin/bundle
 : 1317776370:0;chmod 755 /usr/local/bin/bundle
@@ -8695,8 +7957,6 @@ fi
 : 1317777134:0;gem help install
 : 1317777178:0;gem -V install bundler
 : 1317777184:0;gem install -V bundler
-: 1317777278:0;touch foo
-: 1317777280:0;rm foo
 : 1317777301:0;grep -r home *
 : 1317777310:0;grep -r home\/thermans *
 : 1317777315:0;env | grep home
@@ -8713,7 +7973,6 @@ fi
 : 1317777870:0;brew info zsh
 : 1317777882:0;brew uninstall zsh
 : 1317777890:0;brew install zsh
-: 1317778188:0;vi Gemfile
 : 1317778218:0;cat ~/Dropbox/src/admin/Gemfile
 : 1317778300:0;gem install rb_readline
 : 1317778310:0;gem install rb-readline
@@ -8804,7 +8063,6 @@ fi
 : 1318008655:0;cd ~/.pentadactyl/colors
 : 1318008666:0;cp mac.penta mac.penta.bak
 : 1318174857:0;ls -al themes
-: 1318174865:0;less prelude-ruby.el
 : 1318174895:0;ls vendor
 : 1318174898:0;ls vendor/feature-mode
 : 1318174902:0;ls vendor/feature-mode/snippets
@@ -8861,16 +8119,11 @@ fi
 : 1318179847:0;grep autoload-dir *
 : 1318180738:0;grep snippet *
 : 1318180760:0;grep yas *
-: 1318207608:0;vpn
-: 1318207713:0;rm .emacs.d
 : 1318207722:0;git clone git://github.com/bbatsov/emacs-prelude.git 
-: 1318207732:0;cd /
 : 1318207750:0;ln -s Dropbox/src/emacs-prelude .emacs.d
 : 1318207785:0;ls -al vendor
 : 1318207789:0;ls -al vendor/feature-mode
 : 1318207804:0;ls -al ~/tmp/emacs-prelude/vendor/feature-mode
-: 1318207890:0;ps -ef | grep aspell
-: 1318208094:0;/bin/ls
 : 1318208098:0;/bin/ls --dired
 : 1318208141:0;ls /usr/local/bin/ls
 : 1318208144:0;ls /usr/local/bin/lsx
@@ -8883,7 +8136,6 @@ fi
 : 1318208235:0;ls --dired
 : 1318208276:0;brew upgrade -v cmake
 : 1318209005:0;brew upgrade -v nginx
-: 1318209110:0;exit
 : 1318209218:0;grep -r proced *
 : 1318274077:0;brew outdate
 : 1318274807:0;brew upgrade ffmpeg
@@ -8895,7 +8147,6 @@ fi
 : 1318274902:0;gcl
 : 1318274917:0;svn co http://src.chromium.org/svn/trunk/tools/depot_tools
 : 1318274939:0;cd ../local
-: 1318274942:0;ls bin
 : 1318274958:0;cd ../src/depot_tools
 : 1318274963:0;./gcl
 : 1318274972:0;ls zsh-goodies
@@ -8904,7 +8155,6 @@ fi
 : 1318275386:0;mv depot_tools ~/local/
 : 1318275423:0;cd ~/local/depot_tools
 : 1318275426:0;cd zsh-goodies
-: 1318275429:0;cat README
 : 1318275573:0;echo $fpath
 : 1318275688:0;gclient help
 : 1318275698:0;gclient status
@@ -8947,14 +8197,12 @@ fi
 : 1318278341:0;cd TeX
 : 1318278348:0;ls -al Distributions
 : 1318278360:0;sudo rm -r TeX
-: 1318278381:0;cd ~/Downloads
 : 1318278390:0;unzip -l mactex-basic.pkg.zip
 : 1318278432:0;locate latex | grep -i prefpane
 : 1318278440:0;locate tex | grep -i prefpane
 : 1318278452:0;locate Tex | grep -i prefpane
 : 1318278462:0;cd /System/Library/PreferencePanes
 : 1318278518:0;unzip mactex-basic.pkg.zip
-: 1318278532:0;rm -r __MACOSX
 : 1318278661:0;cd /Library/TeX
 : 1318278679:0;z Basi
 : 1318278688:0;cd BasicTeX-2011.pkg
@@ -8999,7 +8247,6 @@ fi
 : 1318280906:0;rm testfont.log
 : 1318280908:0;cat missfont.log
 : 1318280912:0;rm missfont.log
-: 1318281079:0;fc-list
 : 1318281731:0;cd /usr/local/texlive/2011basic/texmf-dist/tex/latex/euenc/
 : 1318281745:0;view eu1lmr.fd
 : 1318281833:0;man kpathseawhich
@@ -9038,7 +8285,6 @@ fi
 : 1318293822:0;php
 : 1318293832:0;rm -r untitled-2.*
 : 1318293846:0;cd Dropbox/Alfred
-: 1318293848:0;cd extensions
 : 1318293853:0;cd applescripts
 : 1318293864:0;cd Wolfram\|Alpha
 : 1318293872:0;vi wolfram.php
@@ -9125,12 +8371,9 @@ fi
 : 1318943732:0;cd Applications\ \(Parallels\)
 : 1318943738:0;cd {\{a621d7cd-eb7d-49ec-a898-de0e1edf8982\}\ Applications.localized
 : 1318943750:0;rm -r Applications\ \(Parallels\)
-: 1318943790:0;cd /Applications
 : 1318952183:0;svn checkout http://rtm-lisp-api.googlecode.com/svn/trunk/ rtm-lisp
 : 1318952197:0;vi rtm-lisp-api.asd
 : 1318952466:0;cd .zsh/zaw
-: 1318952495:0;git clone https://github.com/zsh-users/zaw.git
-: 1318952502:0;cd zaw
 : 1318952523:0;diffmerge zaw.zsh ~/.zsh/plugins/zaw/zaw.zsh
 : 1318952547:0;cd functions
 : 1318952557:0;ls -al ~/.zsh/plugins/zaw/functions
@@ -9145,7 +8388,6 @@ fi
 : 1318953291:0;rm -r aquamacs-emacs
 : 1318953295:0;sudo rm -r aquamacs-emacs
 : 1318953309:0;git clone --depth 3 git://github.com/davidswelt/aquamacs-emacs.git
-: 1318953930:0;cd aquamacs-emacs
 : 1318953943:0;less INstALL
 : 1318953957:0;less INSTALL.emacs
 : 1318953962:0;less INSTALL.BZR
@@ -9185,7 +8427,6 @@ fi
 : 1318956153:0;view Preferences.el
 : 1318956165:0;cd ../Dropbox
 : 1318956201:0;cd node-express-boilerplate
-: 1318956285:0;cd src/emacs-prelude
 : 1318956292:0;cd jstewart-aquamacs-starter-kit
 : 1318956415:0;sudo rm -r emacs-starter-kit
 : 1318956420:0;sudo rm -r emacs-starter-kit-eschulte
@@ -9202,8 +8443,6 @@ fi
 : 1318957732:0;markdown README.markdown > foo.html
 : 1318957763:0;rm foo.html
 : 1318958947:0;rm -r Aquamacs\ Emacs
-: 1318958975:0;ls -ald .emacs.d
-: 1318958982:0;cd .emacs.d
 : 1318959022:0;ls -al emacs.hold
 : 1318959026:0;rm emacs.hold
 : 1318959030:0;mv .emacs.d emacs.hold
@@ -9235,7 +8474,6 @@ fi
 : 1318972234:0;cd Library/Preferences/Aquamacs\ Emacs
 : 1318972242:0;cd ../../Application\ Support/Aquamacs\ Emacs
 : 1318972248:0;ls -al elpa
-: 1318986461:0;cd ~/.aquamacs/aquastart
 : 1318986475:0;rm boson bundle edit_json.rb prettify_json.rb rake ru update_rubygems
 : 1318986480:0;rm launchy
 : 1318986490:0;mkdir themes
@@ -9244,15 +8482,12 @@ fi
 : 1318986516:0;mv zenburn-theme.el twilight-theme.el railscasts-theme.el themes
 : 1318986907:0;view prelude-core.el
 : 1318990088:0;cd ~/emacs.hold
-: 1318990102:0;cd personal
 : 1318990107:0;less custom.el
 : 1318990362:0;grep ido *
 : 1318990423:0;cp prelude-core.el ~/.aquamacs/aquastart/modules
-: 1318990426:0;cd ~/.aquamacs/aquastart/modules
 : 1318990440:0;mv prelude-core.el aquastart-base..el
 : 1318990592:0;grep load-library *
 : 1318990609:0;grep load *
-: 1318990626:0;vi aquastart-packages.el
 : 1318990688:0;cd ~/Library/Application\ Support/Aquamacs\ Emacs/elpa/marmalade-0.0.4/
 : 1318990692:0;less marmalade.el
 : 1318990706:0;vi *pack*
@@ -9265,7 +8500,6 @@ fi
 : 1319032289:0;mv emacs.hold/ ~/Dropbox/src/emacs-prelude
 : 1319032510:0;cd .aquamacs/aquastart/themes
 : 1319032518:0;cp railscasts-theme.el ~/Dropbox/src
-: 1319033787:0;cd Music/iTunes
 : 1319033799:0;cd Audiobooks
 : 1319033808:0;cd Umberto\ Eco\ -\ Foucault\'s\ Pendulum
 : 1319034031:0;rm -r Umberto\ Eco\ -\ Foucault\'s\ Pendulum
@@ -9278,7 +8512,6 @@ fi
 : 1319034080:0;locate Master
 : 1319034083:0;locate Master_
 : 1319034102:0;cp Master_and_Commander_iPhone.m4v ~/Movies
-: 1319034154:0;ls -al 
 : 1319034180:0;locate Miss
 : 1319034189:0;locate Miss\ Glenwood
 : 1319034203:0;cp Miss\ Glenwood/Miss\ Glenwood.m4v ~/Movies
@@ -9301,7 +8534,6 @@ fi
 : 1319049100:0;cd ../Google\ Earth
 : 1319053842:0;brew search eave
 : 1319056924:0;locate wolfram.php
-: 1319057713:0;cd Desktop
 : 1319057778:0;rm [belpru]*
 : 1319057787:0;vi exchange.txt
 : 1319058728:0;view /etc/passwd
@@ -9320,7 +8552,6 @@ fi
 : 1319221419:0;cat /etc/resolv.conf
 : 1319465930:0;cat .synergy
 : 1319466314:0;sudo /etc/hosts
-: 1319466318:0;sudo vi /etc/hosts
 : 1319467706:0;scp prettify_json.rb nkosi:
 : 1319486386:0;cd /Volumes/MobileBackups
 : 1319486389:0;dc ..
@@ -9368,12 +8599,10 @@ fi
 '\e[0;91mhighlight\n\e[1;91mbold+highlight\n\e[0m'
 : 1319723918:0;echo -e "\033];MY_NEW_TITLE\007"
 : 1319724196:0;ls -0al
-: 1319724278:0;vi custom.zsh
 : 1319724287:0;rm boson bundle edit_json.rb launchy prettify_json.rb rake ru update_rubygems
 : 1319724294:0;cd themes
 : 1319724297:0;vi tim.zsh-theme
 : 1319724468:0;touch .oh-my-zsh/themes/tim.zsh-theme
-: 1319724498:0;which ls
 : 1319724507:0;tail zshrc
 : 1319724517:0;rm zshrc
 : 1319724717:0;rm -r Pictures
@@ -9393,15 +8622,11 @@ fi
 : 1319730744:0;strace
 : 1319730747:0;man trace
 : 1319732872:0;cd thermans
-: 1319732891:0;cd ../../
-: 1319737825:0;cd /Users
 : 1319737829:0;cd temp
-: 1319738295:0;cd Pictures
 : 1319738300:0;cd iPhoto\ Library
 : 1319738324:0;rm -r iPhoto\ Library
 : 1319740791:0;cd ../Dropbox/Glenwood
 : 1319740805:0;cp /Users/temp/glenwoodtest.png .
-: 1319740867:0;cd Documents
 : 1319741163:0;rm De*
 : 1319741192:0;open 1020wallpaper-11_1280.jpg
 : 1319741455:0;mkdir Outlook\ Archive\ 2010.rge
@@ -9411,8 +8636,6 @@ fi
 : 1319741698:0;cd ../bin
 : 1319742257:0;cd ../Movies
 : 1319742614:0;sudo chown -R thermans *
-: 1319742882:0;uptime
-: 1319742884:0;sync
 : 1319744282:0;cd Library/PreferencePanes
 : 1319744285:0;cd SynergyKM.prefPane
 : 1319744288:0;cd Contents
@@ -9429,7 +8652,6 @@ fi
 : 1319744504:0;brew info synergy
 : 1319744516:0;ls -al /usr/local/Cellar/synergy/1.3.6p2
 : 1319744518:0;ls -al /usr/local/Cellar/synergy/1.3.6p2/bin
-: 1319744595:0;source .zshrc
 : 1319744621:0;ps -ef | grep locatedb
 : 1319744807:0;synergyc -f -d DEBUG -n mbp 10.0.0.1
 : 1319745720:0;targe
@@ -9446,7 +8668,6 @@ fi
 : 1319746325:0;launchctl start net.sourceforge.synergy2.synergyd
 : 1319746335:0;launchctl start
 : 1319746351:0;launchctl start [0x0-0x27027].net.sourceforge.synergy2.synergyd
-: 1319746547:0;ps -ef | grep syn
 : 1319746591:0;synergyc
 : 1319746671:0;launchctl list | grep syn
 : 1319746699:0;launchctl start net.sourceforge.syngery2
@@ -9465,9 +8686,6 @@ fi
 : 1319747195:0;sudo vi /Library/LaunchAgents/net.sourceforge.synergy2.plist
 : 1319747217:0;launchctl load /Library/LaunchAgents/net.sourceforge.synergy2.plist
 : 1319748083:0;cd plugins
-: 1319748099:0;cd Music
-: 1319748102:0;cd iTunes
-: 1319748106:0;cd iTunes\ Media
 : 1319748117:0;sudo -i
 : 1319748341:0;mv Mobile\ Applications/ ~/Music
 : 1319748349:0;mkdir Mobile\ Applications
@@ -9478,8 +8696,6 @@ fi
 : 1319749576:0;hdiutil help
 : 1319749580:0;hdiutil info
 : 1319749585:0;defaults read
-: 1319750484:0;z
-: 1319750625:0;cd /var/log
 : 1319750700:0;vi /usr/local/Cellar/mongodb/2.0.1-x86_64/mongod.conf
 : 1319750824:0;vi bin/start-mongo
 : 1319750857:0;chmod 755 bin/start-mongo
@@ -9488,7 +8704,6 @@ fi
 : 1319752941:0;mongo --help
 : 1319752965:0;mongo 10.0.0.3/ldif
 : 1319810896:0;cd aquastart/themes
-: 1319810903:0;cd modules
 : 1319810915:0;view aquastart-base.el
 : 1319813837:0;ps -ef | grep mongo
 : 1319814790:0;echo $path
@@ -9518,7 +8733,6 @@ fi
 : 1319824577:0;scp nkosi:.ssh/config .
 : 1319824618:0;cd /etc/
 : 1319824638:0;/bin/ls -al ssh*
-: 1319824647:0;cat /etc/group
 : 1319824651:0;grep wheel /etc/group
 : 1319824739:0;ls -al ssh*
 : 1319824745:0;view ssh_config
@@ -9557,13 +8771,11 @@ fi
 : 1319826865:0;ssh -v -v -v -v therma000@adm-pot-a02.potomac.co.ndcwest.comcast.net
 : 1319826931:0;launchctl stop org.openbsd.ssh-agent
 : 1319826949:0;launchctl start org.openbsd.ssh-agent
-: 1319826953:0;ssh nkosi
 : 1319827023:0;cd ../tmp/ldif
 : 1319827033:0;ssh therma000@adm-pot-a02.potomac.co.ndcwest.comcast.net
 : 1319827199:0;scp therma000@adm-pot-a02.potomac.co.ndcwest.comcast.net:/opt/vmops/app/ams/ldif/all_users.20111027.ldif.gz .
 : 1319828149:0;man gunzip
 : 1319828198:0;gunzip -c all_users.20111027.ldif.gz > all_users.ldif
-: 1319828203:0;top
 : 1319828230:0;j ldif
 : 1319828234:0;z ldif
 : 1319830940:0;scp nkosi:tmp/ldif/ldif* .
@@ -9580,7 +8792,6 @@ fi
 : 1319831702:0;tar xvf local-lib-1.008004.tar
 : 1319831704:0;cd local-lib-1.008004
 : 1319831724:0;perl Makefile.PL --bootstrap
-: 1319831737:0;make
 : 1319831741:0;make test
 : 1319831750:0;make install
 : 1319831806:0;echo $HOME
@@ -9592,14 +8803,11 @@ fi
 : 1320070773:0;launchctl stop net.sourceforge.syngery2
 : 1320070804:0;launchctl stop net.sourceforge.synergy2
 : 1320070811:0;launchctl unload net.sourceforge.synergy2
-: 1320070814:0;ps -ef | grep syner
 : 1320071801:0;cd .aquamacs/aquastart
-: 1320071802:0;git status
 : 1320071817:0;git add modules/aquastart-base.el
 : 1320071822:0;git add modules/aquastart-defuns.el
 : 1320071826:0;git add modules/aquastart-ui.el
 : 1320071838:0;git commit -m "More progress"
-: 1320071843:0;git push
 : 1320071883:0;rm -r aquastart
 : 1320071887:0;sudo rm -r aquastart
 : 1320071952:0;git clone https://github.com/nedludd/aquastart.git
@@ -9614,14 +8822,12 @@ fi
 : 1320091255:0;vi init.el
 : 1320091274:0;grep aquamacs-dir *
 : 1320091285:0;vi README.markdown
-: 1320091316:0;grep smex *
 : 1320091334:0;grep -r aquamacs-dir *
 : 1320091342:0;vi modules/aquastart-base.el
 : 1320091485:0;cd .aquamacs
 : 1320091489:0;cd aquastart
 : 1320091709:0;grep -r fringe *
 : 1320092110:0;cd ~/src/emacs-starter-kit
-: 1320092121:0;cd ../emacs-prelude
 : 1320092219:0;view ../emacs-starter-kit/starter-kit-defuns.el
 : 1320092282:0;../emacs-starter-kit
 : 1320092305:0;grep -r esk-paredit *
@@ -9667,7 +8873,6 @@ fi
 : 1320175222:0;view /System/Library/Perl/Extras/5.12/LWP/UserAgent.pm
 : 1320175244:0;cd perl5/lib/perl5/WebService
 : 1320175248:0;vi RTMAgent.pm
-: 1320175277:0;cd bin
 : 1320175279:0;vi rtm
 : 1320175294:0;perl -d rtm
 : 1320175335:0;perl -d rtm -verbose authorise
@@ -9736,25 +8941,21 @@ fi
 : 1320244508:0;cat .rbenv/versions
 : 1320244510:0;ls -al .rbenv/versions
 : 1320244534:0;ls -al .rbenv/shims
-: 1320244606:0;vi .zshrc
 : 1320244667:0;env | grep RB 
 : 1320244672:0;env | less
 : 1320244706:0;ls -al /Library/Ruby/Gems/1.8
 : 1320244709:0;ls -al /Library/Ruby/Gems/1.8/gems
-: 1320244729:0;gem install bundler
 : 1320244757:0;cp /Users/temp/.gemrc .
 : 1320244769:0;gem lsit
 : 1320244774:0;cd .gem
 : 1320244808:0;cp /Users/temp/.irbrc .
 : 1320244830:0;gem install wirble 
 : 1320244844:0;gem install hirb
-: 1320244851:0;gem install awesome_print
 : 1320244864:0;gem install bond
 : 1320244878:0;gem install boson
 : 1320244968:0;rm .zsh_history
 : 1320244970:0;ls -al .zsh
 : 1320244979:0;bundle list
-: 1320244982:0;cd /tmp
 : 1320244987:0;cd rtmilk
 : 1320244998:0;gem install hoew
 : 1320245055:0;ls -al /Library/Ruby/Site/1.8
@@ -9774,7 +8975,6 @@ fi
 : 1320245970:0;ruby setup.rb --prefix=/Users/thermans/.gems
 : 1320245991:0;cd .gems/bin
 : 1320245998:0;vi ~/.zsh/custom.zsh
-: 1320246015:0;sz
 : 1320246035:0;whihc gems
 : 1320246040:0;which gems
 : 1320246046:0;gem
@@ -9789,7 +8989,6 @@ fi
 : 1320246380:0;cd /tmp/rtmilk
 : 1320246382:0;rake -T
 : 1320256257:0;cd dotfiles
-: 1320256272:0;cd backups
 : 1320256276:0;ls notes
 : 1320256291:0;locate rc.lua
 : 1320256295:0;locate awesome.lua
@@ -9807,7 +9006,6 @@ fi
 : 1320345484:0;cat .janus.rake
 : 1320346001:0;vi .gemrc
 : 1320346026:0;env | grep RU
-: 1320346037:0;echo $PATH
 : 1320347124:0;gem env
 : 1320347341:0;vi .gems/bin/gem
 : 1320347655:0;locate Arial.ttf
@@ -9835,11 +9033,8 @@ fi
 : 1320675077:0;cat Work/Comcast\ -\ Bedrock\ VPN.pcf
 : 1320675302:0;locate cisco-decrypt
 : 1320675344:0;i[p addr
-: 1320675346:0;ip addr
 : 1320675357:0;ping www.nsf.gov
 : 1320675861:0;gem install sqlite3
-: 1320675935:0;brew update
-: 1320675949:0;brew outdated
 : 1320675962:0;brew upgrade coreutils
 : 1320676186:0;gcc
 : 1320676249:0;which gcc
@@ -9852,7 +9047,6 @@ fi
 : 1320677243:0;ruby local 1.9.2-p290
 : 1320677355:0;ls -al /Users/thermans/.rbenv/versions/1.9.2-p290/bin/ruby
 : 1320677360:0;/Users/thermans/.rbenv/versions/1.9.2-p290/bin/ruby -v
-: 1320677367:0;cat .rbenv-version
 : 1320677998:0;ruby-build
 : 1320678627:0;ruby age.rb
 : 1320678730:0;mvim boss.rb
@@ -9883,7 +9077,6 @@ fi
 : 1320681943:0;ls -al .irbrc
 : 1320681947:0;ls -al *.irb*
 : 1320681952:0;ls -al .irb*
-: 1320681960:0;uname -a
 : 1320681967:0;vi .rbenv/shims/irb
 : 1320681985:0;bash -x .rbenv/shims/irb
 : 1320681996:0;cat .rbenv
@@ -9903,467 +9096,1155 @@ fi
 : 1320682750:0;ls -al /usr/local/Cellar/readline/6.2.1/lib
 : 1320682764:0;gem uninstall bond
 : 1320682801:0;gem install bond -- --with-readline-lib=/usr/local/Cellar/readline/6.2.1/lib --with-readline-include=/usr/local/Cellar/readline/6.2.1/include
-: 1320683355:0;ruby grandma.rb
-: 1320683359:0;vi grandma.rb
-: 1320683366:0;ruby grandma.rb
-: 1320683369:0;vi grandma.rb
-: 1320683431:0;ruby grandma.rb
-: 1320683439:0;vi grandma.rb
-: 1320683451:0;ruby grandma.rb
-: 1320683458:0;vi grandma.rb
-: 1320683484:0;ruby grandma.rb
-: 1320683488:0;vi grandma.rb
-: 1320683499:0;ruby grandma.rb
-: 1320683506:0;vi grandma.rb
-: 1320683537:0;ruby grandma.rb
-: 1320683543:0;vi grandma.rb
-: 1320683551:0;ruby grandma.rb
-: 1320683558:0;vi grandma.rb
-: 1320683570:0;ruby grandma.rb
-: 1320683573:0;vi grandma.rb
-: 1320683589:0;ruby grandma.rb
-: 1320683596:0;vi grandma.rb
-: 1320683628:0;ruby grandma.rb
-: 1320683637:0;vi grandma.rb
-: 1320683652:0;ruby grandma.rb
-: 1320683661:0;vi grandma.rb
-: 1320683672:0;ruby grandma.rb
-: 1320683677:0;vi grandma.rb
-: 1320683699:0;ruby grandma.rb
-: 1320683704:0;vi grandma.rb
-: 1320683724:0;ruby grandma.rb
-: 1320683732:0;vi grandma.rb
-: 1320683774:0;ruby grandma.rb
-: 1320683778:0;vi grandma.rb
-: 1320683812:0;ruby grandma.rb
-: 1320683821:0;vi grandma.rb
-: 1320683831:0;ruby grandma.rb
 : 1320683833:0;vi grandma.rb
 : 1320683837:0;ruby grandma.rb
-: 1320683892:0;irb
-: 1320683903:0;gem install looksee
-: 1320683909:0;irb
-: 1320683934:0;vi ../.irbrc
-: 1320683948:0;irb
-: 1320683979:0;cd ..
-: 1320683981:0;irb
-: 1320684002:0;gem install looksee
-: 1320684007:0;irb
-: 1320684345:0;brew 
 : 1320684359:0;ls -al Pictures/iPhoto\ Library/ls -al
 : 1320684362:0;ls -al Pictures/iPhoto\ Library/
-: 1320684396:0;brew list
 : 1320684407:0;brew install mongodb
-: 1320684599:0;ls -al
 : 1320684717:0;vi .gvimrc
-: 1320684826:0;pwd
-: 1320684833:0;z dotfile
-: 1320684835:0;ls -al
 : 1320684852:0;z tmp
-: 1320684855:0;irb
 : 1320684862:0;vi ../.irbrc
-: 1320684869:0;irb
 : 1320684909:0;z dotfile
-: 1320684910:0;ls -al
 : 1320684945:0;mv ~/.zshrc .
-: 1320684948:0;cd .zsh
-: 1320684948:0;ls -al
-: 1320684950:0;cd ..
 : 1320684952:0;rm -r .zsh
-: 1320684953:0;ls -al
 : 1320684959:0;mv ~/.zsh .
-: 1320684969:0;cd .zsh
-: 1320684970:0;ls -al
-: 1320684979:44;vi README
-: 1320685024:0;cd
 : 1320685038:1;ln -s ~/Dropbox/dotfiles/.zsh
 : 1320685040:0;ln -s ~/Dropbox/dotfiles/.zshrc
-: 1320685041:0;ls -al
-: 1320685043:0;ls -alrt
 : 1320685071:0;mv .irbrc Dropbox/dotfiles
 : 1320685084:0;ln -s Dropbox/dotfiles/.irbrc
 : 1320685108:0;mv .vimrc Dropbox/dotfiles
 : 1320685118:0;ln -s Dropbox/dotfiles/.vimrc
 : 1320685121:0;vi .vimrc
-: 1320685323:0;ls -al
 : 1320685335:0;mv .gemrc Dropbox/dotfiles
 : 1320685344:0;ln -s Dropbox/dotfiles/.gemrc
-: 1320685356:0;ls -al
-: 1320689009:0;vi .janus.rake
-: 1320689102:0;cd .vim
-: 1320689103:0;rake
 : 1320689158:0;vi vimrc
 : 1320689221:0;which vim
 : 1320689223:0;vim
 : 1320689230:0;vim --help
 : 1320689233:0;vim --version
-: 1320689363:0;cd
-: 1320689366:0;cd Downloads
-: 1320689367:0;ls -al
 : 1320689403:0;rm  -r Update_kindle_2.5.8_B009.bin KeePassX-0.4.3.dmg Silverlight.dmg GCC-10.7-v2.pkg googlechrome.dmg slacko-5.3-MAIN.iso rubygems-1.8.10.tar local-lib-1.008004*
 : 1320689414:0;sudo rm -r local-lib-1.008004
-: 1320689419:0;ls -al
 : 1320689426:0;rm cisco-decrypt\ \(1\).c
 : 1320689431:0;rm local-lib-1.008004.tar
-: 1320689432:0;ls -al
-: 1320689436:0;vi cisco-decrypt.c
 : 1320689450:0;brew search crypt
 : 1320689466:0;brew install libgcrypt
-: 1320689576:0;irb
 : 1320689710:0;vi cisco-decrypt.c
 : 1320689723:0;gcc -Wall -o cisco-decrypt cisco-decrypt.c $(libgcrypt-config --libs --cflags)
-: 1320689727:0;ls -al
 : 1320689731:0;./cisco-decrypt
 : 1320689817:0;view *Bed*
 : 1320689835:0;grep Group *Bed*
 : 1320689846:0;./cisco-decrypt BDAC8A0AE74ACCB5616941E986950501EA4F9B544FA994A51F9C2BC8C113BA706C95861A43550FD04ADE8A655FB8901878D99280A30D4EA0E232BC940B0A17F492671A855D88C1350BE2ADC7FFA0E023
-: 1320689860:0;ls -al
-: 1320689877:0;cd ~/Dropbox
-: 1320689877:0;ls -al
-: 1320689885:0;cd src
-: 1320689886:0;ls -al
 : 1320689888:0;cd ../work
-: 1320689889:0;ls -al
 : 1320689899:0;mv ~/Downloads/cisco-decrypt* .
 : 1320691818:0;cd ~/Desktop
-: 1320691819:0;ls -al
 : 1320691822:0;file iVBORw0KGgoAAAANSUhEUgAAAfQA.textClipping
 : 1320691826:0;rm iVBORw0KGgoAAAANSUhEUgAAAfQA.textClipping
 : 1320691844:0;wget http://www.girlsontherunofmoco.org/templates/js_community/images/logo.png
-: 1320691846:0;ls -al
 : 1320692232:0;cd ../Downloads
 : 1320692235:0;file GetPhoto.aspx
 : 1320692248:0;mv GetPhoto.aspx logo.jpeg
 : 1320692261:0;open -a logo.jpeg
 : 1320692266:0;open logo.jpeg
-: 1320693022:0;cd
-: 1320693023:0;gem list
 : 1320693088:0;gem uninstall wirb looksee hirb awesome_print boson
-: 1320693101:0;gem install irbtools
-: 1320693127:0;irb
-: 1320693256:0;vi .irbrc
-: 1320693281:0;irb
 : 1320693537:0;gem install irbtools-more
-: 1320693567:0;vi .irbrc
-: 1320693585:0;irb
 : 1320694402:0;cd Dropbox/src
-: 1320694403:0;ls -alrt
-: 1320694406:0;cd emacs-prelude
-: 1320694407:0;ls -al
 : 1320694417:0;ls -al personal
-: 1320694419:0;git pull
 : 1320694426:0;git diff
 : 1320694434:0;git stash
-: 1320694437:0;git pull
-: 1320694615:0;cd
-: 1320694618:0;vi .irbrc
-: 1320694714:0;irb
 : 1320694801:0;gem remove irbtools-more
 : 1320694805:0;gem uninstall irbtools-more
-: 1320694811:0;gem list
-: 1320694819:0;vi .irbrc
-: 1320694823:0;irb
-: 1320694864:0;gem uninstall looksee
-: 1320694872:0;gem uninstall irbtools
-: 1320694875:0;gem list
-: 1320694886:0;vi .irbrc
-: 1320694899:0;irb
 : 1320694953:0;brew search ripl
 : 1320694989:0;gem install irbtools
-: 1320695007:0;vi .irbrc
-: 1320695031:0;irb
 : 1320695333:0;irb test.rb
 : 1320695352:0;Person.comment
 : 1320695362:0;irb 
 : 1320695467:0;gem list | grep metho
 : 1320695558:0;Set.instance_method(:clear).source.display
-: 1320695563:0;irb
-: 1320695673:0;gem list
 : 1320695703:0;gem uninstall drx
 : 1320695740:0;gem uninstall irbtools
 : 1320695745:0;gem uninstall clipboard
 : 1320695751:0;gem uninstall coderay
 : 1320695761:0;gem uninstall zucker
-: 1320695765:0;gem list
 : 1320695774:0;gem uninstall every_day_irb
 : 1320695802:0;gem uninstall fancy_irb g hirb hoe interactive_editor looksee method_locator method_source methodfinder
 : 1320695817:0;gem uninstall fancy_irb g interactive_editor looksee method_locator method_source methodfinder
-: 1320695824:0;gem list
 : 1320695868:0;gem uninstall ori paint ruby-growl ruby_parser rvm_loader sexp_processor sketches spoon unicode-display_width wirb
-: 1320695878:0;gem list
-: 1320695883:0;vi .irbrc
-: 1320695896:0;irb
-: 1320695958:0;gem install interactive_editor
-: 1320695976:0;vi .irbrc
-: 1320696046:0;gem install looksee
-: 1320696061:0;vi .irbrc
-: 1320696070:0;irb
-: 1320696089:0;cd tmp
-: 1320696090:0;irb
-: 1320696179:0;vi ~/.irbrc
-: 1320696194:0;irb
 : 1320696276:0;ruby-build --help
-: 1320696281:0;ruby-build --definitions
-: 1320696380:0;cd
-: 1320696382:0;cd .rbenv
 : 1320696392:0;find . -name "*looksee*"
 : 1320696401:0;cd ~/.gem
-: 1320696402:0;ls -al
-: 1320696403:0;cd ..
 : 1320696405:0;rm -r .gem
 : 1320696407:0;cd .gems
-: 1320696408:0;ls -al
-: 1320696410:0;cd gems
-: 1320696411:0;ls -al
 : 1320696414:0;cd looksee-1.0.3
-: 1320696414:0;ls -al
 : 1320696417:0;ls -al ext
-: 1320696564:0;env | grep PATH
 : 1320696573:0;ls -al ~/.gems/bin
 : 1320696605:0;rbenv init -
-: 1320696708:0;cd
-: 1320696710:0;cd tmp
-: 1320696713:0;ruby -v
 : 1320696717:0;gem -v
-: 1320696721:0;which gem
 : 1320696736:0;gem install -v looksee
-: 1320696743:0;gem install --verbose looksee
-: 1320696759:0;irb
-: 1320696773:0;cd
-: 1320696775:0;irb
-: 1320696792:0;vi .irbrc
-: 1320696800:0;irb
-: 1320696844:0;rbenv which irb
-: 1320696847:0;cd tmp
-: 1320696848:0;rbenv which irb
 : 1320696856:0;ruby-build --definitions
 : 1320696875:0;rbenv install 1.8.7-p352
-: 1320697092:0;cd ../
-: 1320697095:0;mkdir foo
-: 1320697097:0;cd foo
-: 1320697104:0;rbenv versions
-: 1320697116:0;rbenv local 1.8.7-p352
-: 1320697118:0;cd 
-: 1320697120:0;cd foo
-: 1320697125:0;rbenv which ruby
 : 1320697129:0;rbenv which irb
-: 1320697130:0;irb
-: 1320697137:0;cd ..
 : 1320697140:0;rm -r foo
 : 1320697150:0;mkdir 1.8.7
 : 1320697156:0;mkdir 1.9.2
-: 1320697158:0;cd 1.8.7
-: 1320697171:0;rbenv local 1.8.7-p352
-: 1320697181:0;cd ../1.9.2
 : 1320697187:0;rbenv local 1.9.2-p290
-: 1320697192:0;rbenv which ruby
 : 1320697195:0;cd ../1.8.7
 : 1320697197:0;rbenv which ruby
-: 1320697202:0;irb
 : 1320697327:0;echo $GEM_HOME
 : 1320697372:0;cd ../1.9.2
 : 1320697375:0;unset GEM_HOME
-: 1320697377:0;gem list
-: 1320697383:0;cd ..
-: 1320697386:0;cd -
-: 1320697389:0;gem list
 : 1320697396:0;gem install wirble
 : 1320697409:0;gem config
 : 1320697412:0;gem help
 : 1320697430:0;gem install --verbose wirble
 : 1320697439:0;gem version
-: 1320697443:0;gem --version
-: 1320697449:0;which gem
-: 1320697452:0;cd
-: 1320697456:0;vi .zsh/custom.zsh
-: 1320697482:0;gem list
 : 1320697488:0;which gem 
-: 1320697494:0;gem --version
-: 1320697508:0;vi .zsh/custom.zsh
 : 1320697520:0;which gem
 : 1320697523:0;gem --version
-: 1320697527:0;gem list
-: 1320697535:0;rbenv version
-: 1320697542:0;gem install looksee
-: 1320697722:0;rbenv global
-: 1320697725:0;rbenv version
-: 1320697728:0;rbenv versions
 : 1320697736:0;rbenv global 1.8.7-p352
-: 1320697738:0;rbenv versions
 : 1320697742:0;rbenv global 
-: 1320697746:0;gem list
-: 1320697751:0;gem install looksee
 : 1320697761:0;gem install --version looksee
-: 1320697770:0;gem install --verbose looksee
-: 1320697775:0;gem list
-: 1320697792:0;gem uninstall looksee
 : 1320697804:0;gem list -d looksee
 : 1320697818:0;cd .rbenv/versions/1.8.7-p352/
-: 1320697819:0;ls
-: 1320697821:0;cd lib
-: 1320697822:0;ls
 : 1320697825:0;cd ruby/gems
-: 1320697826:0;ls -al
 : 1320697828:0;cd 1.8
-: 1320697829:0;ls -al
-: 1320697831:0;cd gems
-: 1320697832:0;ls -al
-: 1320697833:0;cd ..
-: 1320697835:0;find .
-: 1320697843:0;rm cache/looksee-1.0.3.gem
-: 1320697848:0;rm specifications/looksee-1.0.3.gemspec
 : 1320697850:0;cd gems
 : 1320697852:0;rm -r looksee-1.0.3
-: 1320697853:0;ls -al
-: 1320697854:0;cd ..
-: 1320697856:0;find .
-: 1320697857:0;cd
 : 1320697863:0;gem install --verbose looksee
-: 1320697869:0;gem list
 : 1320697886:0;vi /Users/thermans/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/specifications/looksee-1.0.3.gemspec
-: 1320697909:0;irb
 : 1320697922:0;gem uninstall looksee
 : 1320697926:0;gem uninstall help
 : 1320697931:0;gem help uninstall
 : 1320697958:0;gem uninstall --force looksee
 : 1320697974:0;gem --force uninstall looksee
 : 1320697999:0;cd /Users/thermans/.rbenv/versions/1.8.7-p352/lib/ruby/gems/1.8/
-: 1320697999:0;ls -al
-: 1320698002:0;find .
 : 1320698027:0;rm -r gems/looksee-1.0.3
 : 1320698031:0;rm specifications/looksee-1.0.3.gemspec
 : 1320698035:0;rm cache/looksee-1.0.3.gem
-: 1320698042:0;cd ~/1.9.2
-: 1320698044:0;gem list
 : 1320698049:0;gem install looksee
 : 1320698063:0;cp ~/.irbrc .
-: 1320698066:0;vi .irbrc
-: 1320698077:0;irb
-: 1320698134:0;vi .irbrc
-: 1320698160:0;irb
-: 1320698170:0;vi .irbrc
-: 1320698187:0;irb
 : 1320698198:0;cat .irbrc
 : 1320698215:0;man irb
 : 1320698243:0;irb --help
-: 1320698269:0;vi ~/.irbrc
-: 1320698288:0;irb
-: 1320698348:0;vi ~/.irbrc
-: 1320698354:0;irb
-: 1320698372:0;vi ~/.irbrc
 : 1320698398:0;gem install --verbose bond -- --with-readline-lib=/usr/local/Cellar/readline/6.2.1/lib --with-readline-include=/usr/local/Cellar/readline/6.2.1/include
-: 1320698425:0;vi ~/.irbrc
-: 1320698442:0;irb
 : 1320698457:0;irb --noreadline
-: 1320698516:0;vi ~/.irbrc
-: 1320698533:0;irb
 : 1320698563:0;gem install --verbose rb-readline
-: 1320698571:0;irb
-: 1320698582:0;vi ~/.irbrc
-: 1320698594:0;irb
 : 1320698670:0;gem install ripl
-: 1320698679:0;ripl
-: 1320698684:0;rbenv rehash
-: 1320698687:0;ripl
-: 1320698718:0;vi ~/.irbrc
-: 1320698732:0;ripl
-: 1320698744:0;cd 1.9.2
-: 1320698746:0;ripl
-: 1320698775:0;vi ~/.irbrc
-: 1320698788:0;ripl
 : 1320698804:0;gem uninstall ripl
 : 1320698826:0;gem install --verbose ripl -- --without-readline
-: 1320698839:0;vi ~/.riplrc
-: 1320698855:0;ripl
-: 1320698868:0;vi ~/.irbrc
-: 1320698932:0;irb
-: 1320698937:0;ripl
 : 1320699105:0;gem install ripl-irb
-: 1320699114:0;vi ~/.irbrc
-: 1320699137:0;ripl
-: 1320699167:0;vi ~/.riplrc
 : 1320699203:0;gem install ripl-multi_line
-: 1320699226:0;ripl
-: 1320699232:0;vi ~/.riplrc
-: 1320699520:0;cd 
-: 1320699522:0;cd .vim
-: 1320699523:0;ls -al
 : 1320699528:0;tail gvimrc
 : 1320699533:0;head gvimrc
 : 1320699538:0;cd plugin
-: 1320699539:0;ls -al
 : 1320699544:0;tail vim-rspec.vim
 : 1320699548:0;tail upAndDown.vim
-: 1320699579:0;cd
 : 1320699581:0;vi .riplrc
 : 1320699640:0;vi .irbrc
-: 1320699658:0;ripl
-: 1320699663:0;cd 1.9.2
-: 1320699665:0;ripl
-: 1320699673:0;gem list
 : 1320699682:0;gem install interactive_editor
-: 1320699691:0;ripl
 : 1320699846:0;gem install ripl-color_error
 : 1320699858:0;gem install ripl-auto_indent
-: 1320699905:0;vi ~/.riplrc
 : 1320699997:0;gem install ripl-color_result
-: 1320700018:0;vi ~/.riplrc
-: 1320700032:0;gem list
 : 1320700039:0;gem install awesome_print
-: 1320700047:0;ripl
-: 1320700096:0;vi ~/.riplrc
-: 1320700103:0;ripl
 : 1320700179:0;gem install nirvana
-: 1320700211:0;nirvana
-: 1320700215:0;rbenv rehash
 : 1320700218:0;nrivana
-: 1320700222:0;nirvana
 : 1320700243:0;nirvana | /Applications/Google\ Chrome.app
-: 1320700294:0;nirvana --help
-: 1320700298:0;cd
-: 1320700300:0;cd 1.9.2
 : 1320700302:0;nirvana --help
 : 1320700335:0;nirvana
 : 1320700361:0;nirvana -f
 : 1320700383:0;telnet localhost 8080
 : 1320700392:0;lsof
 : 1320700397:0;lsof | grep 8080
-: 1320700479:0;gem list
 : 1320700507:0;cat ~/.rbenv/versions/1.9.2-p290/lib/
 : 1320700509:0;cd ~/.rbenv/versions/1.9.2-p290/lib/
-: 1320700510:0;ls -al
-: 1320700512:0;cd ../
-: 1320700512:0;ls
 : 1320700519:0;ls bin
-: 1320700527:0;gem list
-: 1320700529:0;cd
-: 1320700532:0;cd 1.9.2
-: 1320700533:0;gem list
 : 1320700543:0;gem info em-websocket
 : 1320700548:0;gem -h
-: 1320700555:0;cd
 : 1320700558:0;cd .rbenv
-: 1320700559:0;ls -al
 : 1320700561:0;cd versions
-: 1320700561:0;ls -al
 : 1320700564:0;cd 1.9.2-p290
-: 1320700565:0;ls
 : 1320700570:0;find . -name gems
 : 1320700578:0;cd lib/ruby/gems/1.9.1
-: 1320700579:0;ls
 : 1320700583:0;cd specifications
-: 1320700584:0;ls
 : 1320700589:0;cat nirvana-0.1.1.gemspec
-: 1320700621:0;gem uninstall em-websocket json_pure escape_utils 
 : 1320700639:0;cd ~/1.9.2
 : 1320700641:0;gem uninstall em-websocket json_pure escape_utils 
 : 1320700654:0;gem uninstall nirvana-websocket nirvana
-: 1320700659:0;gem list
 : 1320700679:0;gem uninstall eventmachine addressable
-: 1320700700:0;ripl
 : 1320700729:0;vi ~/.irbrc
-: 1320700814:0;ripl
 : 1320700883:0;vi ~/.riplrc
-: 1320700912:0;ripl
-: 1320700924:0;gem list
-: 1320700929:0;ripl
+: 1320767331:0;rbenv global
+: 1320767353:0;rm .irbrc
+: 1320767358:0;rm .riplrc
+: 1320767368:0;mkdir addressbook
+: 1320767416:0;cd addressbook
+: 1320767435:0;mate .
+: 1320767441:0;cd ~/Dropbox
+: 1320767445:0;cd backups
+: 1320767460:0;find . | grep -i textmate
+: 1320767909:0;cd Dropbox/src/emacs-prelude
+: 1320767917:0;cd ../emacs24-starter-kit
+: 1320767937:0;less starter-kit-ruby.org
+: 1320767964:0;cd ../emacs-prelude
+: 1320767971:0;less prelude-ruby.el
+: 1320767992:0;cp prelude-ruby.el ~/.aquamacs/aquastart/modules/aquastart-ruby.el
+: 1320768245:0;rm -r ~/Library/Application\ Support/Aquamacs\ Emacs/elpa/yari-0.5
+: 1320769500:0;cd 1.9.2/addressbook
+: 1320769502:0;vi foo.rb
+: 1320769685:0;ruby address_book_test.rb
+: 1320769736:0;mv address_book_test.rb test_address_book.rb
+: 1320769767:0;rm foo.rb
+: 1320769840:0;ripl
+: 1320769884:0;rbenv versions
+: 1320769894:0;rbenv local 1.8.7-p352
+: 1320769898:0;irb
+: 1320769981:0;z modules
+: 1320769985:0;grep indent *
+: 1320770174:0;z address
+: 1320770179:0;ruby test_address_book.rb
+: 1320770467:0;grep clipboard *
+: 1320770475:0;grep primary *
+: 1320770499:0;../../emacs24-starter-kit
+: 1320770501:0;grep clip *
+: 1320770506:0;grep -r clip *
+: 1320770526:0;grep selection *
+: 1320771398:0;grep auto *
+: 1320771403:0;grep auto-complete *
+: 1320771407:0;grep autocomplete *
+: 1320771680:0;git clone https://github.com/emacsmirror/ruby-block.git
+: 1320771686:0;cd ruby-block
+: 1320776603:0;gem install bundler
+: 1320776630:0;cd 1.9.2
+: 1320776640:0;gem install rails
+: 1320776685:0;cd 1.8.7
+: 1320776692:0;rails new demo
+: 1320776703:0;gem list
+: 1320776709:0;rails --version
+: 1320776734:0;view /Users/thermans/.rbenv/versions/1.8.7-p352/bin/rails
+: 1320776751:0;/Users/thermans/.rbenv/versions/1.8.7-p352/bin/rails
+: 1320776756:0;/Users/thermans/.rbenv/versions/1.8.7-p352/bin/rails new demo
+: 1320777045:0;de demo
+: 1320777055:0;echo $PATH
+: 1320777062:0;rbenv rehash
+: 1320777074:0;ls ~/.rbenv/shims
+: 1320777095:0;view ~/.rbenv/shims/rails
+: 1320777118:0;car .rbenv-version
+: 1320777121:0;cat .rbenv-version
+: 1320777130:0;rbenv which rails
+: 1320777135:0;cd demo
+: 1320777146:0;/Users/thermans/.rbenv/versions/1.8.7-p352/bin/rails server
+: 1320777225:0;rbenv version
+: 1320777229:0;cd 1.8.7/demo
+: 1320777230:0;rails
+: 1320777413:0;vi ~/.zshrc
+: 1320777467:0;rails generate scaffold article title:string body:text
+: 1320777474:0;rake db:migrate
+: 1320777704:0;vi Gemfile
+: 1320778802:0;rails console
+: 1320779128:0;vi .aquamacs/aquastart/init.el
+: 1320779629:0;grep key *
+: 1320779884:0;less prelude-common-lisp.el
+: 1320779903:0;grep eshell *
+: 1320779943:0;z aqua
+: 1320779951:0;cd ~/.aquamacs/aquastart/modules
+: 1320780014:0;z modu
+: 1320780052:0;/bin/ls -ald .zsh
+: 1320780064:0;mkdir plugins
+: 1320780110:0;git clone https://github.com/zsh-users/zaw.git
+: 1320780144:0;mkdir ~/.zsh/plugins
+: 1320780155:0;cp -r zaw ~/.zsh/plugins
+: 1320780157:0;cd ~/.zsh/plugins
+: 1320780172:0;/bin/ls -al
+: 1320780178:0;sudo rm -r .git
+: 1320780197:0;ls -ald .zshrc
+: 1320780200:0;/bin/ls -ald .zshrc
+: 1320780219:0;/bin/ls
+: 1320780284:0;brew info coreutils
+: 1320780302:0;view /usr/local/Cellar/coreutils/8.12/aliases
+: 1320780322:0;vi aliases.zsh
+: 1320780369:0;alias ls
+: 1320780382:0;uname -a
+: 1320780384:0;uname -n
+: 1320780387:0;uname
+: 1320780431:0;echo $OS
+: 1320780445:0;grep -r OSTY *
+: 1320780594:0;which ls
+: 1320780645:0;source .zsh/aliases.zsh
+: 1320780727:0;z prelu
+: 1320780732:0;grep eval-after *
+: 1320780738:0;vi prelude-common-lisp.el
+: 1320780770:0;vi aquastart-shells.el
+: 1320781161:0;wget http://www.emacswiki.org/emacs/download/pretty-lambdada.el
+: 1320781544:0;z emacs24
+: 1320781548:0;grep pretty *
+: 1320781571:0;view starter-kit-misc.el
+: 1320782065:0;view starter-kit-ruby.org
+: 1320782311:0;svn co http://svn.ruby-lang.org/repos/ruby/trunk/misc ruby-mode
+: 1320782401:0;cd ruby-mode
+: 1320782532:0;z demo
+: 1320782536:0;rails server
+: 1320782757:0;cd aquamacs-emacs
+: 1320782766:0;git info
+: 1320782771:0;git sttus
+: 1320782791:0;bzr status
+: 1320782797:0;brew list
+: 1320782805:0;brew search bazaar
+: 1320782808:0;brew search bzr
+: 1320782902:0;git config
+: 1320782909:0;git help
+: 1320782917:0;git tag
+: 1320783263:0;cd /Users/thermans/src/aquamacs-emacs/lisp/progmodes/
+: 1320783268:0;less ruby-mode.el
+: 1320783280:0;locate ruby-mode.elc
+: 1320783295:0;view /Applications/Aquamacs.app/Contents/Resources/lisp/progmodes/ruby-mode.el.gz
+: 1320783374:0;cd ~/Library/Application\ Support/Aquamacs\ Emacs/elpa
+: 1320783378:0;cd archives
+: 1320783381:0;cd marmalade
+: 1320783384:0;view archive-contents
+: 1320783905:0;cd rinari
+: 1320783915:0;find . -name ruby-mode.el
+: 1320783921:0;find . -name "ruby-mode*"
+: 1320784058:0;cd ~/Downloads
+: 1320784060:0;view rinari-2.3.el
+: 1320784767:0;mv rinari-2.3.el ~/.aquamacs/aquastart
+: 1320784770:0;cd ~/.aquamacs/aquastartls -al
+: 1320784772:0;cd ~/.aquamacs/aquastart
+: 1320784777:0;cd vendor
+: 1320784789:0;git clone https://github.com/eschulte/rinari.git
+: 1320784805:0;rm ../rinari-2.3.el
+: 1320785094:0;cd ../modules
+: 1320785097:0;vi aquastart-packages.el
+: 1320785474:0;cp "/Applications/Aquamacs.app/Contents/Resources/lisp/progmodes/ruby-mode.el.gz" .
+: 1320785477:0;gunzip ruby-mode.el.gz
+: 1320785504:0;diff ruby-mode.el ~/Library/Application\ Support/Aquamacs\ Emacs/elpa/ruby-mode-1.1/ruby-mode.el
+: 1320785514:0;diff ruby-mode.el ~/Library/Application\ Support/Aquamacs\ Emacs/elpa/ruby-mode-1.1/ruby-mode.el | less
+: 1320785640:0;cat ~/Library/Application\ Support/Aquamacs\ Emacs/elpa/ruby-mode-1.1/ruby-mode.el | less
+: 1320786424:0;z prelude
+: 1320786430:0;cd ../personal
+: 1320786435:0;view tim-anything.el
+: 1320786476:0;cp tim-anything.el ~/.aquamacs/aquastart/modules/aquastart-anything.el
+: 1320786686:0;z aquastart
+: 1320786709:0;cd modules
+: 1320786716:0;grep -i f5 *
+: 1320786722:0;vi aquastart-base.el
+: 1320790852:0;ls -al .janus.rake
+: 1320790870:0;vi .janus.rake
+: 1320790905:0;rake
+: 1320848607:0;which npm
+: 1320848616:0;brew search npm
+: 1320848707:0;curl http://npmjs.org/install.sh | sh
+: 1320848743:0;npm
+: 1320848775:0;npm install ender
+: 1320848941:0;rnder
+: 1320848945:0;ender
+: 1320854089:0;brew install nginx
+: 1320854638:0;vi /usr/local/etc/nginx
+: 1320854752:0;diff nginx.conf.default nginx.conf
+: 1320854925:0;mkdir html
+: 1320855099:0;cd /var/log
+: 1320855111:0;cd /usr/local/etc/nginx
+: 1320855118:0;killall nginx
+: 1320855130:0;killall nginx:
+: 1320855139:0;kill 86887
+: 1320855203:0;cp nginx.conf.default nginx.conf
+: 1320855278:0;cd nginx
+: 1320855285:0;ls -al /var/log
+: 1320855289:0;ls -alrt /var/log
+: 1320855297:0;tail /var/log/system.log
+: 1320855395:0;kill 88297
+: 1320855487:0;mkdir /var/log/nginx
+: 1320855499:0;sudo mkdir /var/log/nginx
+: 1320855515:0;sudo chown thermans /var/log/nginx
+: 1320855583:0;kill 89807
+: 1320855614:0;vi nginx.conf
+: 1320855642:0;kill 89805
+: 1320855668:0;locate index.html
+: 1320855698:0;cp /Developer/Documentation/DocSets/com.apple.ADC_Reference_Library.DeveloperTools.4_2.docset/Contents/Resources/Documents/qa/qa1393/index.html .
+: 1320855947:0;vi ~/Dropbox/src/admin/public
+: 1320856561:0;git clone https://github.com/scottjehl/Respond.git
+: 1320856566:0;cd Respond
+: 1320856623:0;alias cp
+: 1320856631:0;unalias cp
+: 1320856644:0;cp respond.min.js  ~/html
+: 1320856687:0;cd ~/html
+: 1320856969:0;mvim index.html
+: 1320857479:0;wget http://isotope.metafizzy.co/jquery.isotope.min.js
+: 1320857520:0;wget http://code.jquery.com/jquery-1.7.min.js
+: 1320857529:0;mv jquery-1.7.min.js jquery.min.js
+: 1320859955:0;ls -ald Firefox.app
+: 1320860267:0;cd ~/Dropbox/src/dactyl
+: 1320860285:0;brew install mercurial
+: 1320860300:0;easy_install Mercurial
+: 1320860317:0;sudo easy_install Mercurial
+: 1320860343:0;hg pull
+: 1320860350:0;hg update
+: 1320864792:0;git clone https://github.com/trapd00r/pentadactyl-neverland.git
+: 1320864798:0;cd pentadactyl-neverland
+: 1320864800:0;cd color
+: 1320864817:0;ls -al ~/.pentadactyl
+: 1320864820:0;ls -al ~/.pentadactyl/info
+: 1320864822:0;ls -al ~/.pentadactyl/info/default
+: 1320864835:0;mkdir ~/.pentadactyl/colors
+: 1320864842:0;cp neverland.penta ~/.pentadactyl/colors
+: 1320864894:0;git clone git://gitorious.org/pentafiles/pentafiles.git
+: 1320864902:0;cd pentafiles
+: 1320864913:0;view update.sh
+: 1320865004:0;./update.sh -v
+: 1320865011:0;vi userChrome-simple.css
+: 1320865104:0;mvim userChrome-simple.css
+: 1320865122:0;mvim userChrome-simple_dark.css
+: 1320865180:0;cd Library/Application\ Support
+: 1320865185:0;cd Firefox
+: 1320865190:0;cd Profiles/6njqdwnj.default
+: 1320865263:0;vi prefs.js
+: 1320865292:0;cp /tmp/pentafiles/userChrome-simple_dark.css userChrome.css
+: 1320865391:0;mkdir chrome
+: 1320865395:0;mv userChrome.css chrome
+: 1320865423:0;cd chrome
+: 1320865433:0;cp /tmp/pentafiles/userChrome-simple.css userChrome.css
+: 1320865474:0;mvim userChrome.css
+: 1320865707:0;cp /tmp/pentafiles/userChrome-simple.css . 
+: 1320865713:0;cp /tmp/pentafiles/userChrome-simple_dark.css .
+: 1320865717:0;rm userChrome.css
+: 1320865753:0;vi ~/.pentadactyl/colors/simple.penta
+: 1320866002:0;vi ~/.pentadactyl/colors/lucius.penta
+: 1320866219:0;vi ~/.pentadactyl/colors/ubuntu.penta
+: 1320866311:0;git clone https://github.com/maksimr/colorscheme-ubuntu.git
+: 1320866316:0;cd colorscheme-ubuntu
+: 1320866324:0;cp ubuntu.penta ~/.pentadactyl/colors
+: 1320866691:0;git clone https://github.com/grassofhust/zenburn.penta.git
+: 1320866695:0;cd zenburn.penta
+: 1320866707:0;cp zenburn.penta ~/.pentadactyl/colors
+: 1320867079:0;vi ~/.vimrc.local
+: 1320867085:0;vi ~/.vimrc
+: 1320869019:0;cd ~/Dropbox/src/janus
+: 1320869037:0;cd .vim
+: 1320869043:0;ls syntax
+: 1320870892:0;vi .vimrc.local
+: 1320870918:0;mkdir .vim.local
+: 1320870921:0;cd .vim.local
+: 1320870928:0;mkdir syntax
+: 1320870930:0;cd syntax
+: 1320871026:0;mkdir ftdetect
+: 1320871030:0;mv pentadactyl.vim ftdetect
+: 1320871044:0;mv ~/Downloads/syntax_pentadactyl.vim.txt syntax/pentadactyl.vim
+: 1320871090:0;vi .vim.local/ftdetect/pentadactyl.vim
+: 1320871243:0;vi .vim.local/syntax/pentadactyl.vim
+: 1320871320:0;vi .pentadactylrc
+: 1320934766:0;mkdir foo
+: 1320934767:0;cd foo
+: 1320934770:0;unzip ~/Downloads/Testing-9sT0vLw.zip
+: 1320935838:0;unzip -l ~/Downloads/h5bp-html5-boilerplate-v2.0-0-g8bfbd13.zip
+: 1320935844:0;unzip ~/Downloads/h5bp-html5-boilerplate-v2.0-0-g8bfbd13.zip
+: 1320935846:0;cd h5bp-html5-boilerplate-007754e
+: 1320935862:0;vi robots.txt
+: 1320935867:0;vi index.html
+: 1320936376:0;cd ../
+: 1320936386:0;mv h5bp-html5-boilerplate-007754e/ html5-template
+: 1320937496:0;unzip -l terminal_5_23141_7014.zip
+: 1320937505:0;unzip terminal_5_23141_7014.zip
+: 1320937654:0;cd Pictures
+: 1320937659:0;cd Downloads
+: 1320937668:0;wget hermans.net/images/Nxau.jpg
+: 1320938085:0;unzip -l smoke_5_11537_4244.zip
+: 1320938089:0;unzip smoke_5_11537_4244.zip
+: 1320938369:0;unzip mpsimple_5_25685_7340.zip
+: 1320938372:0;rm -r __MACOSX
+: 1320944902:0;ls -lRS
+: 1320952771:0;locate sdtid
+: 1320953322:0;cd /Users/tim
+: 1320953325:0;cd /Users/
+: 1320953333:0;ls localadmin
+: 1320954993:0;scp .pentadactylrc nkosi:
+: 1320962473:0;locate Terp
+: 1320962477:0;locate Soccer
+: 1321024562:0;cd html5-template
+: 1321024818:0;git clone https://github.com/twitter/bootstrap.git
+: 1321024897:0;mv ~/bootstrap/ .
+: 1321024905:0;cd bootstrap
+: 1321024908:0;cd examples
+: 1321040496:0;brew install wireshark
+: 1321295951:0;ssh therma000@68.87.107.203
+: 1321296806:0;cat /etc/hosts
+: 1321459697:0;ps -ef | grep itun
+: 1321459701:0;ps -ef | grep -i itun
+: 1321459861:0;ln -s Dropbox/dotfiles/.zsh
+: 1321459901:0;ls -al Dropbox/dotfiles
+: 1321459918:0;mv .pentadactyl* Dropbox/dotfiles/
+: 1321459930:0;ln -s Dropbox/dotfiles/.pentadactylrc
+: 1321459934:0;ln -s Dropbox/dotfiles/.pentadactyl
+: 1321459944:0;cd Dropbox/dotfiles/.pentadactyl
+: 1321459973:0;ls -al .bash
+: 1321460004:0;rm .bash/bash_history
+: 1321460036:0;git delete .bash/bash_history
+: 1321460040:0;git rm .bash/bash_history
+: 1321460059:0;git add .pentadactyl*
+: 1321460068:0;git add .zsh/plugins/
+: 1321460097:0;git commit -m "Added Pentadactyl files"
+: 1321460120:0;hg rm .bash/bash_history
+: 1321460130:0;hg add .pentadactyl*
+: 1321460132:0;hg status
+: 1321460153:0;hg commit -m "Added Pentadactyl files"
+: 1321460247:0;hg clone ssh://hg@bitbucket.org/thermans/darkroom-mode
+: 1321460252:0;cd darkroom-mode
+: 1321460256:0;view darkroom-mode.el
+: 1321460456:0;vi README
+: 1321460506:0;mv awesome/ ~/Dropbox/dotfiles
+: 1321460516:0;ln -s ~/Dropbox/dotfiles/awesome
+: 1321460531:0;rm -r subtle
+: 1321460536:0;ln -s ~/Dropbox/dotfiles/subtle
+: 1321460557:0;mkdir /home/thermans/Dropbox/dotfiles/subtle
+: 1321460565:0;z dotf
+: 1321460578:0;git add awesome
+: 1321460604:0;cat .pentadactyl/info/default/register-ring
+: 1321460615:0;vi .gitignore
+: 1321460663:0;git status
+: 1321460680:0;git commit -m "Added awesome"
+: 1321460684:0;git push
+: 1321460699:0;vi .hgignore
+: 1321460713:0;hg add awesome/
+: 1321460715:0;hg commit -m "Added awesome"
+: 1321460719:0;hg push
+: 1321460904:0;ss awesome-freedesktop
+: 1321460912:0;inst awesome-freedesktop-git
+: 1321460924:0;dl awesome-freedesktop-git
+: 1321461096:0;git clone git://scm.solitudo.net/delightful.git
+: 1321461099:0;cd delightful
+: 1321461104:0;vi awesome-3.4.3-delightful-sample-configuration.diff
+: 1321461130:0;git submodules init
+: 1321461136:0;git submodule init
+: 1321461144:0;git submodule update
+: 1321461186:0;cp -a delightful/delightful ~/.config/awesome
+: 1321461200:0;cp delightful/submodules/imap/lua/imap.lua/imap.lua ~/.config/awesome
+: 1321461209:0;cp delightful/submodules/weatherlib/src/weatherlib.lua ~/.config/awesome
+: 1321461217:0;cp delightful/submodules/metar/src/metar.lua ~/.config/awesome
+: 1321461227:0;cp delightful/calendar2.lua ~/.config/awesome
+: 1321461242:0;ss libgweather
+: 1321461255:0;ss liblua
+: 1321461260:0;ss lua5
+: 1321461273:0;ss lua-socket
+: 1321461280:0;ss lua | grep socket
+: 1321461288:0;inst luasocket
+: 1321461302:0;lua
+: 1321466960:0;tail -100 .xstartup.errors
+: 1321466977:0;locate lxp.lua
+: 1321466985:0;ss lxp
+: 1321467038:0;ss luaxpat
+: 1321467041:0;ss xpat
+: 1321467077:0;ss luax
+: 1321467080:0;inst luaxml
+: 1321467088:0;dl luaxml
+: 1321467095:0;remove luaxml
+: 1321467103:0;sudo pacman -Rd luaxml
+: 1321467224:0;ss expat
+: 1321467230:0;inst luaxpat
+: 1321467237:0;inst luaexpat
+: 1321467242:0;dl luaexpat
+: 1321467361:0;tail -50 .xstartup.errors
+: 1321467427:0;ss gwaether
+: 1321467430:0;ss gweatther
+: 1321467432:0;ss gweather
+: 1321467442:0;dl libgweather
+: 1321467465:0;view /usr/share/gtk-doc/html/libgweather-3.0/GWeatherLocationEntry.html
+: 1321467691:0;dl libgweather | less
+: 1321467729:0;view /usr/include/libgweather-3.0/libgweather/gweather-xml.h
+: 1321467740:0;view /usr/include/libgweather-3.0/libgweather/weather.h
+: 1321468012:0;rm .xstartup.*
+: 1321468048:0;view .config/awesome/delightful/widgets/weather.lua
+: 1321469013:0;view /usr/share/libgweather/Locations.xml
+: 1321469411:0;ss awesome
+: 1321469613:0;cat .,
+: 1321469670:0;ss luassl
+: 1321469676:0;ss lua | grep ssl
+: 1321469680:0;ss lua | grep -i sll
+: 1321469682:0;ss lua | grep -i ssl
+: 1321469692:0;ss lua
+: 1321469711:0;inst luasec
+: 1321469888:0;ss tshark
+: 1321469895:0;inst wireshark-cli
+: 1321469910:0;dl wireshark-cli
+: 1321469919:0;cat /etc/group
+: 1321469928:0;sudo gpasswd -a thermans wireshark
+: 1321469935:0;sudo tshark
+: 1321469952:0;sudo tshark host mail.hermans.net
+: 1321469965:0;sudo tshark -i tun0 host mail.hermans.net
+: 1321470231:0;telnet mail.hermans.net 143
+: 1321471256:0;xmodmap ~/.xmodmap
+: 1321471476:0;sudo tshark -vv -i tun0 host weather.noaa.gov
+: 1321471564:0;echo $OSTYPE
+: 1321471897:0;[[ $OSTYPE == 'darwin' ]] && xmodmap -v ~/.xmodmap
+: 1321471911:0;brew 
+: 1321471926:0;brew --config
+: 1321471933:0;brew --env
+: 1321471946:0;brew --prefix
+: 1321472088:0;source .zshrc
+: 1321472251:0;z
+: 1321472346:0;ss rbenv
+: 1321472353:0;ruby -v
+: 1321472358:0;ss ruby
+: 1321472362:0;ss
+: 1321472368:0;which ruby
+: 1321472412:0;cd .oh-my-zsh
+: 1321472418:0;vim plugins/cloudapp/cloudapp.plugin.zsh
+: 1321472427:0;cd ../.zsh/plugins
+: 1321472431:0;cd zaw
+: 1321472458:0;ss wireshark
+: 1321472466:0;inst wireshark-gtk
+: 1321472711:0;rm .zcompdump
+: 1321472724:0;vi KDCA.TXT
+: 1321472805:0;sudo tshark -i tun0 host weather.noaa.gov
+: 1321472821:0;rm KDCA.TXT.*
+: 1321472870:0;sudo tshark -i eth1 host weather.noaa.gov
+: 1321472887:0;tshark -i eth1 host weather.noaa.gov
+: 1321472960:0;tshark -i eth1 -T text host weather.noaa.gov
+: 1321472976:0;tshark -i eth1 -T pdml host weather.noaa.gov
+: 1321472996:0;tshark -i eth1 -T ps host weather.noaa.gov
+: 1321473031:0;tshark -i eth1 -V host weather.noaa.gov
+: 1321473048:0;man tshark
+: 1321473687:0;tshark -G protocols
+: 1321474703:0;rm KDCA.TXT*
+: 1321474741:0;wget http://weather.noaa.gov/pub/data/observations/metar/stations/EFHK.TXT
+: 1321474746:0;cat EFHK.TXT
+: 1321474754:0;wget http://weather.noaa.gov/pub/data/observations/metar/stations/KDCA.TXT
+: 1321474757:0;cat KDCA.TXT
+: 1321476585:0;perl -MNet::LDAP
+: 1321476592:0;cpanm Net::LDAP
+: 1321476603:0;perl -MNet::LDAP -MData::Dumper -e 'print "Password: "; chomp($passwd = <STDIN>); $ldap = Net::LDAP->new( q{76.96.110.225}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => $passwd); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber>=3117686566");  print Dumper(@entries);'
+: 1321476612:0;perl -MNet::LDAP -MData::Dumper -e 'print "Password: "; chomp($passwd = <STDIN>); $ldap = Net::LDAP->new( q{76.96.110.225}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => $passwd); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber=3117686566");  print Dumper(@entries);'
+: 1321476637:0;perl -MNet::LDAP -MData::Dumper -e '$ldap = Net::LDAP->new( q{76.96.110.225}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => "secret"); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber=3117686566");  print Dumper(@entries);'
+: 1321476650:0;perl -MNet::LDAP -MData::Dumper -e '$ldap = Net::LDAP->new( q{drc-wch-b01}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => "secret"); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber=3117686566");  print Dumper(@entries);'
+: 1321476657:0;ssh drc-wch-b01
+: 1321476679:0;ldapsearch
+: 1321476720:0;perl -MNet::LDAP -MData::Dumper -e '$ldap = Net::LDAP->new( q{drc-wch-b01}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => "secret"); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber=3117835907");  print Dumper(@entries);'
+: 1321476730:0;perl -MNet::LDAP -MData::Dumper -e '$ldap = Net::LDAP->new( q{drc-wch-b01}, port => 389 ) or die $@; $mesg = $ldap->bind(q{cn=root}, password => "secret"); $mesg = $ldap->search(base => "cn=config", filter => "lastchangenumber>=3117835907");  print Dumper(@entries);'
+: 1321476749:0;man ldapsearch
+: 1321476797:0;ldapsearch -D cn=root -w secret -h drc-wch-b01 -p 389 -b "cn=config" -s "sub" "lastchangenumber>=3117835907
+: 1321476804:0;ldapsearch -D cn=root -w secret -h drc-wch-b01 -p 389 -b "cn=config" -s "sub" "lastchangenumber>=3117835907"
+: 1321476815:0;ldapsearch -D cn=root -w secret -h drc-wch-b01 -p 389 -b "cn=config" -s "sub" "lastchangenumber>=3117835907" lastchangenumber
+: 1321476828:0;go drc-wch-b01
+: 1321476835:0;bin/go drc-wch-b01
+: 1321477429:0;cd Dropbox/src/cpni
+: 1321477437:0;ss etags
+: 1321477447:0;ss ctags
+: 1321477473:0;locate etags
+: 1321477493:0;etags
+: 1321477508:0;etags.emacs
+: 1321477520:0;ls -al etag*
+: 1321477525:0;sudo ln -s etags.emacs
+: 1321477530:0;sudo ln -s etags.emacs etags
+: 1321477608:0;ss ldapbrowser
+: 1321477613:0;inst ldapbrowser
+: 1321477623:0;dl ldapbrowser
+: 1321477753:0;lbe &
+: 1321533692:0;telnet imap.googlemail.com 143
+: 1321533722:0;telnet imap.googlemail.com 993
+: 1321533734:0;[[ $OSTYPE == 'linux-gnu' ]] && xmodmap -v ~/.xmodmap
+: 1321533907:0;view /etc/mail.rc
+: 1321533922:0;mailx
+: 1321537011:0;diff ambiance.penta evening.penta
+: 1321537302:0;hg clone https://code.google.com/p/vimperator-labs/
+: 1321537325:0;cd vimperator-labs
+: 1321537329:0;less Makefile
+: 1321537335:0;make
+: 1321537850:0;mkdir .vimperator/colors
+: 1321537858:0;vi .vimperator/colors/dark.vimp
+: 1321537960:0;cp .vimperator/colors/dark.vimp .pentadactyl/colors/dark.penta
+: 1321538894:0;cd .pentadactyl/colors
+: 1321538902:0;mv foo.md5 foo.base64
+: 1321539847:0;cd iTunes\ Media
+: 1321539852:0;cd Music
+: 1321539925:0;cd Yamboo
+: 1321539950:0;vi iTunes\ Music\ Library.xml
+: 1321539984:0;ls -al Album\ Artwork
+: 1321539987:0;ls -al Album\ Artwork/Download
+: 1321539989:0;ls -al Album\ Artwork/Download/3B6575162BFB058D
+: 1321539994:0;find Album\ Artwork/Download/3B6575162BFB058D
+: 1321540005:0;ls -al Previous\ iTunes\ Libraries
+: 1321540350:0;perl -MMIME::Base64 -ne 'print decode_base64($_)' foo.base64
+: 1321540359:0;file foo.png
+: 1321540416:0;rm foo.*
+: 1321540608:0;ss ubuntu
+: 1321540623:0;inst ttf-ubuntu-font-family
+: 1321540889:0;perl -MMIME::Base64 -ne 'print decode_base64($_)' foo.base64 > foo.png
+: 1321540894:0;feh foo.png
+: 1321541031:0;fc-list
+: 1321541228:0;vi ~/.pentadactylrc
+: 1321543670:0;vi .zsh/custom.zsh
+: 1321543741:0;alias jh
+: 1321543745:0;ssh oldjumphost
+: 1321543776:0;cat .ssh/authorized_keys
+: 1321544136:0;ldapsearch -D cn=root -w secret -h mds-wch-a02 -p 5005 -b "cn=config" -s "sub" "changenumber=3119092443"
+: 1321544171:0;ldapsearch -D cn=root -w secret -h mds-pot-a01 -p 5005 -b cn=changelog "changenumber=3119092443"
+: 1321544234:0;ldapsearch -D cn=root -w secret -h mds-pot-a01 -p 389 -b cn=changelog "changenumber=3119092443"
+: 1321545046:0;go ems-pot-a02
+: 1321545463:0;ss jxplorer
+: 1321545470:0;inst jxplorer
+: 1321545520:0;cd tmp
+: 1321545525:0;cd local
+: 1321545498:0;mv iTunes/ iTunes.bak
+: 1321545653:0;rm -r iTunes
+: 1321545665:0;y
+: 1321545672:0;cd iTunes.bak
+: 1321545716:0;cd ,..
+: 1321545725:0;mv iTunes.bak/ iTunes
+: 1321545977:0;mkdir localsrc
+: 1321546002:0;ss jndi
+: 1321546011:0;ss cvs
+: 1321546046:0;inst cvs
+: 1321546058:0;ss inetutils
+: 1321546061:0;dl inetutils
+: 1321546256:0;cvs checkout -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer 
+: 1321546307:0;cvs --help-commands
+: 1321546330:0;cvs -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer checkout
+: 1321546335:0;cvs -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer .
+: 1321546337:0;cvs -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer co
+: 1321546341:0;cvs co -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer 
+: 1321546345:0;cvs -d:pserver:anonymous@cvs.jxplorer.sourceforge.net:/cvsroot/jxplorer 
+: 1321546390:0;mv ~/Desktop/jxplorer-3.2.2rc1-linux-installer.bin .
+: 1321546412:0;file jxplorer-3.2.2rc1-linux-installer.bin
+: 1321546419:0;chmod 755 jxplorer-3.2.2rc1-linux-installer.bin
+: 1321546422:0;./jxplorer-3.2.2rc1-linux-installer.bin
+: 1321546512:0;mv ~/
+: 1321546520:0;mv ~/Desktop/JXv3.3b1src.tar.bz2 .
+: 1321546524:0;rm jxplorer-3.2.2rc1-linux-installer.bin
+: 1321546531:0;tar jxvf JXv3.3b1src.tar.bz2
+: 1321546585:0;less codestripper.pl
+: 1321546661:0;cd ../../
+: 1321546664:0;rm -r jxplorer
+: 1321546670:0;mv ~/Desktop/jxplorer-3.3b1-linux-installer.run .
+: 1321546674:0;bash jxplorer-3.3b1-linux-installer.run
+: 1321546679:0;file jxplorer-3.3b1-linux-installer.run
+: 1321546760:0;mv ~/Desktop/JXv3.3b1deploy.tar.bz2 .
+: 1321546768:0;tar jtvf JXv3.3b1deploy.tar.bz2
+: 1321546772:0;tar jxvf JXv3.3b1deploy.tar.bz2
+: 1321546784:0;vi jxplorer.sh
+: 1321546800:0;bash jxplorer.sh
+: 1321546883:0;cd jxplorer
+: 1321546895:0;vi jxconfig.txt
+: 1321547226:0;ss eclipse
+: 1321547240:0;;be
+: 1321547386:0;cd Desktop
+: 1321547444:0;unzip -l browser281.zip
+: 1321547512:0;unzip browser281.zip
+: 1321547522:0;cd lib
+: 1321547536:0;inst lesspipe
+: 1321547542:0;which lesspipe
+: 1321547546:0;dl lesspipe
+: 1321547556:0;cd /usr/bin
+: 1321547566:0;sudo ln -s lesspipe.sh lesspipe
+: 1321547574:0;j lib
+: 1321547578:0;less ldap.jar
+: 1321547588:0;ssh hermans.us
+: 1321547771:0;ss directory
+: 1321547815:0;inst apachedirectorystudio
+: 1321547862:0;zsh jxplorer.sh
+: 1321548032:0;vi /usr/bin/lbe
+: 1321548042:0;cd /opt
+: 1321548054:0;sudo chown thermans ldapbrowser
+: 1321548057:0;cd ldapbrowser
+: 1321548059:0;touch foo
+: 1321548062:0;rm foo
+: 1321548150:0;vi secondary.cfg
+: 1321548208:0;ls -alret
+: 1321548273:0;cd /opt/
+: 1321548280:0;sudo chown root ldapbrowser
+: 1321548283:0;lbe
+: 1321551704:0;dl apachedirectorystudio
+: 1321551708:0;dl apachedirectorystudio | head
+: 1321551720:0;ApacheDirectoryStudio
+: 1321551959:0;ldapsearch -D cn=root -w secret -h drc-wch-b01 -p 389 -b "cn=config" -s "sub" "lastchangenumber=*" lastchangenumber
+: 1321552023:0;rm -r .ApacheDirectoryStudio
+: 1321552025:0;cd .config
+: 1321552376:0;view /var/log/Xorg.0.log
+: 1321552394:0;ps -ef | grep awe
+: 1321552613:0;ps -ef | grep vim
+: 1321552616:0;kill 788
+: 1321552624:0;kill -9  788
+: 1321553020:0;cd im
+: 1321553024:0;cd Pidgin
+: 1321553027:0;cd aim
+: 1321553085:0;cd .purple
+: 1321553103:0;tar cvf - .
+: 1321553147:0;tar cvf - . | (cd /tmp; tar xf -)
+: 1321553183:0;tar cvf - aim
+: 1321553193:0;tar cvf - aim | (cd /tmp/; tar xf -)
+: 1321553196:0;cd /tmp/aim
+: 1321553198:0;cd timlhermans
+: 1321553209:0;z logs
+: 1321553247:0;tar cvf - aim | (cd ~/Dropbox/im/Pidgin; tar xf -)
+: 1321553263:0;cd %5bcomcastvoicemail%5d
+: 1321553337:0;ls -al 
+: 1321553344:0;rm -r logs
+: 1321553357:0;ln -s ~/Dropbox/im/Pidgin logs
+: 1321553358:0;cd logs
+: 1321553415:0;cat 2011-11-17.130958-0500EST.txt
+: 1321553472:0;cat 2011-11-16.142946-0500EST.txt
+: 1321554294:0;ps -ef
+: 1321554471:0;sudo /etc/network stop
+: 1321554475:0;sudo 
+: 1321554480:0;sudo rc.d network stop
+: 1321554483:0;sudo rc.d network
+: 1321554488:0;sudo rc.d stop network
+: 1321554503:0;sudo netcfg -d net-local
+: 1321554576:0;sudo reboot
+: 1321554643:0;sudo netcfg net-external
+: 1321554661:0;sudo netcfg net-local
+: 1321555674:0;meld rc.lua rc.bak
+: 1321555697:0;mv rc.lua rc.bak
+: 1321555815:0;cd .config/awesome
+: 1321555819:0;pwd
+: 1321555830:0;cd ~/Dropbox/dotfiles
+: 1321557269:0;cat .fehbg
+: 1321557276:0;rm .fehbg
+: 1321557494:0;dl vicious-git
+: 1321557618:0;view /usr/share/awesome/lib/vicious
+: 1321557680:0;ls -al /var/run/network/profiles
+: 1321557707:0;cd .cache
+: 1321557710:0;cd awesome
+: 1321557715:0;cat history
+: 1321557760:0;ss vain
+: 1321557764:0;inst vain-git
+: 1321557994:0;clipit&
+: 1321558086:0;cat .xstartup.errors
+: 1321558433:0;dl vain-git
+: 1321558440:0;view /usr/share/awesome/lib/vain/layout/gimp.lua
+: 1321558519:0;cd localsrc
+: 1321558524:0;git clone git@github.com:nedludd/awesome-vain.git
+: 1321559735:0;ss gimp-devel
+: 1321560742:0;ss gajim
+: 1321560751:0;ss pidgin
+: 1321560817:0;inst pidgin-libnotify
+: 1321561405:0;cat ../.xstartup.errors
+: 1321563732:0;notify-send test test
+: 1321566598:0;ps -ef | grep fire
+: 1321566689:0;tail -f .xstartup.errors
+: 1321567672:0;cd Unknown\ Album
+: 1321567695:0;ls *1.mp3"
+: 1321567696:0;ls *1.mp3
+: 1321567835:0;rm *1.mp3
+: 1321568361:0;cd /srv/
+: 1321568366:0;ss ngin
+: 1321568368:0;ss nginx
+: 1321568394:0;omst mgomx
+: 1321568404:0;inst nginx
+: 1321568401:0;cd ls -al
+: 1321568407:0;cd Tom\ Tom\ Club
+: 1321568445:0;locate nginx.conf
+: 1321568472:0;cd html
+: 1321568486:0;tar tvf ~/Dropbox/traffic.tar
+: 1321568490:0;tar xvf ~/Dropbox/traffic.tar
+: 1321568515:0;nginx
+: 1321568700:0;vi /etc/conf.d/nginx
+: 1321568717:0;sudo /etc/rc.d/nginx start
+: 1321568722:0;ps -ef | grep ngin
+: 1321568738:0;cd /var/log/nginx
+: 1321568741:0;tail error.log
+: 1321568759:0;cd /etc/nginx/html
+: 1321568766:0;cd /srv
+: 1321568769:0;cd http
+: 1321568780:0;sudo tar xvf ~/Dropbox/traffic.tar
+: 1321568789:0;sudo vi /etc/nginx/conf/nginx.conf
+: 1321568747:0;vi /usr/local/etc/nginx/nginx.conf
+: 1321568893:0;sudo chmod 775 http
+: 1321568915:0;sudo chgrp wheel http
+: 1321568931:0;sudo /etc/rc.d/nginx restart
+: 1321568956:0;sudo vi /etc/rc.conf
+: 1321628456:0;cd /Applications
+: 1321629221:0;brew update
+: 1321630095:0;brew upgrade gnutls
+: 1321631687:0;brew upgrade nginx
+: 1321636895:0;go
+: 1321636904:0;env | grep PATH
+: 1321636910:0;bin/go
+: 1321636913:0;cd bin
+: 1321636916:0;ls -l
+: 1321636930:0;ln -s ~/Dropbox/src/connect/connect.pl go
+: 1321636960:0;mkdir ~/go_logs
+: 1321636964:0;cd ~@
+: 1321636970:0;cd ~/go_logs
+: 1321636976:0;cd mds-wch-a02
+: 1321637010:0;vi ~/bin/go
+: 1321637028:0;cd /
+: 1321637044:0;sudo rm -r home
+: 1321637052:0;cd home
+: 1321637062:0;sudo ln -s /Users/thermans
+: 1321637068:0;vi bin/go
+: 1321637082:0;go mds-wch-a02
+: 1321637243:0;ssh mds-wch-a02
+: 1321637341:0;ssh mds-wch-a02.westchester.pa.bo.comcast.net
+: 1321637370:0;ping mds-wch-a02.westchester.pa.bo.comcast.net
+: 1321652555:0;cd Dropbox
+: 1321652571:0;rm Sparrow*
+: 1321652586:0;cd ~/Music/
+: 1321652598:0;tar tvf ~/Dropbox/JordiSavall.tar
+: 1321652603:0;tar xvf ~/Dropbox/JordiSavall.tar
+: 1321652609:0;tar xvf ~/Dropbox/KnittingFactory.tar
+: 1321653360:0;exit
+: 1321657851:0;brew search awesome
+: 1321657858:0;brew outdated
+: 1321657861:0;npm list
+: 1321657874:0;npm update
+: 1321657906:0;npm install ender -g
+: 1321657919:0;brew upgrade node
+: 1321660735:0;node -v
+: 1321660740:0;npm 
+: 1321660745:0;npm ls
+: 1321660745:0;s
+: 1321660757:0;git clone https://github.com/rupa/sprunge.git
+: 1321660764:0;cd sprunge
+: 1321660771:0;cat README
+: 1321660804:0;cat app.yaml
+: 1321660840:0;cat index.yaml| curl -F 'sprunge=<-' http://sprunge.us
+: 1321660861:0;cat index.yaml
+: 1321660867:0;cat app.yaml| curl -F 'sprunge=<-' http://sprunge.us
+: 1321660903:0;cat .vimrc| curl -F 'sprunge=<-' http://sprunge.us
+: 1321660938:0;vi .zsh/aliases.zsh
+: 1321660988:0;sz
+: 1321660994:0;ls -alry
+: 1321661004:0;cat .janus.rake | curl -F 'sprunge=<-' http://sprunge.us 
+: 1321803490:0;ls -ald Documents
+: 1321803497:0;cd Documents
+: 1321804344:0;cd Dropbox/Soccer
+: 1321804376:0;scp "hermans.net:hermans.net/soccer/images/Angry*" .
+: 1321804391:0;scp "hermans.net:hermans.net/soccer/images/*angry*" .
+: 1321825971:0;kill 802
+: 1321825974:0;ps -ef | grep Finde
+: 1321883771:0;ss dvpn
+: 1321883809:0;up
+: 1321883877:0;uptime
+: 1321884499:0;JOBS
+: 1321884504:0;jobs
+: 1321885601:0;amixer
+: 1321885606:0;alsamixer
+: 1321885795:0;http://youtu.be/_CEjmwLy9_M#t=2m15s
+: 1321885948:0;http://youtu.be/uE5xZKszXMQ#t=29s
+: 1321886935:0;http://www.youtube.com/artist?a=GxdCwVVULXeYBOcTYCUgM14GkIHuAaqi
+: 1321886958:0;http://youtu.be/xZthKONrn_Y
+: 1321887283:0;http://www.youtube.com/watch?v=PV8UUtqcIZ4&feature=list_related&playnext=1&list=AVGxdCwVVULXeYBOcTYCUgM14GkIHuAaqi
+: 1321888167:0;cat .ssh/id_rsa.pub
+: 1321888193:0;ssh hermans.net
+: 1321891721:0;cd .mozilla/firefox
+: 1321891723:0;cd pddivasw.default
+: 1321891743:0;cd Cache
+: 1321891746:0;find .
+: 1321891752:0;cat ./3/69/274F1d01
+: 1321891757:0;l s-al
+: 1321891779:0;ls -al dactyl
+: 1321891787:0;ls -al OfflineCache
+: 1321891793:0;ls -al extensions
+: 1321891804:0;cd extensions/{foxmarks@kei.com
+: 1321891806:0;cd extensions
+: 1321891816:0;cd {\{e4a8a97b-f2ed-450b-b12d-ee082ba24781\}
+: 1321891824:0;cd {e4a8a97b-f2ed-450b-b12d-ee082ba24781}
+: 1321891830:0;less install.rdf
+: 1321891838:0;cd .thunderbird
+: 1321891843:0;cd pa47ny08.default/GoogleContacts
+: 1321891850:0;tail -f gc.log
+: 1321891871:0;ls -al Cache
+: 1321893113:0;ps -ef | grep syner
+: 1321893577:0;wget http://hermans.net/images/hippobirdies2.gif
+: 1321895294:0;cat maps.txt
+: 1321895298:0;rm maps.txt
+: 1321895301:0;cat .z
+: 1321895307:0;tail .xstartup.
+: 1321896501:0;cd ~/src/connect
+: 1321896527:0;perl
+: 1321896542:0;perl 'print $ENV{'HOME'}\
+'
+: 1321896547:0;perl 'print $ENV{'HOME'}'
+: 1321896555:0;perl -d
+: 1321896659:0;vi test.pl
+: 1321896684:0;perl test.pl
+: 1321896731:0;rm test.pl
+: 1321896742:0;go vsr-wch-d04
+: 1321900478:0;xprop
+: 1321900606:0;xrandr -q
+: 1321900659:0;ss rc-update
+: 1321900947:0;git clone git://git.naquadah.org/naquadah-theme.git
+: 1321901021:0;cd themes/
+: 1321901031:0;cp /tmp/naquadah-theme/naquadah-theme.el .
+: 1321901043:0;emacs &
+: 1321901395:0;locate weather.lua
+: 1321901466:0;tshark --help
+: 1321901476:0;tshark -D
+: 1321901597:0;ping weather.noaa.gov
+: 1321901702:0;ls -alrt /tmp
+: 1321901783:0;tail .xstartup.errors
+: 1321901787:0;tail .xstartup.out
+: 1321901791:0;cat .xstartup.out
+: 1321901808:0;view /usr/share/awesome/lib/vicious/widgets/weather.lua
+: 1321901821:0;grep local /usr/share/awesome/lib/vicious/widgets/weather.lua
+: 1321901921:0;ip addr
+: 1321901943:0;curl -fsm 3 http://weather.noaa.gov/pub/data/observations/metar/decoded/KDCA.TXT
+: 1321902024:0;ssh nkosi
+: 1321902117:0;sudo /etc/rc.d sshd start
+: 1321902125:0;sudo /etc/rc.d/sshd start
+: 1321902137:0;tshark -i any host weather.noaa.gov
+: 1321902165:0;startx
+: 1321902214:0;tshark -i any 'host weather.noaa.gov'
+: 1321902218:0;curl http://weather.noaa.gov/pub/data/observations/metar/decoded/KDCA.TXT
+: 1321902223:0;man curl
+: 1321902255:0;curl --no-sessionid http://weather.noaa.gov/pub/data/observations/metar/decoded/KDCA.TXT
+: 1321902266:0;curl -v --no-sessionid http://weather.noaa.gov/pub/data/observations/metar/decoded/KDCA.TXT
+: 1321902445:0;vi .xinitrc
+: 1321902477:0;kill 12598
+: 1321902482:0;kill -9 12598
+: 1321902489:0;sudo visudo
+: 1321902506:0;groups
+: 1321902509:0;sudo ls 
+: 1321902506:0;sudo vi /etc/hosts
+: 1321902679:0;ps -ef | grep sudo
+: 1321902690:0;kill -9 12696
+: 1321902706:0;man sudo
+: 1321902810:0;cat .ssh/config
+: 1321902850:0;cd Dropbox/emacs
+: 1321902852:0;view my-tramp.el
+: 1321902888:0;cp my-tramp.el ~/.emacs.d/personal/tim-tramp.el
+: 1321902933:0;ps -ef | grep vpn
+: 1321903024:0;mkdir -p cache/backups/tramp
+: 1321903039:0;mkdir -p cache/auto-saves
+: 1321903107:0;grep -r ido.cache *
+: 1321903130:0;cp ido.cache cache
+: 1321903192:0;tail bookmarks
+: 1321903204:0;cat tramp
+: 1321903506:0;mv ido.cache save* smex.items anything-c-adaptive-history ac-comphist.dat abbrev_defs cache
+: 1321903512:0;mv tramp cache
+: 1321903518:0;mv recentf cache
+: 1321903553:0;grep cache *
+: 1321903566:0;vi tim-tramp.el
+: 1321903648:0;kill 13008
+: 1321903670:0;cd /tmp
+: 1321903688:0;clipit
+: 1321903695:0;disown %clipit
+: 1321903928:0;cd src/emacs-prelude
+: 1321903931:0;git pull
+: 1321903940:0;git log | head -100
+: 1321904021:0;grep hl *
+: 1321904052:0;grep -r global-hl *
+: 1321904061:0;vi personal/tim-modes.el
+: 1321904126:0;grep -r flyspell *
+: 1321904518:0;ps -ef | grep fly
+: 1321904521:0;ps -ef | grep asp
+: 1321904570:0;cd .emacs.d/
+: 1321904601:0;cd personal
+: 1321904604:0;grep smex *
+: 1321904611:0;vi tim-smex.el
+: 1321904623:0;cd ../cache
+: 1321904632:0;ls -al backups
+: 1321904634:0;ls -al backups/tramp
+: 1321904636:0;ls -al auto-saves
+: 1321904644:0;cat ac-comphist.dat
+: 1321904647:0;rm ac-comphist.dat
+: 1321904650:0;rm anything-c-adaptive-history
+: 1321904652:0;rm smex.items
+: 1321904664:0;rm -i *
+: 1321904687:0;cd .emacs.d/modules
+: 1321904688:0;ls -alrt
+: 1321904691:0;vi prelude-editor.el
+: 1321904713:0;grep fly *
+: 1321904722:0;vi prelude-core.el
+: 1321904754:0;emacs 
+: 1321906469:0;bg
+: 1321906474:0;cd -
+: 1321906476:0;grep flyspell-prog-mode-hook *
+: 1321906481:0;grep -r flyspell-prog-mode-hook *
+: 1321906806:0;grep -r backup *
+: 1321906822:0;view modules/prelude-editor.el
+: 1321907032:0;cd Music/iTunes
+: 1321907044:0;cd Blood\ Mountain
+: 1321907050:0;file *
+: 1321907057:0;mp3info
+: 1321907062:0;brew search mp3
+: 1321907078:0;brew info mp3check
+: 1321907113:0;brew install mp3check
+: 1321907127:0;mp3check
+: 1321907131:0;mp3check --help
+: 1321907157:0;mp3check -e Mastodon\ -\ Capillarian\ Crest.mp3
+: 1321907180:0;cd ~/Music/iTunes/iTunes\ Media/Music
+: 1321907186:0;cd Mastodon/Blood\ Mountain
+: 1321907344:0;ps -ef | grep syn
+: 1321907597:0;cd ../../Air
+: 1321907601:0;cd Talkie\ Walkie
+: 1321907962:0;defaults write com.apple.dock itunes-notifications -bool TRUE;killall Dock
+: 1321907979:0;z Masto
+: 1321907986:0;cat fingerprint.txt
+: 1321907993:0;cd ../Leviathan
+: 1321908013:0;cd ../../../iTunes/iTunes\ Media/Music/Mastodon/Leviathan
+: 1321908020:0;ls -al ../Blood\ Mountain
+: 1321908157:0;cd /Users
+: 1321908162:0;cd temp/Music
+: 1321908167:0;cd Import
+: 1321908188:0;cd ../Import
+: 1321908196:0;cd iTunes
+: 1321908202:0;cd iTunes\ Media/Music
+: 1321908202:0;ls
+: 1321908205:0;cd Mastodon
+: 1321908214:0;cd The\ Hunter
+: 1321908386:0;ps -ef | grep sy
+: 1321908389:0;ps -ef | grep syne
+: 1321909665:0;grep -r custom *
+: 1321909668:0;grep custom *
+: 1321909672:0;grep custom-file *
+: 1321909833:0;cd ~/src
+: 1321909871:0;mv emacs-prelude/ emacs-prelude.bak
+: 1321910218:0;https://github.com/bbatsov/emacs-prelude.git
+: 1321910222:0;git clone https://github.com/bbatsov/emacs-prelude.git
+: 1321910227:0;cd emacs-prelude
+: 1321910230:0;view init.el
+: 1321910521:0;cd ../emacs-prelude.bak
+: 1321910524:0;vi personal/custom.el
+: 1321910557:0;cd ..
+: 1321910579:0;rm -r emacs-prelude
+: 1321910583:0;sudo rm -r emacs-prelude
+: 1321910537:0;ls -ald src
+: 1321910540:0;cd src
+: 1321911128:0;cd .emacs.d/personal
+: 1321911144:0;vi aaa-init.el
+: 1321911251:0;kill 14082
+: 1321911255:0;ps -ef |grep emacs
+: 1321911257:0;cd 
+: 1321911278:0;kill 14089
+: 1321911282:0;kill -9 14089
+: 1321911288:0;dvpn
+: 1321911315:0;sync
+: 1321911318:0;vpn
+: 1321911363:0;synergys --address 10.0.0.1
+: 1321911485:0;kill 14340
+: 1321912111:0;vi .emacs.d/modules/prelude-editor.el
+: 1321912189:0;vi .emacs.d/modules/prelude-core.el
+: 1321912210:0;ps -ef | grep aspell
+: 1321912217:0;inst htop
+: 1321912221:0;top
+: 1321912232:0;ps -ef | grep drop
+: 1321912646:0;ls -ald .emacs.d
+: 1321912649:0;rm .emacs.d
+: 1321912664:0;cp -pr src/emacs-prelude .emacs.d
+: 1321912673:0;emacs
+: 1321912693:0;emacs --daemon
+: 1321912701:0;ps -ef | grep emacs
+: 1321912705:0;kill emacs
+: 1321912708:0;kill 14563
+: 1321912737:0;cd .emacs.d
+: 1321912739:0;ls -al
+: 1321912749:0;vi .zshrc
+: 1321912765:0;ls -al .zsh/
+: 1321912768:0;ls -ald .zsh/
+: 1321912774:0;cd
+: 1321912777:0;ls -ald .zsh
+: 1321912783:0;cd .zsh
+: 1321912785:0;vi custom.zsh
+: 1321912820:0;cp history ../.zsh-history
+: 1321912841:0;bash
+: 1321912858:0;man ssh
+: 1321912897:0;ssh nkosi exec /bin/bash
+: 1321912918:0;ssh nkosi  /bin/bash
+: 1321912935:0;ssh -v nkosi /bin/bash
+: 1321912986:0;ssh -v nkosi 
+: 1321937102:0;go msv-wch-e06
+: 1321937134:0;ssh msv-wch-e06
+: 1321937142:0;ssh msv-wch-e06.westchester.pa.bo.comcast.net
+: 1321937148:0;jh
+: 1321937186:0;ssh adm-nb-01
+: 1321937191:0;ssh adm-nb-01.sys.comcast.net
+: 1321970981:0;sync
+: 1321970984:0;startx
+: 1321971000:0;sudo reboot

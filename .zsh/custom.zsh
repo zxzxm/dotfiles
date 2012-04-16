@@ -4,7 +4,7 @@
 #-----------------------------------------------------------------------
 # AUTOLOADS
 #
-# "Execute" a file, and have it open default program.  i.e. "% ./foo.pdf" 
+# "Execute" a file, and have it open default program.  i.e. "% ./foo.pdf"
 # opens PDF viewer
 autoload -U zsh-mime-setup
 
@@ -26,16 +26,17 @@ autoload -U zmv
 #     /usr/share/java/apache-ant/bin
 # )
 
-export PATH=/usr/local/Cellar/ccache/3.1.6/libexec
+#export PATH=/usr/local/Cellar/ccache/3.1.6/libexec
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
-export PATH=$PATH:/Users/thermans/bin
+export PATH=$PATH:/usr/bin/core_perl
+export PATH=$PATH:${HOME}/bin
 export PATH=$PATH:/usr/local/sbin
-export PATH=$PATH:/Users/thermans/local/bin
-export PATH=$PATH:/Users/thermans/node_modules/.bin
+export PATH=$PATH:${HOME}/local/bin
+export PATH=$PATH:${HOME}/node_modules/.bin
 
 # Remove duplicates from path
 typeset -U path cdpath fpath manpath
@@ -53,10 +54,8 @@ eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 # Ruby Stuff
 #export RUBYOPT=rubygems
 #export GEM_HOME=/Users/thermans/.gems
-export PATH=/Users/thermans/.gems/bin:$PATH
-# 
-# Rbenv 
-eval "$(rbenv init -)"
+#export PATH=/Users/thermans/.gems/bin:$PATH
+#
 
 # Autojump (http://wiki.github.com/joelthelion/autojump/)
 #source /etc/profile
@@ -64,14 +63,14 @@ eval "$(rbenv init -)"
 
 #-----------------------------------------------------------------------
 # HISTORY
-HISTFILE=$MY_ZSH/history
+HISTFILE=~/.zsh-history
 
 # Do not put "history" commands in the history, duh
 setopt hist_no_store
 
 #-----------------------------------------------------------------------
 # OPTIONS
-# 
+#
 
 # Don't push the same dir twice.
 setopt pushd_ignore_dups
@@ -83,7 +82,7 @@ setopt noglobdots
 setopt noshwordsplit
 
 # If command cannot be executed and name is a directory, cd to it
-setopt auto_cd 
+setopt auto_cd
 
 # Use #, ~, and ^ for filename generation
 setopt extended_glob
@@ -203,10 +202,14 @@ function mcd()
 	mkdir -p -- "$1"
 	cd -- "$1"
 }
- 
+
 
 #-----------------------------------------------------------------------
 # MISC
+
+# Colorize STDERR
+#exec 2>>(while read line; do print '\e[91m'${(q)line}'\e[0m' > /dev/tty; print -n $'\0'; done &)
+
 
 # Helper for less
 LESSOPEN="|lesspipe %s"; export LESSOPEN
@@ -231,88 +234,33 @@ calc () {
     awk "BEGIN{ print $* }"
 }
 
-# Shortcuts for long directory names
-hash -d lr=/home/thermans/Dropbox/src/legal_response/
-hash -d aw=/home/thermans/.config/awesome
-hash -d em=/home/thermans/Dropbox/emacs/packages
-
 #-----------------------------------------------------------------------
 # Ruby setup
 #
-# Rbenv
+
+#export GEM_HOME=$HOME/.gems
+
+# Rbenv (https://github.com/sstephenson/rbenv)
+#export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
+
+# RVM (http://beginrescueend.com/)
+#unsetopt auto_name_dirs
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 #-----------------------------------------------------------------------
 # Quicksilver-like thingy for zsh
-source $MY_ZSH/plugins/zaw/zaw.zsh
+source $ZSH_CUSTOM/plugins/zaw/zaw.zsh
 bindkey '^xr' zaw-history
 bindkey '^xp' zaw-perldoc
 bindkey '^xg' zaw-git-files
 
+[[ $OSTYPE == 'linux-gnu' ]] && xmodmap ~/.xmodmap
 
-#-----------------------------------------------------------------------
-# GLOBAL ALIASES
-typeset -Ag abbreviations
-abbreviations=(
-  "Ia"    "| awk"
-  "Im"    "| most"
-  "Il"    "| less"
-  "Ig"    "| grep"
-  "Ip"    "| $PAGER"
-  "Ih"    "| head"
-  "It"    "| tail"
-  "Is"    "| sort"
-  "Iu"    "| sort -u"
-  "Iv"    "| ${VISUAL:-${EDITOR}}"
-  "Iw"    "| wc -l"
-  "Ix"    "| xargs "
-)
+[[ $OSTYPE == 'darwin11.0' ]] && BREWPREFIX=`brew --prefix`
 
-magic-abbrev-expand() {
-    local MATCH
-    LBUFFER=${LBUFFER%%(#m)[_a-zA-Z0-9]#}
-    LBUFFER+=${abbreviations[$MATCH]:-$MATCH}
-    zle self-insert
-}
-
-no-magic-abbrev-expand() {
-  LBUFFER+=' '
-}
-
-zle -N magic-abbrev-expand
-zle -N no-magic-abbrev-expand
-bindkey " " magic-abbrev-expand
-bindkey "^x " no-magic-abbrev-expand
-
-#-----------------------------------------------------------------------
-# ALIASES
-alias sudo='sudo '
-alias ls='gls -lhGF --color=auto'
-alias vi='vim'
-alias view='vim -R '
-alias jh='ssh therma000@jumphost'
-alias history='history -i'
-
-alias top=htop
-
-alias sqlite=sqlite3
-
-# Ruby and Gems
-alias gs='gem search -r '
-alias gi='gem install '
-
-alias sz='source ~/.zshrc'
-alias ez='vim ~/.zshrc'
-
-alias b='bundle exec'
-
-# For RVM
-unsetopt auto_name_dirs
-
-
-# Z 
-source `brew --prefix`/etc/profile.d/z.sh
+# Z
+source $BREWPREFIX/etc/profile.d/z.sh
  function precmd () {
     z --add "$(pwd -P)"
      }
-

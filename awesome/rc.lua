@@ -6,16 +6,46 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
-
+-- Utilities
+require('myutils')
+-- Widgets
 require("vicious")
---require("obvious")
---quire("obvious.clock")
+require("vain")
+require("timgimp")
+vain.widgets.terminal = 'urxvtc'
 
--- Theme
--- beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
+
+-- {{{ Error handling  ..................................... &errors ...
+-- Check if awesome encountered an error during startup and fell back to
+-- another config (This code will only ever execute for the fallback config)
+if awesome.startup_errors then
+    naughty.notify({ preset = naughty.config.presets.critical,
+                     title = "Oops, there were errors during startup!",
+                     text = awesome.startup_errors })
+end
+
+-- Handle runtime errors after startup
+do
+    local in_error = false
+    awesome.add_signal("debug::error", function (err)
+        -- Make sure we don't go into an endless error loop
+        if in_error then return end
+        in_error = true
+
+        naughty.notify({ preset = naughty.config.presets.critical,
+                         title = "Oops, an error happened!",
+                         text = err })
+        in_error = false
+    end)
+end
+-- }}}
+
+-- Themes ................................................ &themes ...
+--beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 beautiful.init("/home/thermans/.config/awesome/themes/default/theme.lua")
+ -- }}}
 
--- {{{ Widgets
+-- {{{ Widgets .......................................... &widgets ...
 
 vicious.cache(vicious.widgets.fs)
 
@@ -27,16 +57,24 @@ separator.image = image(beautiful.widget_separator)
 dateicon       = widget({ type = "imagebox" })
 dateicon.image = image(beautiful.widget_date)
 datewidget     = widget({ type = "textbox" })
-vicious.register(datewidget, vicious.widgets.date, "%R", 61)
+vicious.register(datewidget, vicious.widgets.date, "%a %b %d %l:%M %P", 61)
+
+-- Weather
+weatherwidget  = widget({ type = "textbox"})
+vicious.register(weatherwidget, vicious.widgets.weather, "${tempf}°", 300, "KIAD")
+
+-- Memory
+memorywidget = vain.widgets.memusage()
 
 -- }}}
 
--- {{{ Variable definitions
+-- {{{ Variables ...................................... &variables ...
 
 -- Default apps
 terminal   = "urxvtc"
 browser    = "firefox"
 im         = "pidgin"
+mail       = "thunderbird"
 editor     = "emacsclient -n -c"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -53,29 +91,35 @@ layouts =
 {
    awful.layout.suit.floating,    -- 1
    awful.layout.suit.tile,        -- 2
-   awful.layout.suit.tile.left,   -- 3
-   awful.layout.suit.tile.bottom, -- 4
-   awful.layout.suit.fair,        -- 5
-   awful.layout.suit.max          -- 6
+   awful.layout.suit.tile.right,  -- 3
+   awful.layout.suit.tile.left,   -- 4
+   awful.layout.suit.tile.bottom, -- 5
+   awful.layout.suit.fair,        -- 6
+   awful.layout.suit.max,         -- 7
+   tim.layout.gimp               -- 8
 }
 -- }}}
 
--- {{{ Tags
+-- {{{ Tags ................................................. &tags ...
 tags = {
-  names  = { "term", "emacs", "www", "im", "other" },
-  layout = { layouts[2], layouts[2], layouts[6], layouts[3], layouts[1] }
+  names  = { "term", "emacs", "www", "im", "mail", "gimp" },
+  layout = { layouts[5], layouts[2], layouts[6], layouts[3], layouts[1], layouts[8] }
 }
 
 for s = 1, screen.count() do
    tags[s] = awful.tag(tags.names, s, tags.layout)
    for i, t in ipairs(tags[s]) do
-      awful.tag.setproperty(t, "mwfact", i==4 and 0.20  or  0.5) -- for Pidgin
+      awful.tag.setncol(2, tags[1][4])      -- Pidgin
+      awful.tag.setmwfact(0.80, tags[1][4]) -- Pidgin
+      awful.tag.setmwfact(0.75, tags[1][6]) -- Gimp
+      awful.tag.setncol(2, tags[1][6])      -- Gimp
    end
 end
 
+
 -- }}}
 
--- {{{ Menu
+-- {{{ Menu ................................................ &menu ...
 -- Create a laucher widget and a main menu
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
@@ -102,6 +146,7 @@ mysystray = widget({ type = "systray" })
 
 -- Create a wibox for each screen and add it
 mywibox = {}
+mybottombox = {}
 mypromptbox = {}
 mylayoutbox = {}
 mytaglist = {}
@@ -165,7 +210,7 @@ for s = 1, screen.count() do
                                           end, mytasklist.buttons)
 
     -- Create the wibox
-    mywibox[s] = awful.wibox({ position = "top", screen = s })
+    mywibox[s] = awful.wibox({ position = "top", screen = s, ontop = false})
     -- Add widgets to the wibox - order matters
     mywibox[s].widgets = {
         {
@@ -176,23 +221,31 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-        s == 1 and mysystray or nil,
-        separator,
-        datewidget,
-        dateicon,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }
+
+    mybottombox[s] = awful.wibox({ position = "bottom", screen = s, ontop = false })
+    mybottombox[s].widgets = {
+       s == 1 and mysystray or nil,
+       s == 1 and separator or nil,
+       s == 1 and datewidget or nil,
+       s == 1 and dateicon or nil,
+       s == 1 and separator or nil,
+       s == 1 and weatherwidget,
+       s == 2 and memorywidget,
+       layout = awful.widget.layout.horizontal.rightleft
+    }
 end
 -- }}}
-
+-- -------------------------------------------------------- &bindings ---
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
     awful.button({ }, 3, function () mymainmenu:toggle() end)
 ))
 -- }}}
 
--- {{{ Key bindings
+-- {{{ Key bindings ............................... &global_bindings ...
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
@@ -225,9 +278,13 @@ globalkeys = awful.util.table.join(
 
     -- Launchers
     awful.key({ modkey,           }, "Return", function () exec(terminal) end),
-    awful.key({ modkey,           }, "e",      function () exec(editor)   end),
-    awful.key({ modkey,           }, "w",      function () exec(browser)  end),
-    awful.key({ modkey,           }, "i",      function () exec(im)       end),
+    awful.key({ modkey,           }, "e",      function () run_or_raise(editor,  { instance = "Emacs" })       end),
+    awful.key({ modkey,           }, "w",      function () run_or_raise(browser, { instance = "Navigator" })   end),
+    awful.key({ modkey,           }, "i",      function () run_or_raise(im,      { instance = "Pidgin" })      end),
+    awful.key({ modkey,           }, "t",      function () run_or_raise(mail,    { instance = "Mail" })        end),
+
+    -- Special keystrokes
+    awful.key({ modkey,           }, "x",      function () exec("xdotool getactivewindow type utBjCxb7") end),
 
     -- Standard program
     awful.key({ modkey, "Control" }, "r", awesome.restart),
@@ -242,21 +299,29 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
-    awful.key({ modkey, "Control" }, "n", awful.client.restore),
+    -- awful.key({ modkey, "Control" }, "n", awful.client.restore),
+    awful.key({ modkey,           }, "n", function () screenfocus(1) end),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end)
 
-    awful.key({ modkey }, "x",
-              function ()
-                  awful.prompt.run({ prompt = "Run Lua code: " },
-                  mypromptbox[mouse.screen].widget,
-                  awful.util.eval, nil,
-                  awful.util.getdir("cache") .. "/history_eval")
-              end)
+    -- awful.key({ modkey }, "x",
+    --           function ()
+    --               awful.prompt.run({ prompt = "Run Lua code: " },
+    --               mypromptbox[mouse.screen].widget,
+    --               awful.util.eval, nil,
+    --               awful.util.getdir("cache") .. "/history_eval")
+    --           end)
 )
 
+-- ................................................. &client_bindings ...
 clientkeys = awful.util.table.join(
+
+    awful.key({ modkey            }, 'Home',   function() awful.client.moveresize(  0,  20,   0,   0) end),
+    awful.key({ modkey            }, 'Insert', function() awful.client.moveresize(  0, -20,   0,   0) end),
+    awful.key({ modkey            }, 'Delete', function() awful.client.moveresize(-20,   0,   0,   0) end),
+    awful.key({ modkey            }, 'End',    function() awful.client.moveresize( 20,   0,   0,   0) end),
+
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
@@ -264,17 +329,29 @@ clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
     awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end),
-    awful.key({ modkey,           }, "n",
-        function (c)
-            -- The client currently has the input focus, so it cannot be
-            -- minimized, since minimized clients can't have the focus.
-            c.minimized = true
-        end),
+    -- awful.key({ modkey,           }, "n",
+    --      function (c)
+    --          -- The client currently has the input focus, so it cannot be
+    --         -- minimized, since minimized clients can't have the focus.
+    --          c.minimized = not c.minimized
+    --      end),
     awful.key({ modkey,           }, "m",
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
-        end)
+        end),
+    -- Toggle titlebar
+    awful.key({ modkey, "Shift"    }, 't',
+      function(c)
+        local t = awful.client.property.get(c, 'titlebar') or false
+        awful.client.property.set(c, 'titlebar', not t)
+        if t then
+          awful.titlebar.remove(c)
+        else
+          awful.titlebar.add(c, { modkey = modkey })
+        end
+      end)
+
 )
 
 -- Compute the maximum number of digit we need, limited to 9
@@ -325,7 +402,7 @@ clientbuttons = awful.util.table.join(
 root.keys(globalkeys)
 -- }}}
 
--- {{{ Rules
+-- {{{ Rules ----------------------------------------------- &rules ---
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
@@ -343,45 +420,105 @@ awful.rules.rules = {
       properties = { floating = true } },
 
     -- Set up Pidgin
-    { rule       = { class = "Pidgin" },
-      properties = { tag   = tags[1][4] } },
+    { rule       = { class = "Pidgin"},
+      properties = { tag = tags[1][4] } },
 
-    { rule       = { name  = "Buddy List"},
-      callback   = awful.client.setslave },
+    { rule       = { class = "Pidgin", role = "conversation" },
+      properties = { size_hints_honor = false, callback = awful.client.setslave } },
 
-    -- Set Firefox to always map on tags number 2 of screen 1.
+    -- { rule       = { class = "Pidgin", role = "conversation" },
+    --   properties = { size_hints_honor = false, mwfact = 0.2 } },
+
+
+    -- Firefox ---------------------------------------------------
     { rule = { class = "Firefox" },
-      properties = { tag = tags[1][3] } },
+      properties = { tag = tags[1][3], switchtotag = true } },
 
+    { rule = { class = "Firefox", name = "Firefox Preferences"},
+      properties = { floating = true }},
+
+    { rule = { class = "Firefox", instance = "Places"},
+      properties = { floating = true }},
+
+    { rule = { class = "Firefox", instance = "Browser"},
+      properties = { floating = true }},
+
+    { rule = { class = "Firefox", role = "view-source"},
+      properties = { floating = true }},
+
+
+    -- Emacs
     { rule = { class = "Emacs" },
-      properties = { tag = tags[1][2] } },
+      properties = { tag = tags[1][2], switchtotag = true } },
+
+    -- Thunderbird
+    { rule = { class = "Thunderbird" },
+      properties = { tag = tags[2][5], switchtotag = true } },
+
+    { rule = { class = "Thunderbird", name = "Address Book" },
+      properties = { floating = true } },
+
+    -- Gimp
+    { rule = { class = "Gimp" },
+      properties = { tag = tags[2][6], switchtotag = true } },
+
+    -- Floaters
+    { rule = { name = "MusicBrainz Picard" },
+      properties = { floating = true } },
+    { rule = { class = "Mozilla", name = "SQLite Manager" },
+      properties = { floating = true } },
+    { rule = { class = "Meld" },
+      properties = { floating = true } },
+    { rule = { class = "Skype" },
+      properties = { floating = true } },
+    -- { rule = { class = "Epiphany" },
+      -- properties = { floating = true } },
+    { rule = { class = "Evince" },
+      properties = { floating = true } },
+    { rule = { class = "Pcmanfm" },
+      properties = { floating = true } },
+    { rule = { class = "Nautilus" },
+      properties = { floating = true } },
+    { rule = { class = "Zathura" },
+      properties = { floating = true } },
+    { rule = { class = "Multixterm" },
+      properties = { floating = true } },
+    { rule = { class = "Wine" },
+      properties = { floating = true } },
+    { rule = { class = "Mysql-workbench-bin" },
+      properties = { floating = true } },
+    { rule = { class = "Calibre" },
+      properties = { floating = true } },
+    { rule = { class = "sun-awt-X11-XFramePeer" },
+      properties = { floating = true } },
+    { rule = { class = "lbe-ui-BrowserApp" },
+      properties = { floating = true } },
 }
+
+awful.rules.rules = awful.util.table.join(
+   awful.rules.rules,
+   vain.layout.gimp.rules
+                                         )
 -- }}}
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
 client.add_signal("manage", function (c, startup)
-    -- Add a titlebar
-    -- awful.titlebar.add(c, { modkey = modkey })
 
-    -- Enable sloppy focus
-    c:add_signal("mouse::enter", function(c)
-        if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
+   -- Enable sloppy focus
+   c:add_signal("mouse::enter", function(c)
+   if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
             and awful.client.focus.filter(c) then
-            client.focus = c
-        end
-    end)
+                client.focus = c
+            end
+   end)
 
     if not startup then
-        -- Set the windows at the slave,
-        -- i.e. put it at the end of others instead of setting it master.
-       -- awful.client.setslave(c)
-
         -- Put windows in a smart way, only if they does not set an initial position.
-        -- if not c.size_hints.user_position and not c.size_hints.program_position then
+        if not c.size_hints.user_position and not c.size_hints.program_position then
             awful.placement.no_overlap(c)
             awful.placement.no_offscreen(c)
-        -- end
+        end
     end
 end)
 

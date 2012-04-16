@@ -14,7 +14,7 @@ theme.bg_minimize   = "#444444"
 
 theme.fg_normal     = "#B8B8B8"
 theme.fg_focus      = "#FECF35"
-theme.fg_urgent     = "#202020"
+theme.fg_urgent     = "#444444"
 theme.fg_minimize   = "#ffffff"
 
 theme.border_width  = "1"
@@ -74,7 +74,7 @@ theme.tasklist_bg_focus = "#303030"
 theme.taglist_squares_sel                       = theme.confdir .. "/icons/taglist/squaref_b.png"
 theme.taglist_squares_unsel                     = theme.confdir .. "/icons/taglist/square_b.png"
 
-theme.tasklist_floating_icon                    = theme.confdir .. "/icons/tasklist/floatingw.png"
+theme.tasklist_floating_icon                    = theme.confdir .. "/icons/tasklist/floating.png"
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
@@ -133,6 +133,9 @@ theme.layout_tile                               = theme.confdir .. "/icons/layou
 theme.layout_tiletop                            = theme.confdir .. "/icons/layouts/tiletop.png"
 theme.layout_spiral                             = theme.confdir .. "/icons/layouts/spiral.png"
 theme.layout_dwindle                            = theme.confdir .. "/icons/layouts/dwindle.png"
+
+theme.layout_gimp                               = "/usr/share/awesome/lib/vain/themes/default/layouts/gimpw.png"
+
 
 theme.awesome_icon                              = theme.confdir .. "/icons/submenu.png"
 
