@@ -5,7 +5,7 @@
 theme = {}
 theme.confdir       = awful.util.getdir("config") .. "/themes/default"
 
-theme.font          = "Arial Bold 8"
+theme.font          = "Helvetica 9"
 
 theme.bg_normal     = "#202020"
 theme.bg_focus      = "#202020"
@@ -18,9 +18,12 @@ theme.fg_urgent     = "#444444"
 theme.fg_minimize   = "#ffffff"
 
 theme.border_width  = "1"
-theme.border_normal = "#B8B8B8"
-theme.border_focus  = "#303030"
+theme.border_normal = "#cdc8b1"
+theme.border_focus  = "#696969"
 theme.border_marked = "#91231c"
+
+-- Naughty
+naughty.config.presets.critical.bg = '#91231c'
 
 -- color :title_fg,          "#fecf35"
 -- color :title_bg,          "#202020"
@@ -82,6 +85,9 @@ theme.tasklist_floating_icon                    = theme.confdir .. "/icons/taskl
 theme.menu_submenu_icon                         = theme.confdir .. "/icons/submenu.png"
 theme.menu_height                               = "15"
 theme.menu_width                                = "100"
+
+
+-- "☠", "⌥", "✇", "⌤", "⍜", "✣", "⌨", "⌘", "☕" α
 
 -- You can add as many variables as
 -- you wish and access them by using

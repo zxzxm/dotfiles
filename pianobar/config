@@ -1,0 +1,11 @@
+user = tim@hermans.net
+password = f00bar
+event_command = /Users/thermans/.config/pianobar/eventcmd.sh
+
+# Format strings
+format_nowplaying_song = [32m%t[0m by [34m%a[0m on %l[31m%r[0m%@%s
+format_nowplaying_station = Station [35m%n[0m
+format_list_song = %i) %a - %t%r
+
+default_driver=alsa
+dev=hw:1,3
