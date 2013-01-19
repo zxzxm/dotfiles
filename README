@@ -2,9 +2,10 @@ My assorted configuration files.
 
     * awesome - tiling window manager (http://awesome.naquadah.org)
     * bash
+    * irb - Ruby debugger/REPL
     * pentadactyl - vimlike browser extension (dactyl.sourceforge.net)
     * pianobar - commandline Pandora client (http://6xq.net/projects/pianobar/)
-    * pry - Ruby debugger (http://pryrepl.org/)
+    * pry - Ruby debugger/REPL (http://pryrepl.org/)
     * remind - Reminder system (http://www.roaringpenguin.com/products/remind)
     * subtle - tiling window manager (http://subforge.org/projects/subtle/wiki)
     * vim
