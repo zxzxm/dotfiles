@@ -1,15 +1,17 @@
 My assorted configuration files.
 
-    * awesome window manager
+    * awesome - tiling window manager (http://awesome.naquadah.org)
     * bash
-    * pentadactyl
-    * pianobar
-    * pry
+    * pentadactyl - vimlike browser extension (dactyl.sourceforge.net)
+    * pianobar - commandline Pandora client (http://6xq.net/projects/pianobar/)
+    * pry - Ruby debugger (http://pryrepl.org/)
+    * remind - Reminder system (http://www.roaringpenguin.com/products/remind)
+    * subtle - tiling window manager (http://subforge.org/projects/subtle/wiki)
     * vim
-    * vimperator
+    * vimperator - vim-like browser extension (http://www.vimperator.org/vimperator)
     * Xdefaults
     * xinitrc
-    * xmonad
-    * xmobar
+    * xmonad - tiling window manager (http://xmonad.org)
+    * xmobar - status bar for xmonad (http://projects.haskell.org/xmobar/)
     * zsh
 
