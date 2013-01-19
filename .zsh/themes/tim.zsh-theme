@@ -1,7 +1,7 @@
 # tim prompt theme
 
-PROMPT='%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[green]%}%m %{$fg[red]%}[%~] %{$reset_color%}
-%{$fg[white]%}➜ %{$reset_color%}'
+PROMPT='%{$fg[blue]%}%n%{$fg[bright_white]%}@%{$fg[green]%}%m %{$fg[red]%}[%~] %{$reset_color%}
+%{$fg[bright_white]%}> %{$reset_color%}'
 
 # ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[yellow]%}"
 # ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"

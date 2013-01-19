@@ -1,13 +1,15 @@
 My assorted configuration files.
 
-    * vim
     * awesome window manager
+    * bash
+    * pentadactyl
+    * pianobar
+    * pry
+    * vim
+    * vimperator
     * Xdefaults
     * xinitrc
-    * vimperator
-    * pentadactyl
-    * bash
-    * zsh
     * xmonad
     * xmobar
+    * zsh
 

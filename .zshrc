@@ -10,7 +10,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 #export ZSH_THEME="robbyrussell"
-export ZSH_THEME="tim"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -26,27 +25,44 @@ export COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
+
+# These are the base plugins that are not host specific
 plugins=(
-  archlinux
-  brew
-  bundler
   cpanm
+  dircycle
+  dirpersist
   extract
-  git
-  github
+#  git
+#  github
   gnu-utils
+  zsh-syntax-highlighting
   history-substring-search
   node
   npm
-  pow
-  powder
-  rails
-  rails3
-  ruby
-  rvm
+#  pow
+#  powder
+#  ruby
+#  rvm
   svn
   zaw
   )
+
+# Mac plugins
+if [[ $OSTYPE =~ "darwin" ]]; then
+    plugins+=(
+        osx
+        brew
+        pow
+        powder
+    )
+fi
+
+# Linux plugins
+if [[ $OSTYPE =~ "linux" ]]; then
+    plugins+=(
+        archlinux
+    )
+fi
 
 export ZSH_CUSTOM=$HOME/.zsh
 
@@ -59,8 +75,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 #export MY_ZSH=$HOME/.zsh
-#source $ZSH_CUSTOM/custom.zsh
-#source $ZSH_CUSTOM/aliases.zsh
+source $ZSH_CUSTOM/custom.zsh
+source $ZSH_CUSTOM/aliases.zsh
 
 #myplugins=(
 #  zaw
@@ -73,13 +89,5 @@ source $ZSH/oh-my-zsh.sh
 #  fi
 #done
 
-# My Theme
-if [[ $TERM == "eterm-color" ]]
-then
-    source $ZSH_CUSTOM/themes/emacs.zsh-theme
-else
-    source $ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme
-fi
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#[[ $OSTYPE == 'darwin11.4.0' ]] && PATH=/usr/local/Cellar/ccache/3.1.8/libexec:$PATH # ccache

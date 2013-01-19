@@ -89,8 +89,8 @@ set :click_to_focus, false
 #
 
 screen 1 do
-  top    [ :views, :title, :spacer, :keychain, :spacer, :tray, :sublets ]
-  bottom [ ]
+  top    [ :views, :separator, :title, :spacer, :keychain, :spacer, :sublets ]
+  bottom [ :spacer, :tray ]
 end
 
 # Example for a second screen:
@@ -126,7 +126,8 @@ style :all do
   icon        "#757575"
   border      "#303030", 0
   padding     0, 3
-  font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
+  #font        "-*-*-*-*-*-*-14-*-*-*-*-*-*-*"
+  font        "xft:Helvetica-10"
   #font        "xft:sans-8"
 end
 
@@ -350,8 +351,6 @@ grab "KP_Subtract", :ViewPrev
 # Move mouse to screen1, screen2, ...
 grab "W-A-1", :ScreenJump1
 grab "W-A-2", :ScreenJump2
-grab "W-A-3", :ScreenJump3
-grab "W-A-4", :ScreenJump4
 
 # Force reload of config and sublets
 grab "W-C-r", :SubtleReload
@@ -396,37 +395,38 @@ grab "W-Right", :WindowRight
 grab "W-S-k", :WindowKill
 
 # Cycle between given gravities
-grab "W-KP_7", [ :top_left,     :top_left66,     :top_left33     ]
-grab "W-KP_8", [ :top,          :top66,          :top33          ]
-grab "W-KP_9", [ :top_right,    :top_right66,    :top_right33    ]
-grab "W-KP_4", [ :left,         :left66,         :left33         ]
-grab "W-KP_5", [ :center,       :center66,       :center33       ]
-grab "W-KP_6", [ :right,        :right66,        :right33        ]
-grab "W-KP_1", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
-grab "W-KP_2", [ :bottom,       :bottom66,       :bottom33       ]
-grab "W-KP_3", [ :bottom_right, :bottom_right66, :bottom_right33 ]
+# grab "W-KP_7", [ :top_left,     :top_left66,     :top_left33     ]
+# grab "W-KP_8", [ :top,          :top66,          :top33          ]
+# grab "W-KP_9", [ :top_right,    :top_right66,    :top_right33    ]
+# grab "W-KP_4", [ :left,         :left66,         :left33         ]
+# grab "W-KP_5", [ :center,       :center66,       :center33       ]
+# grab "W-KP_6", [ :right,        :right66,        :right33        ]
+# grab "W-KP_1", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+# grab "W-KP_2", [ :bottom,       :bottom66,       :bottom33       ]
+# grab "W-KP_3", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
 # In case no numpad is available e.g. on notebooks
-# grab "W-q", [ :top_left,     :top_left66,     :top_left33     ]
-# grab "W-w", [ :top,          :top66,          :top33          ]
-# grab "W-e", [ :top_right,    :top_right66,    :top_right33    ]
-# grab "W-a", [ :left,         :left66,         :left33         ]
-# grab "W-s", [ :center,       :center66,       :center33       ]
-# grab "W-d", [ :right,        :right66,        :right33        ]
-#
+grab "W-q", [ :top_left,     :top_left66,     :top_left33     ]
+grab "W-w", [ :top,          :top66,          :top33          ]
+grab "W-e", [ :top_right,    :top_right66,    :top_right33    ]
+grab "W-a", [ :left,         :left66,         :left33         ]
+grab "W-s", [ :center,       :center66,       :center33       ]
+grab "W-d", [ :right,        :right66,        :right33        ]
+
 # QUERTZ
-#grab "W-y", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+# grab "W-y", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
 #
 # QWERTY
-#grab "W-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
+grab "W-z", [ :bottom_left,  :bottom_left66,  :bottom_left33  ]
 #
-#grab "W-x", [ :bottom,       :bottom66,       :bottom33       ]
-#grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
+grab "W-x", [ :bottom,       :bottom66,       :bottom33       ]
+grab "W-c", [ :bottom_right, :bottom_right66, :bottom_right33 ]
 
 # Exec programs
 grab "W-Return", "urxvt"
-grab "W-e", "emacsclient -n -c"
-grab "W-w", "firefox"
+grab "W-S-e", "emacsclient -n -c"
+grab "W-S-w", "firefox"
+grab "W-S-i", "pidgin"
 
 # Run Ruby lambdas
 grab "S-F2" do |c|
@@ -758,6 +758,20 @@ view "dev",   "editor"
 #
 # http://subforge.org/projects/subtle/wiki/Sublets
 #
+sublet :clock do
+   interval      50
+   format_string "%A %B %e %_H:%M%p" 
+end
+
+sublet :weather do
+  location         "20910"
+  forecast_length  0
+end
+
+sublet :gmail do
+  user    "tim@hermans.net"
+  pass    "IL0v3Sammy"
+end
 
 #
 # == Hooks

@@ -20,23 +20,27 @@ autoload -U zmv
 #     /opt/java/jre/bin
 #     /opt/oracle
 #     /home/thermans/bin
-#     /home/thermans/.bundle/ruby/1.8/bin
 #     /home/thermans/.ec2/bin
 #     /home/thermans/.seed/bin
 #     /usr/share/java/apache-ant/bin
 # )
 
-#export PATH=/usr/local/Cellar/ccache/3.1.6/libexec
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/bin
-export PATH=$PATH:/bin
-export PATH=$PATH:/usr/sbin
-export PATH=$PATH:/sbin
-export PATH=$PATH:/usr/bin/core_perl
-export PATH=$PATH:${HOME}/bin
-export PATH=$PATH:/usr/local/sbin
-export PATH=$PATH:${HOME}/local/bin
-export PATH=$PATH:${HOME}/node_modules/.bin
+PATH=${HOME}/bin
+PATH=$PATH:${HOME}/node_modules/.bin
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/sbin
+PATH=$PATH:/usr/bin/core_perl
+PATH=$PATH:/usr/bin/vendor_perl
+PATH=$PATH:/usr/local/sbin
+
+if [[ $OSTYPE =~ 'darwin' ]]; then
+  PATH=/usr/local/Cellar/ccache/3.1.8/libexec:$PATH # ccache
+fi
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Remove duplicates from path
 typeset -U path cdpath fpath manpath
@@ -51,15 +55,17 @@ export BROWSER=firefox
 # Use home folder for modules
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
-# Ruby Stuff
-#export RUBYOPT=rubygems
-#export GEM_HOME=/Users/thermans/.gems
-#export PATH=/Users/thermans/.gems/bin:$PATH
-#
-
 # Autojump (http://wiki.github.com/joelthelion/autojump/)
 #source /etc/profile
 #source /etc/profile.d/autojump.zsh
+
+#-----------------------------------------------------------------------
+# THEME
+[[ $OSTYPE =~ 'darwin' ]] && ZSH_THEME="tim-zenburn"
+[[ $OSTYPE == 'linux-gnu' ]] && ZSH_THEME="tim-zenburn"
+export ZSH_THEME
+
+source ${ZSH_CUSTOM}/themes/${ZSH_THEME}.zsh-theme
 
 #-----------------------------------------------------------------------
 # HISTORY
@@ -210,6 +216,8 @@ function mcd()
 # Colorize STDERR
 #exec 2>>(while read line; do print '\e[91m'${(q)line}'\e[0m' > /dev/tty; print -n $'\0'; done &)
 
+# Haste pastebin
+export HASTE_SERVER=http://pastebin.cable.comcast.com
 
 # Helper for less
 LESSOPEN="|lesspipe %s"; export LESSOPEN
@@ -219,7 +227,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 # List all installed packages
 function pkgs () {
-    yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("\033[1;34m%s\033[0;37m", $2)}/^Description/{print $2}'
+    # yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("\033[1;34m%s\033[0;37m", $2)}/^Description/{print $2}'
+    yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("%s", $2)}/^Description/{print $2}'
 }
 
 # Show details of an package
@@ -241,12 +250,23 @@ calc () {
 #export GEM_HOME=$HOME/.gems
 
 # Rbenv (https://github.com/sstephenson/rbenv)
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
+if [[ -s "$HOME/.rbenv" ]]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
 
 # RVM (http://beginrescueend.com/)
-#unsetopt auto_name_dirs
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+unsetopt auto_name_dirs
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && unsetopt auto_name_dirs
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# For zsh-syntax-highlighting
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+
+#-----------------------------------------------------------------------
+# Use GRC to colorize
+[[ $OSTYPE =~ 'darwin' ]] && source "`brew --prefix grc`/etc/grc.bashrc"
+[[ $OSTYPE == 'linux-gnu' ]] && . "$HOME/.zsh/grc.zsh"
 
 #-----------------------------------------------------------------------
 # Quicksilver-like thingy for zsh
@@ -254,13 +274,14 @@ source $ZSH_CUSTOM/plugins/zaw/zaw.zsh
 bindkey '^xr' zaw-history
 bindkey '^xp' zaw-perldoc
 bindkey '^xg' zaw-git-files
+bindkey '^xd' zaw-cdr
 
 [[ $OSTYPE == 'linux-gnu' ]] && xmodmap ~/.xmodmap
 
-[[ $OSTYPE == 'darwin11.0' ]] && BREWPREFIX=`brew --prefix`
+[[ $OSTYPE =~ 'darwin' ]] && BREWPREFIX=`brew --prefix`
 
 # Z
-source $BREWPREFIX/etc/profile.d/z.sh
- function precmd () {
-    z --add "$(pwd -P)"
-     }
+. $BREWPREFIX/etc/profile.d/z.sh
+
+# For Rsense (Emacs ruby)
+export RSENSE_HOME="~/.emacs.d/vendor/rsense"

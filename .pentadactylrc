@@ -1,11 +1,13 @@
 " Load host or OS specific stuff in ~/.mypentadactyl
-set runtimepath=~/.mypentadactyl,~/.pentadactyl
+"set runtimepath=~/.mypentadactyl,~/.pentadactyl
+set runtimepath=~/.pentadactyl
 
 loadplugins '\.(js|penta)$'
 group user
 
 set guioptions=BMCs
 set showtabline=multitab
+set visualbell
 
 set hintkeys='asdfg;lkjh'
 
@@ -13,9 +15,12 @@ set hintkeys='asdfg;lkjh'
 set hlfind
 nmap <silent> <CR> :nohlfind<CR>
 
-set defsearch=duckduckgo
+nmap <silent> b :back<CR>
+
+set defsearch=ddg
 
 set titlestring="Firefox"
+
 
 " Don't close browser when you close the last tab
 :set! browser.tabs.closeWindowWithLastTab=false
