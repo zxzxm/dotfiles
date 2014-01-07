@@ -48,7 +48,7 @@ hi -a CompTitle                                 color:lightblue; background-colo
 hi -a CompTitleSep                              background:-moz-linear-gradient(60deg, lightblue, white); height:1px;
 hi -a CompResult                                width:46%;
 hi -a CompDesc                                  width:52%;
-hi -a Filter                                    font-style:normal; font-weight:bold;
+hi -a Filter                                    font-style:normal; font-weight:bold;color:#3f3f3f;background: #f0dfaf;opacity=0.5
 hi -a Keyword                                   color:#f0dfaf; font-weight:bold;
 hi -a URL                                       text-decoration:none; color:#9ECE9E; background-color:inherit;
 hi -a URL:hover                                 text-decoration:underline; cursor: pointer;

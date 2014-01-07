@@ -1,7 +1,7 @@
 !------------------------------------------------------------------!
 ! XFT                                                              !
 !------------------------------------------------------------------!
-Xft.dpi:                        96
+Xft.dpi:                        85
 Xft.autohint:                   0
 Xft.antialias:                  1
 Xft.rgba:                       rgb
@@ -25,8 +25,9 @@ Emacs.pointerColor:             orange
 !------------------------------------------------------------------!
 ! Xterm                                                            !
 !------------------------------------------------------------------!
-!XTerm*faceName:                 DejaVu Sans Mono:size=12
-XTerm*faceName:                 Proggy Clean:size=14
+!XTerm*faceName:                 Proggy Clean:size=12
+!XTerm*faceName:                 DejaVu Sans Mono:size=10
+XTerm*faceName:                 Ubuntu Mono-11
 XTerm*termName:                 xterm-256color
 XTerm*dynamicColors:            on
 XTerm*allowSendEvents:          true
@@ -35,20 +36,22 @@ XTerm*utf8:                     2
 !------------------------------------------------------------------!
 ! URxvt                                                            !
 !------------------------------------------------------------------!
-!URxvt*font:                     xft:DejaVu Sans Mono-9
-!URxvt*boldFont:                 xft:DejaVu Sans Mono-9
-!URxvt.talicFont:                xft:DejaVu Sans Mono-9
-!URxvt.bolditalicFont:           xft:DejaVu Sans Mono-9
-URxvt*font:                     xft:Ubuntu Mono-14
-URxvt*boldFont:                 xft:Ubuntu Mono-14
-URxvt.talicFont:                xft:Ubuntu Mono-14
-URxvt.bolditalicFont:           xft:Ubuntu Mono-14
+!URxvt*font:                     xft:DejaVu Sans Mono-10
+!URxvt*boldFont:                 xft:DejaVu Sans Mono-10
+!URxvt.talicFont:                xft:DejaVu Sans Mono-10
+!URxvt.bolditalicFont:           xft:DejaVu Sans Mono-10
+URxvt*font:                     xft:Ubuntu Mono-11
+URxvt*boldFont:                 xft:Ubuntu Mono-11
+URxvt.talicFont:                xft:Ubuntu Mono-11
+URxvt.bolditalicFont:           xft:Ubuntu Mono-11
 
 URxvt*letterSpace:              -1
 Urxvt.depth:                    32
 URxvt.colorDB:                  white
-URxvt.colorIT:                  green
-URxvt*termName:                 rxvt-unicode
+URxvt.colorIT:                  #87af5f
+URxvt.colorBD:                  #d7d7d7
+URxvt.colorUL:                  #87afd7
+URxvt*termName:                 xterm-256color
 
 URxvt.urgentOnBell:             True
 URxvt*saveLines:                32767
@@ -86,103 +89,11 @@ URxvt.perl-ext-common:          default,keyboard-select,url-select
 ! COLORS
 !------------------------------------------------------------------!
 !
-!black
-!*color0:               #353535
-!*color8:               #666666
-
-!!red
-!*color1:               #C73737
-!*color9:               #EE6363
-!
-!!green
-!*color2:               #79a035
-!*color10:              #9ACD32
-!
-!!brown/yellow
-!*color3:               #DAA520
-!*color11:              #FFC125
-!
-!!blue
-!*color4:               #6F99B4
-!*color12:              #7C96B0
-!
-!!magenta
-!*color5:               #8B7B8B
-!*color13:              #D8BFD8
-!
-!!cyan
-!*color6:               #A7A15E
-!*color14:              #F0E68C
-!
-!!white
-!*color7:               #DDDDDD
-!*color15:              #FFFFFF
-!
-!*background:           #1c1c1c
-!*foreground:           #DDDDDD
-!
-!! Bio Standard
-
-!URxvt*foreground:       #B4B4B4
-
-! black
-!URxvt*color0:           #000000
-!URxvt*color8:           #808080
-
-! red
-!URxvt*color1:           #A36666
-!URxvt*color9:           #D78787
-
-! green
-!URxvt*color2:           #429942
-!URxvt*color10:          #87D787
-
-! yellow
-!URxvt*color3:           #D7AF87
-!URxvt*color11:          #FFFFAF
-
-! blue
-!URxvt*color4:           #AFAFD7
-!URxvt*color12:          #AFD7FF
-
-! ! magenta
-!URxvt*color5:           #A872A8
-!URxvt*color13:          #D7AFD7
-
-! cyan
-!URxvt*color6:           #00A8AB
-!URxvt*color14:          #00C8CC
-
-! white
-!URxvt*color7:           #D0D0D0
-!URxvt*color15:          #EFEFEF
-
-!Theme Ten
-! *background:       #121212
-! *foreground:       #B4B4B4
-! *color0:     rgb:00/00/00
-! *color1:     rgb:98/56/5e
-! *color2:     rgb:66/82/5d
-! *color3:     rgb:96/91/76
-! *color4:     rgb:4d/65/85
-! *color5:     rgb:96/73/95
-! *color6:     rgb:5f/7f/7b
-! *color7:     rgb:b3/b3/b3
-! *color8:     rgb:73/73/73
-! *color9:     rgb:cf/a3/a9
-! *color10:    rgb:ca/f7/bb
-! *color11:    rgb:ff/f8/bc
-! *color12:    rgb:83/a3/be
-! *color13:    rgb:bb/a9/cf
-! *color14:    rgb:96/cc/cc
-! *color15:    rgb:ff/ff/ff
-!
 ! Zenburn
 *background:       #3f3f3f
 *foreground:       rgb:c3/c3/c73
 ! black + red
 *color0:           #3f3f3f
-! *color0:         #1E2320
 *color1:           #705050
 !green + yellow
 *color2:           #60b48a
@@ -206,8 +117,201 @@ URxvt.perl-ext-common:          default,keyboard-select,url-select
 *color14:          #93e0e3
 *color15:          #ffffff
 
+!!-------------------------------------------
+!!! awesome-copycats
+!!! https://github.com/copycat-killer/awesome-copycats.git
+
+!! Multicolor ----------
+
+!!black
+!*color0:  #171717
+!*color8:  #737373
+
+!!red
+!*color1:  #FF5E5E
+!*color9:  #FF7878
+
+!!green
+!*color2:  #9CE82B
+!*color10: #9ACD32
+
+!!yellow
+!*color3:  #F0E68C
+!*color11: #EEE8AA
+
+!!blue
+!*color4:  #008AFF
+!*color12: #4F98FF
+
+!!magenta
+!*color5:  #E88CFF
+!*color13: #EDA6FF
+
+!!cyan
+!*color6:  #87CEFA
+!*color14: #B0E2FF
+
+!!white
+!*color7:  #DCDCCC
+!*color15: #FFFFFF
+
+!*background: #101010
+!*foreground: #d4d4d4
+
+!*cursorColor: darkorange2
+
+!! Copland ----------
+
+!*background: #181818
+!*foreground: #eeeeec
+
+!! black
+!*color0: #333333
+!*color8: #777777
+
+!! red
+!*color1: #ff78a3
+!*color9: #ffa0be
+
+!! green
+!*color2: #b6ff93
+!*color10: #bdff9d
+
+!! yellow
+!*color3: #ffd378
+!*color11: #ffe0a0
+
+!! blue
+!*color4: #78a4ff
+!*color12: #93b6ff
+
+!! magenta
+!*color5: #8f78ff
+!*color13: #b0a0ff
+
+!! cyan
+!*color6: #78e7ff
+!*color14: #a0eeff
+
+!! white
+!*color7: #cccbca
+!*color15: #fcfcfc
+
+!! Dremora ----------
+
+!*.background: #111111
+!*.foreground: #F2F1F0
+!*.cursorColor: #E15441
+
+!!black
+!*color0: #222222
+!*color8: #666666
+
+!!red
+!*color1: #D23D3D
+!*color9: #E84F4F
+
+!!green
+!*color2: #B7CE42
+!*color10: #BDE077
+
+!!yellow
+!*color3: #E36E5E
+!*color11: #E36352
+
+!!blue
+!*color4: #7DC1CF
+!*color12: #5fB4C6
+
+!!magenta
+!*color5: #B54670
+!*color13: #E17689
+
+!!cyan
+!*color6: #6D878D
+!*color14: #42717B
+
+!!white
+!*color7: #F2F1F0
+!*color15: #F2F1F0
+
+!! Holo ----------
+
+!*background: #242424
+!*foreground: #CCCCCC
+
+!! black
+!*color0: #444444 
+!*color8: #888888
+
+!! red
+!*color1: #BF3E3E
+!*color9: #FF5353
+
+!! green
+!*color2: #98AB60
+!*color10: #CBE580
+
+!! yellow
+!*color3: #AB7260
+!*color11: #E59980 
+
+!! blue
+!*color4: #6099AC
+!*color12: #80CCE6
+
+!! magenta
+!*color5: #AB6099
+!*color13: #E580CC
+
+!! cyan
+!*color6: #80bab0
+!*color14: #add9d1
+
+!! white
+!*color7: #F1F2F0
+!*color15: #FFFFFF
+
+!! Steamburn ----------
+
+!*.background: #130c0b
+!*.foreground: #877a70
+
+!! black
+!*.color0: #403f3e
+!*.color8: #666564
+
+!! red
+!*.color1: #a63138
+!*.color9: #e28b90
+
+!! green
+!*.color2: #958f2c
+!*.color10: #d9d264
+
+!! yellow
+!*.color3: #d07f3f
+!*.color11: #eccbb2
+
+!! blue
+!*.color4: #3780bb
+!*.color12: #8bbbe2
+
+!! magenta
+!*.color5: #952c66
+!*.color13: #de77b0
+
+!! cyan
+!*.color6: #427c6a
+!*.color14: #8dc6b4
+
+!! white
+!*.color7: #dcdccc
+!*.color15: #dddfff
 
 
+
+!!-------------------------------------------
 !!TomorrowNight
 !#define t_background     #1d1f21
 !#define t_current_line   #282a2e

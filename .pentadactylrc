@@ -1,3 +1,5 @@
+" -*- mode: vimrc-generic -*-
+
 " Load host or OS specific stuff in ~/.mypentadactyl
 "set runtimepath=~/.mypentadactyl,~/.pentadactyl
 set runtimepath=~/.pentadactyl
@@ -5,46 +7,73 @@ set runtimepath=~/.pentadactyl
 loadplugins '\.(js|penta)$'
 group user
 
-set guioptions=BMCs
+"set verbose=15
+
+" Startup with:
+"  M = Messages outside the status line
+"  C = Command line outside the status line
+"  s = Status bar
+set guioptions=MCs
+
+" Show tabs only when there are multiples
 set showtabline=multitab
+
+" Show destination links in status line
+set showstatuslinks=status
+
+" Don't beep on errors
 set visualbell
 
-set hintkeys='asdfg;lkjh'
+" Define where to show requested popup windows 
+set popups=resized
+
+" Command line and search patterns history
+set history=10000
+
+" Show completions and use AwesomeBar (+search plugins)
+" set complete=slhbS
+set complete=search,location,history,suggestion
+
+" Hint characters
+set hintkeys='asdfglkjh;'
 
 " highlighted search matches
 set hlfind
 nmap <silent> <CR> :nohlfind<CR>
 
+" Navigate
 nmap <silent> b :back<CR>
+nmap <silent> h :back<CR>
+nmap <silent> l :forward<CR>
 
 set defsearch=ddg
 
 set titlestring="Firefox"
 
-
 " Don't close browser when you close the last tab
 :set! browser.tabs.closeWindowWithLastTab=false
 
-" Keys
+" Toggle toolbars
 map ,b :toolbartoggle Bookmarks Toolbar<CR>
 map ,n :toolbartoggle Navigation Toolbar<CR>
-map ,m :toolbartoggle Menu Bar<CR>
-map ,w :toolbartoggle Web Developer Toolbar<CR>
+" map ,m :toolbartoggle Menu Bar<CR>
+" map ,w :toolbartoggle Web Developer Toolbar<CR>
 
-"{{{ PassKeys
+" PassKeys
 set passkeys+='mail\.google\.com':c/jkhnpovuelxsfra#`[]z?*nrtgidIU+-=<Tab><Return>
 set passkeys+='mail\.google\.com/tasks/canvas':<Tab><S-Tab><Return>
 set passkeys+='groups\.google\.com/forum':glmo<Enter>j<S-j>k<S-k>n<S-n>p<S-p>ufh<S-a>rc/?<Esc><Return>
-set passkeys+='google\.com/reader':jkvnpbumoaAXNOVPJK?gehtl<Return>
 set passkeys+='plus\.google\.com':jk<Return><Tab>
 set passkeys+='twitter\.com':jk<Space>/.frtmn?ghrpu<Return>
-set passkeys+='rememberthemilk\.com/home/f':trsjkdhyucpgfinalez1234<Return>
 set passkeys+='www\.google\.com/calendar':dwmxajkcnqetp?<Del>s12345<Return>
-set passkeys+='duckduckgo\.com/':\!l'o<C-Return>jkh<Esc>\'v/rs1<Return>
-" set passkeys+='github\.com/':s?tl<Return>
-set passkeys+='facebook\.com':<Left><Right>
-set passkeys+='flickr\.com':lf<Left><Right>
-"}}}
+
+" :autocmd LocationChange www.rememberthemilk.com :normal! <C-z>
+
+"" Special commands
+:command! dict -nargs=* tabopen http://definr.com/<args>
+:map w :dict<SPACE>
+:map <silent> W :exe ":dict "+content.getSelection()<CR> 
+
 
 :source ~/.my.penta
 

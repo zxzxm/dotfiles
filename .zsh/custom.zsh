@@ -14,19 +14,13 @@ autoload -U zmv
 
 #-----------------------------------------------------------------------
 # ENVIRONMENT
-# path=(
-#     $PATH
-#     /home/thermans/.gem/bin
-#     /opt/java/jre/bin
-#     /opt/oracle
-#     /home/thermans/bin
-#     /home/thermans/.ec2/bin
-#     /home/thermans/.seed/bin
-#     /usr/share/java/apache-ant/bin
-# )
+
+cdpath=(. .. ~)
 
 PATH=${HOME}/bin
-PATH=$PATH:${HOME}/node_modules/.bin
+PATH=$PATH:${HOME}/.cabal/bin
+PATH=$PATH:${HOME}/perl5/bin
+PATH=$PATH:/usr/local/share/npm/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin
@@ -35,12 +29,10 @@ PATH=$PATH:/sbin
 PATH=$PATH:/usr/bin/core_perl
 PATH=$PATH:/usr/bin/vendor_perl
 PATH=$PATH:/usr/local/sbin
-
-if [[ $OSTYPE =~ 'darwin' ]]; then
-  PATH=/usr/local/Cellar/ccache/3.1.8/libexec:$PATH # ccache
-fi
+PATH=$PATH:${HOME}/node_modules/.bin
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
 
 # Remove duplicates from path
 typeset -U path cdpath fpath manpath
@@ -54,18 +46,6 @@ export BROWSER=firefox
 # Perl Stuff
 # Use home folder for modules
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
-
-# Autojump (http://wiki.github.com/joelthelion/autojump/)
-#source /etc/profile
-#source /etc/profile.d/autojump.zsh
-
-#-----------------------------------------------------------------------
-# THEME
-[[ $OSTYPE =~ 'darwin' ]] && ZSH_THEME="tim-zenburn"
-[[ $OSTYPE == 'linux-gnu' ]] && ZSH_THEME="tim-zenburn"
-export ZSH_THEME
-
-source ${ZSH_CUSTOM}/themes/${ZSH_THEME}.zsh-theme
 
 #-----------------------------------------------------------------------
 # HISTORY
@@ -123,16 +103,6 @@ setopt no_cdable_vars
 #-----------------------------------------------------------------------
 # FUNCTIONS
 
-#  From: http://bmaland.com/2009/04/07/zsh-tip-of-the-day%3A-%232.html
-# Prefix the previous line with "sudo " then execute it
-rerun-with-sudo () {
-  LBUFFER="sudo !!"
-  zle accept-line
-}
-zle -N rerun-with-sudo
-
-bindkey '\C-x\C-x' rerun-with-sudo
-
 # press esc-e for editing command line in $EDITOR or $VISUAL
 if autoload edit-command-line && zle -N edit-command-line ; then
     #k# Edit the current line in \kbd{\$EDITOR}
@@ -142,7 +112,7 @@ fi
 # Press "ctrl-e d" to insert the actual date in the form yyyy-mm-dd
 _bkdate() { BUFFER="$BUFFER$(date '+%F')"; CURSOR=$#BUFFER; }
 zle -N _bkdate
-bindkey '^xd' _bkdate
+bindkey '^ed' _bkdate
 
 # add a command line to the shells history without executing it
 commit-to-history() {
@@ -174,11 +144,22 @@ bindkey "^xm" insert-last-typed-word
 sudo-command-line() {
     [[ -z $BUFFER ]] && zle up-history
     [[ $BUFFER != sudo\ * ]] && BUFFER="sudo $BUFFER"
+    zle end-of-line
 }
 zle -N sudo-command-line
 
 #k# Put the current command line into a \kbd{sudo} call
-bindkey "^xs" sudo-command-line
+bindkey "^x^x" sudo-command-line
+
+# Wrap the command line in a for statement
+
+make-for-loop() {
+    [[ -z $BUFFER ]] && zle up-history
+    [[ $BUFFER != for\ * ]] && BUFFER="for x in (); do $BUFFER; done"
+}
+zle -N make-for-loop
+
+bindkey "^xf" make-for-loop
 
 ### jump behind the first word on the cmdline.
 ### useful to add options.
@@ -220,27 +201,19 @@ function mcd()
 export HASTE_SERVER=http://pastebin.cable.comcast.com
 
 # Helper for less
-LESSOPEN="|lesspipe %s"; export LESSOPEN
+#LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 
 # For Java apps
-export _JAVA_AWT_WM_NONREPARENTING=1
+#export _JAVA_AWT_WM_NONREPARENTING=1
 
-# List all installed packages
-function pkgs () {
-    # yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("\033[1;34m%s\033[0;37m", $2)}/^Description/{print $2}'
-    yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("%s", $2)}/^Description/{print $2}'
-}
-
-# Show details of an package
-function pkg () {
-    test -z "$1" && echo "usage: pkg packagename" && return
-    yaourt -Qi $1
-}
 
 # Simple calculator
 calc () {
     test -z "$1" && echo "usage example: calc \"3*6\"" && return
-    awk "BEGIN{ print $* }"
+    #awk "BEGIN{ print $* }"
+    echo $(($*))
 }
 
 #-----------------------------------------------------------------------
@@ -255,18 +228,8 @@ if [[ -s "$HOME/.rbenv" ]]; then
     eval "$(rbenv init -)"
 fi
 
-# RVM (http://beginrescueend.com/)
-unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && unsetopt auto_name_dirs
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # For zsh-syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
-
-#-----------------------------------------------------------------------
-# Use GRC to colorize
-[[ $OSTYPE =~ 'darwin' ]] && source "`brew --prefix grc`/etc/grc.bashrc"
-[[ $OSTYPE == 'linux-gnu' ]] && . "$HOME/.zsh/grc.zsh"
 
 #-----------------------------------------------------------------------
 # Quicksilver-like thingy for zsh
@@ -274,14 +237,57 @@ source $ZSH_CUSTOM/plugins/zaw/zaw.zsh
 bindkey '^xr' zaw-history
 bindkey '^xp' zaw-perldoc
 bindkey '^xg' zaw-git-files
-bindkey '^xd' zaw-cdr
+#bindkey '^xd' zaw-cdr
 
-[[ $OSTYPE == 'linux-gnu' ]] && xmodmap ~/.xmodmap
+# OS specific settings ------------------------------------------------
+# Linux
 
-[[ $OSTYPE =~ 'darwin' ]] && BREWPREFIX=`brew --prefix`
+if [[ $OSTYPE == 'linux-gnu' ]]; then
 
-# Z
-. $BREWPREFIX/etc/profile.d/z.sh
+    # For MPD clients
+    export MPD_HOST=/home/thermans/.mpd/socket
+
+    # Colorize with GRC
+    . "$HOME/.zsh/grc.zsh"
+
+    # Proxy
+    #export http_proxy="http://therma000:IzzyZ0ra!@10.21.151.203:8080"
+    export http_proxy="http://127.0.0.1:10000"
+    export https_proxy="http://127.0.0.1:10000"
+
+    # THEME
+    export ZSH_THEME="tim-zenburn"
+
+fi
+
+# OSX
+if [[ $OSTYPE =~ 'darwin' ]]; then
+    export BREWPREFIX=`brew --prefix`
+
+    # Colorize with GRC
+    source "`brew --prefix grc`/etc/grc.bashrc"
+
+    # For powerline
+    PATH=$PATH:${HOME}/Library/Python/2.7/bin
+
+    # THEME
+    export ZSH_THEME="tim-zenburn"
+
+fi
+
+# Set the theme
+source ${ZSH_CUSTOM}/themes/${ZSH_THEME}.zsh-theme
 
 # For Rsense (Emacs ruby)
 export RSENSE_HOME="~/.emacs.d/vendor/rsense"
+
+
+# For "weatherme" https://github.com/shapeshed/weatherme
+export KEY="0a076ac73ee032925db493cbaffad41e"
+export LATLON="39.018500166927,-77.05239772796631"
+
+# Amazon Web Services
+#export AWS_ACCESS_KEY_ID=0JMB4AXJ18YWCBJ2C9G2
+export AWS_ACCESS_KEY_ID=AKIAJHK2CKJHKPJ7DM7A
+#export AWS_SECRET_ACCESS_KEY=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
+export AWS_SECRET_ACCESS_KEY=ShNat478N7q5EpAy7SsljeWc3MNV8D68Ll0OSZAX

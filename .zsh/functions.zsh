@@ -31,10 +31,29 @@ function jc {
     kill $ssh_pid
 }
 
-orphans() {
-  if [[ ! -n $(pacman -Qdt) ]]; then
-    echo "No orphans to remove."
-  else
-    sudo pacman -Rs $(pacman -Qdtq)
-  fi
-}
+# Linux specific stuff ----------------------------------------------------------
+if [[ $OSTYPE == 'linux-gnu' ]]; then
+
+    # List all installed packages
+    function pkgs () {
+        yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|  \
+            awk ' BEGIN {FS=":"}/^Name/{printf("\033[1;34m%s\033[0;37m", $2)}/^Description/{print $2}'
+        # yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("%s", $2)}/^Description/{print $2}'
+    }
+
+    # Show details of an package
+    function pkg () {
+        test -z "$1" && echo "usage: pkg packagename" && return
+        yaourt -Qi $1
+    }
+
+    # Find orphaned packages
+    function orphans() {
+        if [[ ! -n $(pacman -Qdt) ]]; then
+            echo "No orphans to remove."
+        else
+            sudo pacman -Rs $(pacman -Qdtq)
+        fi
+    }
+
+fi

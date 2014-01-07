@@ -29,23 +29,28 @@ export COMPLETION_WAITING_DOTS="true"
 # These are the base plugins that are not host specific
 plugins=(
   cpanm
-  dircycle
+  colored-man
   dirpersist
   extract
-#  git
-#  github
-  gnu-utils
-  zsh-syntax-highlighting
+  fabric
   history-substring-search
+  gnu-utils
+  last-working-dir
+  mercurial
   node
   npm
-#  pow
-#  powder
-#  ruby
-#  rvm
+  perl
+  pip
+  rails
+  rake
+  rsync
   svn
+  systemadmin
+  web-search
   zaw
-  )
+  zsh-syntax-highlighting
+  z
+)
 
 # Mac plugins
 if [[ $OSTYPE =~ "darwin" ]]; then
@@ -54,6 +59,7 @@ if [[ $OSTYPE =~ "darwin" ]]; then
         brew
         pow
         powder
+        powify
     )
 fi
 
@@ -61,6 +67,11 @@ fi
 if [[ $OSTYPE =~ "linux" ]]; then
     plugins+=(
         archlinux
+        cabal
+        command-not-found
+        dircycle
+        systemd
+        wd
     )
 fi
 
@@ -73,21 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # ".oh-my-zsh/custom" directory because I want to be able to update
 # that from git without disturbing anything
 
-
-#export MY_ZSH=$HOME/.zsh
 source $ZSH_CUSTOM/custom.zsh
 source $ZSH_CUSTOM/aliases.zsh
 
-#myplugins=(
-#  zaw
-#  zsh-syntax-highlighting-filetypes
-#)
-
-#for myplugin ($myplugins); do
-#  if [ -f $MY_ZSH/plugins/$myplugin/$myplugin.zsh ]; then
-#    source $MY_ZSH/plugins/$myplugin/$myplugin.zsh
-#  fi
-#done
-
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#[[ $OSTYPE == 'darwin11.4.0' ]] && PATH=/usr/local/Cellar/ccache/3.1.8/libexec:$PATH # ccache
+#[[ $OSTYPE == 'darwin11.4.0' ]] && PATH=/usr/local/Cellar/ccache/3.1.9/libexec:$PATH # ccache

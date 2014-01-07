@@ -1,19 +1,20 @@
-{- xmonad.hs
- - Author: Tim Hermans
- - Version: 0.0.9
- -}
+-- {- xmonad.hs
+-- - Author: Tim Hermans
+-- - Version: 0.0.9
+-- -}
 
 -------------------------------------------------------------------------------
 -- Imports --
 -- core stuff
-import Monad (liftM)
+import Control.Monad (liftM)
 import XMonad
 import XMonad.Core
 import qualified XMonad.StackSet as W
 import System.IO
+import System.Random
 import System.Exit
 import Graphics.X11.Xlib
-import IO (Handle, hPutStrLn) 
+-- import IO (Handle, hPutStrLn)
 
 import qualified Data.Map as M
 import qualified Data.List as L
@@ -57,31 +58,39 @@ import XMonad.Layout.IM
 import XMonad.Layout.Grid
 import XMonad.Layout.Tabbed
 import XMonad.Layout.PerWorkspace
---import XMonad.Layout.ShowWName
+import XMonad.Layout.ShowWName
 import XMonad.Layout.Magnifier
 import XMonad.Layout.TabBarDecoration
 import XMonad.Layout.IndependentScreens
 
 -----------------------------------------------------------------
--- Settings 
+-- Settings
 
 myTerminal                      = "urxvtc"
 myModMask                       = mod4Mask
-myWorkspaces                    = clickable . (map dzenEscape) $ nWorkspaces 0 [ "main", "emacs", "web", "im", "mail" ]
-                                     where nWorkspaces n [] = map show [1 .. n]
-                                           nWorkspaces n l  = init l ++ map show [length l .. n] ++ [last l]
-                                           clickable l      = [ "^ca(1,xdotool key super+" ++ show (n) ++ ")" ++ ws ++ "^ca()" | (i,ws) <- zip [1..] l, let n = i ]
+-- myWorkspaces                    = clickable . map dzenEscape $ nWorkspaces 0 [ "main", "emacs", "web", "im", "mail" ]
+ --                                      where nWorkspaces n [] = map show [1 .. n]
+   --                                          nWorkspaces n l  = init l ++ map show [length l .. n] ++ [last l]
+     --                                        clickable l      = [ "^ca(1,xdotool key super+" ++ show n ++ ")" ++ ws ++ "^ca()" | (i,ws) <- zip [1..] l, let n = i ]
+myWorkspaces                    = clickable . (map dzenEscape) $ [ "main", "emacs", "web", "im", "mail" ]
+                                        where clickable l = [ "^ca(1,xdotool key super+" ++ show (n) ++ ")" ++ ws ++ "^ca()" | (i,ws) <- zip [1..] l, let n = i ]
 
 myBorderWidth                   = 2
 
 mySep                           = "|"
 myWsSep                         = ""
 
+
+-- myRootMask                      = substructureRedirectMask .|. substructureNotifyMask
+--                                 .|. enterWindowMask .|. leaveWindowMask .|. structureNotifyMask .|. buttonPressMask
+
+-- myClientMask                    =  structureNotifyMask .|. enterWindowMask .|. propertyChangeMask
+
 -- Icons
 myIconDir                       = "/home/thermans/.icons/dzen"
 myWorkspaceIcon                 = "corner.xbm"
 myWorkspaceUnselIcon            = "square.xbm"
-               
+
 myIcons layout
     | is "Mirror ResizableTall" = Just "layout-mirror-bottom.xbm"
     | is "ResizableTall"        = Just "layout-tall-right.xbm"
@@ -118,11 +127,11 @@ myEmptyFGColor                  = "#8B8378"
 myEmptyBGColor                  = ""
 
 myDefaultFont                   = "xft:Dejavu Sans:size=9"
-                      
+
 -----------------------------------------------------------------
 -- Keys
 myKeys = \conf -> mkKeymap conf $
-                [ ("M-S-<Esc>",    spawn $ "xkill")
+                [ ("M-S-<Esc>",    spawn "xkill")
                 , ("M-<Space>",    sendMessage NextLayout)
                 , ("M-S-<Space>",  setLayout $ XMonad.layoutHook conf)
                 , ("M-n",          refresh)
@@ -141,12 +150,13 @@ myKeys = \conf -> mkKeymap conf $
                 , ("M-,",          sendMessage (IncMasterN 1))
                 , ("M-.",          sendMessage (IncMasterN (-1)))
                 , ("M-S-q",        io (exitWith ExitSuccess))
-                , ("M-q",          restart "xmonad" True)
+                  -- , ("M-q",          restart "xmonad" True)
+                , ("M-q",          spawn "xmonad --recompile; xmonad --restart")
                 , ("M-p",          shellPrompt myXPConfig)
                 , ("M-S-<Right>",  shiftToNext >> nextWS)
-                , ("M-S-<Left>",   shiftToPrev >> prevWS) 
+                , ("M-S-<Left>",   shiftToPrev >> prevWS)
                 , ("M-<Down>",     nextScreen)
-                , ("M-o",           shiftNextScreen >> nextScreen)
+                , ("M-o",          shiftNextScreen >> nextScreen)
                 , ("M-<Left>",     prevNonEmptyWS )
                 , ("M-C-k",        prevNonEmptyWS )
                 , ("M-<Right>",    nextNonEmptyWS )
@@ -155,9 +165,7 @@ myKeys = \conf -> mkKeymap conf $
                 , ("M-<Up>",       swapNextScreen)
                 , ("M-a",          sendMessage MirrorShrink)
                 , ("M-y",          sendMessage MirrorExpand)
-                , ("M-S-<Return>",   dwmpromote)
-                , ("M-x M-c",      kill)
-                , ("M-x c",        kill)
+                , ("M-S-<Return>", dwmpromote)
                 , ("M-u",          focusUrgent)
                 , ("M-x M-x",      nextScreen)
                 , ("M-x w",        sendMessage MagnifyMore)
@@ -165,92 +173,89 @@ myKeys = \conf -> mkKeymap conf $
                -- grid select
                 , ("M-g",          goToSelected defaultGSConfig)
                -- spawn
-                , ("M-e",        spawn "emacsclient -n -c")
-                , ("M-w",        spawn "start_firefox.sh")
-                , ("M-<Return>", spawn $ XMonad.terminal conf)
+                , ("M-e",         spawn "emacsclient -n -c")
+                , ("M-w",         spawn "firefox")
+                , ("M-i",         spawn "pidgin")
+                , ("M-<Return>",  spawn $ XMonad.terminal conf)
                 -- mpd controls
                 , ("M-C-t",        spawn "mpc pause")
                 , ("M-C-p",        spawn "mpc play")
                 , ("M-C-n",        spawn "mpc next")
-                
+
                 , ("M-z",          warpToWindow (1%10) (1%10)) -- Move pointer to currently focused window
                 ]
                 ++
                 [ (m ++ i, windows $ onCurrentScreen f j)
-                    | (i, j) <- zip (map show [1..9]) (workspaces' conf)
+                -- [ (m ++ i, windows $ f j)
+                    | (i, j) <- zip (map show [1..9]) (workspaces conf)
                     , (m, f) <- [("M-", W.view), ("M-S-", W.shift)]
                 ]
-    where 
+    where
       nextNonEmptyWS = moveTo Next (WSIs (liftM (not .) isVisible))
       prevNonEmptyWS = moveTo Prev (WSIs (liftM (not .) isVisible))
 
 isVisible :: X (WindowSpace -> Bool)
 isVisible = do
   vs <- gets (map (W.tag . W.workspace) . W.visible . windowset)
-  return (\w -> (W.tag w) `elem` vs)
-                     
+  return (\w -> W.tag w `elem` vs)
+
 -----------------------------------------------------------------
 -- Mouse
-myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
+myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList
     -- mod-button1, Set the window to floating mode and move by dragging
-    [ ((modMask, button1), (\w -> focus w >> mouseMoveWindow w))
+    [ ((modMask, button1), \w -> focus w >> mouseMoveWindow w)
     -- mod-button2, Raise the window to the top of the stack
-    , ((modMask, button2), (\w -> focus w >> windows W.swapMaster))
+    , ((modMask, button2), \w -> focus w >> windows W.swapMaster)
     -- mod-button3, Set the window to floating mode and resize by dragging
-    , ((modMask, button3), (\w -> focus w >> mouseResizeWindow w))
+    , ((modMask, button3), \w -> focus w >> mouseResizeWindow w)
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
     -- cycle focus
-    , ((modMask, button4), (\_ -> windows W.focusUp))
-    , ((modMask, button5), (\_ -> windows W.focusDown))
+    , ((modMask, button4), \_ -> windows W.focusUp)
+    , ((modMask, button5), \_ -> windows W.focusDown)
     -- cycle through workspaces
     , ((controlMask .|. modMask, button5), nextNonEmptyWS)
     , ((controlMask .|. modMask, button4), prevNonEmptyWS)
     ]
-    where 
-      nextNonEmptyWS = \_ -> moveTo Next (WSIs (liftM (not .) isVisible))
-      prevNonEmptyWS = \_ -> moveTo Prev (WSIs (liftM (not .) isVisible))
-                       
+    where
+      nextNonEmptyWS _ = moveTo Next (WSIs (liftM (not .) isVisible))
+      prevNonEmptyWS _ = moveTo Prev (WSIs (liftM (not .) isVisible))
+
 -----------------------------------------------------------------
 -- Hooks --
 myManageHook = composeAll
-    [ 
-        className=? "Pidgin"                    --> doShift "0_im"
-      , className=? "Uzbl-core"                 --> doShift "1_web"
-      , className=? "Namoroka"                  --> doShift "0_web"
-      , className=? "Emacs"                     --> doShift "0_emacs"
-      , className=? "Do"                        --> doIgnore
+    [
+        className=? "Pidgin"                    --> doShift "im"
+      , className=? "Uzbl-core"                 --> doShift "web"
+      , className=? "Firefox"                   --> doShift "web"
+      , className=? "Emacs"                     --> doShift "emacs"
+      , className=? "Synapse"                   --> doIgnore
       , isDialog                                --> placeHook simpleSmart <+> doFloat
     ]
       -- <+> positionStoreManageHook
       <+> manageDocks
 
+myLayoutHook =
+  avoidStruts $
+  onWorkspace "im" (reflectHoriz . withIM 0.20 (Role "buddy_list") $ Grid) $
+  onWorkspace "emacs" tiled $
+  onWorkspace "mail" simpleFloat $
+  smartBorders (Mirror tiled)
+  ||| Grid
+  ||| smartBorders Full
+  ||| smartBorders tiled
+  where
+    tiled = ResizableTall nmaster delta ratio []
+    -- The default number of windows in the master pane
+    nmaster = 1
+    -- Default proportion of screen occupied by master pane
+    ratio   = toRational (2/(1+sqrt(5)::Double)) -- golden
+    -- Percent of screen to increment by when resizing panes
+    delta   = 0.03
 
-myLayoutHook = avoidStruts $ 
-               onWorkspace "0_im" (reflectHoriz . withIM 0.20 (Role "buddy_list") $ Grid) $ 
-               onWorkspace "0_emacs" tiled $ 
-               smartBorders (Mirror tiled)
-               ||| tabs
-               ||| Grid
-               ||| smartBorders Full
-               ||| smartBorders tiled 
-
-    where
-      tiled = ResizableTall nmaster delta ratio []
-      -- The default number of windows in the master pane
-      nmaster = 1
-      -- Default proportion of screen occupied by master pane
-      ratio   = toRational (2/(1+sqrt(5)::Double)) -- golden
-      -- Percent of screen to increment by when resizing panes
-      delta   = 0.03
-      -- tabbed layout
-      tabs = tabbed shrinkText myTabTheme
-      -- magnification in grid
-      magnify = magnifier (13%10)
-                       
 ------------------------------------------------------------------
 -- Prompt --
 myXPConfig :: XPConfig
-myXPConfig = defaultXPConfig { 
+myXPConfig = defaultXPConfig {
                font              = "xft:Consolas-12"
              , bgColor           = myDzenBGColor
              , fgColor           = myDzenFGColor
@@ -268,7 +273,7 @@ myXPConfig = defaultXPConfig {
 
 -- for Tabbed layouts
 myTabTheme :: Theme
-myTabTheme = defaultTheme { 
+myTabTheme = defaultTheme {
                activeBorderColor   = myFocusedBorderColor
              , inactiveBorderColor = myNormalBorderColor
              , activeColor         = myFocusedBGColor
@@ -280,7 +285,7 @@ myTabTheme = defaultTheme {
              , urgentColor         = myUrgentBGColor
              , urgentTextColor     = myUrgentFGColor
              }
- 
+
 -----------------------------------------------------------------
 -- Status Bars
 
@@ -293,56 +298,62 @@ myLogHook top = do
  -- fadeInactiveLogHook fadeAmount
  --   where fadeAmount = 0.93
   dynamicLogWithPP $ defaultPP {
-                         ppLayout          = dzenColor myNormalFGColor myNormalBGColor . pad . loadIcons
-                       , ppCurrent         = dzenColor myFocusedFGColor myFocusedBGColor .pad . squareIcon
-                       , ppVisible         = dzenColor myVisibleFGColor myVisibleBGColor 
-                       , ppHidden          = dzenColor myHiddenFGColor myHiddenBGColor . pad . cornerIcon
+                         -- ppLayout          = dzenColor myNormalFGColor myNormalBGColor . pad . loadIcons
+                         ppLayout          = dzenColor myNormalFGColor myNormalBGColor . pad
+                       -- , ppCurrent         = dzenColor myFocusedFGColor myFocusedBGColor .pad . squareIcon
+                       , ppCurrent         = dzenColor myFocusedFGColor myFocusedBGColor . pad
+                       , ppVisible         = dzenColor myVisibleFGColor myVisibleBGColor
+                       , ppHidden          = dzenColor myHiddenFGColor myHiddenBGColor . pad
+                       -- , ppHidden          = dzenColor myHiddenFGColor myHiddenBGColor . pad . cornerIcon
                        , ppHiddenNoWindows = dzenColor myEmptyFGColor myEmptyBGColor . pad
-                       , ppTitle           = dzenColor myTitleFGColor "" . wrap "[" "]" . pad . shorten 50 
+                       , ppTitle           = dzenColor myTitleFGColor "" . wrap "[" "]" . pad
                        , ppSep             = mySep
                        , ppWsSep           = myWsSep
                        , ppUrgent          = dzenColor myUrgentFGColor myUrgentBGColor
                        , ppOutput          = hPutStrLn top
                        }
-      where loadIcons s = fromMaybe s $ myIcons s >>= \icon -> return $ "^i(" ++ myIconDir ++ "/" ++ icon ++ ")"
-            cornerIcon  = (++) $ "^i(" ++ myIconDir ++ "/" ++ myWorkspaceIcon ++ ")"
-            squareIcon  = (++) $ "^i(" ++ myIconDir ++ "/" ++ myWorkspaceUnselIcon ++ ")"
-            shorten :: Int -> String -> String
-            shorten n xs | length xs < n = xs
-                         | otherwise     = (take (n - length end) xs) ++ end
-                         where
-                           end = "…"
+      -- where loadIcons s = fromMaybe s $ myIcons s >>= \icon -> return $ "^i(" ++ myIconDir ++ "/" ++ icon ++ ")"
+      --       cornerIcon  = (++) $ "^i(" ++ myIconDir ++ "/" ++ myWorkspaceIcon ++ ")"
+      --       squareIcon  = (++) $ "^i(" ++ myIconDir ++ "/" ++ myWorkspaceUnselIcon ++ ")"
+      --       shorten :: Int -> String -> String
+      --       shorten n xs | length xs < n = xs
+      --                    | otherwise     = (take (n - length end) xs) ++ end
+      --                    where
+      --                      end = "…"
 
-myStartupHook = ewmhDesktopsStartup 
+myStartupHook = ewmhDesktopsStartup
 
-myEventHook = ewmhDesktopsEventHook 
+myEventHook = ewmhDesktopsEventHook
 
--- Focus follows mouse 
+-- Focus follows mouse
 myFocusFollowsMouse :: Bool
 myFocusFollowsMouse = True
 
 -----------------------------------------------------------------
--- Main 
+-- Main
 main = do
   bottom <- spawnPipe "xmobar"
   top   <- spawnPipe topbarCmd
   xmonad . withUrgencyHookC NoUrgencyHook (urgencyConfig { suppressWhen = Focused }) . ewmh $ XConfig {
                     -- basics
                     terminal           = myTerminal,
-                    workspaces         = withScreens 2 myWorkspaces,
+                     workspaces         = withScreens 2 myWorkspaces,
+                    {-workspaces         =  myWorkspaces,-}
                     modMask            = myModMask,
                     borderWidth        = myBorderWidth,
                     normalBorderColor  = myNormalBorderColor,
                     focusedBorderColor = myFocusedBorderColor,
                     focusFollowsMouse  = True,
+                    clickJustFocuses   = True,
+                    --rootMask           = myRootMask,
+                    -- clientMask         = myClientMask,
                     -- key bindings
                     keys               = myKeys,
                     mouseBindings      = myMouseBindings,
                     -- hooks, layouts
                     logHook            = myLogHook top,
-                    layoutHook         =  myLayoutHook,
+                    layoutHook         = showWName myLayoutHook,
                     manageHook         = myManageHook,
                     handleEventHook    = myEventHook,
                     startupHook        = myStartupHook
                 }
-

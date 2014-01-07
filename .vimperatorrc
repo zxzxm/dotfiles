@@ -1,23 +1,9 @@
 " -*- mode: vimrc-generic -*-
-" anrxc's vimperator init file with Emacs bindings
 
-" For a nice formatted list of keybindings check: 
-"   * http://sysphere.org/~anrxc/j/articles/vimperator/index.html
+" Colorscheme
+colorscheme tomorrownight
 
-" TODO
-"  * C-n and C-p in "INSERT (menu)" mode
-"      - see this feature request: http://vimperator.org/trac/ticket/235
-"  * C-? bindings wanted for: i (caret mode) and v (visual mode)
-"  * C-g is buggy in insert mode in Vimperator 2.0
-"      * completion brings system and FF to a crawl anyway so I will not use v2.0
-"      * C-g solved in Vimperator 2.1 and completion is fixed
-
-
-" User styles as colorschemes in Vimperator 2
-"   * ~/.vimperator/colors/clearlooks.vimp
-"colorscheme clearlooks
-
-" set verbose=15
+set verbose=15
 
 " Options
 "  - Most of the options already have good defaults
@@ -26,7 +12,10 @@
 set titlestring=Firefox
 
 " Editor, C-i invokes it in text fields (replaces "It's All Text")
-set editor=emacsclient -n -c
+"set editor=emacsclient -n -c
+
+" Hint characters
+set hintchars=asdfghjkl;
 
 " Command line and search patterns history
 set history=10000
@@ -35,165 +24,29 @@ set history=10000
 "set go+=T
 
 " Show the tab bar only if more then one tab is open
-set showtabline=1
+"set showtabline=1
 
 " Show destination links in 1=status line, 2=command line
 set showstatuslinks=1
 
 " Show completions and use AwesomeBar (+search plugins)
-set complete=sl
-set wildoptions=auto
+set complete=slhbS
 
 " Ex commands output in a new tab by default (prefs, addons...)
-set newtab=all
+" set newtab=all
 
 " Define where to show requested popup windows 
-set popups=tab,resized
+set popups=resized
 
 " Hilight previous search pattern matches
 set hlsearch
 
 " Default search engine is ignored, plugins are used, place yubnub in there and do:
-" set defsearch=yubnub
+set defsearch=duckduckgo
 
-" Key bindings
-"  - Emacs key theme for GTK and Firefox already provide bindings for input fields.
-" 
-" M-x enters command mode
-noremap <A-x> :
-
-" Emacs navigation in command line and insert mode
-cmap <C-n> <Tab>
-cmap <C-p> <S-Tab>
-cmap <C-f> <Right>
-cmap <C-b> <Left>
-cmap <C-j> <CR>
-noremap <C-j> <CR>
-inoremap <C-j> <CR>
-inoremap <C-n> <Down>
-inoremap <C-p> <Up>
-inoremap <C-f> <Right>
-inoremap <C-b> <Left>
-
-" Use C-f and C-b for tab browsing
-noremap <C-f> <C-n>
-noremap <C-b> <C-p>
-
-" Use C-a and C-e to jump to first/last tab
-"noremap <C-a> g0
-"noremap <C-e> g$
-" Or use them to go to the absolute left/right of the document
-noremap <C-a> 0
-noremap <C-e> $
-
-" Use C-p and C-n for up/down
-noremap <C-p> k
-noremap <C-n> j
-
-" Use C-v and M-v for jump scrolling
-noremap <C-v> <C-d>
-noremap <A-v> <C-u>
-
-" Goto the top of the document with M-<
-noremap <A-<> gg
-
-" Goto the end of the document with M->
-noremap <A->> G
-
-" Use C-s and C-r for searching (n/N for next/prev as in less)
-noremap <C-s> /
-noremap <C-r> ?
-
-" Copy the current URL to the clipboard with M-w
-noremap <A-w> y
-" Copy selected text to the clipboard with C-w 
-noremap <C-w> Y
-
-" Paste the current clipboard selection to a new buffer with C-y
-noremap <C-y> P
-
-" Use current URL as a start for a new location with C-x C-v
-
-noremap <C-x><C-v> O
-
-" C-g as cancel (C-c is stop)
-"cmap <C-g> <C-c>
-cmap <C-g> <Esc>
-imap <C-g> <Esc>
-noremap <C-g> <Esc>
-
-" Avoid Find dialog when canceling a started command, C-x C-g
-noremap <C-x><C-g> <Esc>
-" Avoid quit on C-q, and it's more suitable for Stop here
-noremap <C-q> <C-c>
-
-" Kill the buffer with C-x k
-map <C-x>k d
-
-" Undo close tab with C-_ (also with C-Shift-t, as C-t is new tab)
-noremap <C-_> u
-
-" Exit and save the session with C-x C-c
-noremap <C-x><C-c> ZZ
-
-" restart Vimperator
-map <C-r>   :restart<CR>
-
-" Buffer lists with C-x b and C-x C-b
-noremap <C-x>b b
-noremap <C-x><C-b> B
-
-" C-x l as :open
-" C-x t as :tabopen
-noremap <C-x>l :o<SPACE>
-noremap <C-x>t :t<SPACE>
-
-" Switch roles of f and F to have hints opened in new tabs by default
-noremap f F
-noremap F f
-
-" Switch hints to letter "j" for right hand usage
-"noremap j f
-"noremap J F
-" Extended hint mode with M-j
-"  ; - focus link, a - save, y - copy link, O - :open query, T - for :tabopen ...
-noremap <A-j> ;
-
-" We can now also use F for Shift+b/f as back/forward
-noremap F L
-noremap B H
-
-" Back with Backspace as well
-map <BS> H
-
-" Default C-o/C-i for older/newer position on the history jump list
-"remap if needed
-
-" Use C-h i to start help
-noremap <C-h>i :help<CR>
-
-" Record a key sequence into a macro with C-x (
-noremap <C-x>( q
-
-" Play a macro with C-x e
-noremap <C-x>e @
-
-" Set a mark at the cursor with C-x r m
-noremap <C-x>rm m
-
-" Jump to the mark in the current buffer with C-x r b
-noremap <C-x>rb '
-
-" C-v was pass-next command, re-map it so we can bind to default keys too
-noremap <C-d> <C-v>
-
-" C-x C-f starts the "Open File" dialog (C-x C-s is Save)
-map <C-x><C-f> <C-d><C-o>
-
-
-" M-Up/Dn toggles the toolbar (I keep all bars in one)
-map <A-Down> :set go+=T<CR>
-map <A-Up> :set go-=T<CR>
+" Navigate
+map h <silent> :back<CR>
+map l <silent> :forward<CR>
 
 "" Toggle tool bars
 :js << EOF
@@ -202,124 +55,18 @@ map <A-Up> :set go-=T<CR>
   }
 EOF
 
-" Hide the ticket toolbar
-" :js document.getElementById('TicketTB-Toolbar').collapsed = 1;
+map ,w :js toggle_element('webdeveloper-toolbar')<CR>
+map ,b :js toggle_element('PersonalToolbar')<CR>
+map ,m :js toggle_element('toolbar-menubar')<CR>
+map ,n :js toggle_element('nav-bar')<CR>
 
-"
-map <A-t> :js toggle_element('webdeveloper-toolbar')<CR>
-map <A-p> :js toggle_element('PersonalToolbar')<CR>
-map <A-,> :js toggle_element('toolbar-menubar')<CR>
-map <A-.> :js toggle_element('nav-bar')<CR>
-" map <A-/> :js toggle_element('TicketTB-Toolbar')<CR>
-
-" Sidebar selection with s, close a sidebar with S
-map s :sidebar<SPACE>
-map S :sbclose<CR>
-
-" Bookmark this page with C-x a (dialog)
-map <C-x>a <C-d><C-d>
-
-" Bookmarks search and search by tag
-map <C-x>q :bmarks<SPACE>
-map <C-x>w :bmarks -tags=
-
-" View source with C-x g
-noremap <C-x>g gf
-" or in an external editor
-"noremap <C-x>g gF
-
-" Focus the address bar with C-l
-map <C-l> <C-d><C-l>
-
-" Focus last used input field with C-x i
-noremap <C-x>i gi
-
-" Open home directory with C-x f
-noremap <C-x>f ~
-
-" Go to home page with C-x h
-noremap <C-x>h gh
-
-" Go to parent directory with C-x u
-noremap <C-x>u gu
-
-" Go to the root of the website with C-x C-u
-noremap <C-x><C-u> gU
-
-" Special commands
+" " Special commands
 
 :command! dict -nargs=* tabopen http://definr.com/<args>
 :map w :dict<SPACE>
 :map <silent> W :exe ":dict "+content.getSelection()<CR> 
 
-"" Allow keystroke passthrough
-" feedSomeKeys_3.js
-command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
-" Gmail
-lazy fmaps -u='mail\.google\.com/mail/.*/[0-9a-f]+$' c / j,n k,p n,j p,k o u e x s r a # [ ] ? gi gs gt gd ga gc
-"Google Reader
-lazy fmaps -u='www\.google\.com/reader' -events=vkeypress j k n p m s v A r S N P X O gh ga gs gt gu u / ? J K
-"Google Calendar
-
-"Remember the Milk
-lazy fmaps -u='www\.rememberthemilk\.com/home' -events=vkeypress t c p d f g s u l y r z 1 2 3 4 <Del> a n k j i h m
-":autocmd LocationChange '^http://www\.rememberthemilk\.com/home/' :fmap! -vkey t c p d f g s u l y r z 1 2 3 4 <Del> a n k j i h m
-
-" Github
-"lazy fmaps -u='github\.com/' -events=vkeypress j k x o I U e y c l i u /
-
-"autocmd LocationChange .* js modes.passAllKeys = /rememberthemilk\.com/.test(buffer.URL)
-
-"
-" Javascript
-"   - Some useful functions
-"
-" Show the feed-button in the statusbar
-" javascript <<EOF
-" (function(){
-"     var feedPanel = document.createElement("statusbarpanel");
-"     feedPanel.setAttribute("id", "feed-panel-clone");
-"     feedPanel.appendChild(document.getElementById("feed-button"));
-"     feedPanel.firstChild.setAttribute("style", "padding: 0; max-height: 16px;");
-"     document.getElementById("status-bar")
-"             .insertBefore(feedPanel, document.getElementById("security-button"));
-" })();
-" EOF
-
-" Readability
-" javascript <<EOF
-" (function(){
-"         readConvertLinksToFootnotes=true;readStyle='style-ebook';
-"         readSize='size-large';
-"         readMargin='margin-medium';
-"         _readability_script=document.createElement('SCRIPT');
-"         _readability_script.type='text/javascript';
-"         _readability_script.src='http://lab.arc90.com/experiments/readability/js/readability.js?x='+(Math.random());
-"         document.getElementsByTagName('head')[0].appendChild(_readability_script);
-"         _readability_css=document.createElement('LINK');_readability_css.rel='stylesheet';
-"         _readability_css.href='http://lab.arc90.com/experiments/readability/css/readability.css';
-"         _readability_css.type='text/css';
-"         _readability_css.media='all';
-"         document.getElementsByTagName('head')[0].appendChild(_readability_css);
-"         _readability_print_css=document.createElement('LINK');
-"         _readability_print_css.rel='stylesheet';
-"         _readability_print_css.href='http://lab.arc90.com/experiments/readability/css/readability-print.css';
-"         _readability_print_css.media='print';
-"         _readability_print_css.type='text/css';
-"         document.getElementsByTagName('head')[0].appendChild(_readability_print_css);
-"         });
-" EOF
-
-" Show the bookmark-button in the statusbar
-"javascript <<EOF
-"(function(){
-"    var bookPanel = document.createElement("statusbarpanel");
-"    bookPanel.setAttribute("id", "book-panel-clone");
-"    bookPanel.appendChild(document.getElementById("star-button"));
-"    bookPanel.firstChild.setAttribute("style", "padding: 0; max-height: 16px;");
-"    document.getElementById("status-bar")
-"            .insertBefore(bookPanel, document.getElementById("security-button"));
-"})();
-"EOF
+" " Hint properly in gmail et al
+set hinttags="//*[@onclick or @onmouseover or @onmousedown or @onmouseup or @oncommand or @class='lk' or @role='link' or @role='button'] | //input[not(@type='hidden')] | //a | //area | //iframe | //textarea | //button | //select | //xhtml:input[not(@type='hidden')] | //xhtml:a | //xhtml:area | //xhtml:iframe | //xhtml:textarea | //xhtml:button | //xhtml:select | //div[contains(@class,'J-K-I J-J5-Ji')]"
 
 " vim: filetype=vim :

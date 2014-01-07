@@ -1,9 +1,6 @@
-REM Mon AT 10:00                 MSG Do your timesheet!
-REM Mon Tue Thu Fri AT 09:45     MSG Take your Omega 3
-REM Mon Tue Thu Fri AT 14:45     MSG Take your Omega 3
-REM Tue AT 10:00                 MSG Take your vitamin
-REM Mon Tue Wed Thu Fri AT 10:15 MSG DayView Scrum
-REM Mon Tue Wed Thu Fri AT 11:00 MSG MPS Scrum
-REM Tue Thu AT 10:45             MSG DayView Sync Up
-REM Tue Thu AT 10:44             MSG Test
-
+#
+REM Mon             AT 09:00  MSG Timesheet
+REM Mon Tue Thu Fri AT 09:45  MSG Take your Omega 3
+REM Tue Thu         AT 10:00  MSG Take your vitamin
+REM Mon Tue Thu     AT 11:00  MSG MPS Stand Up
+REM Mon Tue Thu Fri AT 14:45  MSG Take your Omega 3

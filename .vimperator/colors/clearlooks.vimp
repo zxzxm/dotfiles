@@ -3,7 +3,7 @@
 " ==Clearlooks_Colorscheme_Settings==
 hi Bell					border: 0 none; background-color: black;
 hi Boolean				color: red;
-hi CmdLine				font-family: monospace; padding: 1px;
+hi CmdLine				font-family: Arial; padding: 1px;
 hi CmdOutput				white-space: pre;
 hi CompDesc				color: gray; width: 50%;
 hi CompGroup	
@@ -28,7 +28,7 @@ hi Function				color: navy;
 hi Gradient				height: 1px; margin-bottom: -1px; margin-top: -1px;
 hi GradientLeft				background-color: #86ABD9;
 hi GradientRight			background-color: white;
-hi Hint					font-family: monospace; font-size: 10px; font-weight: bold; color: white; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding 0px 1px 0px 1px;
+hi Hint					font-family: Arial; font-size: 10px; font-weight: bold; color: white; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding 0px 1px 0px 1px;
 hi Hint::after				content: attr(number);
 hi HintActive				background: #88FF00; color: black;
 hi HintElem				background-color: #86ABD9; color: black;
