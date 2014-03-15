@@ -35,7 +35,14 @@ theme.titlebar_bg_focus  = "#3F3F3F"
 theme.titlebar_bg_normal = "#3F3F3F"
 -- }}}
 
+-- {{{ Color
+theme.bright_magenta = "#8b008b"
+theme.bright_yellow = "#ff8c00"
+theme.bright_green = "#00FF00"
+theme.red = "#8b0000"
+
 -- There are other variable sets
+theme.red = "#8b0000"
 -- overriding the default one when
 -- defined, the sets are:
 -- [taglist|tasklist]_[bg|fg]_[focus|urgent]

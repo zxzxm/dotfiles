@@ -1,10 +1,29 @@
+colorscheme zenburn
 set nonumber
-set shell=bash
+let g:spf13_use_powerline = 1
+set laststatus=2
+""let g:spf13_no_indent_guides_autocolor = 0
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup=0
+set nospell
 
-"color Tomorrow-Night
-color zenburn
+let g:haddock_browser = "firefox"
 
+set foldlevel=999
+
+set encoding=utf-8
+
+map <CR> :set nohlsearch<CR>
+nmap <leader>l :set list!<CR>
+
+"" Don't clear the screen after exit
 set t_ti=t_e=
 
-" Add local plugin directories
-set runtimepath=~/.vim_local,~/.vim,$VIMRUNTIME
+""let g:airline_modified_detection=1
+"let g:airline_powerline_fonts=1
+
+UnBundle 'myusuf3/numbers'
+UnBundle 'bling/vim-airline'
+UnBundle 'kien/ctrlp.vim'
+UnBundle 'airblade/vim-gitgutter'
+UnBundle 'nathanaelkane/vim-indent-guides'

@@ -1,0 +1,227 @@
+# -*- mode: Tcl -*-
+set yPos 81
+set xPos 173
+
+#set font -xos4-terminux-medium-r-normal-*-14-*-*-*-*-*-*-*
+#set font -*-proggyclean-*-*-*-*-*-80-*-*-*-*-*-*
+#set font -monotype-*-*-*-*-*-12-*-*-*-*-*-*-*
+set font "Proggy Clean:size=10"
+
+# trace variable xtermArgs r traceArgs
+
+# proc traceArgs {args} {
+#     global xPos yPos font
+#     set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+#     if {$xPos} {
+#         set yPos 40
+#         incr xPos 490
+#         if {$xPos > 700} {
+#             set yPos 380
+#             set xPos 150
+#         }
+#     } else {
+#         set xPos 150
+#     }
+# }
+
+set ::xtermArgs "-geometry 80x50+$xPos+$yPos -fa \"$font\""
+set xtermCmd "ssh %n"
+
+switch $argv {
+
+    two {
+        set xtermCmd "/bin/zsh"
+        set xtermNames "one two"
+    }
+
+    four {
+        set ::xtermArgs "-geometry 80x25+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermCmd "/bin/zsh"
+        set xtermNames "one two three four"
+    }
+
+    six {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermCmd "/bin/zsh"
+        set xtermNames "one two three four five six"
+    }
+
+    nsqpo {
+        set ::xtermArgs "-geometry 80x10+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "nsq-pot-001 nsq-pot-002 nsq-pot-003 nsq-pot-004 nsq-pot-005 nsq-pot-006 nsq-pot-007 nsq-pot-008 nsq-pot-009 nsq-pot-010"
+    }
+
+    nsqwc {
+        set ::xtermArgs "-geometry 80x10+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "nsq-wch-001 nsq-wch-002 nsq-wch-003 nsq-wch-004 nsq-wch-005 nsq-wch-006 nsq-wch-007 nsq-wch-008 nsq-wch-009 nsq-wch-010"
+    }
+
+
+    bcvqa {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "bcvtools-ch2-01q bcvtools-ch2-02q bcvtools-ch2-03q bcvtools-ch2-04q bcvtoolsdb-ch2-01q"
+    }
+
+    ott {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "web-pot-a05 web-pot-a06 web-pot-a07 web-pot-a08"
+    }
+
+    osg {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "web-wch-a05 web-wch-a06 web-wch-a07 web-wch-a08"
+    }
+
+    allstorm {
+        set ::xtermArgs "-geometry 80x10+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "dayview-wc-9 dayview-wc-10 dayview-wc-11 dayview-wc-12 dayview-po-9 dayview-po-10 dayview-po-11 dayview-po-12 dayview-wc-16 dayview-wc-17 dayview-wc-18 dayview-wc-19 dayview-po-20 dayview-po-21 dayview-po-22 dayview-po-23"
+    }
+    chistorm {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-ch2-7 dayview-ch2-8 dayview-ch2-9 dayview-ch2-10 dayview-ch2-11"
+    }
+    postorm {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-po-9 dayview-po-10 dayview-po-11 dayview-po-12 dayview-po-20 dayview-po-21 dayview-po-22 dayview-po-23"
+    }
+    wcstorm {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-wc-9 dayview-wc-10 dayview-wc-11 dayview-wc-12 dayview-wc-16 dayview-wc-17 dayview-wc-18 dayview-wc-19"
+    }
+    newstorm {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-po-28 dayview-po-29 dayview-po-30 dayview-po-31 dayview-po-32 dayview-pot-33 dayview-po-34 dayview-po-35"
+    }
+    newtomcat {
+        set ::xtermArgs "-geometry 120x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-po-32 dayview-po-33 dayview-po-34 dayview-po-35"
+    }
+    chitomcat {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-ch2-1 dayview-ch2-2 dayview-ch2-3 dayview-ch2-4 dayview-ch2-5 dayview-ch2-6"
+    }
+    tomcat {
+        set ::xtermArgs "-geometry 80x10+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-ch2-1 dayview-ch2-2 dayview-ch2-3 dayview-ch2-4 dayview-ch2-5 dayview-ch2-6 dayview-po-1 dayview-po-2 dayview-po-3 dayview-po-13 dayview-po-14 dayview-po-15 dayview-po-24 dayview-po-25 dayview-po-26 dayviewpo-27"
+    }
+    potomcat {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-po-1 dayview-po-2 dayview-po-3 dayview-po-13 dayview-po-14 dayview-po-15"
+    }
+    wctomcat {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-wc-1 dayview-wc-2 dayview-wc-3 dayview-wc-13 dayview-wc-14 dayview-wc-15"
+    }
+
+    zookeeper {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-wc-9 dayview-wc-10 dayview-wc-11 dayview-po-9 dayview-po-10 dayview-po-11"
+    }
+    wczoo {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"Proggy Clean:size=12\""
+        set xtermNames "dayview-wc-9 dayview-wc-10 dayview-wc-11"
+    }
+    pozoo {
+        set ::xtermArgs "-geometry 80x30+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-po-9 dayview-po-10 dayview-po-11"
+    }
+    posolid {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "solid-po-1 solid-po-2 solid-po-3 solid-po-4"
+    }
+    solid {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "solid-ch2-1 solid-ch2-2 solid-ch2-3 solid-ch2-4 solid-po-1 solid-po-2 solid-po-3 solid-po-4"
+    }
+    chsolid {
+        set ::xtermArgs "-geometry 80x40+$xPos+$yPos -fa \"Proggy Clean:size=12\""
+        set xtermNames "solid-ch2-1 solid-ch2-2 solid-ch2-3 solid-ch2-4"
+    }
+    solidtest {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "clduser@solidtest-ch2-1 clduser@solidtest-ch2-2 clduser@solidtest-ch2-3 clduser@solidtest-ch2-4"
+    }
+    cassandra {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "dayview-wc-4 dayview-wc-5 dayview-wc-6 dayview-wc-8 dayview-po-4 dayview-po-5 dayview-po-6 dayview-po-7"
+    }
+    rabbit {
+        set ::xtermArgs "-geometry 80x30+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-ch2-13 dayview-ch2-14 dayview-po-8 dayview-po-12"
+    }
+    nimbus {
+        set ::xtermArgs "-geometry 80x40+$xPos+$yPos -fa \"Proggy Clean:size=10\""
+        set xtermNames "dayview-ch2-12 dayview-po-8"
+    }
+    wc {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "dayview-wc-1 dayview-wc-2 dayview-wc-3 dayview-wc-4 dayview-wc-5 dayview-wc-6 dayview-wc-7 dayview-wc-8 dayview-wc-9 dayview-wc-10 dayview-wc-11 dayview-wc-12 dayview-wc-13 dayview-wc-14 dayview-wc-15"
+    }
+    ch2 {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "dayview-ch2-1 dayview-ch2-2 dayview-ch2-3 dayview-ch2-4 dayview-ch2-5 dayview-ch2-6 dayview-ch2-7 dayview-ch2-8 dayview-ch2-9 dayview-ch2-10 dayview-ch2-11 dayview-ch2-12 dayview-ch2-13 dayview-ch2-14 dayview-ch2-15"
+    }
+    po {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "dayview-po-1 dayview-po-2 dayview-po-3 dayview-po-4 dayview-po-5 dayview-po-6 dayview-po-7 dayview-po-8 dayview-po-9 dayview-po-10 dayview-po-11 dayview-po-12 dayview-po-13 dayview-po-14 dayview-po-15"
+    }
+    po2 {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "dayview-po-20 dayview-po-21 dayview-po-22 dayview-po-23 dayview-po-24 dayview-po-25 dayview-po-26 dayview-po-27"
+    }
+    prod {
+        set ::xtermArgs "-geometry 80x12+$xPos+$yPos -fa \"Proggy Clean:size=8\""
+        set xtermNames "dayview-wc-1 dayview-wc-2 dayview-wc-3 dayview-wc-4 dayview-wc-5 dayview-wc-6 dayview-wc-7 dayview-wc-8 dayview-po-1 dayview-po-2 dayview-po-3 dayview-po-4 dayview-po-5 dayview-po-6 dayview-po-7 dayview-po-8"
+    }
+    qa {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermNames "dayview-dt-1q.ula.comcast.net dayview-dt-2q.ula.comcast.net dayview-dt-3q.ula.comcast.net  dayview-dt-4q.ula.comcast.net dayview-dt-5q.ula.comcast.net dayview-dt-6q.ula.comcast.net dayview-dt-7q.ula.comcast.net dayview-dt-8q.ula.comcast.net"
+    }
+    dev {
+        set ::xtermArgs "-geometry 80x30+$xPos+$yPos -fa \"Proggy Clean:size=11\""
+        set xtermNames "dayview-dev-ch2-01.sys.comcast.net dayview-dev-ch2-02.sys.comcast.net dayview-dev-ch2-03.sys.comcast.net  dayview-dev-ch2-04.sys.comcast.net"
+    }
+    mds {
+        set ::xtermArgs "-geometry 80x30+$xPos+$yPos -fa \"$font\""
+        set xtermNames "mds-po-001 mds-po-002 mds-wc-001 mds-wc-002"
+    }
+    pomds {
+        set ::xtermArgs "-geometry 80x50+$xPos+$yPos -fa \"$font\""
+        set xtermCmd "/bin/zsh  /home/thermans/Dropbox/src/connect/connect.pl %n"
+        set xtermNames "mds-po-001 mds-po-002"
+    }
+    wcmds {
+        set ::xtermArgs "-geometry 80x50+$xPos+$yPos -fa \"$font\""
+        set xtermCmd "/home/thermans/bin/go %n"
+        set xtermNames "mds-wc-001 mds-wc-002"
+    }
+    vsrs {
+        set ::xtermArgs "-geometry 80x20+$xPos+$yPos -fa \"$font\""
+        set xtermCmd "/bin/zsh"
+        set xtermNames "vsr1 vsr2 vsr3 vsr4"
+    }
+    einsteinch2 {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "einstncm-ch2-2p einstncm-ch2-3p einstncm-ch2-4p einstncm-ch2-5p einstncm-ch2-6p"
+    }
+    einsteinwc {
+        set ::xtermArgs "-geometry 80x15+$xPos+$yPos -fa \"$font\""
+        set xtermNames "einstncm-wch-2p einstncm-wch-3p einstncm-wch-4p einstncm-wch-5p einstncm-wch-6p"
+    }
+    einstaging {
+        set ::xtermArgs "-geometry 80x10+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "einstncm-ch2-02s einstncm-ch2-03s einstncm-ch2-04s einstncm-ch2-05s einstncm-ch2-06s einstncm-wch-02s einstncm-wch-03s einstncm-wch-04s einstncm-wch-05s einstncm-wch-06s"
+    }
+    sippo {
+        set ::xtermArgs "-geometry 80x5+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "sip-po-001 sip-po-002 sip-po-003 sip-po-004 sip-po-005 sip-po-006 sip-po-007 sip-po-008 sip-po-009 sip-po-010 sip-po-011 sip-po-012 sip-po-013 sip-po-014 sip-po-015 sip-po-016 sip-po-017 sip-po-018 sip-po-019 sip-po-020 sip-po-021 sip-po-022 sip-po-023 sip-po-024 sip-po-025 sip-po-026 sip-po-027 sip-po-028 sip-po-029 sip-po-030 sip-po-031 sip-po-032"
+    }
+    sipwc {
+        set ::xtermArgs "-geometry 80x5+$xPos+$yPos -fa \"Proggy Clean:size=9\""
+        set xtermNames "sip-wc-001 sip-wc-002 sip-wc-003 sip-wc-004 sip-wc-005 sip-wc-006 sip-wc-007 sip-wc-008 sip-wc-009 sip-wc-010 sip-wc-011 sip-wc-012 sip-wc-013 sip-wc-014 sip-wc-015 sip-wc-016 sip-wc-017 sip-wc-018 sip-wc-019 sip-wc-020 sip-wc-021 sip-wc-022 sip-wc-023 sip-wc-024 sip-wc-025 sip-wc-026 sip-wc-027 sip-wc-028 sip-wc-029 sip-wc-030 sip-wc-031 sip-wc-032"
+    }
+}
+
+# xtermStartAll
+
+# set ::xtermArgs "-geometry 80x10+$xPos+$yPos -bg white -fg black -sb -cr orange -fn \"-bitstream-bitstream vera sans mono-medium-r-normal-*-9-*-*-*-*-*-*-*\""

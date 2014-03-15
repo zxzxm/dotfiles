@@ -1,0 +1,196 @@
+2013-05-07 11:14:06	-->	thermans (~thermans@10.21.144.254) has joined #neto-cloud
+2013-05-07 11:14:06	--	Nicks #neto-cloud: [abaren001 amitry Anthony cburke002 comcast-c jwalte003 Paul sadkin201 sc68cal sri thermans vharih000 zorro]
+2013-05-07 11:14:06	--	Channel #neto-cloud: 13 nicks (0 ops, 0 halfops, 0 voices, 13 normals)
+2013-05-07 11:14:08	--	Mode #neto-cloud [+tn]
+2013-05-07 11:14:08	--	Channel created on Mon, 22 Apr 2013 08:48:18
+2013-05-07 11:15:40	<--	zorro (~webchat@127.0.0.1) has quit (Quit: Page closed)
+2013-05-07 11:36:26	<--	comcast-c (~mblack@10.21.150.164) has quit (Quit: Leaving.)
+2013-05-07 11:38:06	-->	comcast-c (~mblack@10.21.146.177) has joined #neto-cloud
+2013-05-07 11:38:06	--	comcast-c is now known as mblack203
+2013-05-07 12:01:04	-->	DougTroxe (~webchat@127.0.0.1) has joined #neto-cloud
+2013-05-07 12:01:15	DougTroxe	hello all
+2013-05-07 12:06:53	-->	billHath (~bhathaway@204.15.241.108) has joined #neto-cloud
+2013-05-07 12:07:20	sadkin201	Hi Doug
+2013-05-07 12:08:39	DougTroxe	can you call me 215 384 6997? 2 mins to discuss take me all day to type
+2013-05-07 12:08:59	sadkin201	I am in a meeting, maybe somebody else can give you a call.
+2013-05-07 12:09:02	sadkin201	Let me pass your message along.
+2013-05-07 12:10:31	-->	ssaebi200 (~webchat@127.0.0.1) has joined #neto-cloud
+2013-05-07 12:10:59	sadkin201	Doug, I put the message out to the team.  I am guessing most of them are at lunch.
+2013-05-07 12:11:13	sadkin201	Or you can go ahead and ask your question here.
+2013-05-07 12:11:36	DougTroxe	ok first is the login is no longer working for me for swan project
+2013-05-07 12:11:54	DougTroxe	second is the second DC up for customers
+2013-05-07 12:12:03	sadkin201	The login is now using the NT password for logins.
+2013-05-07 12:12:10	DougTroxe	third did we solve the domain issue
+2013-05-07 12:12:12	sadkin201	Second DC will be available May 20th.
+2013-05-07 12:12:24	sadkin201	We expect to be done with it at the end of our sprint.
+2013-05-07 12:12:31	sadkin201	domain issue?  refresh my memory
+2013-05-07 12:12:52	DougTroxe	I wanted my domain to show up as sys.comcast.net instead of localnova
+2013-05-07 12:13:14	mblack203	ok
+2013-05-07 12:13:46	mblack203	do you want the hostname renamed?
+2013-05-07 12:14:12	DougTroxe	yes
+2013-05-07 12:14:24	DougTroxe	also do I have a login to swan
+2013-05-07 12:14:32	DougTroxe	nt is not working for me either
+2013-05-07 12:14:40	DougTroxe	dtroxe200
+2013-05-07 12:14:51	mblack203	we have a script to rename the hostname to <hostname>-<instance_id>
+2013-05-07 12:15:06	mblack203	that you can pop into the rc.local startup script
+2013-05-07 12:15:14	DougTroxe	not that
+2013-05-07 12:15:44	mblack203	the only other way to do it then, which will be a problem if the IP address ever changes, is to add an entry to /etc/hosts
+2013-05-07 12:16:04	DougTroxe	when I do hostname I want to get back swanapp-ch2-a01c.sys.comcast.net instead of swanapp-ch2-a01.c.novalocal
+2013-05-07 12:16:11	DougTroxe	hostname -f
+2013-05-07 12:16:37	DougTroxe	do right now my domain is novalocal
+2013-05-07 12:16:39	mblack203	then you need to add into /etc/hosts this <ip address> swanapp-ch2-a01c.sys.comcast.net swanapp-ch2-a01c
+2013-05-07 12:16:48	DougTroxe	it is
+2013-05-07 12:16:52	mblack203	ip address is whatever it is for eth0
+2013-05-07 12:17:01	DougTroxe	right that does not change it
+2013-05-07 12:17:16	DougTroxe	it is being set by dchp I would think
+2013-05-07 12:17:24	mblack203	works when I do it on a vm
+2013-05-07 12:17:40	DougTroxe	show me an example please
+2013-05-07 12:18:01	mblack203	192.168.16.27 mblack203-i-00000bff.novalocal mblack203-i-00000bff
+2013-05-07 12:18:32	mblack203	192.168.16.27 mblack203-i-00000bff.my.domain mblack203-i-00000bff
+2013-05-07 12:18:32	DougTroxe	ok but you are using novalocal
+2013-05-07 12:18:43	mblack203	[root@mblack203-i-00000bff ~]# hostname -f
+2013-05-07 12:18:43	mblack203	mblack203-i-00000bff.my.domain
+2013-05-07 12:18:51	mblack203	I know I'm showing before and after
+2013-05-07 12:18:57	DougTroxe	ok gotcha
+2013-05-07 12:19:29	mblack203	you need to do it in the format of <ipaddress> <fqdn> <shortname>
+2013-05-07 12:19:35	DougTroxe	can you help me with the login to openstack dashboard
+2013-05-07 12:19:54	DougTroxe	yeah I will set that up again maybe I messed it up
+2013-05-07 12:19:57	mblack203	I might be able to, which one are you having trouble logging into?
+2013-05-07 12:20:02	DougTroxe	swan
+2013-05-07 12:20:16	DougTroxe	https://osdash-ch2-b01.sys.comcast.net/auth/login/
+2013-05-07 12:21:48	mblack203	whats your user id?
+2013-05-07 12:21:58	DougTroxe	dtroxe200
+2013-05-07 12:23:21	mblack203	looks like you dont have an account, you would need to create a ticket for access
+2013-05-07 12:23:54	sri	Doug, did you have an account there previously?
+2013-05-07 12:24:17	sri	Did you get the email about cutting that over to your Windows credentials?
+2013-05-07 12:24:33	DougTroxe	no sir I was using hgopu000
+2013-05-07 12:25:05	DougTroxe	is there a template for the ticket?
+2013-05-07 12:25:19	sri	You have to create a ticket 
+2013-05-07 12:25:31	DougTroxe	ok no issue is there a template
+2013-05-07 12:27:19	mblack203	yeah it stopped working because now its using ldap for user authentication
+2013-05-07 12:28:14	mblack203	if you create a ticket for access I believe you just need to provide your nt login and email address
+2013-05-07 12:29:18	sri	https://tkts.io.comcast.net/secure/CreateIssue.jspa?pid=12824&issuetype=170&Create=Create
+2013-05-07 12:29:28	sri	ask to be added to your existing tenant
+2013-05-07 12:40:06	DougTroxe	thnx 
+2013-05-07 12:58:13	-->	amitry1 (~Adium@10.21.150.106) has joined #neto-cloud
+2013-05-07 12:59:25	<--	sadkin201 (~sadkin201@10.21.150.131) has quit (Quit: Leaving.)
+2013-05-07 13:05:10	<--	amitry (~Adium@10.21.147.219) has quit (Ping timeout: 600 seconds)
+2013-05-07 13:07:00	<--	amitry1 (~Adium@10.21.150.106) has quit (Quit: Leaving.)
+2013-05-07 13:09:10	-->	sadkin202 (~sadkin201@10.21.147.143) has joined #neto-cloud
+2013-05-07 13:11:37	-->	amitry (~Adium@10.21.150.106) has joined #neto-cloud
+2013-05-07 13:34:42	<--	jwalte003 (~webchat@127.0.0.1) has left #neto-cloud
+2013-05-07 13:34:59	-->	jwalte003 (ccc5da5e@ircip3.mibbit.com) has joined #neto-cloud
+2013-05-07 13:35:15	-->	hw (~webchat@127.0.0.1) has joined #neto-cloud
+2013-05-07 13:36:30	hw	Is it possible to upload our own OVF to the Image and Snapshot page?
+2013-05-07 13:47:51	<--	hw (~webchat@127.0.0.1) has quit (Ping timeout: 240 seconds)
+2013-05-07 13:50:19	-->	Mohsin (~webchat@127.0.0.1) has joined #neto-cloud
+2013-05-07 13:56:10	<--	amitry (~Adium@10.21.150.106) has quit (Quit: Leaving.)
+2013-05-07 13:56:15	-->	JC (~chatzilla@10.172.223.22) has joined #neto-cloud
+2013-05-07 13:56:34	JC	busy server today
+2013-05-07 13:56:53	mblack203	they're standing in line for the new iphone
+2013-05-07 13:57:02	JC	The web portal connections are filled up.
+2013-05-07 13:58:12	JC	re: service accounts, can I get someone to check something?
+2013-05-07 13:58:47	JC	I had my local admin create a service account.  I don't know if it's visible in AD yet.
+2013-05-07 13:58:50	cburke002	Is this related to PLATINF-406 ?
+2013-05-07 13:58:54	JC	Yup
+2013-05-07 13:59:10	cburke002	Ok, let me know what it is and I'll create it in your tenant
+2013-05-07 13:59:13	cburke002	Then you can test
+2013-05-07 13:59:20	JC	tenant: CHQCVSA
+2013-05-07 13:59:24	JC	user: openstack
+2013-05-07 13:59:29	sadkin202	Wait
+2013-05-07 13:59:29	JC	original right?
+2013-05-07 13:59:38	sadkin202	You didn't make the user "openstack" in AD did you?
+2013-05-07 13:59:57	JC	I didn't.  My admin did
+2013-05-07 13:59:58	cburke002	Usually, service accounts start with '!'
+2013-05-07 14:00:03	sadkin202	We can't accept that one… sorry...
+2013-05-07 14:00:05	JC	he said that wasn't necessary
+2013-05-07 14:00:13	sadkin202	That collides with our Openstack environment...
+2013-05-07 14:00:18	JC	reserved?
+2013-05-07 14:00:19	sadkin202	Can you use a team name instead?
+2013-05-07 14:00:23	sadkin202	Yeah, consider it reserved :)
+2013-05-07 14:00:25	JC	Ha... OK
+2013-05-07 14:00:31	JC	I'll need to talk to the man.
+2013-05-07 14:00:38	sadkin202	Yeah. :)
+2013-05-07 14:00:54	cburke002	When you get a new username, add it to the ticket and I'll take it from there
+2013-05-07 14:01:00	JC	Sounds good.
+2013-05-07 14:01:12	JC	let's see if he gets around to it today.
+2013-05-07 14:01:22	cburke002	Ok
+2013-05-07 14:01:45	<--	Mohsin (~webchat@127.0.0.1) has quit (Quit: Page closed)
+2013-05-07 14:01:59	-->	Mohsin (~webchat@127.0.0.1) has joined #neto-cloud
+2013-05-07 14:07:19	 *	Mohsin slaps jwalte003 around a bit with a large fishbot
+2013-05-07 14:07:29	sadkin202	that happens a lot aroujnd here.
+2013-05-07 14:07:46	<--	sadkin202 (~sadkin201@10.21.147.143) has quit (Quit: Leaving.)
+2013-05-07 14:11:48	<--	Paul (~Adium@c-76-26-118-45.hsd1.pa.comcast.net) has quit (Quit: Leaving.)
+2013-05-07 14:12:28	-->	Paul (~Adium@c-76-26-118-45.hsd1.pa.comcast.net) has joined #neto-cloud
+2013-05-07 14:12:48	<--	Paul (~Adium@c-76-26-118-45.hsd1.pa.comcast.net) has quit (Client Quit)
+2013-05-07 14:13:03	-->	Paul (~Adium@c-76-26-118-45.hsd1.pa.comcast.net) has joined #neto-cloud
+2013-05-07 14:16:15	<--	Paul (~Adium@c-76-26-118-45.hsd1.pa.comcast.net) has quit (Client Quit)
+2013-05-07 14:32:04	-->	amitry (~Adium@10.21.150.106) has joined #neto-cloud
+2013-05-07 14:39:59	Mohsin	I am trying to use the nova-client to access openstack. I set up the nova client on my machine and set up authentication as documented http://docs.openstack.org/cli/quick-start/content/authenticate.html . However when I run a "nova credentials", it just sits there and doesn't do anything. Any ideas?
+2013-05-07 14:40:33	-->	Paul (~Adium@50.146.179.195) has joined #neto-cloud
+2013-05-07 14:41:17	Mohsin	I get this error ERROR: HTTPConnectionPool(host='162.150.8.198', port=5000): Max retries exceeded with url: /v2.0/tokens (Caused by <class 'socket.error'>: [Errno 110] Connection timed out)
+2013-05-07 14:41:31	Mohsin	got the openrc.sh from the dashboard
+2013-05-07 14:46:26	-->	Paul1 (~Adium@50.146.145.240) has joined #neto-cloud
+2013-05-07 14:46:51	<--	Paul (~Adium@50.146.179.195) has quit (Ping timeout: 240 seconds)
+2013-05-07 14:50:31	<--	Paul1 (~Adium@50.146.145.240) has quit (Ping timeout: 240 seconds)
+2013-05-07 14:51:12	-->	Paul (~Adium@37.sub-75-195-156.myvzw.com) has joined #neto-cloud
+2013-05-07 14:59:09	Mohsin	What is the OS_AUTH_URL? Is it http://162.150.8.198:5000/v2.0/
+2013-05-07 14:59:46	Mohsin	telnet doesn't seem to work. I can ping the IP but the port isnt accessible
+2013-05-07 15:00:12	cburke002	Let me take a look
+2013-05-07 15:00:28	Mohsin	Thanks
+2013-05-07 15:00:37	cburke002	What's your tenant name?
+2013-05-07 15:01:39	Mohsin	CHQCVSA
+2013-05-07 15:02:30	Mohsin	Do you need the tenant ID too?
+2013-05-07 15:02:47	cburke002	No, just the name works
+2013-05-07 15:02:51	<--	Paul (~Adium@37.sub-75-195-156.myvzw.com) has quit (Ping timeout: 240 seconds)
+2013-05-07 15:02:57	Mohsin	OK
+2013-05-07 15:03:04	<--	vharih000 (~Adium@10.21.146.187) has quit (Quit: Leaving.)
+2013-05-07 15:09:27	cburke002	I was able to telnet from my laptop to 162.150.8.198:5000
+2013-05-07 15:09:39	cburke002	What network are you coming from?
+2013-05-07 15:10:13	Mohsin	CET
+2013-05-07 15:10:36	Mohsin	actually ULA
+2013-05-07 15:10:47	Mohsin	cause I am trying to telnet from my machine
+2013-05-07 15:11:14	cburke002	Ah, ok
+2013-05-07 15:11:24	cburke002	I don't think you'll be able to get to prod from ULA
+2013-05-07 15:11:46	Mohsin	I can ping it though
+2013-05-07 15:12:38	cburke002	UCMP packets might be specifically allowed
+2013-05-07 15:12:42	cburke002	Can't say for sure though
+2013-05-07 15:12:46	Mohsin	I see
+2013-05-07 15:13:19	Mohsin	My laptop is on the CET. Going to try telneting from there
+2013-05-07 15:13:24	cburke002	Ok
+2013-05-07 15:13:46	cburke002	While you're at it, could you give us your laptop's IP?
+2013-05-07 15:14:00	Mohsin	sure
+2013-05-07 15:14:25	Mohsin	10.172.223.92
+2013-05-07 15:14:34	Mohsin	doesn't work from my laptop either
+2013-05-07 15:14:41	Mohsin	but I can access the UI
+2013-05-07 15:14:54	Mohsin	UI = Horizon
+2013-05-07 15:15:23	cburke002	Well, Horizon is on port 80
+2013-05-07 15:15:29	cburke002	(Or 443)
+2013-05-07 15:15:33	Mohsin	yeah
+2013-05-07 15:19:21	sri	Mohsin: try to connect to the keystone port
+2013-05-07 15:19:33	sri	What is the exact command you are trying to run?
+2013-05-07 15:19:46	Mohsin	just running nova credentials
+2013-05-07 15:20:00	Mohsin	and then I just tried a simple telnet
+2013-05-07 15:20:11	Mohsin	What is the keystone port?
+2013-05-07 15:20:48	sri	5000
+2013-05-07 15:20:58	Mohsin	Yes thats the port I am trying
+2013-05-07 15:21:10	sri	telnet to 162.150.8.198 on port 5000
+2013-05-07 15:21:11	Mohsin	but can't seem to get in from the ULA or CET
+2013-05-07 15:21:20	sri	ULA isn't going to work
+2013-05-07 15:21:52	Mohsin	CET should right/
+2013-05-07 15:21:54	Mohsin	?
+2013-05-07 15:22:04	sri	I have no idea what CET space means
+2013-05-07 15:22:14	sri	Office networks are in 10/8
+2013-05-07 15:22:27	sri	If you are are comign from there, you should have access
+2013-05-07 15:22:35	Mohsin	I am coming from there
+2013-05-07 15:22:38	sri	From your office desktop
+2013-05-07 15:22:39	Mohsin	on my laptop
+2013-05-07 15:22:41	Mohsin	yes
+2013-05-07 15:22:46	sri	telnet 162.150.8.198  5000
+2013-05-07 15:22:52	Mohsin	I did
+2013-05-07 15:22:57	sri	Try it now please
+2013-05-07 15:22:59	Mohsin	ok
+2013-05-07 15:23:49	sri	I am not seeing any connection attempts get through
+2013-05-07 15:25:00	Mohsin	Just a sec please. Laptop is running really slow
+2013-05-07 15:27:19	Mohsin	OK worked this time
+2013-05-07 15:27:24	Mohsin	great :)

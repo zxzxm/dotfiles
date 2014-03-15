@@ -1,0 +1,2540 @@
+2012-02-08 17:03:00		Plugins loaded: alias, aspell, fifo, irc, logger, relay, rmodifier, tcl, xfer
+2012-02-08 17:03:04		[startup] (weechat.conf)
+2012-02-08 17:03:04		  weechat.startup.command_after_plugins = ""
+2012-02-08 17:03:04		  weechat.startup.command_before_plugins = ""
+2012-02-08 17:03:04		  weechat.startup.display_logo = on
+2012-02-08 17:03:04		  weechat.startup.display_version = on
+2012-02-08 17:03:04		[look] (weechat.conf)
+2012-02-08 17:03:04		  weechat.look.align_end_of_lines = message
+2012-02-08 17:03:04		  weechat.look.bar_more_down = "++"
+2012-02-08 17:03:04		  weechat.look.bar_more_left = "<<"
+2012-02-08 17:03:04		  weechat.look.bar_more_right = ">>"
+2012-02-08 17:03:04		  weechat.look.bar_more_up = "--"
+2012-02-08 17:03:04		  weechat.look.buffer_notify_default = all
+2012-02-08 17:03:04		  weechat.look.buffer_time_format = "%H:%M:%S"
+2012-02-08 17:03:04		  weechat.look.color_basic_force_bold = off
+2012-02-08 17:03:04		  weechat.look.color_inactive_buffer = off
+2012-02-08 17:03:04		  weechat.look.color_inactive_message = on
+2012-02-08 17:03:04		  weechat.look.color_inactive_prefix = on
+2012-02-08 17:03:04		  weechat.look.color_inactive_prefix_buffer = on
+2012-02-08 17:03:04		  weechat.look.color_inactive_time = off
+2012-02-08 17:03:04		  weechat.look.color_inactive_window = off
+2012-02-08 17:03:04		  weechat.look.color_pairs_auto_reset = 5
+2012-02-08 17:03:04		  weechat.look.color_real_white = off
+2012-02-08 17:03:04		  weechat.look.command_chars = ""
+2012-02-08 17:03:04		  weechat.look.confirm_quit = off
+2012-02-08 17:03:04		  weechat.look.day_change = on
+2012-02-08 17:03:04		  weechat.look.day_change_time_format = "%a, %d %b %Y"
+2012-02-08 17:03:04		  weechat.look.eat_newline_glitch = off
+2012-02-08 17:03:04		  weechat.look.highlight = ""
+2012-02-08 17:03:04		  weechat.look.highlight_regex = ""
+2012-02-08 17:03:04		  weechat.look.highlight_tags = ""
+2012-02-08 17:03:04		  weechat.look.hotlist_add_buffer_if_away = on
+2012-02-08 17:03:04		  weechat.look.hotlist_buffer_separator = ", "
+2012-02-08 17:03:04		  weechat.look.hotlist_count_max = 2
+2012-02-08 17:03:04		  weechat.look.hotlist_count_min_msg = 2
+2012-02-08 17:03:04		  weechat.look.hotlist_names_count = 3
+2012-02-08 17:03:04		  weechat.look.hotlist_names_length = 0
+2012-02-08 17:03:04		  weechat.look.hotlist_names_level = 12
+2012-02-08 17:03:04		  weechat.look.hotlist_names_merged_buffers = off
+2012-02-08 17:03:04		  weechat.look.hotlist_short_names = on
+2012-02-08 17:03:04		  weechat.look.hotlist_sort = group_time_asc
+2012-02-08 17:03:04		  weechat.look.hotlist_unique_numbers = on
+2012-02-08 17:03:04		  weechat.look.input_cursor_scroll = 20
+2012-02-08 17:03:04		  weechat.look.input_share = none
+2012-02-08 17:03:04		  weechat.look.input_share_overwrite = off
+2012-02-08 17:03:04		  weechat.look.input_undo_max = 32
+2012-02-08 17:03:04		  weechat.look.item_buffer_filter = "*"
+2012-02-08 17:03:04		  weechat.look.item_time_format = "%H:%M"
+2012-02-08 17:03:04		  weechat.look.jump_current_to_previous_buffer = on
+2012-02-08 17:03:04		  weechat.look.jump_previous_buffer_when_closing = on
+2012-02-08 17:03:04		  weechat.look.mouse = off
+2012-02-08 17:03:04		  weechat.look.mouse_timer_delay = 100
+2012-02-08 17:03:04		  weechat.look.nickmode = on
+2012-02-08 17:03:04		  weechat.look.nickmode_empty = off
+2012-02-08 17:03:04		  weechat.look.paste_max_lines = 3
+2012-02-08 17:03:04		  weechat.look.prefix_action = " *"
+2012-02-08 17:03:04		  weechat.look.prefix_align = right
+2012-02-08 17:03:04		  weechat.look.prefix_align_max = 0
+2012-02-08 17:03:04		  weechat.look.prefix_align_min = 0
+2012-02-08 17:03:04		  weechat.look.prefix_align_more = on
+2012-02-08 17:03:04		  weechat.look.prefix_buffer_align = right
+2012-02-08 17:03:04		  weechat.look.prefix_buffer_align_max = 0
+2012-02-08 17:03:04		  weechat.look.prefix_buffer_align_more = on
+2012-02-08 17:03:04		  weechat.look.prefix_error = "=!="
+2012-02-08 17:03:04		  weechat.look.prefix_join = "-->"
+2012-02-08 17:03:04		  weechat.look.prefix_network = "--"
+2012-02-08 17:03:04		  weechat.look.prefix_quit = "<--"
+2012-02-08 17:03:04		  weechat.look.prefix_suffix = "|"
+2012-02-08 17:03:04		  weechat.look.read_marker = line
+2012-02-08 17:03:04		  weechat.look.read_marker_always_show = off
+2012-02-08 17:03:04		  weechat.look.read_marker_string = "- "
+2012-02-08 17:03:04		  weechat.look.save_config_on_exit = on
+2012-02-08 17:03:04		  weechat.look.save_layout_on_exit = none
+2012-02-08 17:03:04		  weechat.look.scroll_amount = 3
+2012-02-08 17:03:04		  weechat.look.scroll_page_percent = 100
+2012-02-08 17:03:04		  weechat.look.search_text_not_found_alert = on
+2012-02-08 17:03:04		  weechat.look.separator_horizontal = "-"
+2012-02-08 17:03:04		  weechat.look.separator_vertical = ""
+2012-02-08 17:03:04		  weechat.look.set_title = on
+2012-02-08 17:03:04		  weechat.look.time_format = "%a, %d %b %Y %T"
+2012-02-08 17:03:04		[color] (weechat.conf)
+2012-02-08 17:03:04		  weechat.color.bar_more = lightmagenta
+2012-02-08 17:03:04		  weechat.color.chat = default
+2012-02-08 17:03:04		  weechat.color.chat_bg = default
+2012-02-08 17:03:04		  weechat.color.chat_buffer = white
+2012-02-08 17:03:04		  weechat.color.chat_channel = white
+2012-02-08 17:03:04		  weechat.color.chat_delimiters = green
+2012-02-08 17:03:04		  weechat.color.chat_highlight = yellow
+2012-02-08 17:03:04		  weechat.color.chat_highlight_bg = magenta
+2012-02-08 17:03:04		  weechat.color.chat_host = cyan
+2012-02-08 17:03:04		  weechat.color.chat_inactive_buffer = darkgray
+2012-02-08 17:03:04		  weechat.color.chat_inactive_window = darkgray
+2012-02-08 17:03:04		  weechat.color.chat_nick = lightcyan
+2012-02-08 17:03:04		  weechat.color.chat_nick_colors = "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2012-02-08 17:03:04		  weechat.color.chat_nick_other = cyan
+2012-02-08 17:03:04		  weechat.color.chat_nick_self = white
+2012-02-08 17:03:04		  weechat.color.chat_prefix_action = white
+2012-02-08 17:03:04		  weechat.color.chat_prefix_buffer = brown
+2012-02-08 17:03:04		  weechat.color.chat_prefix_buffer_inactive_buffer = darkgray
+2012-02-08 17:03:04		  weechat.color.chat_prefix_error = yellow
+2012-02-08 17:03:04		  weechat.color.chat_prefix_join = lightgreen
+2012-02-08 17:03:04		  weechat.color.chat_prefix_more = lightmagenta
+2012-02-08 17:03:04		  weechat.color.chat_prefix_network = magenta
+2012-02-08 17:03:04		  weechat.color.chat_prefix_quit = lightred
+2012-02-08 17:03:04		  weechat.color.chat_prefix_suffix = green
+2012-02-08 17:03:04		  weechat.color.chat_read_marker = magenta
+2012-02-08 17:03:04		  weechat.color.chat_read_marker_bg = default
+2012-02-08 17:03:04		  weechat.color.chat_server = brown
+2012-02-08 17:03:04		  weechat.color.chat_tags = red
+2012-02-08 17:03:04		  weechat.color.chat_text_found = yellow
+2012-02-08 17:03:04		  weechat.color.chat_text_found_bg = lightmagenta
+2012-02-08 17:03:04		  weechat.color.chat_time = default
+2012-02-08 17:03:04		  weechat.color.chat_time_delimiters = brown
+2012-02-08 17:03:04		  weechat.color.chat_value = cyan
+2012-02-08 17:03:04		  weechat.color.input_actions = lightgreen
+2012-02-08 17:03:04		  weechat.color.input_text_not_found = red
+2012-02-08 17:03:04		  weechat.color.nicklist_away = cyan
+2012-02-08 17:03:04		  weechat.color.nicklist_group = green
+2012-02-08 17:03:04		  weechat.color.nicklist_offline = blue
+2012-02-08 17:03:04		  weechat.color.separator = blue
+2012-02-08 17:03:04		  weechat.color.status_count_highlight = magenta
+2012-02-08 17:03:04		  weechat.color.status_count_msg = brown
+2012-02-08 17:03:04		  weechat.color.status_count_other = default
+2012-02-08 17:03:04		  weechat.color.status_count_private = green
+2012-02-08 17:03:04		  weechat.color.status_data_highlight = lightmagenta
+2012-02-08 17:03:04		  weechat.color.status_data_msg = yellow
+2012-02-08 17:03:04		  weechat.color.status_data_other = default
+2012-02-08 17:03:04		  weechat.color.status_data_private = lightgreen
+2012-02-08 17:03:04		  weechat.color.status_filter = green
+2012-02-08 17:03:04		  weechat.color.status_more = yellow
+2012-02-08 17:03:04		  weechat.color.status_name = white
+2012-02-08 17:03:04		  weechat.color.status_name_ssl = lightgreen
+2012-02-08 17:03:04		  weechat.color.status_number = yellow
+2012-02-08 17:03:04		  weechat.color.status_time = default
+2012-02-08 17:03:04		[completion] (weechat.conf)
+2012-02-08 17:03:04		  weechat.completion.default_template = "%(nicks)|%(irc_channels)"
+2012-02-08 17:03:04		  weechat.completion.nick_add_space = on
+2012-02-08 17:03:04		  weechat.completion.nick_completer = ":"
+2012-02-08 17:03:04		  weechat.completion.nick_first_only = off
+2012-02-08 17:03:04		  weechat.completion.nick_ignore_chars = "[]`_-^"
+2012-02-08 17:03:04		  weechat.completion.partial_completion_alert = on
+2012-02-08 17:03:04		  weechat.completion.partial_completion_command = off
+2012-02-08 17:03:04		  weechat.completion.partial_completion_command_arg = off
+2012-02-08 17:03:04		  weechat.completion.partial_completion_count = on
+2012-02-08 17:03:04		  weechat.completion.partial_completion_other = off
+2012-02-08 17:03:04		[history] (weechat.conf)
+2012-02-08 17:03:04		  weechat.history.display_default = 5
+2012-02-08 17:03:04		  weechat.history.max_commands = 100
+2012-02-08 17:03:04		  weechat.history.max_lines = 4096
+2012-02-08 17:03:04		  weechat.history.max_visited_buffers = 50
+2012-02-08 17:03:04		[network] (weechat.conf)
+2012-02-08 17:03:04		  weechat.network.gnutls_ca_file = "/etc/ssl/certs/ca-certificates.crt"
+2012-02-08 17:03:04		  weechat.network.gnutls_handshake_timeout = 30
+2012-02-08 17:03:04		[plugin] (weechat.conf)
+2012-02-08 17:03:04		  weechat.plugin.autoload = "*"
+2012-02-08 17:03:04		  weechat.plugin.debug = off
+2012-02-08 17:03:04		  weechat.plugin.extension = ".so"
+2012-02-08 17:03:04		  weechat.plugin.path = "%h/plugins"
+2012-02-08 17:03:04		  weechat.plugin.save_config_on_unload = on
+2012-02-08 17:03:04		[bar] (weechat.conf)
+2012-02-08 17:03:04		  weechat.bar.input.color_bg = default
+2012-02-08 17:03:04		  weechat.bar.input.color_delim = cyan
+2012-02-08 17:03:04		  weechat.bar.input.color_fg = default
+2012-02-08 17:03:04		  weechat.bar.input.conditions = ""
+2012-02-08 17:03:04		  weechat.bar.input.filling_left_right = vertical
+2012-02-08 17:03:04		  weechat.bar.input.filling_top_bottom = horizontal
+2012-02-08 17:03:04		  weechat.bar.input.hidden = off
+2012-02-08 17:03:04		  weechat.bar.input.items = "[input_prompt]+(away),[input_search],[input_paste],input_text"
+2012-02-08 17:03:04		  weechat.bar.input.position = bottom
+2012-02-08 17:03:04		  weechat.bar.input.priority = 1000
+2012-02-08 17:03:04		  weechat.bar.input.separator = off
+2012-02-08 17:03:04		  weechat.bar.input.size = 1
+2012-02-08 17:03:04		  weechat.bar.input.size_max = 0
+2012-02-08 17:03:04		  weechat.bar.input.type = window
+2012-02-08 17:03:04		  weechat.bar.nicklist.color_bg = default
+2012-02-08 17:03:04		  weechat.bar.nicklist.color_delim = cyan
+2012-02-08 17:03:04		  weechat.bar.nicklist.color_fg = default
+2012-02-08 17:03:04		  weechat.bar.nicklist.conditions = "nicklist"
+2012-02-08 17:03:04		  weechat.bar.nicklist.filling_left_right = vertical
+2012-02-08 17:03:04		  weechat.bar.nicklist.filling_top_bottom = columns_vertical
+2012-02-08 17:03:04		  weechat.bar.nicklist.hidden = off
+2012-02-08 17:03:04		  weechat.bar.nicklist.items = "buffer_nicklist"
+2012-02-08 17:03:04		  weechat.bar.nicklist.position = right
+2012-02-08 17:03:04		  weechat.bar.nicklist.priority = 200
+2012-02-08 17:03:04		  weechat.bar.nicklist.separator = on
+2012-02-08 17:03:04		  weechat.bar.nicklist.size = 0
+2012-02-08 17:03:04		  weechat.bar.nicklist.size_max = 0
+2012-02-08 17:03:04		  weechat.bar.nicklist.type = window
+2012-02-08 17:03:04		  weechat.bar.status.color_bg = blue
+2012-02-08 17:03:04		  weechat.bar.status.color_delim = cyan
+2012-02-08 17:03:04		  weechat.bar.status.color_fg = default
+2012-02-08 17:03:04		  weechat.bar.status.conditions = ""
+2012-02-08 17:03:04		  weechat.bar.status.filling_left_right = vertical
+2012-02-08 17:03:04		  weechat.bar.status.filling_top_bottom = horizontal
+2012-02-08 17:03:04		  weechat.bar.status.hidden = off
+2012-02-08 17:03:04		  weechat.bar.status.items = "[time],[buffer_count],[buffer_plugin],buffer_number+:+buffer_name+{buffer_nicklist_count}+buffer_filter,[lag],[hotlist],completion,scroll"
+2012-02-08 17:03:04		  weechat.bar.status.position = bottom
+2012-02-08 17:03:04		  weechat.bar.status.priority = 500
+2012-02-08 17:03:04		  weechat.bar.status.separator = off
+2012-02-08 17:03:04		  weechat.bar.status.size = 1
+2012-02-08 17:03:04		  weechat.bar.status.size_max = 0
+2012-02-08 17:03:04		  weechat.bar.status.type = window
+2012-02-08 17:03:04		  weechat.bar.title.color_bg = blue
+2012-02-08 17:03:04		  weechat.bar.title.color_delim = cyan
+2012-02-08 17:03:04		  weechat.bar.title.color_fg = default
+2012-02-08 17:03:04		  weechat.bar.title.conditions = ""
+2012-02-08 17:03:04		  weechat.bar.title.filling_left_right = vertical
+2012-02-08 17:03:04		  weechat.bar.title.filling_top_bottom = horizontal
+2012-02-08 17:03:04		  weechat.bar.title.hidden = off
+2012-02-08 17:03:04		  weechat.bar.title.items = "buffer_title"
+2012-02-08 17:03:04		  weechat.bar.title.position = top
+2012-02-08 17:03:04		  weechat.bar.title.priority = 500
+2012-02-08 17:03:04		  weechat.bar.title.separator = off
+2012-02-08 17:03:04		  weechat.bar.title.size = 1
+2012-02-08 17:03:04		  weechat.bar.title.size_max = 0
+2012-02-08 17:03:04		  weechat.bar.title.type = window
+2012-02-08 17:03:04		[var] (plugins.conf)
+2012-02-08 17:03:04		  plugins.var.fifo.fifo = "on"
+2012-02-08 17:03:04		  plugins.var.tcl.check_license = "on"
+2012-02-08 17:03:04		[cmd] (alias.conf)
+2012-02-08 17:03:04		  alias.cmd.AAWAY = "allserv /away"
+2012-02-08 17:03:04		  alias.cmd.AME = "allchan /me"
+2012-02-08 17:03:04		  alias.cmd.AMSG = "allchan /msg *"
+2012-02-08 17:03:04		  alias.cmd.ANICK = "allserv /nick"
+2012-02-08 17:03:04		  alias.cmd.BYE = "quit"
+2012-02-08 17:03:04		  alias.cmd.C = "buffer clear"
+2012-02-08 17:03:04		  alias.cmd.CHAT = "dcc chat"
+2012-02-08 17:03:04		  alias.cmd.CL = "buffer clear"
+2012-02-08 17:03:04		  alias.cmd.CLOSE = "buffer close"
+2012-02-08 17:03:04		  alias.cmd.EXIT = "quit"
+2012-02-08 17:03:04		  alias.cmd.IG = "ignore"
+2012-02-08 17:03:04		  alias.cmd.J = "join"
+2012-02-08 17:03:04		  alias.cmd.K = "kick"
+2012-02-08 17:03:04		  alias.cmd.KB = "kickban"
+2012-02-08 17:03:04		  alias.cmd.LEAVE = "part"
+2012-02-08 17:03:04		  alias.cmd.M = "msg"
+2012-02-08 17:03:04		  alias.cmd.MUB = "unban *"
+2012-02-08 17:03:04		  alias.cmd.N = "names"
+2012-02-08 17:03:04		  alias.cmd.Q = "query"
+2012-02-08 17:03:04		  alias.cmd.REDRAW = "window refresh"
+2012-02-08 17:03:04		  alias.cmd.SAY = "msg *"
+2012-02-08 17:03:04		  alias.cmd.SIGNOFF = "quit"
+2012-02-08 17:03:04		  alias.cmd.T = "topic"
+2012-02-08 17:03:04		  alias.cmd.UB = "unban"
+2012-02-08 17:03:04		  alias.cmd.V = "command core version"
+2012-02-08 17:03:04		  alias.cmd.W = "who"
+2012-02-08 17:03:04		  alias.cmd.WC = "window merge"
+2012-02-08 17:03:04		  alias.cmd.WI = "whois"
+2012-02-08 17:03:04		  alias.cmd.WII = "whois $1 $1"
+2012-02-08 17:03:04		  alias.cmd.WW = "whowas"
+2012-02-08 17:03:04		[look] (aspell.conf)
+2012-02-08 17:03:04		  aspell.look.color = lightred
+2012-02-08 17:03:04		[check] (aspell.conf)
+2012-02-08 17:03:04		  aspell.check.commands = "ame,amsg,away,command,cycle,kick,kickban,me,msg,notice,part,query,quit,topic"
+2012-02-08 17:03:04		  aspell.check.default_dict = ""
+2012-02-08 17:03:04		  aspell.check.during_search = off
+2012-02-08 17:03:04		  aspell.check.real_time = off
+2012-02-08 17:03:04		  aspell.check.word_min_length = 2
+2012-02-08 17:03:04		[look] (irc.conf)
+2012-02-08 17:03:04		  irc.look.buffer_switch_autojoin = on
+2012-02-08 17:03:04		  irc.look.buffer_switch_join = on
+2012-02-08 17:03:04		  irc.look.color_nicks_in_names = off
+2012-02-08 17:03:04		  irc.look.color_nicks_in_nicklist = off
+2012-02-08 17:03:04		  irc.look.color_nicks_in_server_messages = on
+2012-02-08 17:03:04		  irc.look.color_pv_nick_like_channel = on
+2012-02-08 17:03:04		  irc.look.display_away = local
+2012-02-08 17:03:04		  irc.look.display_ctcp_blocked = on
+2012-02-08 17:03:04		  irc.look.display_ctcp_reply = on
+2012-02-08 17:03:04		  irc.look.display_ctcp_unknown = on
+2012-02-08 17:03:04		  irc.look.display_host_join = on
+2012-02-08 17:03:04		  irc.look.display_host_join_local = on
+2012-02-08 17:03:04		  irc.look.display_host_quit = on
+2012-02-08 17:03:04		  irc.look.display_old_topic = on
+2012-02-08 17:03:04		  irc.look.display_pv_away_once = on
+2012-02-08 17:03:04		  irc.look.display_pv_back = on
+2012-02-08 17:03:04		  irc.look.hide_nickserv_pwd = on
+2012-02-08 17:03:04		  irc.look.highlight_tags = "irc_privmsg,irc_notice"
+2012-02-08 17:03:04		  irc.look.item_away_message = on
+2012-02-08 17:03:04		  irc.look.item_channel_modes = on
+2012-02-08 17:03:04		  irc.look.item_channel_modes_hide_key = off
+2012-02-08 17:03:04		  irc.look.item_display_server = buffer_plugin
+2012-02-08 17:03:04		  irc.look.item_nick_modes = on
+2012-02-08 17:03:04		  irc.look.item_nick_prefix = on
+2012-02-08 17:03:04		  irc.look.msgbuffer_fallback = current
+2012-02-08 17:03:04		  irc.look.new_channel_position = none
+2012-02-08 17:03:04		  irc.look.new_pv_position = none
+2012-02-08 17:03:04		  irc.look.nick_color_force = ""
+2012-02-08 17:03:04		  irc.look.nick_color_stop_chars = "_|["
+2012-02-08 17:03:04		  irc.look.nick_completion_smart = speakers
+2012-02-08 17:03:04		  irc.look.nick_prefix = ""
+2012-02-08 17:03:04		  irc.look.nick_suffix = ""
+2012-02-08 17:03:04		  irc.look.notice_as_pv = auto
+2012-02-08 17:03:04		  irc.look.notify_tags_ison = "notify_message"
+2012-02-08 17:03:04		  irc.look.notify_tags_whois = "notify_message"
+2012-02-08 17:03:04		  irc.look.part_closes_buffer = off
+2012-02-08 17:03:04		  irc.look.raw_messages = 256
+2012-02-08 17:03:04		  irc.look.server_buffer = merge_with_core
+2012-02-08 17:03:04		  irc.look.smart_filter = on
+2012-02-08 17:03:04		  irc.look.smart_filter_delay = 5
+2012-02-08 17:03:04		  irc.look.smart_filter_join = on
+2012-02-08 17:03:04		  irc.look.smart_filter_nick = on
+2012-02-08 17:03:04		  irc.look.smart_filter_quit = on
+2012-02-08 17:03:04		  irc.look.topic_strip_colors = off
+2012-02-08 17:03:04		[color] (irc.conf)
+2012-02-08 17:03:04		  irc.color.input_nick = lightcyan
+2012-02-08 17:03:04		  irc.color.item_away = yellow
+2012-02-08 17:03:04		  irc.color.item_channel_modes = default
+2012-02-08 17:03:04		  irc.color.item_lag_counting = default
+2012-02-08 17:03:04		  irc.color.item_lag_finished = yellow
+2012-02-08 17:03:04		  irc.color.message_join = green
+2012-02-08 17:03:04		  irc.color.message_quit = red
+2012-02-08 17:03:04		  irc.color.nick_prefix = green
+2012-02-08 17:03:04		  irc.color.nick_prefixes = "q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+2012-02-08 17:03:04		  irc.color.nick_suffix = green
+2012-02-08 17:03:04		  irc.color.notice = green
+2012-02-08 17:03:04		  irc.color.reason_quit = default
+2012-02-08 17:03:04		  irc.color.topic_new = white
+2012-02-08 17:03:04		  irc.color.topic_old = darkgray
+2012-02-08 17:03:04		[network] (irc.conf)
+2012-02-08 17:03:04		  irc.network.autoreconnect_delay_growing = 2
+2012-02-08 17:03:04		  irc.network.autoreconnect_delay_max = 1800
+2012-02-08 17:03:04		  irc.network.colors_receive = on
+2012-02-08 17:03:04		  irc.network.colors_send = on
+2012-02-08 17:03:04		  irc.network.lag_check = 60
+2012-02-08 17:03:04		  irc.network.lag_disconnect = 0
+2012-02-08 17:03:04		  irc.network.lag_min_show = 500
+2012-02-08 17:03:04		  irc.network.lag_refresh_interval = 1
+2012-02-08 17:03:04		  irc.network.notify_check_ison = 1
+2012-02-08 17:03:04		  irc.network.notify_check_whois = 5
+2012-02-08 17:03:04		  irc.network.send_unknown_commands = off
+2012-02-08 17:03:04		[server_default] (irc.conf)
+2012-02-08 17:03:04		  irc.server_default.addresses = ""
+2012-02-08 17:03:04		  irc.server_default.anti_flood_prio_high = 2
+2012-02-08 17:03:04		  irc.server_default.anti_flood_prio_low = 2
+2012-02-08 17:03:04		  irc.server_default.autoconnect = off
+2012-02-08 17:03:04		  irc.server_default.autojoin = ""
+2012-02-08 17:03:04		  irc.server_default.autoreconnect = on
+2012-02-08 17:03:04		  irc.server_default.autoreconnect_delay = 10
+2012-02-08 17:03:04		  irc.server_default.autorejoin = off
+2012-02-08 17:03:04		  irc.server_default.autorejoin_delay = 30
+2012-02-08 17:03:04		  irc.server_default.away_check = 0
+2012-02-08 17:03:04		  irc.server_default.away_check_max_nicks = 25
+2012-02-08 17:03:04		  irc.server_default.command = ""
+2012-02-08 17:03:04		  irc.server_default.command_delay = 0
+2012-02-08 17:03:04		  irc.server_default.connection_timeout = 60
+2012-02-08 17:03:04		  irc.server_default.default_msg_part = "WeeChat %v"
+2012-02-08 17:03:04		  irc.server_default.default_msg_quit = "WeeChat %v"
+2012-02-08 17:03:04		  irc.server_default.ipv6 = off
+2012-02-08 17:03:04		  irc.server_default.local_hostname = ""
+2012-02-08 17:03:04		  irc.server_default.nicks = "thermans,thermans1,thermans2,thermans3,thermans4"
+2012-02-08 17:03:04		  irc.server_default.notify = ""
+2012-02-08 17:03:04		  irc.server_default.password = ""
+2012-02-08 17:03:04		  irc.server_default.proxy = ""
+2012-02-08 17:03:04		  irc.server_default.realname = ""
+2012-02-08 17:03:04		  irc.server_default.sasl_mechanism = plain
+2012-02-08 17:03:04		  irc.server_default.sasl_password = ""
+2012-02-08 17:03:04		  irc.server_default.sasl_timeout = 15
+2012-02-08 17:03:04		  irc.server_default.sasl_username = ""
+2012-02-08 17:03:04		  irc.server_default.ssl = off
+2012-02-08 17:03:04		  irc.server_default.ssl_cert = ""
+2012-02-08 17:03:04		  irc.server_default.ssl_dhkey_size = 2048
+2012-02-08 17:03:04		  irc.server_default.ssl_priorities = "NORMAL"
+2012-02-08 17:03:04		  irc.server_default.ssl_verify = on
+2012-02-08 17:03:04		  irc.server_default.username = "thermans"
+2012-02-08 17:03:04		[server] (irc.conf)
+2012-02-08 17:03:04		  irc.server.freenode.addresses = "chat.freenode.net/6667"
+2012-02-08 17:03:04		  irc.server.freenode.anti_flood_prio_high
+2012-02-08 17:03:04		  irc.server.freenode.anti_flood_prio_low
+2012-02-08 17:03:04		  irc.server.freenode.autoconnect
+2012-02-08 17:03:04		  irc.server.freenode.autojoin
+2012-02-08 17:03:04		  irc.server.freenode.autoreconnect
+2012-02-08 17:03:04		  irc.server.freenode.autoreconnect_delay
+2012-02-08 17:03:04		  irc.server.freenode.autorejoin
+2012-02-08 17:03:04		  irc.server.freenode.autorejoin_delay
+2012-02-08 17:03:04		  irc.server.freenode.away_check
+2012-02-08 17:03:04		  irc.server.freenode.away_check_max_nicks
+2012-02-08 17:03:04		  irc.server.freenode.command
+2012-02-08 17:03:04		  irc.server.freenode.command_delay
+2012-02-08 17:03:04		  irc.server.freenode.connection_timeout
+2012-02-08 17:03:04		  irc.server.freenode.default_msg_part
+2012-02-08 17:03:04		  irc.server.freenode.default_msg_quit
+2012-02-08 17:03:04		  irc.server.freenode.ipv6
+2012-02-08 17:03:04		  irc.server.freenode.local_hostname
+2012-02-08 17:03:04		  irc.server.freenode.nicks
+2012-02-08 17:03:04		  irc.server.freenode.notify
+2012-02-08 17:03:04		  irc.server.freenode.password
+2012-02-08 17:03:04		  irc.server.freenode.proxy
+2012-02-08 17:03:04		  irc.server.freenode.realname
+2012-02-08 17:03:04		  irc.server.freenode.sasl_mechanism
+2012-02-08 17:03:04		  irc.server.freenode.sasl_password
+2012-02-08 17:03:04		  irc.server.freenode.sasl_timeout
+2012-02-08 17:03:04		  irc.server.freenode.sasl_username
+2012-02-08 17:03:04		  irc.server.freenode.ssl
+2012-02-08 17:03:04		  irc.server.freenode.ssl_cert
+2012-02-08 17:03:04		  irc.server.freenode.ssl_dhkey_size
+2012-02-08 17:03:04		  irc.server.freenode.ssl_priorities
+2012-02-08 17:03:04		  irc.server.freenode.ssl_verify
+2012-02-08 17:03:04		  irc.server.freenode.username
+2012-02-08 17:03:04		[look] (logger.conf)
+2012-02-08 17:03:04		  logger.look.backlog = 20
+2012-02-08 17:03:04		[file] (logger.conf)
+2012-02-08 17:03:04		  logger.file.auto_log = on
+2012-02-08 17:03:04		  logger.file.flush_delay = 120
+2012-02-08 17:03:04		  logger.file.info_lines = off
+2012-02-08 17:03:04		  logger.file.mask = "$plugin.$name.weechatlog"
+2012-02-08 17:03:04		  logger.file.name_lower_case = on
+2012-02-08 17:03:04		  logger.file.path = "%h/logs/"
+2012-02-08 17:03:04		  logger.file.replacement_char = "_"
+2012-02-08 17:03:04		  logger.file.time_format = "%Y-%m-%d %H:%M:%S"
+2012-02-08 17:03:04		[look] (relay.conf)
+2012-02-08 17:03:04		  relay.look.auto_open_buffer = on
+2012-02-08 17:03:04		  relay.look.raw_messages = 256
+2012-02-08 17:03:04		[color] (relay.conf)
+2012-02-08 17:03:04		  relay.color.status_active = lightblue
+2012-02-08 17:03:04		  relay.color.status_auth_failed = lightred
+2012-02-08 17:03:04		  relay.color.status_connecting = yellow
+2012-02-08 17:03:04		  relay.color.status_disconnected = lightred
+2012-02-08 17:03:04		  relay.color.status_waiting_auth = brown
+2012-02-08 17:03:04		  relay.color.text = default
+2012-02-08 17:03:04		  relay.color.text_bg = default
+2012-02-08 17:03:04		  relay.color.text_selected = white
+2012-02-08 17:03:04		[network] (relay.conf)
+2012-02-08 17:03:04		  relay.network.bind_address = ""
+2012-02-08 17:03:04		  relay.network.max_clients = 5
+2012-02-08 17:03:04		  relay.network.password = ""
+2012-02-08 17:03:04		[look] (rmodifier.conf)
+2012-02-08 17:03:04		  rmodifier.look.hide_char = "*"
+2012-02-08 17:03:04		[modifier] (rmodifier.conf)
+2012-02-08 17:03:04		  rmodifier.modifier.nickserv = "history_add,input_text_display;^(/(msg|quote) +nickserv +(identify|ghost \S+) +)(.*);1,4*"
+2012-02-08 17:03:04		  rmodifier.modifier.oper = "history_add,input_text_display;^(/oper +\S+ +)(.*);1,2*"
+2012-02-08 17:03:04		  rmodifier.modifier.set_pass = "history_add;^(/set +\S*password\S* +)(.*);1,2*"
+2012-02-08 17:03:04		[look] (xfer.conf)
+2012-02-08 17:03:04		  xfer.look.auto_open_buffer = on
+2012-02-08 17:03:04		  xfer.look.progress_bar_size = 20
+2012-02-08 17:03:04		[color] (xfer.conf)
+2012-02-08 17:03:04		  xfer.color.status_aborted = lightred
+2012-02-08 17:03:04		  xfer.color.status_active = lightblue
+2012-02-08 17:03:04		  xfer.color.status_connecting = yellow
+2012-02-08 17:03:04		  xfer.color.status_done = lightgreen
+2012-02-08 17:03:04		  xfer.color.status_failed = lightred
+2012-02-08 17:03:04		  xfer.color.status_waiting = lightcyan
+2012-02-08 17:03:04		  xfer.color.text = default
+2012-02-08 17:03:04		  xfer.color.text_bg = default
+2012-02-08 17:03:04		  xfer.color.text_selected = white
+2012-02-08 17:03:04		[network] (xfer.conf)
+2012-02-08 17:03:04		  xfer.network.blocksize = 65536
+2012-02-08 17:03:04		  xfer.network.fast_send = on
+2012-02-08 17:03:04		  xfer.network.own_ip = ""
+2012-02-08 17:03:04		  xfer.network.port_range = ""
+2012-02-08 17:03:04		  xfer.network.speed_limit = 0
+2012-02-08 17:03:04		  xfer.network.timeout = 300
+2012-02-08 17:03:04		[file] (xfer.conf)
+2012-02-08 17:03:04		  xfer.file.auto_accept_chats = off
+2012-02-08 17:03:04		  xfer.file.auto_accept_files = off
+2012-02-08 17:03:04		  xfer.file.auto_rename = on
+2012-02-08 17:03:04		  xfer.file.auto_resume = on
+2012-02-08 17:03:04		  xfer.file.convert_spaces = on
+2012-02-08 17:03:04		  xfer.file.download_path = "%h/xfer"
+2012-02-08 17:03:04		  xfer.file.upload_path = "~"
+2012-02-08 17:03:04		  xfer.file.use_nick_in_filename = on
+2012-02-08 17:03:04		431 configuration options found
+2012-02-08 17:03:15		irc: server oftc created
+2012-02-08 17:03:29	=!=	irc: server "freenode" already exists, can't create it!
+2012-02-08 17:03:51		Option changed: irc.server.oftc.nicks = "tibaza"
+2012-02-08 17:04:00		[server] (irc.conf)
+2012-02-08 17:04:00		  irc.server.oftc.username
+2012-02-08 17:04:00		1 configuration options found matching with "irc.server.oftc.username"
+2012-02-08 17:04:17		Option changed: irc.server.oftc.username = "thermans"
+2012-02-08 17:04:33		Option changed: irc.server.oftc.realname = "Tim Hermans"
+2012-02-08 17:04:50		Option changed: irc.server.oftc.command = "/msg nickserv identify f00bar"
+2012-02-08 17:06:00	=!=	Error: unknown command "plugins" (type /help for help)
+2012-02-08 17:06:25	=!=	Error: unknown command "plugins" (type /help for help)
+2012-02-08 17:06:28		[core]
+2012-02-08 17:06:28		  away    color   debug   history layout  plugin  reload  set     uptime  window 
+2012-02-08 17:06:28		  bar     command filter  input   mouse   proxy   repeat  unset   version
+2012-02-08 17:06:28		  buffer  cursor  help    key     mute    quit    save    upgrade wait   
+2012-02-08 17:06:28		[alias]
+2012-02-08 17:06:28		  AAWAY   AMSG    C       CLOSE   J       LEAVE   N       SAY     UB      W       WII    
+2012-02-08 17:06:28		  alias   ANICK   CHAT    EXIT    K       M       Q       SIGNOFF unalias WC      WW     
+2012-02-08 17:06:28		  AME     BYE     CL      IG      KB      MUB     REDRAW  T       V       WI     
+2012-02-08 17:06:28		[aspell]
+2012-02-08 17:06:28		  aspell
+2012-02-08 17:06:28		[irc]
+2012-02-08 17:06:28		  admin      dehalfop   invite     lusers     notice     quote      saquit     time       wallchops 
+2012-02-08 17:06:28		  allchan    deop       ison       map        notify     reconnect  server     topic      wallops   
+2012-02-08 17:06:28		  allserv    devoice    join       me         op         rehash     service    trace      who       
+2012-02-08 17:06:28		  ban        die        kick       mode       oper       restart    servlist   unban      whois     
+2012-02-08 17:06:28		  connect    disconnect kickban    motd       part       sajoin     squery     userhost   whowas    
+2012-02-08 17:06:28		  ctcp       halfop     kill       msg        ping       samode     squit      users     
+2012-02-08 17:06:28		  cycle      ignore     links      names      pong       sanick     stats      version   
+2012-02-08 17:06:28		  dcc        info       list       nick       query      sapart     summon     voice     
+2012-02-08 17:06:28		[logger]
+2012-02-08 17:06:28		  logger
+2012-02-08 17:06:28		[relay]
+2012-02-08 17:06:28		  relay
+2012-02-08 17:06:28		[rmodifier]
+2012-02-08 17:06:28		  rmodifier
+2012-02-08 17:06:28		[tcl]
+2012-02-08 17:06:28		  tcl
+2012-02-08 17:06:28		[xfer]
+2012-02-08 17:06:28		  me   xfer
+2012-02-08 17:06:45	=!=	irc: command "servlist" must be executed on irc buffer (server or channel)
+2012-02-08 17:06:58		Plugins loaded:
+2012-02-08 17:06:58		  alias: Alias plugin for WeeChat
+2012-02-08 17:06:58		  aspell: Aspell plugin for WeeChat
+2012-02-08 17:06:58		  fifo: Fifo plugin for WeeChat
+2012-02-08 17:06:58		  irc: IRC (Internet Relay Chat) plugin for WeeChat
+2012-02-08 17:06:58		  logger: Logger plugin for WeeChat
+2012-02-08 17:06:58		  relay: Network communication between WeeChat and remote application
+2012-02-08 17:06:58		  rmodifier: Regex modifier plugin for WeeChat
+2012-02-08 17:06:58		  tcl: Tcl plugin for WeeChat
+2012-02-08 17:06:58		  xfer: Xfer (file transfer and direct chat) plugin for WeeChat
+2012-02-08 17:10:19		[look] (irc.conf)
+2012-02-08 17:10:19		  irc.look.buffer_switch_autojoin = on
+2012-02-08 17:10:19		  irc.look.buffer_switch_join = on
+2012-02-08 17:10:19		  irc.look.color_nicks_in_names = off
+2012-02-08 17:10:19		  irc.look.color_nicks_in_nicklist = off
+2012-02-08 17:10:19		  irc.look.color_nicks_in_server_messages = on
+2012-02-08 17:10:19		  irc.look.color_pv_nick_like_channel = on
+2012-02-08 17:10:19		  irc.look.display_away = local
+2012-02-08 17:10:19		  irc.look.display_ctcp_blocked = on
+2012-02-08 17:10:19		  irc.look.display_ctcp_reply = on
+2012-02-08 17:10:19		  irc.look.display_ctcp_unknown = on
+2012-02-08 17:10:19		  irc.look.display_host_join = on
+2012-02-08 17:10:19		  irc.look.display_host_join_local = on
+2012-02-08 17:10:19		  irc.look.display_host_quit = on
+2012-02-08 17:10:19		  irc.look.display_old_topic = on
+2012-02-08 17:10:19		  irc.look.display_pv_away_once = on
+2012-02-08 17:10:19		  irc.look.display_pv_back = on
+2012-02-08 17:10:19		  irc.look.hide_nickserv_pwd = on
+2012-02-08 17:10:19		  irc.look.highlight_tags = "irc_privmsg,irc_notice"
+2012-02-08 17:10:19		  irc.look.item_away_message = on
+2012-02-08 17:10:19		  irc.look.item_channel_modes = on
+2012-02-08 17:10:19		  irc.look.item_channel_modes_hide_key = off
+2012-02-08 17:10:19		  irc.look.item_display_server = buffer_plugin
+2012-02-08 17:10:19		  irc.look.item_nick_modes = on
+2012-02-08 17:10:19		  irc.look.item_nick_prefix = on
+2012-02-08 17:10:19		  irc.look.msgbuffer_fallback = current
+2012-02-08 17:10:19		  irc.look.new_channel_position = none
+2012-02-08 17:10:19		  irc.look.new_pv_position = none
+2012-02-08 17:10:19		  irc.look.nick_color_force = ""
+2012-02-08 17:10:19		  irc.look.nick_color_stop_chars = "_|["
+2012-02-08 17:10:19		  irc.look.nick_completion_smart = speakers
+2012-02-08 17:10:19		  irc.look.nick_prefix = ""
+2012-02-08 17:10:19		  irc.look.nick_suffix = ""
+2012-02-08 17:10:19		  irc.look.notice_as_pv = auto
+2012-02-08 17:10:19		  irc.look.notify_tags_ison = "notify_message"
+2012-02-08 17:10:19		  irc.look.notify_tags_whois = "notify_message"
+2012-02-08 17:10:19		  irc.look.part_closes_buffer = off
+2012-02-08 17:10:19		  irc.look.raw_messages = 256
+2012-02-08 17:10:19		  irc.look.server_buffer = merge_with_core
+2012-02-08 17:10:19		  irc.look.smart_filter = on
+2012-02-08 17:10:19		  irc.look.smart_filter_delay = 5
+2012-02-08 17:10:19		  irc.look.smart_filter_join = on
+2012-02-08 17:10:19		  irc.look.smart_filter_nick = on
+2012-02-08 17:10:19		  irc.look.smart_filter_quit = on
+2012-02-08 17:10:19		  irc.look.topic_strip_colors = off
+2012-02-08 17:10:19		[color] (irc.conf)
+2012-02-08 17:10:19		  irc.color.input_nick = lightcyan
+2012-02-08 17:10:19		  irc.color.item_away = yellow
+2012-02-08 17:10:19		  irc.color.item_channel_modes = default
+2012-02-08 17:10:19		  irc.color.item_lag_counting = default
+2012-02-08 17:10:19		  irc.color.item_lag_finished = yellow
+2012-02-08 17:10:19		  irc.color.message_join = green
+2012-02-08 17:10:19		  irc.color.message_quit = red
+2012-02-08 17:10:19		  irc.color.nick_prefix = green
+2012-02-08 17:10:19		  irc.color.nick_prefixes = "q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+2012-02-08 17:10:19		  irc.color.nick_suffix = green
+2012-02-08 17:10:19		  irc.color.notice = green
+2012-02-08 17:10:19		  irc.color.reason_quit = default
+2012-02-08 17:10:19		  irc.color.topic_new = white
+2012-02-08 17:10:19		  irc.color.topic_old = darkgray
+2012-02-08 17:10:19		[network] (irc.conf)
+2012-02-08 17:10:19		  irc.network.autoreconnect_delay_growing = 2
+2012-02-08 17:10:19		  irc.network.autoreconnect_delay_max = 1800
+2012-02-08 17:10:19		  irc.network.colors_receive = on
+2012-02-08 17:10:19		  irc.network.colors_send = on
+2012-02-08 17:10:19		  irc.network.lag_check = 60
+2012-02-08 17:10:19		  irc.network.lag_disconnect = 0
+2012-02-08 17:10:19		  irc.network.lag_min_show = 500
+2012-02-08 17:10:19		  irc.network.lag_refresh_interval = 1
+2012-02-08 17:10:19		  irc.network.notify_check_ison = 1
+2012-02-08 17:10:19		  irc.network.notify_check_whois = 5
+2012-02-08 17:10:19		  irc.network.send_unknown_commands = off
+2012-02-08 17:10:19		[server_default] (irc.conf)
+2012-02-08 17:10:19		  irc.server_default.addresses = ""
+2012-02-08 17:10:19		  irc.server_default.anti_flood_prio_high = 2
+2012-02-08 17:10:19		  irc.server_default.anti_flood_prio_low = 2
+2012-02-08 17:10:19		  irc.server_default.autoconnect = off
+2012-02-08 17:10:19		  irc.server_default.autojoin = ""
+2012-02-08 17:10:19		  irc.server_default.autoreconnect = on
+2012-02-08 17:10:19		  irc.server_default.autoreconnect_delay = 10
+2012-02-08 17:10:19		  irc.server_default.autorejoin = off
+2012-02-08 17:10:19		  irc.server_default.autorejoin_delay = 30
+2012-02-08 17:10:19		  irc.server_default.away_check = 0
+2012-02-08 17:10:19		  irc.server_default.away_check_max_nicks = 25
+2012-02-08 17:10:19		  irc.server_default.command = ""
+2012-02-08 17:10:19		  irc.server_default.command_delay = 0
+2012-02-08 17:10:19		  irc.server_default.connection_timeout = 60
+2012-02-08 17:10:19		  irc.server_default.default_msg_part = "WeeChat %v"
+2012-02-08 17:10:19		  irc.server_default.default_msg_quit = "WeeChat %v"
+2012-02-08 17:10:19		  irc.server_default.ipv6 = off
+2012-02-08 17:10:19		  irc.server_default.local_hostname = ""
+2012-02-08 17:10:19		  irc.server_default.nicks = "thermans,thermans1,thermans2,thermans3,thermans4"
+2012-02-08 17:10:19		  irc.server_default.notify = ""
+2012-02-08 17:10:19		  irc.server_default.password = ""
+2012-02-08 17:10:19		  irc.server_default.proxy = ""
+2012-02-08 17:10:19		  irc.server_default.realname = ""
+2012-02-08 17:10:19		  irc.server_default.sasl_mechanism = plain
+2012-02-08 17:10:19		  irc.server_default.sasl_password = ""
+2012-02-08 17:10:19		  irc.server_default.sasl_timeout = 15
+2012-02-08 17:10:19		  irc.server_default.sasl_username = ""
+2012-02-08 17:10:19		  irc.server_default.ssl = off
+2012-02-08 17:10:19		  irc.server_default.ssl_cert = ""
+2012-02-08 17:10:19		  irc.server_default.ssl_dhkey_size = 2048
+2012-02-08 17:10:19		  irc.server_default.ssl_priorities = "NORMAL"
+2012-02-08 17:10:19		  irc.server_default.ssl_verify = on
+2012-02-08 17:10:19		  irc.server_default.username = "thermans"
+2012-02-08 17:10:19		[server] (irc.conf)
+2012-02-08 17:10:19		  irc.server.freenode.addresses = "chat.freenode.net/6667"
+2012-02-08 17:10:19		  irc.server.freenode.anti_flood_prio_high
+2012-02-08 17:10:19		  irc.server.freenode.anti_flood_prio_low
+2012-02-08 17:10:19		  irc.server.freenode.autoconnect
+2012-02-08 17:10:19		  irc.server.freenode.autojoin
+2012-02-08 17:10:19		  irc.server.freenode.autoreconnect
+2012-02-08 17:10:19		  irc.server.freenode.autoreconnect_delay
+2012-02-08 17:10:19		  irc.server.freenode.autorejoin
+2012-02-08 17:10:19		  irc.server.freenode.autorejoin_delay
+2012-02-08 17:10:19		  irc.server.freenode.away_check
+2012-02-08 17:10:19		  irc.server.freenode.away_check_max_nicks
+2012-02-08 17:10:19		  irc.server.freenode.command
+2012-02-08 17:10:19		  irc.server.freenode.command_delay
+2012-02-08 17:10:19		  irc.server.freenode.connection_timeout
+2012-02-08 17:10:19		  irc.server.freenode.default_msg_part
+2012-02-08 17:10:19		  irc.server.freenode.default_msg_quit
+2012-02-08 17:10:19		  irc.server.freenode.ipv6
+2012-02-08 17:10:19		  irc.server.freenode.local_hostname
+2012-02-08 17:10:19		  irc.server.freenode.nicks
+2012-02-08 17:10:19		  irc.server.freenode.notify
+2012-02-08 17:10:19		  irc.server.freenode.password
+2012-02-08 17:10:19		  irc.server.freenode.proxy
+2012-02-08 17:10:19		  irc.server.freenode.realname
+2012-02-08 17:10:19		  irc.server.freenode.sasl_mechanism
+2012-02-08 17:10:19		  irc.server.freenode.sasl_password
+2012-02-08 17:10:19		  irc.server.freenode.sasl_timeout
+2012-02-08 17:10:19		  irc.server.freenode.sasl_username
+2012-02-08 17:10:19		  irc.server.freenode.ssl
+2012-02-08 17:10:19		  irc.server.freenode.ssl_cert
+2012-02-08 17:10:19		  irc.server.freenode.ssl_dhkey_size
+2012-02-08 17:10:19		  irc.server.freenode.ssl_priorities
+2012-02-08 17:10:19		  irc.server.freenode.ssl_verify
+2012-02-08 17:10:19		  irc.server.freenode.username
+2012-02-08 17:10:19		  irc.server.oftc.addresses = "irc.oftc.net/6667"
+2012-02-08 17:10:19		  irc.server.oftc.anti_flood_prio_high
+2012-02-08 17:10:19		  irc.server.oftc.anti_flood_prio_low
+2012-02-08 17:10:19		  irc.server.oftc.autoconnect
+2012-02-08 17:10:19		  irc.server.oftc.autojoin
+2012-02-08 17:10:19		  irc.server.oftc.autoreconnect
+2012-02-08 17:10:19		  irc.server.oftc.autoreconnect_delay
+2012-02-08 17:10:19		  irc.server.oftc.autorejoin
+2012-02-08 17:10:19		  irc.server.oftc.autorejoin_delay
+2012-02-08 17:10:19		  irc.server.oftc.away_check
+2012-02-08 17:10:19		  irc.server.oftc.away_check_max_nicks
+2012-02-08 17:10:19		  irc.server.oftc.command = "/msg nickserv identify f00bar"
+2012-02-08 17:10:19		  irc.server.oftc.command_delay
+2012-02-08 17:10:19		  irc.server.oftc.connection_timeout
+2012-02-08 17:10:19		  irc.server.oftc.default_msg_part
+2012-02-08 17:10:19		  irc.server.oftc.default_msg_quit
+2012-02-08 17:10:19		  irc.server.oftc.ipv6
+2012-02-08 17:10:19		  irc.server.oftc.local_hostname
+2012-02-08 17:10:19		  irc.server.oftc.nicks = "tibaza"
+2012-02-08 17:10:19		  irc.server.oftc.notify
+2012-02-08 17:10:19		  irc.server.oftc.password
+2012-02-08 17:10:19		  irc.server.oftc.proxy
+2012-02-08 17:10:19		  irc.server.oftc.realname = "Tim Hermans"
+2012-02-08 17:10:19		  irc.server.oftc.sasl_mechanism
+2012-02-08 17:10:19		  irc.server.oftc.sasl_password
+2012-02-08 17:10:19		  irc.server.oftc.sasl_timeout
+2012-02-08 17:10:19		  irc.server.oftc.sasl_username
+2012-02-08 17:10:19		  irc.server.oftc.ssl
+2012-02-08 17:10:19		  irc.server.oftc.ssl_cert
+2012-02-08 17:10:19		  irc.server.oftc.ssl_dhkey_size
+2012-02-08 17:10:19		  irc.server.oftc.ssl_priorities
+2012-02-08 17:10:19		  irc.server.oftc.ssl_verify
+2012-02-08 17:10:19		  irc.server.oftc.username = "thermans"
+2012-02-08 17:10:19		168 configuration options found matching with "irc.*"
+2012-02-08 17:10:35		Buffers list:
+2012-02-08 17:10:35		  [1] (core) weechat (notify: all)
+2012-02-08 17:10:35		  [1] (irc) server.freenode (notify: all)
+2012-02-08 17:10:35		  [2] (irc) freenode.#emacs (notify: all)
+2012-02-08 17:12:17		Message filtering enabled
+2012-02-08 17:12:17		No message filter defined
+2012-02-08 17:12:53		Filter "joinquit" added:
+2012-02-08 17:12:53		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2012-02-08 17:13:02		Message filtering enabled
+2012-02-08 17:13:02		Message filters:
+2012-02-08 17:13:02		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2012-02-08 17:14:16		221 key bindings for context "default":
+2012-02-08 17:14:16		  ctrl-? => /input delete_previous_char
+2012-02-08 17:14:16		  ctrl-A => /input move_beginning_of_line
+2012-02-08 17:14:16		  ctrl-B => /input move_previous_char
+2012-02-08 17:14:16		  ctrl-Cb => /input insert \x02
+2012-02-08 17:14:16		  ctrl-Cc => /input insert \x03
+2012-02-08 17:14:16		  ctrl-Ci => /input insert \x1D
+2012-02-08 17:14:16		  ctrl-Co => /input insert \x0F
+2012-02-08 17:14:16		  ctrl-Cr => /input insert \x12
+2012-02-08 17:14:16		  ctrl-Cu => /input insert \x15
+2012-02-08 17:14:16		  ctrl-D => /input delete_next_char
+2012-02-08 17:14:16		  ctrl-E => /input move_end_of_line
+2012-02-08 17:14:16		  ctrl-F => /input move_next_char
+2012-02-08 17:14:16		  ctrl-H => /input delete_previous_char
+2012-02-08 17:14:16		  ctrl-I => /input complete_next
+2012-02-08 17:14:16		  ctrl-J => /input return
+2012-02-08 17:14:16		  ctrl-K => /input delete_end_of_line
+2012-02-08 17:14:16		  ctrl-L => /window refresh
+2012-02-08 17:14:16		  ctrl-M => /input return
+2012-02-08 17:14:16		  ctrl-N => /buffer +1
+2012-02-08 17:14:16		  ctrl-P => /buffer -1
+2012-02-08 17:14:16		  ctrl-R => /input search_text
+2012-02-08 17:14:16		  ctrl-Sctrl-U => /input set_unread
+2012-02-08 17:14:16		  ctrl-T => /input transpose_chars
+2012-02-08 17:14:16		  ctrl-U => /input delete_beginning_of_line
+2012-02-08 17:14:16		  ctrl-W => /input delete_previous_word
+2012-02-08 17:14:16		  ctrl-X => /input switch_active_buffer
+2012-02-08 17:14:16		  ctrl-Y => /input clipboard_paste
+2012-02-08 17:14:16		  meta-meta2-1~ => /window scroll_top
+2012-02-08 17:14:16		  meta-meta2-23~ => /bar scroll nicklist * b
+2012-02-08 17:14:16		  meta-meta2-24~ => /bar scroll nicklist * e
+2012-02-08 17:14:16		  meta-meta2-4~ => /window scroll_bottom
+2012-02-08 17:14:16		  meta-meta2-5~ => /window scroll_up
+2012-02-08 17:14:16		  meta-meta2-6~ => /window scroll_down
+2012-02-08 17:14:16		  meta-meta2-7~ => /window scroll_top
+2012-02-08 17:14:16		  meta-meta2-8~ => /window scroll_bottom
+2012-02-08 17:14:16		  meta-meta2-A => /buffer -1
+2012-02-08 17:14:16		  meta-meta2-B => /buffer +1
+2012-02-08 17:14:16		  meta-meta2-C => /buffer +1
+2012-02-08 17:14:16		  meta-meta2-D => /buffer -1
+2012-02-08 17:14:16		  meta-0 => /buffer *10
+2012-02-08 17:14:16		  meta-1 => /buffer *1
+2012-02-08 17:14:16		  meta-2 => /buffer *2
+2012-02-08 17:14:16		  meta-3 => /buffer *3
+2012-02-08 17:14:16		  meta-4 => /buffer *4
+2012-02-08 17:14:16		  meta-5 => /buffer *5
+2012-02-08 17:14:16		  meta-6 => /buffer *6
+2012-02-08 17:14:16		  meta-7 => /buffer *7
+2012-02-08 17:14:16		  meta-8 => /buffer *8
+2012-02-08 17:14:16		  meta-9 => /buffer *9
+2012-02-08 17:14:16		  meta-< => /input jump_previously_visited_buffer
+2012-02-08 17:14:16		  meta-= => /filter toggle
+2012-02-08 17:14:16		  meta-> => /input jump_next_visited_buffer
+2012-02-08 17:14:16		  meta-OA => /input history_global_previous
+2012-02-08 17:14:16		  meta-OB => /input history_global_next
+2012-02-08 17:14:16		  meta-OC => /input move_next_word
+2012-02-08 17:14:16		  meta-OD => /input move_previous_word
+2012-02-08 17:14:16		  meta-OF => /input move_end_of_line
+2012-02-08 17:14:16		  meta-OH => /input move_beginning_of_line
+2012-02-08 17:14:16		  meta-Oa => /input history_global_previous
+2012-02-08 17:14:16		  meta-Ob => /input history_global_next
+2012-02-08 17:14:16		  meta-Oc => /input move_next_word
+2012-02-08 17:14:16		  meta-Od => /input move_previous_word
+2012-02-08 17:14:16		  meta2-15~ => /buffer -1
+2012-02-08 17:14:16		  meta2-17~ => /buffer +1
+2012-02-08 17:14:16		  meta2-18~ => /window -1
+2012-02-08 17:14:16		  meta2-19~ => /window +1
+2012-02-08 17:14:16		  meta2-1;3A => /buffer -1
+2012-02-08 17:14:16		  meta2-1;3B => /buffer +1
+2012-02-08 17:14:16		  meta2-1;3C => /buffer +1
+2012-02-08 17:14:16		  meta2-1;3D => /buffer -1
+2012-02-08 17:14:16		  meta2-1;5A => /input history_global_previous
+2012-02-08 17:14:16		  meta2-1;5B => /input history_global_next
+2012-02-08 17:14:16		  meta2-1~ => /input move_beginning_of_line
+2012-02-08 17:14:16		  meta2-20~ => /bar scroll title * -30%
+2012-02-08 17:14:16		  meta2-21~ => /bar scroll title * +30%
+2012-02-08 17:14:16		  meta2-23~ => /bar scroll nicklist * -100%
+2012-02-08 17:14:16		  meta2-24~ => /bar scroll nicklist * +100%
+2012-02-08 17:14:16		  meta2-3~ => /input delete_next_char
+2012-02-08 17:14:16		  meta2-4~ => /input move_end_of_line
+2012-02-08 17:14:16		  meta2-5;3~ => /window scroll_up
+2012-02-08 17:14:16		  meta2-5~ => /window page_up
+2012-02-08 17:14:16		  meta2-6;3~ => /window scroll_down
+2012-02-08 17:14:16		  meta2-6~ => /window page_down
+2012-02-08 17:14:16		  meta2-7~ => /input move_beginning_of_line
+2012-02-08 17:14:16		  meta2-8~ => /input move_end_of_line
+2012-02-08 17:14:16		  meta2-A => /input history_previous
+2012-02-08 17:14:16		  meta2-B => /input history_next
+2012-02-08 17:14:16		  meta2-C => /input move_next_char
+2012-02-08 17:14:16		  meta2-D => /input move_previous_char
+2012-02-08 17:14:16		  meta2-F => /input move_end_of_line
+2012-02-08 17:14:16		  meta2-G => /window page_down
+2012-02-08 17:14:16		  meta2-H => /input move_beginning_of_line
+2012-02-08 17:14:16		  meta2-I => /window page_up
+2012-02-08 17:14:16		  meta2-Z => /input complete_previous
+2012-02-08 17:14:16		  meta2-[E => /buffer -1
+2012-02-08 17:14:16		  meta-_ => /input redo
+2012-02-08 17:14:16		  meta-a => /input jump_smart
+2012-02-08 17:14:16		  meta-b => /input move_previous_word
+2012-02-08 17:14:16		  meta-d => /input delete_next_word
+2012-02-08 17:14:16		  meta-f => /input move_next_word
+2012-02-08 17:14:16		  meta-h => /input hotlist_clear
+2012-02-08 17:14:16		  meta-jmeta-l => /input jump_last_buffer
+2012-02-08 17:14:16		  meta-jmeta-r => /server raw
+2012-02-08 17:14:16		  meta-jmeta-s => /server jump
+2012-02-08 17:14:16		  meta-j01 => /buffer 1
+2012-02-08 17:14:16		  meta-j02 => /buffer 2
+2012-02-08 17:14:16		  meta-j03 => /buffer 3
+2012-02-08 17:14:16		  meta-j04 => /buffer 4
+2012-02-08 17:14:16		  meta-j05 => /buffer 5
+2012-02-08 17:14:16		  meta-j06 => /buffer 6
+2012-02-08 17:14:16		  meta-j07 => /buffer 7
+2012-02-08 17:14:16		  meta-j08 => /buffer 8
+2012-02-08 17:14:16		  meta-j09 => /buffer 9
+2012-02-08 17:14:16		  meta-j10 => /buffer 10
+2012-02-08 17:14:16		  meta-j11 => /buffer 11
+2012-02-08 17:14:16		  meta-j12 => /buffer 12
+2012-02-08 17:14:16		  meta-j13 => /buffer 13
+2012-02-08 17:14:16		  meta-j14 => /buffer 14
+2012-02-08 17:14:16		  meta-j15 => /buffer 15
+2012-02-08 17:14:16		  meta-j16 => /buffer 16
+2012-02-08 17:14:16		  meta-j17 => /buffer 17
+2012-02-08 17:14:16		  meta-j18 => /buffer 18
+2012-02-08 17:14:16		  meta-j19 => /buffer 19
+2012-02-08 17:14:16		  meta-j20 => /buffer 20
+2012-02-08 17:14:16		  meta-j21 => /buffer 21
+2012-02-08 17:14:16		  meta-j22 => /buffer 22
+2012-02-08 17:14:16		  meta-j23 => /buffer 23
+2012-02-08 17:14:16		  meta-j24 => /buffer 24
+2012-02-08 17:14:16		  meta-j25 => /buffer 25
+2012-02-08 17:14:16		  meta-j26 => /buffer 26
+2012-02-08 17:14:16		  meta-j27 => /buffer 27
+2012-02-08 17:14:16		  meta-j28 => /buffer 28
+2012-02-08 17:14:16		  meta-j29 => /buffer 29
+2012-02-08 17:14:16		  meta-j30 => /buffer 30
+2012-02-08 17:14:16		  meta-j31 => /buffer 31
+2012-02-08 17:14:16		  meta-j32 => /buffer 32
+2012-02-08 17:14:16		  meta-j33 => /buffer 33
+2012-02-08 17:14:16		  meta-j34 => /buffer 34
+2012-02-08 17:14:16		  meta-j35 => /buffer 35
+2012-02-08 17:14:16		  meta-j36 => /buffer 36
+2012-02-08 17:14:16		  meta-j37 => /buffer 37
+2012-02-08 17:14:16		  meta-j38 => /buffer 38
+2012-02-08 17:14:16		  meta-j39 => /buffer 39
+2012-02-08 17:14:16		  meta-j40 => /buffer 40
+2012-02-08 17:14:16		  meta-j41 => /buffer 41
+2012-02-08 17:14:16		  meta-j42 => /buffer 42
+2012-02-08 17:14:16		  meta-j43 => /buffer 43
+2012-02-08 17:14:16		  meta-j44 => /buffer 44
+2012-02-08 17:14:16		  meta-j45 => /buffer 45
+2012-02-08 17:14:16		  meta-j46 => /buffer 46
+2012-02-08 17:14:16		  meta-j47 => /buffer 47
+2012-02-08 17:14:16		  meta-j48 => /buffer 48
+2012-02-08 17:14:16		  meta-j49 => /buffer 49
+2012-02-08 17:14:16		  meta-j50 => /buffer 50
+2012-02-08 17:14:16		  meta-j51 => /buffer 51
+2012-02-08 17:14:16		  meta-j52 => /buffer 52
+2012-02-08 17:14:16		  meta-j53 => /buffer 53
+2012-02-08 17:14:16		  meta-j54 => /buffer 54
+2012-02-08 17:14:16		  meta-j55 => /buffer 55
+2012-02-08 17:14:16		  meta-j56 => /buffer 56
+2012-02-08 17:14:16		  meta-j57 => /buffer 57
+2012-02-08 17:14:16		  meta-j58 => /buffer 58
+2012-02-08 17:14:16		  meta-j59 => /buffer 59
+2012-02-08 17:14:16		  meta-j60 => /buffer 60
+2012-02-08 17:14:16		  meta-j61 => /buffer 61
+2012-02-08 17:14:16		  meta-j62 => /buffer 62
+2012-02-08 17:14:16		  meta-j63 => /buffer 63
+2012-02-08 17:14:16		  meta-j64 => /buffer 64
+2012-02-08 17:14:16		  meta-j65 => /buffer 65
+2012-02-08 17:14:16		  meta-j66 => /buffer 66
+2012-02-08 17:14:16		  meta-j67 => /buffer 67
+2012-02-08 17:14:16		  meta-j68 => /buffer 68
+2012-02-08 17:14:16		  meta-j69 => /buffer 69
+2012-02-08 17:14:16		  meta-j70 => /buffer 70
+2012-02-08 17:14:16		  meta-j71 => /buffer 71
+2012-02-08 17:14:16		  meta-j72 => /buffer 72
+2012-02-08 17:14:16		  meta-j73 => /buffer 73
+2012-02-08 17:14:16		  meta-j74 => /buffer 74
+2012-02-08 17:14:16		  meta-j75 => /buffer 75
+2012-02-08 17:14:16		  meta-j76 => /buffer 76
+2012-02-08 17:14:16		  meta-j77 => /buffer 77
+2012-02-08 17:14:16		  meta-j78 => /buffer 78
+2012-02-08 17:14:16		  meta-j79 => /buffer 79
+2012-02-08 17:14:16		  meta-j80 => /buffer 80
+2012-02-08 17:14:16		  meta-j81 => /buffer 81
+2012-02-08 17:14:16		  meta-j82 => /buffer 82
+2012-02-08 17:14:16		  meta-j83 => /buffer 83
+2012-02-08 17:14:16		  meta-j84 => /buffer 84
+2012-02-08 17:14:16		  meta-j85 => /buffer 85
+2012-02-08 17:14:16		  meta-j86 => /buffer 86
+2012-02-08 17:14:16		  meta-j87 => /buffer 87
+2012-02-08 17:14:16		  meta-j88 => /buffer 88
+2012-02-08 17:14:16		  meta-j89 => /buffer 89
+2012-02-08 17:14:16		  meta-j90 => /buffer 90
+2012-02-08 17:14:16		  meta-j91 => /buffer 91
+2012-02-08 17:14:16		  meta-j92 => /buffer 92
+2012-02-08 17:14:16		  meta-j93 => /buffer 93
+2012-02-08 17:14:16		  meta-j94 => /buffer 94
+2012-02-08 17:14:16		  meta-j95 => /buffer 95
+2012-02-08 17:14:16		  meta-j96 => /buffer 96
+2012-02-08 17:14:16		  meta-j97 => /buffer 97
+2012-02-08 17:14:16		  meta-j98 => /buffer 98
+2012-02-08 17:14:16		  meta-j99 => /buffer 99
+2012-02-08 17:14:16		  meta-k => /input grab_key_command
+2012-02-08 17:14:16		  meta-m => /mouse toggle
+2012-02-08 17:14:16		  meta-n => /window scroll_next_highlight
+2012-02-08 17:14:16		  meta-p => /window scroll_previous_highlight
+2012-02-08 17:14:16		  meta-r => /input delete_line
+2012-02-08 17:14:16		  meta-u => /input scroll_unread
+2012-02-08 17:14:16		  meta-wmeta-meta2-A => /window up
+2012-02-08 17:14:16		  meta-wmeta-meta2-B => /window down
+2012-02-08 17:14:16		  meta-wmeta-meta2-C => /window right
+2012-02-08 17:14:16		  meta-wmeta-meta2-D => /window left
+2012-02-08 17:14:16		  meta-wmeta2-1;3A => /window up
+2012-02-08 17:14:16		  meta-wmeta2-1;3B => /window down
+2012-02-08 17:14:16		  meta-wmeta2-1;3C => /window right
+2012-02-08 17:14:16		  meta-wmeta2-1;3D => /window left
+2012-02-08 17:14:16		  meta-wmeta-b => /window balance
+2012-02-08 17:14:16		  meta-wmeta-s => /window swap
+2012-02-08 17:14:16		  meta-z => /window zoom
+2012-02-08 17:14:16		  ctrl-_ => /input undo
+2012-02-08 17:14:16		5 key bindings for context "search":
+2012-02-08 17:14:16		  ctrl-J => /input search_stop
+2012-02-08 17:14:16		  ctrl-M => /input search_stop
+2012-02-08 17:14:16		  ctrl-R => /input search_switch_case
+2012-02-08 17:14:16		  meta2-A => /input search_previous
+2012-02-08 17:14:16		  meta2-B => /input search_next
+2012-02-08 17:14:16		22 key bindings for context "cursor":
+2012-02-08 17:14:16		  ctrl-J => /cursor stop
+2012-02-08 17:14:16		  ctrl-M => /cursor stop
+2012-02-08 17:14:16		  meta-meta2-A => /cursor move area_up
+2012-02-08 17:14:16		  meta-meta2-B => /cursor move area_down
+2012-02-08 17:14:16		  meta-meta2-C => /cursor move area_right
+2012-02-08 17:14:16		  meta-meta2-D => /cursor move area_left
+2012-02-08 17:14:16		  meta2-1;3A => /cursor move area_up
+2012-02-08 17:14:16		  meta2-1;3B => /cursor move area_down
+2012-02-08 17:14:16		  meta2-1;3C => /cursor move area_right
+2012-02-08 17:14:16		  meta2-1;3D => /cursor move area_left
+2012-02-08 17:14:16		  meta2-A => /cursor move up
+2012-02-08 17:14:16		  meta2-B => /cursor move down
+2012-02-08 17:14:16		  meta2-C => /cursor move right
+2012-02-08 17:14:16		  meta2-D => /cursor move left
+2012-02-08 17:14:16		  @item(buffer_nicklist):K => /window ${_window_number};/kickban ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):b => /window ${_window_number};/ban ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):k => /window ${_window_number};/kick ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):q => /window ${_window_number};/query ${nick};/cursor stop
+2012-02-08 17:14:16		  @item(buffer_nicklist):w => /window ${_window_number};/whois ${nick}
+2012-02-08 17:14:16		  @chat:Q => hsignal:chat_quote_time_prefix_message;/cursor stop
+2012-02-08 17:14:16		  @chat:m => hsignal:chat_quote_message;/cursor stop
+2012-02-08 17:14:16		  @chat:q => hsignal:chat_quote_prefix_message;/cursor stop
+2012-02-08 17:14:16		20 key bindings for context "mouse":
+2012-02-08 17:14:16		  @bar(input):button2 => /input grab_mouse_area
+2012-02-08 17:14:16		  @bar(nicklist):button1-gesture-down => /bar scroll nicklist ${_window_number} +100%
+2012-02-08 17:14:16		  @bar(nicklist):button1-gesture-down-long => /bar scroll nicklist ${_window_number} e
+2012-02-08 17:14:16		  @bar(nicklist):button1-gesture-up => /bar scroll nicklist ${_window_number} -100%
+2012-02-08 17:14:16		  @bar(nicklist):button1-gesture-up-long => /bar scroll nicklist ${_window_number} b
+2012-02-08 17:14:16		  @item(buffer_nicklist):button1 => /window ${_window_number};/query ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):button1-gesture-left => /window ${_window_number};/kick ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):button1-gesture-left-long => /window ${_window_number};/kickban ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):button2 => /window ${_window_number};/whois ${nick}
+2012-02-08 17:14:16		  @item(buffer_nicklist):button2-gesture-left => /window ${_window_number};/ban ${nick}
+2012-02-08 17:14:16		  @bar:wheeldown => /bar scroll ${_bar_name} ${_window_number} +20%
+2012-02-08 17:14:16		  @bar:wheelup => /bar scroll ${_bar_name} ${_window_number} -20%
+2012-02-08 17:14:16		  @chat:button1 => /window ${_window_number}
+2012-02-08 17:14:16		  @chat:button1-gesture-left => /window ${_window_number};/buffer -1
+2012-02-08 17:14:16		  @chat:button1-gesture-left-long => /window ${_window_number};/buffer 1
+2012-02-08 17:14:16		  @chat:button1-gesture-right => /window ${_window_number};/buffer +1
+2012-02-08 17:14:16		  @chat:button1-gesture-right-long => /window ${_window_number};/input jump_last_buffer
+2012-02-08 17:14:16		  @chat:wheeldown => /window scroll_down -window ${_window_number}
+2012-02-08 17:14:16		  @chat:wheelup => /window scroll_up -window ${_window_number}
+2012-02-08 17:14:16		  @*:button3 => /cursor go ${_x},${_y}
+2012-02-08 17:14:48		221 key bindings for context "default":
+2012-02-08 17:14:48		  ctrl-? => /input delete_previous_char
+2012-02-08 17:14:48		  ctrl-A => /input move_beginning_of_line
+2012-02-08 17:14:48		  ctrl-B => /input move_previous_char
+2012-02-08 17:14:48		  ctrl-Cb => /input insert \x02
+2012-02-08 17:14:48		  ctrl-Cc => /input insert \x03
+2012-02-08 17:14:48		  ctrl-Ci => /input insert \x1D
+2012-02-08 17:14:48		  ctrl-Co => /input insert \x0F
+2012-02-08 17:14:48		  ctrl-Cr => /input insert \x12
+2012-02-08 17:14:48		  ctrl-Cu => /input insert \x15
+2012-02-08 17:14:48		  ctrl-D => /input delete_next_char
+2012-02-08 17:14:48		  ctrl-E => /input move_end_of_line
+2012-02-08 17:14:48		  ctrl-F => /input move_next_char
+2012-02-08 17:14:48		  ctrl-H => /input delete_previous_char
+2012-02-08 17:14:48		  ctrl-I => /input complete_next
+2012-02-08 17:14:48		  ctrl-J => /input return
+2012-02-08 17:14:48		  ctrl-K => /input delete_end_of_line
+2012-02-08 17:14:48		  ctrl-L => /window refresh
+2012-02-08 17:14:48		  ctrl-M => /input return
+2012-02-08 17:14:48		  ctrl-N => /buffer +1
+2012-02-08 17:14:48		  ctrl-P => /buffer -1
+2012-02-08 17:14:48		  ctrl-R => /input search_text
+2012-02-08 17:14:48		  ctrl-Sctrl-U => /input set_unread
+2012-02-08 17:14:48		  ctrl-T => /input transpose_chars
+2012-02-08 17:14:48		  ctrl-U => /input delete_beginning_of_line
+2012-02-08 17:14:48		  ctrl-W => /input delete_previous_word
+2012-02-08 17:14:48		  ctrl-X => /input switch_active_buffer
+2012-02-08 17:14:48		  ctrl-Y => /input clipboard_paste
+2012-02-08 17:14:48		  meta-meta2-1~ => /window scroll_top
+2012-02-08 17:14:48		  meta-meta2-23~ => /bar scroll nicklist * b
+2012-02-08 17:14:48		  meta-meta2-24~ => /bar scroll nicklist * e
+2012-02-08 17:14:48		  meta-meta2-4~ => /window scroll_bottom
+2012-02-08 17:14:48		  meta-meta2-5~ => /window scroll_up
+2012-02-08 17:14:48		  meta-meta2-6~ => /window scroll_down
+2012-02-08 17:14:48		  meta-meta2-7~ => /window scroll_top
+2012-02-08 17:14:48		  meta-meta2-8~ => /window scroll_bottom
+2012-02-08 17:14:48		  meta-meta2-A => /buffer -1
+2012-02-08 17:14:48		  meta-meta2-B => /buffer +1
+2012-02-08 17:14:48		  meta-meta2-C => /buffer +1
+2012-02-08 17:14:48		  meta-meta2-D => /buffer -1
+2012-02-08 17:14:48		  meta-0 => /buffer *10
+2012-02-08 17:14:48		  meta-1 => /buffer *1
+2012-02-08 17:14:48		  meta-2 => /buffer *2
+2012-02-08 17:14:48		  meta-3 => /buffer *3
+2012-02-08 17:14:48		  meta-4 => /buffer *4
+2012-02-08 17:14:48		  meta-5 => /buffer *5
+2012-02-08 17:14:48		  meta-6 => /buffer *6
+2012-02-08 17:14:48		  meta-7 => /buffer *7
+2012-02-08 17:14:48		  meta-8 => /buffer *8
+2012-02-08 17:14:48		  meta-9 => /buffer *9
+2012-02-08 17:14:48		  meta-< => /input jump_previously_visited_buffer
+2012-02-08 17:14:48		  meta-= => /filter toggle
+2012-02-08 17:14:48		  meta-> => /input jump_next_visited_buffer
+2012-02-08 17:14:48		  meta-OA => /input history_global_previous
+2012-02-08 17:14:48		  meta-OB => /input history_global_next
+2012-02-08 17:14:48		  meta-OC => /input move_next_word
+2012-02-08 17:14:48		  meta-OD => /input move_previous_word
+2012-02-08 17:14:48		  meta-OF => /input move_end_of_line
+2012-02-08 17:14:48		  meta-OH => /input move_beginning_of_line
+2012-02-08 17:14:48		  meta-Oa => /input history_global_previous
+2012-02-08 17:14:48		  meta-Ob => /input history_global_next
+2012-02-08 17:14:48		  meta-Oc => /input move_next_word
+2012-02-08 17:14:48		  meta-Od => /input move_previous_word
+2012-02-08 17:14:48		  meta2-15~ => /buffer -1
+2012-02-08 17:14:48		  meta2-17~ => /buffer +1
+2012-02-08 17:14:48		  meta2-18~ => /window -1
+2012-02-08 17:14:48		  meta2-19~ => /window +1
+2012-02-08 17:14:48		  meta2-1;3A => /buffer -1
+2012-02-08 17:14:48		  meta2-1;3B => /buffer +1
+2012-02-08 17:14:48		  meta2-1;3C => /buffer +1
+2012-02-08 17:14:48		  meta2-1;3D => /buffer -1
+2012-02-08 17:14:48		  meta2-1;5A => /input history_global_previous
+2012-02-08 17:14:48		  meta2-1;5B => /input history_global_next
+2012-02-08 17:14:48		  meta2-1~ => /input move_beginning_of_line
+2012-02-08 17:14:48		  meta2-20~ => /bar scroll title * -30%
+2012-02-08 17:14:48		  meta2-21~ => /bar scroll title * +30%
+2012-02-08 17:14:48		  meta2-23~ => /bar scroll nicklist * -100%
+2012-02-08 17:14:48		  meta2-24~ => /bar scroll nicklist * +100%
+2012-02-08 17:14:48		  meta2-3~ => /input delete_next_char
+2012-02-08 17:14:48		  meta2-4~ => /input move_end_of_line
+2012-02-08 17:14:48		  meta2-5;3~ => /window scroll_up
+2012-02-08 17:14:48		  meta2-5~ => /window page_up
+2012-02-08 17:14:48		  meta2-6;3~ => /window scroll_down
+2012-02-08 17:14:48		  meta2-6~ => /window page_down
+2012-02-08 17:14:48		  meta2-7~ => /input move_beginning_of_line
+2012-02-08 17:14:48		  meta2-8~ => /input move_end_of_line
+2012-02-08 17:14:48		  meta2-A => /input history_previous
+2012-02-08 17:14:48		  meta2-B => /input history_next
+2012-02-08 17:14:48		  meta2-C => /input move_next_char
+2012-02-08 17:14:48		  meta2-D => /input move_previous_char
+2012-02-08 17:14:48		  meta2-F => /input move_end_of_line
+2012-02-08 17:14:48		  meta2-G => /window page_down
+2012-02-08 17:14:48		  meta2-H => /input move_beginning_of_line
+2012-02-08 17:14:48		  meta2-I => /window page_up
+2012-02-08 17:14:48		  meta2-Z => /input complete_previous
+2012-02-08 17:14:48		  meta2-[E => /buffer -1
+2012-02-08 17:14:48		  meta-_ => /input redo
+2012-02-08 17:14:48		  meta-a => /input jump_smart
+2012-02-08 17:14:48		  meta-b => /input move_previous_word
+2012-02-08 17:14:48		  meta-d => /input delete_next_word
+2012-02-08 17:14:48		  meta-f => /input move_next_word
+2012-02-08 17:14:48		  meta-h => /input hotlist_clear
+2012-02-08 17:14:48		  meta-jmeta-l => /input jump_last_buffer
+2012-02-08 17:14:48		  meta-jmeta-r => /server raw
+2012-02-08 17:14:48		  meta-jmeta-s => /server jump
+2012-02-08 17:14:48		  meta-j01 => /buffer 1
+2012-02-08 17:14:48		  meta-j02 => /buffer 2
+2012-02-08 17:14:48		  meta-j03 => /buffer 3
+2012-02-08 17:14:48		  meta-j04 => /buffer 4
+2012-02-08 17:14:48		  meta-j05 => /buffer 5
+2012-02-08 17:14:48		  meta-j06 => /buffer 6
+2012-02-08 17:14:48		  meta-j07 => /buffer 7
+2012-02-08 17:14:48		  meta-j08 => /buffer 8
+2012-02-08 17:14:48		  meta-j09 => /buffer 9
+2012-02-08 17:14:48		  meta-j10 => /buffer 10
+2012-02-08 17:14:48		  meta-j11 => /buffer 11
+2012-02-08 17:14:48		  meta-j12 => /buffer 12
+2012-02-08 17:14:48		  meta-j13 => /buffer 13
+2012-02-08 17:14:48		  meta-j14 => /buffer 14
+2012-02-08 17:14:48		  meta-j15 => /buffer 15
+2012-02-08 17:14:48		  meta-j16 => /buffer 16
+2012-02-08 17:14:48		  meta-j17 => /buffer 17
+2012-02-08 17:14:48		  meta-j18 => /buffer 18
+2012-02-08 17:14:48		  meta-j19 => /buffer 19
+2012-02-08 17:14:48		  meta-j20 => /buffer 20
+2012-02-08 17:14:48		  meta-j21 => /buffer 21
+2012-02-08 17:14:48		  meta-j22 => /buffer 22
+2012-02-08 17:14:48		  meta-j23 => /buffer 23
+2012-02-08 17:14:48		  meta-j24 => /buffer 24
+2012-02-08 17:14:48		  meta-j25 => /buffer 25
+2012-02-08 17:14:48		  meta-j26 => /buffer 26
+2012-02-08 17:14:48		  meta-j27 => /buffer 27
+2012-02-08 17:14:48		  meta-j28 => /buffer 28
+2012-02-08 17:14:48		  meta-j29 => /buffer 29
+2012-02-08 17:14:48		  meta-j30 => /buffer 30
+2012-02-08 17:14:48		  meta-j31 => /buffer 31
+2012-02-08 17:14:48		  meta-j32 => /buffer 32
+2012-02-08 17:14:48		  meta-j33 => /buffer 33
+2012-02-08 17:14:48		  meta-j34 => /buffer 34
+2012-02-08 17:14:48		  meta-j35 => /buffer 35
+2012-02-08 17:14:48		  meta-j36 => /buffer 36
+2012-02-08 17:14:48		  meta-j37 => /buffer 37
+2012-02-08 17:14:48		  meta-j38 => /buffer 38
+2012-02-08 17:14:48		  meta-j39 => /buffer 39
+2012-02-08 17:14:48		  meta-j40 => /buffer 40
+2012-02-08 17:14:48		  meta-j41 => /buffer 41
+2012-02-08 17:14:48		  meta-j42 => /buffer 42
+2012-02-08 17:14:48		  meta-j43 => /buffer 43
+2012-02-08 17:14:48		  meta-j44 => /buffer 44
+2012-02-08 17:14:48		  meta-j45 => /buffer 45
+2012-02-08 17:14:48		  meta-j46 => /buffer 46
+2012-02-08 17:14:48		  meta-j47 => /buffer 47
+2012-02-08 17:14:48		  meta-j48 => /buffer 48
+2012-02-08 17:14:48		  meta-j49 => /buffer 49
+2012-02-08 17:14:48		  meta-j50 => /buffer 50
+2012-02-08 17:14:48		  meta-j51 => /buffer 51
+2012-02-08 17:14:48		  meta-j52 => /buffer 52
+2012-02-08 17:14:48		  meta-j53 => /buffer 53
+2012-02-08 17:14:48		  meta-j54 => /buffer 54
+2012-02-08 17:14:48		  meta-j55 => /buffer 55
+2012-02-08 17:14:48		  meta-j56 => /buffer 56
+2012-02-08 17:14:48		  meta-j57 => /buffer 57
+2012-02-08 17:14:48		  meta-j58 => /buffer 58
+2012-02-08 17:14:48		  meta-j59 => /buffer 59
+2012-02-08 17:14:48		  meta-j60 => /buffer 60
+2012-02-08 17:14:48		  meta-j61 => /buffer 61
+2012-02-08 17:14:48		  meta-j62 => /buffer 62
+2012-02-08 17:14:48		  meta-j63 => /buffer 63
+2012-02-08 17:14:48		  meta-j64 => /buffer 64
+2012-02-08 17:14:48		  meta-j65 => /buffer 65
+2012-02-08 17:14:48		  meta-j66 => /buffer 66
+2012-02-08 17:14:48		  meta-j67 => /buffer 67
+2012-02-08 17:14:48		  meta-j68 => /buffer 68
+2012-02-08 17:14:48		  meta-j69 => /buffer 69
+2012-02-08 17:14:48		  meta-j70 => /buffer 70
+2012-02-08 17:14:48		  meta-j71 => /buffer 71
+2012-02-08 17:14:48		  meta-j72 => /buffer 72
+2012-02-08 17:14:48		  meta-j73 => /buffer 73
+2012-02-08 17:14:48		  meta-j74 => /buffer 74
+2012-02-08 17:14:48		  meta-j75 => /buffer 75
+2012-02-08 17:14:48		  meta-j76 => /buffer 76
+2012-02-08 17:14:48		  meta-j77 => /buffer 77
+2012-02-08 17:14:48		  meta-j78 => /buffer 78
+2012-02-08 17:14:48		  meta-j79 => /buffer 79
+2012-02-08 17:14:48		  meta-j80 => /buffer 80
+2012-02-08 17:14:48		  meta-j81 => /buffer 81
+2012-02-08 17:14:48		  meta-j82 => /buffer 82
+2012-02-08 17:14:48		  meta-j83 => /buffer 83
+2012-02-08 17:14:48		  meta-j84 => /buffer 84
+2012-02-08 17:14:48		  meta-j85 => /buffer 85
+2012-02-08 17:14:48		  meta-j86 => /buffer 86
+2012-02-08 17:14:48		  meta-j87 => /buffer 87
+2012-02-08 17:14:48		  meta-j88 => /buffer 88
+2012-02-08 17:14:48		  meta-j89 => /buffer 89
+2012-02-08 17:14:48		  meta-j90 => /buffer 90
+2012-02-08 17:14:48		  meta-j91 => /buffer 91
+2012-02-08 17:14:48		  meta-j92 => /buffer 92
+2012-02-08 17:14:48		  meta-j93 => /buffer 93
+2012-02-08 17:14:48		  meta-j94 => /buffer 94
+2012-02-08 17:14:48		  meta-j95 => /buffer 95
+2012-02-08 17:14:48		  meta-j96 => /buffer 96
+2012-02-08 17:14:48		  meta-j97 => /buffer 97
+2012-02-08 17:14:48		  meta-j98 => /buffer 98
+2012-02-08 17:14:48		  meta-j99 => /buffer 99
+2012-02-08 17:14:48		  meta-k => /input grab_key_command
+2012-02-08 17:14:48		  meta-m => /mouse toggle
+2012-02-08 17:14:48		  meta-n => /window scroll_next_highlight
+2012-02-08 17:14:48		  meta-p => /window scroll_previous_highlight
+2012-02-08 17:14:48		  meta-r => /input delete_line
+2012-02-08 17:14:48		  meta-u => /input scroll_unread
+2012-02-08 17:14:48		  meta-wmeta-meta2-A => /window up
+2012-02-08 17:14:48		  meta-wmeta-meta2-B => /window down
+2012-02-08 17:14:48		  meta-wmeta-meta2-C => /window right
+2012-02-08 17:14:48		  meta-wmeta-meta2-D => /window left
+2012-02-08 17:14:48		  meta-wmeta2-1;3A => /window up
+2012-02-08 17:14:48		  meta-wmeta2-1;3B => /window down
+2012-02-08 17:14:48		  meta-wmeta2-1;3C => /window right
+2012-02-08 17:14:48		  meta-wmeta2-1;3D => /window left
+2012-02-08 17:14:48		  meta-wmeta-b => /window balance
+2012-02-08 17:14:48		  meta-wmeta-s => /window swap
+2012-02-08 17:14:48		  meta-z => /window zoom
+2012-02-08 17:14:48		  ctrl-_ => /input undo
+2012-02-08 17:14:48		5 key bindings for context "search":
+2012-02-08 17:14:48		  ctrl-J => /input search_stop
+2012-02-08 17:14:48		  ctrl-M => /input search_stop
+2012-02-08 17:14:48		  ctrl-R => /input search_switch_case
+2012-02-08 17:14:48		  meta2-A => /input search_previous
+2012-02-08 17:14:48		  meta2-B => /input search_next
+2012-02-08 17:14:48		22 key bindings for context "cursor":
+2012-02-08 17:14:48		  ctrl-J => /cursor stop
+2012-02-08 17:14:48		  ctrl-M => /cursor stop
+2012-02-08 17:14:48		  meta-meta2-A => /cursor move area_up
+2012-02-08 17:14:48		  meta-meta2-B => /cursor move area_down
+2012-02-08 17:14:48		  meta-meta2-C => /cursor move area_right
+2012-02-08 17:14:48		  meta-meta2-D => /cursor move area_left
+2012-02-08 17:14:48		  meta2-1;3A => /cursor move area_up
+2012-02-08 17:14:48		  meta2-1;3B => /cursor move area_down
+2012-02-08 17:14:48		  meta2-1;3C => /cursor move area_right
+2012-02-08 17:14:48		  meta2-1;3D => /cursor move area_left
+2012-02-08 17:14:48		  meta2-A => /cursor move up
+2012-02-08 17:14:48		  meta2-B => /cursor move down
+2012-02-08 17:14:48		  meta2-C => /cursor move right
+2012-02-08 17:14:48		  meta2-D => /cursor move left
+2012-02-08 17:14:48		  @item(buffer_nicklist):K => /window ${_window_number};/kickban ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):b => /window ${_window_number};/ban ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):k => /window ${_window_number};/kick ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):q => /window ${_window_number};/query ${nick};/cursor stop
+2012-02-08 17:14:48		  @item(buffer_nicklist):w => /window ${_window_number};/whois ${nick}
+2012-02-08 17:14:48		  @chat:Q => hsignal:chat_quote_time_prefix_message;/cursor stop
+2012-02-08 17:14:48		  @chat:m => hsignal:chat_quote_message;/cursor stop
+2012-02-08 17:14:48		  @chat:q => hsignal:chat_quote_prefix_message;/cursor stop
+2012-02-08 17:14:48		20 key bindings for context "mouse":
+2012-02-08 17:14:48		  @bar(input):button2 => /input grab_mouse_area
+2012-02-08 17:14:48		  @bar(nicklist):button1-gesture-down => /bar scroll nicklist ${_window_number} +100%
+2012-02-08 17:14:48		  @bar(nicklist):button1-gesture-down-long => /bar scroll nicklist ${_window_number} e
+2012-02-08 17:14:48		  @bar(nicklist):button1-gesture-up => /bar scroll nicklist ${_window_number} -100%
+2012-02-08 17:14:48		  @bar(nicklist):button1-gesture-up-long => /bar scroll nicklist ${_window_number} b
+2012-02-08 17:14:48		  @item(buffer_nicklist):button1 => /window ${_window_number};/query ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):button1-gesture-left => /window ${_window_number};/kick ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):button1-gesture-left-long => /window ${_window_number};/kickban ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):button2 => /window ${_window_number};/whois ${nick}
+2012-02-08 17:14:48		  @item(buffer_nicklist):button2-gesture-left => /window ${_window_number};/ban ${nick}
+2012-02-08 17:14:48		  @bar:wheeldown => /bar scroll ${_bar_name} ${_window_number} +20%
+2012-02-08 17:14:48		  @bar:wheelup => /bar scroll ${_bar_name} ${_window_number} -20%
+2012-02-08 17:14:48		  @chat:button1 => /window ${_window_number}
+2012-02-08 17:14:48		  @chat:button1-gesture-left => /window ${_window_number};/buffer -1
+2012-02-08 17:14:48		  @chat:button1-gesture-left-long => /window ${_window_number};/buffer 1
+2012-02-08 17:14:48		  @chat:button1-gesture-right => /window ${_window_number};/buffer +1
+2012-02-08 17:14:48		  @chat:button1-gesture-right-long => /window ${_window_number};/input jump_last_buffer
+2012-02-08 17:14:48		  @chat:wheeldown => /window scroll_down -window ${_window_number}
+2012-02-08 17:14:48		  @chat:wheelup => /window scroll_up -window ${_window_number}
+2012-02-08 17:14:48		  @*:button3 => /cursor go ${_x},${_y}
+2012-02-08 17:15:25		Plugins loaded: alias, aspell, fifo, irc, logger, relay, rmodifier, tcl, xfer
+2012-02-08 17:15:30		Plugins loaded:
+2012-02-08 17:15:30		  alias: Alias plugin for WeeChat
+2012-02-08 17:15:30		  aspell: Aspell plugin for WeeChat
+2012-02-08 17:15:30		  fifo: Fifo plugin for WeeChat
+2012-02-08 17:15:30		  irc: IRC (Internet Relay Chat) plugin for WeeChat
+2012-02-08 17:15:30		  logger: Logger plugin for WeeChat
+2012-02-08 17:15:30		  relay: Network communication between WeeChat and remote application
+2012-02-08 17:15:30		  rmodifier: Regex modifier plugin for WeeChat
+2012-02-08 17:15:30		  tcl: Tcl plugin for WeeChat
+2012-02-08 17:15:30		  xfer: Xfer (file transfer and direct chat) plugin for WeeChat
+2012-02-08 17:16:13		Options saved to weechat.conf
+2012-02-08 17:16:13		Options saved to plugins.conf
+2012-02-08 17:16:13		Options saved to alias.conf
+2012-02-08 17:16:13		Options saved to aspell.conf
+2012-02-08 17:16:13		Options saved to irc.conf
+2012-02-08 17:16:13		Options saved to logger.conf
+2012-02-08 17:16:13		Options saved to relay.conf
+2012-02-08 17:16:13		Options saved to rmodifier.conf
+2012-02-08 17:16:13		Options saved to xfer.conf
+2012-02-08 17:16:16	=!=	irc: too few arguments for "query" command
+2012-03-29 12:15:12		Plugins loaded: alias, aspell, fifo, irc, logger, relay, rmodifier, tcl, xfer
+2012-03-29 12:15:34	=!=	irc: too few arguments for "query" command
+2012-03-29 12:15:52	=!=	You can not write text in this buffer
+2012-03-29 12:15:56	=!=	You can not write text in this buffer
+2012-03-29 12:16:36		Plugins loaded: alias, aspell, fifo, irc, logger, relay, rmodifier, tcl, xfer
+2012-03-29 12:16:47		[core]
+2012-03-29 12:16:47		  away    color   debug   history layout  plugin  reload  set     uptime  window 
+2012-03-29 12:16:47		  bar     command filter  input   mouse   proxy   repeat  unset   version
+2012-03-29 12:16:47		  buffer  cursor  help    key     mute    quit    save    upgrade wait   
+2012-03-29 12:16:47		[alias]
+2012-03-29 12:16:47		  AAWAY   AMSG    C       CLOSE   J       LEAVE   N       SAY     UB      W       WII    
+2012-03-29 12:16:47		  alias   ANICK   CHAT    EXIT    K       M       Q       SIGNOFF unalias WC      WW     
+2012-03-29 12:16:47		  AME     BYE     CL      IG      KB      MUB     REDRAW  T       V       WI     
+2012-03-29 12:16:47		[aspell]
+2012-03-29 12:16:47		  aspell
+2012-03-29 12:16:47		[irc]
+2012-03-29 12:16:47		  admin      dehalfop   invite     lusers     notice     quote      saquit     time       wallchops 
+2012-03-29 12:16:47		  allchan    deop       ison       map        notify     reconnect  server     topic      wallops   
+2012-03-29 12:16:47		  allserv    devoice    join       me         op         rehash     service    trace      who       
+2012-03-29 12:16:47		  ban        die        kick       mode       oper       restart    servlist   unban      whois     
+2012-03-29 12:16:47		  connect    disconnect kickban    motd       part       sajoin     squery     userhost   whowas    
+2012-03-29 12:16:47		  ctcp       halfop     kill       msg        ping       samode     squit      users     
+2012-03-29 12:16:47		  cycle      ignore     links      names      pong       sanick     stats      version   
+2012-03-29 12:16:47		  dcc        info       list       nick       query      sapart     summon     voice     
+2012-03-29 12:16:47		[logger]
+2012-03-29 12:16:47		  logger
+2012-03-29 12:16:47		[relay]
+2012-03-29 12:16:47		  relay
+2012-03-29 12:16:47		[rmodifier]
+2012-03-29 12:16:47		  rmodifier
+2012-03-29 12:16:47		[tcl]
+2012-03-29 12:16:47		  tcl
+2012-03-29 12:16:47		[xfer]
+2012-03-29 12:16:47		  me   xfer
+2012-03-29 12:17:17		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2012-07-16 09:47:26		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2012-07-16 09:48:01		[startup] (weechat.conf)
+2012-07-16 09:48:01		  weechat.startup.command_after_plugins = ""
+2012-07-16 09:48:01		  weechat.startup.command_before_plugins = ""
+2012-07-16 09:48:01		  weechat.startup.display_logo = on
+2012-07-16 09:48:01		  weechat.startup.display_version = on
+2012-07-16 09:48:01		[look] (weechat.conf)
+2012-07-16 09:48:01		  weechat.look.align_end_of_lines = message
+2012-07-16 09:48:01		  weechat.look.bar_more_down = "++"
+2012-07-16 09:48:01		  weechat.look.bar_more_left = "<<"
+2012-07-16 09:48:01		  weechat.look.bar_more_right = ">>"
+2012-07-16 09:48:01		  weechat.look.bar_more_up = "--"
+2012-07-16 09:48:01		  weechat.look.buffer_notify_default = all
+2012-07-16 09:48:01		  weechat.look.buffer_time_format = "%H:%M:%S"
+2012-07-16 09:48:01		  weechat.look.color_basic_force_bold = off
+2012-07-16 09:48:01		  weechat.look.color_inactive_buffer = off
+2012-07-16 09:48:01		  weechat.look.color_inactive_message = on
+2012-07-16 09:48:01		  weechat.look.color_inactive_prefix = on
+2012-07-16 09:48:01		  weechat.look.color_inactive_prefix_buffer = on
+2012-07-16 09:48:01		  weechat.look.color_inactive_time = off
+2012-07-16 09:48:01		  weechat.look.color_inactive_window = off
+2012-07-16 09:48:01		  weechat.look.color_pairs_auto_reset = 5
+2012-07-16 09:48:01		  weechat.look.color_real_white = off
+2012-07-16 09:48:01		  weechat.look.command_chars = ""
+2012-07-16 09:48:01		  weechat.look.confirm_quit = off
+2012-07-16 09:48:01		  weechat.look.day_change = on
+2012-07-16 09:48:01		  weechat.look.day_change_time_format = "%a, %d %b %Y"
+2012-07-16 09:48:01		  weechat.look.eat_newline_glitch = off
+2012-07-16 09:48:01		  weechat.look.highlight = ""
+2012-07-16 09:48:01		  weechat.look.highlight_regex = ""
+2012-07-16 09:48:01		  weechat.look.highlight_tags = ""
+2012-07-16 09:48:01		  weechat.look.hotlist_add_buffer_if_away = on
+2012-07-16 09:48:01		  weechat.look.hotlist_buffer_separator = ", "
+2012-07-16 09:48:01		  weechat.look.hotlist_count_max = 2
+2012-07-16 09:48:01		  weechat.look.hotlist_count_min_msg = 2
+2012-07-16 09:48:01		  weechat.look.hotlist_names_count = 3
+2012-07-16 09:48:01		  weechat.look.hotlist_names_length = 0
+2012-07-16 09:48:01		  weechat.look.hotlist_names_level = 12
+2012-07-16 09:48:01		  weechat.look.hotlist_names_merged_buffers = off
+2012-07-16 09:48:01		  weechat.look.hotlist_short_names = on
+2012-07-16 09:48:01		  weechat.look.hotlist_sort = group_time_asc
+2012-07-16 09:48:01		  weechat.look.hotlist_unique_numbers = on
+2012-07-16 09:48:01		  weechat.look.input_cursor_scroll = 20
+2012-07-16 09:48:01		  weechat.look.input_share = none
+2012-07-16 09:48:01		  weechat.look.input_share_overwrite = off
+2012-07-16 09:48:01		  weechat.look.input_undo_max = 32
+2012-07-16 09:48:01		  weechat.look.item_buffer_filter = "*"
+2012-07-16 09:48:01		  weechat.look.item_time_format = "%H:%M"
+2012-07-16 09:48:01		  weechat.look.jump_current_to_previous_buffer = on
+2012-07-16 09:48:01		  weechat.look.jump_previous_buffer_when_closing = on
+2012-07-16 09:48:01		  weechat.look.mouse = off
+2012-07-16 09:48:01		  weechat.look.mouse_timer_delay = 100
+2012-07-16 09:48:01		  weechat.look.nickmode = on
+2012-07-16 09:48:01		  weechat.look.nickmode_empty = off
+2012-07-16 09:48:01		  weechat.look.paste_bracketed = off
+2012-07-16 09:48:01		  weechat.look.paste_bracketed_timer_delay = 10
+2012-07-16 09:48:01		  weechat.look.paste_max_lines = 3
+2012-07-16 09:48:01		  weechat.look.prefix_action = " *"
+2012-07-16 09:48:01		  weechat.look.prefix_align = right
+2012-07-16 09:48:01		  weechat.look.prefix_align_max = 0
+2012-07-16 09:48:01		  weechat.look.prefix_align_min = 0
+2012-07-16 09:48:01		  weechat.look.prefix_align_more = "+"
+2012-07-16 09:48:01		  weechat.look.prefix_buffer_align = right
+2012-07-16 09:48:01		  weechat.look.prefix_buffer_align_max = 0
+2012-07-16 09:48:01		  weechat.look.prefix_buffer_align_more = "+"
+2012-07-16 09:48:01		  weechat.look.prefix_error = "=!="
+2012-07-16 09:48:01		  weechat.look.prefix_join = "-->"
+2012-07-16 09:48:01		  weechat.look.prefix_network = "--"
+2012-07-16 09:48:01		  weechat.look.prefix_quit = "<--"
+2012-07-16 09:48:01		  weechat.look.prefix_same_nick = ""
+2012-07-16 09:48:01		  weechat.look.prefix_suffix = "|"
+2012-07-16 09:48:01		  weechat.look.read_marker = line
+2012-07-16 09:48:01		  weechat.look.read_marker_always_show = off
+2012-07-16 09:48:01		  weechat.look.read_marker_string = "- "
+2012-07-16 09:48:01		  weechat.look.save_config_on_exit = on
+2012-07-16 09:48:01		  weechat.look.save_layout_on_exit = none
+2012-07-16 09:48:01		  weechat.look.scroll_amount = 3
+2012-07-16 09:48:01		  weechat.look.scroll_bottom_after_switch = off
+2012-07-16 09:48:01		  weechat.look.scroll_page_percent = 100
+2012-07-16 09:48:01		  weechat.look.search_text_not_found_alert = on
+2012-07-16 09:48:01		  weechat.look.separator_horizontal = "-"
+2012-07-16 09:48:01		  weechat.look.separator_vertical = ""
+2012-07-16 09:48:01		  weechat.look.set_title = on
+2012-07-16 09:48:01		  weechat.look.time_format = "%a, %d %b %Y %T"
+2012-07-16 09:48:01		[color] (weechat.conf)
+2012-07-16 09:48:01		  weechat.color.bar_more = lightmagenta
+2012-07-16 09:48:01		  weechat.color.chat = default
+2012-07-16 09:48:01		  weechat.color.chat_bg = default
+2012-07-16 09:48:01		  weechat.color.chat_buffer = white
+2012-07-16 09:48:01		  weechat.color.chat_channel = white
+2012-07-16 09:48:01		  weechat.color.chat_delimiters = green
+2012-07-16 09:48:01		  weechat.color.chat_highlight = yellow
+2012-07-16 09:48:01		  weechat.color.chat_highlight_bg = magenta
+2012-07-16 09:48:01		  weechat.color.chat_host = cyan
+2012-07-16 09:48:01		  weechat.color.chat_inactive_buffer = darkgray
+2012-07-16 09:48:01		  weechat.color.chat_inactive_window = darkgray
+2012-07-16 09:48:01		  weechat.color.chat_nick = lightcyan
+2012-07-16 09:48:01		  weechat.color.chat_nick_colors = "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2012-07-16 09:48:01		  weechat.color.chat_nick_other = cyan
+2012-07-16 09:48:01		  weechat.color.chat_nick_self = white
+2012-07-16 09:48:01		  weechat.color.chat_prefix_action = white
+2012-07-16 09:48:01		  weechat.color.chat_prefix_buffer = brown
+2012-07-16 09:48:01		  weechat.color.chat_prefix_buffer_inactive_buffer = darkgray
+2012-07-16 09:48:01		  weechat.color.chat_prefix_error = yellow
+2012-07-16 09:48:01		  weechat.color.chat_prefix_join = lightgreen
+2012-07-16 09:48:01		  weechat.color.chat_prefix_more = lightmagenta
+2012-07-16 09:48:01		  weechat.color.chat_prefix_network = magenta
+2012-07-16 09:48:01		  weechat.color.chat_prefix_quit = lightred
+2012-07-16 09:48:01		  weechat.color.chat_prefix_suffix = green
+2012-07-16 09:48:01		  weechat.color.chat_read_marker = magenta
+2012-07-16 09:48:01		  weechat.color.chat_read_marker_bg = default
+2012-07-16 09:48:01		  weechat.color.chat_server = brown
+2012-07-16 09:48:01		  weechat.color.chat_tags = red
+2012-07-16 09:48:01		  weechat.color.chat_text_found = yellow
+2012-07-16 09:48:01		  weechat.color.chat_text_found_bg = lightmagenta
+2012-07-16 09:48:01		  weechat.color.chat_time = default
+2012-07-16 09:48:01		  weechat.color.chat_time_delimiters = brown
+2012-07-16 09:48:01		  weechat.color.chat_value = cyan
+2012-07-16 09:48:01		  weechat.color.input_actions = lightgreen
+2012-07-16 09:48:01		  weechat.color.input_text_not_found = red
+2012-07-16 09:48:01		  weechat.color.nicklist_away = cyan
+2012-07-16 09:48:01		  weechat.color.nicklist_group = green
+2012-07-16 09:48:01		  weechat.color.nicklist_offline = blue
+2012-07-16 09:48:01		  weechat.color.separator = blue
+2012-07-16 09:48:01		  weechat.color.status_count_highlight = magenta
+2012-07-16 09:48:01		  weechat.color.status_count_msg = brown
+2012-07-16 09:48:01		  weechat.color.status_count_other = default
+2012-07-16 09:48:01		  weechat.color.status_count_private = green
+2012-07-16 09:48:01		  weechat.color.status_data_highlight = lightmagenta
+2012-07-16 09:48:01		  weechat.color.status_data_msg = yellow
+2012-07-16 09:48:01		  weechat.color.status_data_other = default
+2012-07-16 09:48:01		  weechat.color.status_data_private = lightgreen
+2012-07-16 09:48:01		  weechat.color.status_filter = green
+2012-07-16 09:48:01		  weechat.color.status_more = yellow
+2012-07-16 09:48:01		  weechat.color.status_name = white
+2012-07-16 09:48:01		  weechat.color.status_name_ssl = lightgreen
+2012-07-16 09:48:01		  weechat.color.status_number = yellow
+2012-07-16 09:48:01		  weechat.color.status_time = default
+2012-07-16 09:48:01		[completion] (weechat.conf)
+2012-07-16 09:48:01		  weechat.completion.base_word_until_cursor = on
+2012-07-16 09:48:01		  weechat.completion.default_template = "%(nicks)|%(irc_channels)"
+2012-07-16 09:48:01		  weechat.completion.nick_add_space = on
+2012-07-16 09:48:01		  weechat.completion.nick_completer = ":"
+2012-07-16 09:48:01		  weechat.completion.nick_first_only = off
+2012-07-16 09:48:01		  weechat.completion.nick_ignore_chars = "[]`_-^"
+2012-07-16 09:48:01		  weechat.completion.partial_completion_alert = on
+2012-07-16 09:48:01		  weechat.completion.partial_completion_command = off
+2012-07-16 09:48:01		  weechat.completion.partial_completion_command_arg = off
+2012-07-16 09:48:01		  weechat.completion.partial_completion_count = on
+2012-07-16 09:48:01		  weechat.completion.partial_completion_other = off
+2012-07-16 09:48:01		[history] (weechat.conf)
+2012-07-16 09:48:01		  weechat.history.display_default = 5
+2012-07-16 09:48:01		  weechat.history.max_buffer_lines_minutes = 0
+2012-07-16 09:48:01		  weechat.history.max_buffer_lines_number = 4096
+2012-07-16 09:48:01		  weechat.history.max_commands = 100
+2012-07-16 09:48:01		  weechat.history.max_visited_buffers = 50
+2012-07-16 09:48:01		[network] (weechat.conf)
+2012-07-16 09:48:01		  weechat.network.connection_timeout = 60
+2012-07-16 09:48:01		  weechat.network.gnutls_ca_file = "/etc/ssl/certs/ca-certificates.crt"
+2012-07-16 09:48:01		  weechat.network.gnutls_handshake_timeout = 30
+2012-07-16 09:48:01		[plugin] (weechat.conf)
+2012-07-16 09:48:01		  weechat.plugin.autoload = "*"
+2012-07-16 09:48:01		  weechat.plugin.debug = off
+2012-07-16 09:48:01		  weechat.plugin.extension = ".so"
+2012-07-16 09:48:01		  weechat.plugin.path = "%h/plugins"
+2012-07-16 09:48:01		  weechat.plugin.save_config_on_unload = on
+2012-07-16 09:48:01		[bar] (weechat.conf)
+2012-07-16 09:48:01		  weechat.bar.input.color_bg = default
+2012-07-16 09:48:01		  weechat.bar.input.color_delim = cyan
+2012-07-16 09:48:01		  weechat.bar.input.color_fg = default
+2012-07-16 09:48:01		  weechat.bar.input.conditions = ""
+2012-07-16 09:48:01		  weechat.bar.input.filling_left_right = vertical
+2012-07-16 09:48:01		  weechat.bar.input.filling_top_bottom = horizontal
+2012-07-16 09:48:01		  weechat.bar.input.hidden = off
+2012-07-16 09:48:01		  weechat.bar.input.items = "[input_prompt]+(away),[input_search],[input_paste],input_text"
+2012-07-16 09:48:01		  weechat.bar.input.position = bottom
+2012-07-16 09:48:01		  weechat.bar.input.priority = 1000
+2012-07-16 09:48:01		  weechat.bar.input.separator = off
+2012-07-16 09:48:01		  weechat.bar.input.size = 1
+2012-07-16 09:48:01		  weechat.bar.input.size_max = 0
+2012-07-16 09:48:01		  weechat.bar.input.type = window
+2012-07-16 09:48:01		  weechat.bar.nicklist.color_bg = default
+2012-07-16 09:48:01		  weechat.bar.nicklist.color_delim = cyan
+2012-07-16 09:48:01		  weechat.bar.nicklist.color_fg = default
+2012-07-16 09:48:01		  weechat.bar.nicklist.conditions = "nicklist"
+2012-07-16 09:48:01		  weechat.bar.nicklist.filling_left_right = vertical
+2012-07-16 09:48:01		  weechat.bar.nicklist.filling_top_bottom = columns_vertical
+2012-07-16 09:48:01		  weechat.bar.nicklist.hidden = off
+2012-07-16 09:48:01		  weechat.bar.nicklist.items = "buffer_nicklist"
+2012-07-16 09:48:01		  weechat.bar.nicklist.position = right
+2012-07-16 09:48:01		  weechat.bar.nicklist.priority = 200
+2012-07-16 09:48:01		  weechat.bar.nicklist.separator = on
+2012-07-16 09:48:01		  weechat.bar.nicklist.size = 0
+2012-07-16 09:48:01		  weechat.bar.nicklist.size_max = 0
+2012-07-16 09:48:01		  weechat.bar.nicklist.type = window
+2012-07-16 09:48:01		  weechat.bar.status.color_bg = blue
+2012-07-16 09:48:01		  weechat.bar.status.color_delim = cyan
+2012-07-16 09:48:01		  weechat.bar.status.color_fg = default
+2012-07-16 09:48:01		  weechat.bar.status.conditions = ""
+2012-07-16 09:48:01		  weechat.bar.status.filling_left_right = vertical
+2012-07-16 09:48:01		  weechat.bar.status.filling_top_bottom = horizontal
+2012-07-16 09:48:01		  weechat.bar.status.hidden = off
+2012-07-16 09:48:01		  weechat.bar.status.items = "[time],[buffer_count],[buffer_plugin],buffer_number+:+buffer_name+{buffer_nicklist_count}+buffer_filter,[lag],[hotlist],completion,scroll"
+2012-07-16 09:48:01		  weechat.bar.status.position = bottom
+2012-07-16 09:48:01		  weechat.bar.status.priority = 500
+2012-07-16 09:48:01		  weechat.bar.status.separator = off
+2012-07-16 09:48:01		  weechat.bar.status.size = 1
+2012-07-16 09:48:01		  weechat.bar.status.size_max = 0
+2012-07-16 09:48:01		  weechat.bar.status.type = window
+2012-07-16 09:48:01		  weechat.bar.title.color_bg = blue
+2012-07-16 09:48:01		  weechat.bar.title.color_delim = cyan
+2012-07-16 09:48:01		  weechat.bar.title.color_fg = default
+2012-07-16 09:48:01		  weechat.bar.title.conditions = ""
+2012-07-16 09:48:01		  weechat.bar.title.filling_left_right = vertical
+2012-07-16 09:48:01		  weechat.bar.title.filling_top_bottom = horizontal
+2012-07-16 09:48:01		  weechat.bar.title.hidden = off
+2012-07-16 09:48:01		  weechat.bar.title.items = "buffer_title"
+2012-07-16 09:48:01		  weechat.bar.title.position = top
+2012-07-16 09:48:01		  weechat.bar.title.priority = 500
+2012-07-16 09:48:01		  weechat.bar.title.separator = off
+2012-07-16 09:48:01		  weechat.bar.title.size = 1
+2012-07-16 09:48:01		  weechat.bar.title.size_max = 0
+2012-07-16 09:48:01		  weechat.bar.title.type = window
+2012-07-16 09:48:01		[var] (plugins.conf)
+2012-07-16 09:48:01		  plugins.var.fifo.fifo = "on"
+2012-07-16 09:48:01		  plugins.var.lua.check_license = "on"
+2012-07-16 09:48:01		  plugins.var.perl.check_license = "on"
+2012-07-16 09:48:01		  plugins.var.python.check_license = "on"
+2012-07-16 09:48:01		  plugins.var.python.colorize_nicks.blacklist_channels = ""
+2012-07-16 09:48:01		  plugins.var.python.colorize_nicks.blacklist_nicks = "so,root"
+2012-07-16 09:48:01		  plugins.var.python.colorize_nicks.colorize_input = "off"
+2012-07-16 09:48:01		  plugins.var.python.colorize_nicks.min_nick_length = "2"
+2012-07-16 09:48:01		  plugins.var.ruby.check_license = "on"
+2012-07-16 09:48:01		  plugins.var.tcl.check_license = "on"
+2012-07-16 09:48:01		[default] (charset.conf)
+2012-07-16 09:48:01		  charset.default.decode = "iso-8859-1"
+2012-07-16 09:48:01		  charset.default.encode = ""
+2012-07-16 09:48:01		[look] (relay.conf)
+2012-07-16 09:48:01		  relay.look.auto_open_buffer = on
+2012-07-16 09:48:01		  relay.look.raw_messages = 256
+2012-07-16 09:48:01		[color] (relay.conf)
+2012-07-16 09:48:01		  relay.color.status_active = lightblue
+2012-07-16 09:48:01		  relay.color.status_auth_failed = lightred
+2012-07-16 09:48:01		  relay.color.status_connecting = yellow
+2012-07-16 09:48:01		  relay.color.status_disconnected = lightred
+2012-07-16 09:48:01		  relay.color.status_waiting_auth = brown
+2012-07-16 09:48:01		  relay.color.text = default
+2012-07-16 09:48:01		  relay.color.text_bg = default
+2012-07-16 09:48:01		  relay.color.text_selected = white
+2012-07-16 09:48:01		[network] (relay.conf)
+2012-07-16 09:48:01		  relay.network.allowed_ips = ""
+2012-07-16 09:48:01		  relay.network.bind_address = ""
+2012-07-16 09:48:01		  relay.network.compression_level = 6
+2012-07-16 09:48:01		  relay.network.max_clients = 5
+2012-07-16 09:48:01		  relay.network.password = ""
+2012-07-16 09:48:01		[look] (logger.conf)
+2012-07-16 09:48:01		  logger.look.backlog = 20
+2012-07-16 09:48:01		[color] (logger.conf)
+2012-07-16 09:48:01		  logger.color.backlog_end = darkgray
+2012-07-16 09:48:01		  logger.color.backlog_line = darkgray
+2012-07-16 09:48:01		[file] (logger.conf)
+2012-07-16 09:48:01		  logger.file.auto_log = on
+2012-07-16 09:48:01		  logger.file.flush_delay = 120
+2012-07-16 09:48:01		  logger.file.info_lines = off
+2012-07-16 09:48:01		  logger.file.mask = "$plugin.$name.weechatlog"
+2012-07-16 09:48:01		  logger.file.name_lower_case = on
+2012-07-16 09:48:01		  logger.file.path = "%h/logs/"
+2012-07-16 09:48:01		  logger.file.replacement_char = "_"
+2012-07-16 09:48:01		  logger.file.time_format = "%Y-%m-%d %H:%M:%S"
+2012-07-16 09:48:01		[look] (aspell.conf)
+2012-07-16 09:48:01		  aspell.look.color = lightred
+2012-07-16 09:48:01		[check] (aspell.conf)
+2012-07-16 09:48:01		  aspell.check.commands = "ame,amsg,away,command,cycle,kick,kickban,me,msg,notice,part,query,quit,topic"
+2012-07-16 09:48:01		  aspell.check.default_dict = ""
+2012-07-16 09:48:01		  aspell.check.during_search = off
+2012-07-16 09:48:01		  aspell.check.real_time = off
+2012-07-16 09:48:01		  aspell.check.word_min_length = 2
+2012-07-16 09:48:01		[look] (xfer.conf)
+2012-07-16 09:48:01		  xfer.look.auto_open_buffer = on
+2012-07-16 09:48:01		  xfer.look.progress_bar_size = 20
+2012-07-16 09:48:01		[color] (xfer.conf)
+2012-07-16 09:48:01		  xfer.color.status_aborted = lightred
+2012-07-16 09:48:01		  xfer.color.status_active = lightblue
+2012-07-16 09:48:01		  xfer.color.status_connecting = yellow
+2012-07-16 09:48:01		  xfer.color.status_done = lightgreen
+2012-07-16 09:48:01		  xfer.color.status_failed = lightred
+2012-07-16 09:48:01		  xfer.color.status_waiting = lightcyan
+2012-07-16 09:48:01		  xfer.color.text = default
+2012-07-16 09:48:01		  xfer.color.text_bg = default
+2012-07-16 09:48:01		  xfer.color.text_selected = white
+2012-07-16 09:48:01		[network] (xfer.conf)
+2012-07-16 09:48:01		  xfer.network.blocksize = 65536
+2012-07-16 09:48:01		  xfer.network.fast_send = on
+2012-07-16 09:48:01		  xfer.network.own_ip = ""
+2012-07-16 09:48:01		  xfer.network.port_range = ""
+2012-07-16 09:48:01		  xfer.network.speed_limit = 0
+2012-07-16 09:48:01		  xfer.network.timeout = 300
+2012-07-16 09:48:01		[file] (xfer.conf)
+2012-07-16 09:48:01		  xfer.file.auto_accept_chats = off
+2012-07-16 09:48:01		  xfer.file.auto_accept_files = off
+2012-07-16 09:48:01		  xfer.file.auto_rename = on
+2012-07-16 09:48:01		  xfer.file.auto_resume = on
+2012-07-16 09:48:01		  xfer.file.convert_spaces = on
+2012-07-16 09:48:01		  xfer.file.download_path = "%h/xfer"
+2012-07-16 09:48:01		  xfer.file.upload_path = "~"
+2012-07-16 09:48:01		  xfer.file.use_nick_in_filename = on
+2012-07-16 09:48:01		[look] (rmodifier.conf)
+2012-07-16 09:48:01		  rmodifier.look.hide_char = "*"
+2012-07-16 09:48:01		[modifier] (rmodifier.conf)
+2012-07-16 09:48:01		  rmodifier.modifier.nickserv = "history_add,input_text_display;^(/(msg|quote) +nickserv +(identify|ghost \S+) +)(.*);1,4*"
+2012-07-16 09:48:01		  rmodifier.modifier.oper = "history_add,input_text_display;^(/oper +\S+ +)(.*);1,2*"
+2012-07-16 09:48:01		  rmodifier.modifier.set_pass = "history_add;^(/set +\S*password\S* +)(.*);1,2*"
+2012-07-16 09:48:01		[look] (irc.conf)
+2012-07-16 09:48:01		  irc.look.buffer_switch_autojoin = on
+2012-07-16 09:48:01		  irc.look.buffer_switch_join = on
+2012-07-16 09:48:01		  irc.look.color_nicks_in_names = off
+2012-07-16 09:48:01		  irc.look.color_nicks_in_nicklist = off
+2012-07-16 09:48:01		  irc.look.color_nicks_in_server_messages = on
+2012-07-16 09:48:01		  irc.look.color_pv_nick_like_channel = on
+2012-07-16 09:48:01		  irc.look.display_away = local
+2012-07-16 09:48:01		  irc.look.display_ctcp_blocked = on
+2012-07-16 09:48:01		  irc.look.display_ctcp_reply = on
+2012-07-16 09:48:01		  irc.look.display_ctcp_unknown = on
+2012-07-16 09:48:01		  irc.look.display_host_join = on
+2012-07-16 09:48:01		  irc.look.display_host_join_local = on
+2012-07-16 09:48:01		  irc.look.display_host_quit = on
+2012-07-16 09:48:01		  irc.look.display_old_topic = on
+2012-07-16 09:48:01		  irc.look.display_pv_away_once = on
+2012-07-16 09:48:01		  irc.look.display_pv_back = on
+2012-07-16 09:48:01		  irc.look.hide_nickserv_pwd = on
+2012-07-16 09:48:01		  irc.look.highlight_channel = "$nick"
+2012-07-16 09:48:01		  irc.look.highlight_pv = "$nick"
+2012-07-16 09:48:01		  irc.look.highlight_server = "$nick"
+2012-07-16 09:48:01		  irc.look.highlight_tags = "irc_privmsg,irc_notice"
+2012-07-16 09:48:01		  irc.look.item_away_message = on
+2012-07-16 09:48:01		  irc.look.item_channel_modes = on
+2012-07-16 09:48:01		  irc.look.item_channel_modes_hide_key = off
+2012-07-16 09:48:01		  irc.look.item_display_server = buffer_plugin
+2012-07-16 09:48:01		  irc.look.item_nick_modes = on
+2012-07-16 09:48:01		  irc.look.item_nick_prefix = on
+2012-07-16 09:48:01		  irc.look.msgbuffer_fallback = current
+2012-07-16 09:48:01		  irc.look.new_channel_position = none
+2012-07-16 09:48:01		  irc.look.new_pv_position = none
+2012-07-16 09:48:01		  irc.look.nick_color_force = ""
+2012-07-16 09:48:01		  irc.look.nick_color_stop_chars = "_|["
+2012-07-16 09:48:01		  irc.look.nick_completion_smart = speakers
+2012-07-16 09:48:01		  irc.look.nick_prefix = ""
+2012-07-16 09:48:01		  irc.look.nick_suffix = ""
+2012-07-16 09:48:01		  irc.look.notice_as_pv = auto
+2012-07-16 09:48:01		  irc.look.notify_tags_ison = "notify_message"
+2012-07-16 09:48:01		  irc.look.notify_tags_whois = "notify_message"
+2012-07-16 09:48:01		  irc.look.part_closes_buffer = off
+2012-07-16 09:48:01		  irc.look.raw_messages = 256
+2012-07-16 09:48:01		  irc.look.server_buffer = merge_with_core
+2012-07-16 09:48:01		  irc.look.smart_filter = on
+2012-07-16 09:48:01		  irc.look.smart_filter_delay = 5
+2012-07-16 09:48:01		  irc.look.smart_filter_join = on
+2012-07-16 09:48:01		  irc.look.smart_filter_nick = on
+2012-07-16 09:48:01		  irc.look.smart_filter_quit = on
+2012-07-16 09:48:01		  irc.look.topic_strip_colors = off
+2012-07-16 09:48:01		[color] (irc.conf)
+2012-07-16 09:48:01		  irc.color.input_nick = lightcyan
+2012-07-16 09:48:01		  irc.color.item_away = yellow
+2012-07-16 09:48:01		  irc.color.item_channel_modes = default
+2012-07-16 09:48:01		  irc.color.item_lag_counting = default
+2012-07-16 09:48:01		  irc.color.item_lag_finished = yellow
+2012-07-16 09:48:01		  irc.color.message_join = green
+2012-07-16 09:48:01		  irc.color.message_quit = red
+2012-07-16 09:48:01		  irc.color.mirc_remap = "1,-1:darkgray"
+2012-07-16 09:48:01		  irc.color.nick_prefix = green
+2012-07-16 09:48:01		  irc.color.nick_prefixes = "q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+2012-07-16 09:48:01		  irc.color.nick_suffix = green
+2012-07-16 09:48:01		  irc.color.notice = green
+2012-07-16 09:48:01		  irc.color.reason_quit = default
+2012-07-16 09:48:01		  irc.color.topic_new = white
+2012-07-16 09:48:01		  irc.color.topic_old = darkgray
+2012-07-16 09:48:01		[network] (irc.conf)
+2012-07-16 09:48:01		  irc.network.autoreconnect_delay_growing = 2
+2012-07-16 09:48:01		  irc.network.autoreconnect_delay_max = 1800
+2012-07-16 09:48:01		  irc.network.colors_receive = on
+2012-07-16 09:48:01		  irc.network.colors_send = on
+2012-07-16 09:48:01		  irc.network.lag_check = 60
+2012-07-16 09:48:01		  irc.network.lag_disconnect = 0
+2012-07-16 09:48:01		  irc.network.lag_min_show = 500
+2012-07-16 09:48:01		  irc.network.lag_refresh_interval = 1
+2012-07-16 09:48:01		  irc.network.notify_check_ison = 1
+2012-07-16 09:48:01		  irc.network.notify_check_whois = 5
+2012-07-16 09:48:01		  irc.network.send_unknown_commands = off
+2012-07-16 09:48:01		[server_default] (irc.conf)
+2012-07-16 09:48:01		  irc.server_default.addresses = ""
+2012-07-16 09:48:01		  irc.server_default.anti_flood_prio_high = 2
+2012-07-16 09:48:01		  irc.server_default.anti_flood_prio_low = 2
+2012-07-16 09:48:01		  irc.server_default.autoconnect = off
+2012-07-16 09:48:01		  irc.server_default.autojoin = ""
+2012-07-16 09:48:01		  irc.server_default.autoreconnect = on
+2012-07-16 09:48:01		  irc.server_default.autoreconnect_delay = 10
+2012-07-16 09:48:01		  irc.server_default.autorejoin = off
+2012-07-16 09:48:01		  irc.server_default.autorejoin_delay = 30
+2012-07-16 09:48:01		  irc.server_default.away_check = 0
+2012-07-16 09:48:01		  irc.server_default.away_check_max_nicks = 25
+2012-07-16 09:48:01		  irc.server_default.capabilities = ""
+2012-07-16 09:48:01		  irc.server_default.command = ""
+2012-07-16 09:48:01		  irc.server_default.command_delay = 0
+2012-07-16 09:48:01		  irc.server_default.connection_timeout = 60
+2012-07-16 09:48:01		  irc.server_default.default_msg_part = "WeeChat %v"
+2012-07-16 09:48:01		  irc.server_default.default_msg_quit = "WeeChat %v"
+2012-07-16 09:48:01		  irc.server_default.ipv6 = off
+2012-07-16 09:48:01		  irc.server_default.local_hostname = ""
+2012-07-16 09:48:01		  irc.server_default.nicks = "thermans,thermans1,thermans2,thermans3,thermans4"
+2012-07-16 09:48:01		  irc.server_default.notify = ""
+2012-07-16 09:48:01		  irc.server_default.password = ""
+2012-07-16 09:48:01		  irc.server_default.proxy = ""
+2012-07-16 09:48:01		  irc.server_default.realname = ""
+2012-07-16 09:48:01		  irc.server_default.sasl_mechanism = plain
+2012-07-16 09:48:01		  irc.server_default.sasl_password = ""
+2012-07-16 09:48:01		  irc.server_default.sasl_timeout = 15
+2012-07-16 09:48:01		  irc.server_default.sasl_username = ""
+2012-07-16 09:48:01		  irc.server_default.ssl = off
+2012-07-16 09:48:01		  irc.server_default.ssl_cert = ""
+2012-07-16 09:48:01		  irc.server_default.ssl_dhkey_size = 2048
+2012-07-16 09:48:01		  irc.server_default.ssl_priorities = "NORMAL"
+2012-07-16 09:48:01		  irc.server_default.ssl_verify = on
+2012-07-16 09:48:01		  irc.server_default.username = "thermans"
+2012-07-16 09:48:01		[server] (irc.conf)
+2012-07-16 09:48:01		  irc.server.freenode.addresses = "chat.freenode.net/6667"
+2012-07-16 09:48:01		  irc.server.freenode.anti_flood_prio_high
+2012-07-16 09:48:01		  irc.server.freenode.anti_flood_prio_low
+2012-07-16 09:48:01		  irc.server.freenode.autoconnect
+2012-07-16 09:48:01		  irc.server.freenode.autojoin
+2012-07-16 09:48:01		  irc.server.freenode.autoreconnect
+2012-07-16 09:48:01		  irc.server.freenode.autoreconnect_delay
+2012-07-16 09:48:01		  irc.server.freenode.autorejoin
+2012-07-16 09:48:01		  irc.server.freenode.autorejoin_delay
+2012-07-16 09:48:01		  irc.server.freenode.away_check
+2012-07-16 09:48:01		  irc.server.freenode.away_check_max_nicks
+2012-07-16 09:48:01		  irc.server.freenode.capabilities
+2012-07-16 09:48:01		  irc.server.freenode.command
+2012-07-16 09:48:01		  irc.server.freenode.command_delay
+2012-07-16 09:48:01		  irc.server.freenode.connection_timeout
+2012-07-16 09:48:01		  irc.server.freenode.default_msg_part
+2012-07-16 09:48:01		  irc.server.freenode.default_msg_quit
+2012-07-16 09:48:01		  irc.server.freenode.ipv6
+2012-07-16 09:48:01		  irc.server.freenode.local_hostname
+2012-07-16 09:48:01		  irc.server.freenode.nicks
+2012-07-16 09:48:01		  irc.server.freenode.notify
+2012-07-16 09:48:01		  irc.server.freenode.password
+2012-07-16 09:48:01		  irc.server.freenode.proxy
+2012-07-16 09:48:01		  irc.server.freenode.realname
+2012-07-16 09:48:01		  irc.server.freenode.sasl_mechanism
+2012-07-16 09:48:01		  irc.server.freenode.sasl_password
+2012-07-16 09:48:01		  irc.server.freenode.sasl_timeout
+2012-07-16 09:48:01		  irc.server.freenode.sasl_username
+2012-07-16 09:48:01		  irc.server.freenode.ssl
+2012-07-16 09:48:01		  irc.server.freenode.ssl_cert
+2012-07-16 09:48:01		  irc.server.freenode.ssl_dhkey_size
+2012-07-16 09:48:01		  irc.server.freenode.ssl_priorities
+2012-07-16 09:48:01		  irc.server.freenode.ssl_verify
+2012-07-16 09:48:01		  irc.server.freenode.username
+2012-07-16 09:48:01		  irc.server.oftc.addresses = "irc.oftc.net/6667"
+2012-07-16 09:48:01		  irc.server.oftc.anti_flood_prio_high
+2012-07-16 09:48:01		  irc.server.oftc.anti_flood_prio_low
+2012-07-16 09:48:01		  irc.server.oftc.autoconnect
+2012-07-16 09:48:01		  irc.server.oftc.autojoin
+2012-07-16 09:48:01		  irc.server.oftc.autoreconnect
+2012-07-16 09:48:01		  irc.server.oftc.autoreconnect_delay
+2012-07-16 09:48:01		  irc.server.oftc.autorejoin
+2012-07-16 09:48:01		  irc.server.oftc.autorejoin_delay
+2012-07-16 09:48:01		  irc.server.oftc.away_check
+2012-07-16 09:48:01		  irc.server.oftc.away_check_max_nicks
+2012-07-16 09:48:01		  irc.server.oftc.capabilities
+2012-07-16 09:48:01		  irc.server.oftc.command = "/msg nickserv identify f00bar"
+2012-07-16 09:48:01		  irc.server.oftc.command_delay
+2012-07-16 09:48:01		  irc.server.oftc.connection_timeout
+2012-07-16 09:48:01		  irc.server.oftc.default_msg_part
+2012-07-16 09:48:01		  irc.server.oftc.default_msg_quit
+2012-07-16 09:48:01		  irc.server.oftc.ipv6
+2012-07-16 09:48:01		  irc.server.oftc.local_hostname
+2012-07-16 09:48:01		  irc.server.oftc.nicks = "tibaza"
+2012-07-16 09:48:01		  irc.server.oftc.notify
+2012-07-16 09:48:01		  irc.server.oftc.password
+2012-07-16 09:48:01		  irc.server.oftc.proxy
+2012-07-16 09:48:01		  irc.server.oftc.realname = "Tim Hermans"
+2012-07-16 09:48:01		  irc.server.oftc.sasl_mechanism
+2012-07-16 09:48:01		  irc.server.oftc.sasl_password
+2012-07-16 09:48:01		  irc.server.oftc.sasl_timeout
+2012-07-16 09:48:01		  irc.server.oftc.sasl_username
+2012-07-16 09:48:01		  irc.server.oftc.ssl
+2012-07-16 09:48:01		  irc.server.oftc.ssl_cert
+2012-07-16 09:48:01		  irc.server.oftc.ssl_dhkey_size
+2012-07-16 09:48:01		  irc.server.oftc.ssl_priorities
+2012-07-16 09:48:01		  irc.server.oftc.ssl_verify
+2012-07-16 09:48:01		  irc.server.oftc.username = "thermans"
+2012-07-16 09:48:01		[cmd] (alias.conf)
+2012-07-16 09:48:01		  alias.cmd.AAWAY = "allserv /away"
+2012-07-16 09:48:01		  alias.cmd.AME = "allchan /me"
+2012-07-16 09:48:01		  alias.cmd.AMSG = "allchan /msg *"
+2012-07-16 09:48:01		  alias.cmd.ANICK = "allserv /nick"
+2012-07-16 09:48:01		  alias.cmd.BYE = "quit"
+2012-07-16 09:48:01		  alias.cmd.C = "buffer clear"
+2012-07-16 09:48:01		  alias.cmd.CHAT = "dcc chat"
+2012-07-16 09:48:01		  alias.cmd.CL = "buffer clear"
+2012-07-16 09:48:01		  alias.cmd.CLOSE = "buffer close"
+2012-07-16 09:48:01		  alias.cmd.EXIT = "quit"
+2012-07-16 09:48:01		  alias.cmd.IG = "ignore"
+2012-07-16 09:48:01		  alias.cmd.J = "join"
+2012-07-16 09:48:01		  alias.cmd.K = "kick"
+2012-07-16 09:48:01		  alias.cmd.KB = "kickban"
+2012-07-16 09:48:01		  alias.cmd.LEAVE = "part"
+2012-07-16 09:48:01		  alias.cmd.M = "msg"
+2012-07-16 09:48:01		  alias.cmd.MUB = "unban *"
+2012-07-16 09:48:01		  alias.cmd.N = "names"
+2012-07-16 09:48:01		  alias.cmd.Q = "query"
+2012-07-16 09:48:01		  alias.cmd.REDRAW = "window refresh"
+2012-07-16 09:48:01		  alias.cmd.SAY = "msg *"
+2012-07-16 09:48:01		  alias.cmd.SIGNOFF = "quit"
+2012-07-16 09:48:01		  alias.cmd.T = "topic"
+2012-07-16 09:48:01		  alias.cmd.UB = "unban"
+2012-07-16 09:48:01		  alias.cmd.V = "command core version"
+2012-07-16 09:48:01		  alias.cmd.W = "who"
+2012-07-16 09:48:01		  alias.cmd.WC = "window merge"
+2012-07-16 09:48:01		  alias.cmd.WI = "whois"
+2012-07-16 09:48:01		  alias.cmd.WII = "whois $1 $1"
+2012-07-16 09:48:01		  alias.cmd.WW = "whowas"
+2012-07-16 09:48:01		492 configuration options found
+2012-07-16 09:48:20	=!=	irc: too few arguments for "query" command
+2012-07-16 09:48:22		fifo: pipe closed
+2012-07-16 09:48:24		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2012-07-16 09:48:41		[server] (irc.conf)
+2012-07-16 09:48:41		  irc.server.freenode.addresses = "chat.freenode.net/6667"
+2012-07-16 09:48:41		  irc.server.freenode.anti_flood_prio_high
+2012-07-16 09:48:41		  irc.server.freenode.anti_flood_prio_low
+2012-07-16 09:48:41		  irc.server.freenode.autoconnect
+2012-07-16 09:48:41		  irc.server.freenode.autojoin
+2012-07-16 09:48:41		  irc.server.freenode.autoreconnect
+2012-07-16 09:48:41		  irc.server.freenode.autoreconnect_delay
+2012-07-16 09:48:41		  irc.server.freenode.autorejoin
+2012-07-16 09:48:41		  irc.server.freenode.autorejoin_delay
+2012-07-16 09:48:41		  irc.server.freenode.away_check
+2012-07-16 09:48:41		  irc.server.freenode.away_check_max_nicks
+2012-07-16 09:48:41		  irc.server.freenode.capabilities
+2012-07-16 09:48:41		  irc.server.freenode.command
+2012-07-16 09:48:41		  irc.server.freenode.command_delay
+2012-07-16 09:48:41		  irc.server.freenode.connection_timeout
+2012-07-16 09:48:41		  irc.server.freenode.default_msg_part
+2012-07-16 09:48:41		  irc.server.freenode.default_msg_quit
+2012-07-16 09:48:41		  irc.server.freenode.ipv6
+2012-07-16 09:48:41		  irc.server.freenode.local_hostname
+2012-07-16 09:48:41		  irc.server.freenode.nicks
+2012-07-16 09:48:41		  irc.server.freenode.notify
+2012-07-16 09:48:41		  irc.server.freenode.password
+2012-07-16 09:48:41		  irc.server.freenode.proxy
+2012-07-16 09:48:41		  irc.server.freenode.realname
+2012-07-16 09:48:41		  irc.server.freenode.sasl_mechanism
+2012-07-16 09:48:41		  irc.server.freenode.sasl_password
+2012-07-16 09:48:41		  irc.server.freenode.sasl_timeout
+2012-07-16 09:48:41		  irc.server.freenode.sasl_username
+2012-07-16 09:48:41		  irc.server.freenode.ssl
+2012-07-16 09:48:41		  irc.server.freenode.ssl_cert
+2012-07-16 09:48:41		  irc.server.freenode.ssl_dhkey_size
+2012-07-16 09:48:41		  irc.server.freenode.ssl_priorities
+2012-07-16 09:48:41		  irc.server.freenode.ssl_verify
+2012-07-16 09:48:41		  irc.server.freenode.username
+2012-07-16 09:48:41		  irc.server.oftc.addresses = "irc.oftc.net/6667"
+2012-07-16 09:48:41		  irc.server.oftc.anti_flood_prio_high
+2012-07-16 09:48:41		  irc.server.oftc.anti_flood_prio_low
+2012-07-16 09:48:41		  irc.server.oftc.autoconnect
+2012-07-16 09:48:41		  irc.server.oftc.autojoin
+2012-07-16 09:48:41		  irc.server.oftc.autoreconnect
+2012-07-16 09:48:41		  irc.server.oftc.autoreconnect_delay
+2012-07-16 09:48:41		  irc.server.oftc.autorejoin
+2012-07-16 09:48:41		  irc.server.oftc.autorejoin_delay
+2012-07-16 09:48:41		  irc.server.oftc.away_check
+2012-07-16 09:48:41		  irc.server.oftc.away_check_max_nicks
+2012-07-16 09:48:41		  irc.server.oftc.capabilities
+2012-07-16 09:48:41		  irc.server.oftc.command = "/msg nickserv identify f00bar"
+2012-07-16 09:48:41		  irc.server.oftc.command_delay
+2012-07-16 09:48:41		  irc.server.oftc.connection_timeout
+2012-07-16 09:48:41		  irc.server.oftc.default_msg_part
+2012-07-16 09:48:41		  irc.server.oftc.default_msg_quit
+2012-07-16 09:48:41		  irc.server.oftc.ipv6
+2012-07-16 09:48:41		  irc.server.oftc.local_hostname
+2012-07-16 09:48:41		  irc.server.oftc.nicks = "tibaza"
+2012-07-16 09:48:41		  irc.server.oftc.notify
+2012-07-16 09:48:41		  irc.server.oftc.password
+2012-07-16 09:48:41		  irc.server.oftc.proxy
+2012-07-16 09:48:41		  irc.server.oftc.realname = "Tim Hermans"
+2012-07-16 09:48:41		  irc.server.oftc.sasl_mechanism
+2012-07-16 09:48:41		  irc.server.oftc.sasl_password
+2012-07-16 09:48:41		  irc.server.oftc.sasl_timeout
+2012-07-16 09:48:41		  irc.server.oftc.sasl_username
+2012-07-16 09:48:41		  irc.server.oftc.ssl
+2012-07-16 09:48:41		  irc.server.oftc.ssl_cert
+2012-07-16 09:48:41		  irc.server.oftc.ssl_dhkey_size
+2012-07-16 09:48:41		  irc.server.oftc.ssl_priorities
+2012-07-16 09:48:41		  irc.server.oftc.ssl_verify
+2012-07-16 09:48:41		  irc.server.oftc.username = "thermans"
+2012-07-16 09:48:41		68 configuration options found matching with "irc.server.*"
+2012-07-16 09:49:12	=!=	Error: unknown command "qui" (type /help for help)
+2012-07-16 09:49:14	=!=	Error: unknown command "quti" (type /help for help)
+2012-07-16 09:49:16		fifo: pipe closed
+2012-08-21 09:50:38		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2012-08-21 09:50:52	=!=	irc: too few arguments for "query" command
+2012-08-21 09:50:54		fifo: pipe closed
+2012-12-03 16:34:14	=!=	Warning: /home/thermans/.weechat/irc.conf, line 28: unknown option for section "look": item_channel_modes = on
+2012-12-03 16:34:14		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2012-12-03 16:34:30		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2012-12-03 16:35:12		fifo: pipe closed
+2013-05-07 11:08:23	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/guile.so": libguile.so.17: cannot open shared object file: No such file or directory
+2013-05-07 11:08:23	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-05-07 11:08:23		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-05-07 11:08:47	=!=	irc: too few arguments for "query" command
+2013-05-07 11:08:50	=!=	You can not write text in this buffer
+2013-05-07 11:08:52		fifo: pipe closed
+2013-05-07 11:09:07		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-05-07 11:09:43		[startup] (weechat.conf)
+2013-05-07 11:09:43		  weechat.startup.command_after_plugins = ""
+2013-05-07 11:09:43		  weechat.startup.command_before_plugins = ""
+2013-05-07 11:09:43		  weechat.startup.display_logo = on
+2013-05-07 11:09:43		  weechat.startup.display_version = on
+2013-05-07 11:09:43		  weechat.startup.sys_rlimit = ""
+2013-05-07 11:09:43		[look] (weechat.conf)
+2013-05-07 11:09:43		  weechat.look.align_end_of_lines = message
+2013-05-07 11:09:43		  weechat.look.bar_more_down = "++"
+2013-05-07 11:09:43		  weechat.look.bar_more_left = "<<"
+2013-05-07 11:09:43		  weechat.look.bar_more_right = ">>"
+2013-05-07 11:09:43		  weechat.look.bar_more_up = "--"
+2013-05-07 11:09:43		  weechat.look.buffer_notify_default = all
+2013-05-07 11:09:43		  weechat.look.buffer_time_format = "%H:%M:%S"
+2013-05-07 11:09:43		  weechat.look.color_basic_force_bold = off
+2013-05-07 11:09:43		  weechat.look.color_inactive_buffer = off
+2013-05-07 11:09:43		  weechat.look.color_inactive_message = on
+2013-05-07 11:09:43		  weechat.look.color_inactive_prefix = on
+2013-05-07 11:09:43		  weechat.look.color_inactive_prefix_buffer = on
+2013-05-07 11:09:43		  weechat.look.color_inactive_time = off
+2013-05-07 11:09:43		  weechat.look.color_inactive_window = off
+2013-05-07 11:09:43		  weechat.look.color_nick_offline = off
+2013-05-07 11:09:43		  weechat.look.color_pairs_auto_reset = 5
+2013-05-07 11:09:43		  weechat.look.color_real_white = off
+2013-05-07 11:09:43		  weechat.look.command_chars = ""
+2013-05-07 11:09:43		  weechat.look.confirm_quit = off
+2013-05-07 11:09:43		  weechat.look.day_change = on
+2013-05-07 11:09:43		  weechat.look.day_change_time_format = "%a, %d %b %Y"
+2013-05-07 11:09:43		  weechat.look.eat_newline_glitch = off
+2013-05-07 11:09:43		  weechat.look.highlight = ""
+2013-05-07 11:09:43		  weechat.look.highlight_regex = ""
+2013-05-07 11:09:43		  weechat.look.highlight_tags = ""
+2013-05-07 11:09:43		  weechat.look.hotlist_add_buffer_if_away = on
+2013-05-07 11:09:43		  weechat.look.hotlist_buffer_separator = ", "
+2013-05-07 11:09:43		  weechat.look.hotlist_count_max = 2
+2013-05-07 11:09:43		  weechat.look.hotlist_count_min_msg = 2
+2013-05-07 11:09:43		  weechat.look.hotlist_names_count = 3
+2013-05-07 11:09:43		  weechat.look.hotlist_names_length = 0
+2013-05-07 11:09:43		  weechat.look.hotlist_names_level = 12
+2013-05-07 11:09:43		  weechat.look.hotlist_names_merged_buffers = off
+2013-05-07 11:09:43		  weechat.look.hotlist_short_names = on
+2013-05-07 11:09:43		  weechat.look.hotlist_sort = group_time_asc
+2013-05-07 11:09:43		  weechat.look.hotlist_unique_numbers = on
+2013-05-07 11:09:43		  weechat.look.input_cursor_scroll = 20
+2013-05-07 11:09:43		  weechat.look.input_share = none
+2013-05-07 11:09:43		  weechat.look.input_share_overwrite = off
+2013-05-07 11:09:43		  weechat.look.input_undo_max = 32
+2013-05-07 11:09:43		  weechat.look.item_buffer_filter = "*"
+2013-05-07 11:09:43		  weechat.look.item_time_format = "%H:%M"
+2013-05-07 11:09:43		  weechat.look.jump_current_to_previous_buffer = on
+2013-05-07 11:09:43		  weechat.look.jump_previous_buffer_when_closing = on
+2013-05-07 11:09:43		  weechat.look.jump_smart_back_to_buffer = on
+2013-05-07 11:09:43		  weechat.look.mouse = off
+2013-05-07 11:09:43		  weechat.look.mouse_timer_delay = 100
+2013-05-07 11:09:43		  weechat.look.paste_bracketed = off
+2013-05-07 11:09:43		  weechat.look.paste_bracketed_timer_delay = 10
+2013-05-07 11:09:43		  weechat.look.paste_max_lines = 3  (default: 1)
+2013-05-07 11:09:43		  weechat.look.prefix_action = " *"
+2013-05-07 11:09:43		  weechat.look.prefix_align = right
+2013-05-07 11:09:43		  weechat.look.prefix_align_max = 0
+2013-05-07 11:09:43		  weechat.look.prefix_align_min = 0
+2013-05-07 11:09:43		  weechat.look.prefix_align_more = "+"
+2013-05-07 11:09:43		  weechat.look.prefix_buffer_align = right
+2013-05-07 11:09:43		  weechat.look.prefix_buffer_align_max = 0
+2013-05-07 11:09:43		  weechat.look.prefix_buffer_align_more = "+"
+2013-05-07 11:09:43		  weechat.look.prefix_error = "=!="
+2013-05-07 11:09:43		  weechat.look.prefix_join = "-->"
+2013-05-07 11:09:43		  weechat.look.prefix_network = "--"
+2013-05-07 11:09:43		  weechat.look.prefix_quit = "<--"
+2013-05-07 11:09:43		  weechat.look.prefix_same_nick = ""
+2013-05-07 11:09:43		  weechat.look.prefix_suffix = "|"
+2013-05-07 11:09:43		  weechat.look.read_marker = line
+2013-05-07 11:09:43		  weechat.look.read_marker_always_show = off
+2013-05-07 11:09:43		  weechat.look.read_marker_string = "- "
+2013-05-07 11:09:43		  weechat.look.save_config_on_exit = on
+2013-05-07 11:09:43		  weechat.look.save_layout_on_exit = none
+2013-05-07 11:09:43		  weechat.look.scroll_amount = 3
+2013-05-07 11:09:43		  weechat.look.scroll_bottom_after_switch = off
+2013-05-07 11:09:43		  weechat.look.scroll_page_percent = 100
+2013-05-07 11:09:43		  weechat.look.search_text_not_found_alert = on
+2013-05-07 11:09:43		  weechat.look.separator_horizontal = "-"
+2013-05-07 11:09:43		  weechat.look.separator_vertical = ""
+2013-05-07 11:09:43		  weechat.look.set_title = on
+2013-05-07 11:09:43		  weechat.look.time_format = "%a, %d %b %Y %T"
+2013-05-07 11:09:43		  weechat.look.window_separator_horizontal = on
+2013-05-07 11:09:43		  weechat.look.window_separator_vertical = on
+2013-05-07 11:09:43		[color] (weechat.conf)
+2013-05-07 11:09:43		  weechat.color.bar_more = lightmagenta
+2013-05-07 11:09:43		  weechat.color.chat = default
+2013-05-07 11:09:43		  weechat.color.chat_bg = default
+2013-05-07 11:09:43		  weechat.color.chat_buffer = white
+2013-05-07 11:09:43		  weechat.color.chat_channel = white
+2013-05-07 11:09:43		  weechat.color.chat_delimiters = green
+2013-05-07 11:09:43		  weechat.color.chat_highlight = yellow
+2013-05-07 11:09:43		  weechat.color.chat_highlight_bg = magenta
+2013-05-07 11:09:43		  weechat.color.chat_host = cyan
+2013-05-07 11:09:43		  weechat.color.chat_inactive_buffer = darkgray
+2013-05-07 11:09:43		  weechat.color.chat_inactive_window = darkgray
+2013-05-07 11:09:43		  weechat.color.chat_nick = lightcyan
+2013-05-07 11:09:43		  weechat.color.chat_nick_colors = "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue"
+2013-05-07 11:09:43		  weechat.color.chat_nick_offline = darkgray
+2013-05-07 11:09:43		  weechat.color.chat_nick_offline_highlight = default
+2013-05-07 11:09:43		  weechat.color.chat_nick_offline_highlight_bg = darkgray
+2013-05-07 11:09:43		  weechat.color.chat_nick_other = cyan
+2013-05-07 11:09:43		  weechat.color.chat_nick_self = white
+2013-05-07 11:09:43		  weechat.color.chat_prefix_action = white
+2013-05-07 11:09:43		  weechat.color.chat_prefix_buffer = brown
+2013-05-07 11:09:43		  weechat.color.chat_prefix_buffer_inactive_buffer = darkgray
+2013-05-07 11:09:43		  weechat.color.chat_prefix_error = yellow
+2013-05-07 11:09:43		  weechat.color.chat_prefix_join = lightgreen
+2013-05-07 11:09:43		  weechat.color.chat_prefix_more = lightmagenta
+2013-05-07 11:09:43		  weechat.color.chat_prefix_network = magenta
+2013-05-07 11:09:43		  weechat.color.chat_prefix_quit = lightred
+2013-05-07 11:09:43		  weechat.color.chat_prefix_suffix = green
+2013-05-07 11:09:43		  weechat.color.chat_read_marker = magenta
+2013-05-07 11:09:43		  weechat.color.chat_read_marker_bg = default
+2013-05-07 11:09:43		  weechat.color.chat_server = brown
+2013-05-07 11:09:43		  weechat.color.chat_tags = red
+2013-05-07 11:09:43		  weechat.color.chat_text_found = yellow
+2013-05-07 11:09:43		  weechat.color.chat_text_found_bg = lightmagenta
+2013-05-07 11:09:43		  weechat.color.chat_time = default
+2013-05-07 11:09:43		  weechat.color.chat_time_delimiters = brown
+2013-05-07 11:09:43		  weechat.color.chat_value = cyan
+2013-05-07 11:09:43		  weechat.color.input_actions = lightgreen
+2013-05-07 11:09:43		  weechat.color.input_text_not_found = red
+2013-05-07 11:09:43		  weechat.color.nicklist_away = cyan
+2013-05-07 11:09:43		  weechat.color.nicklist_group = green
+2013-05-07 11:09:43		  weechat.color.nicklist_offline = blue
+2013-05-07 11:09:43		  weechat.color.separator = blue
+2013-05-07 11:09:43		  weechat.color.status_count_highlight = magenta
+2013-05-07 11:09:43		  weechat.color.status_count_msg = brown
+2013-05-07 11:09:43		  weechat.color.status_count_other = default
+2013-05-07 11:09:43		  weechat.color.status_count_private = green
+2013-05-07 11:09:43		  weechat.color.status_data_highlight = lightmagenta
+2013-05-07 11:09:43		  weechat.color.status_data_msg = yellow
+2013-05-07 11:09:43		  weechat.color.status_data_other = default
+2013-05-07 11:09:43		  weechat.color.status_data_private = lightgreen
+2013-05-07 11:09:43		  weechat.color.status_filter = green
+2013-05-07 11:09:43		  weechat.color.status_more = yellow
+2013-05-07 11:09:43		  weechat.color.status_name = white
+2013-05-07 11:09:43		  weechat.color.status_name_ssl = lightgreen
+2013-05-07 11:09:43		  weechat.color.status_number = yellow
+2013-05-07 11:09:43		  weechat.color.status_time = default
+2013-05-07 11:09:43		[completion] (weechat.conf)
+2013-05-07 11:09:43		  weechat.completion.base_word_until_cursor = on
+2013-05-07 11:09:43		  weechat.completion.default_template = "%(nicks)|%(irc_channels)"
+2013-05-07 11:09:43		  weechat.completion.nick_add_space = on
+2013-05-07 11:09:43		  weechat.completion.nick_completer = ":"
+2013-05-07 11:09:43		  weechat.completion.nick_first_only = off
+2013-05-07 11:09:43		  weechat.completion.nick_ignore_chars = "[]`_-^"
+2013-05-07 11:09:43		  weechat.completion.partial_completion_alert = on
+2013-05-07 11:09:43		  weechat.completion.partial_completion_command = off
+2013-05-07 11:09:43		  weechat.completion.partial_completion_command_arg = off
+2013-05-07 11:09:43		  weechat.completion.partial_completion_count = on
+2013-05-07 11:09:43		  weechat.completion.partial_completion_other = off
+2013-05-07 11:09:43		[history] (weechat.conf)
+2013-05-07 11:09:43		  weechat.history.display_default = 5
+2013-05-07 11:09:43		  weechat.history.max_buffer_lines_minutes = 0
+2013-05-07 11:09:43		  weechat.history.max_buffer_lines_number = 4096
+2013-05-07 11:09:43		  weechat.history.max_commands = 100
+2013-05-07 11:09:43		  weechat.history.max_visited_buffers = 50
+2013-05-07 11:09:43		[network] (weechat.conf)
+2013-05-07 11:09:43		  weechat.network.connection_timeout = 60
+2013-05-07 11:09:43		  weechat.network.gnutls_ca_file = "/etc/ssl/certs/ca-certificates.crt"
+2013-05-07 11:09:43		  weechat.network.gnutls_handshake_timeout = 30
+2013-05-07 11:09:43		[plugin] (weechat.conf)
+2013-05-07 11:09:43		  weechat.plugin.autoload = "*"
+2013-05-07 11:09:43		  weechat.plugin.debug = off
+2013-05-07 11:09:43		  weechat.plugin.extension = ".so"  (default: ".so,.dll")
+2013-05-07 11:09:43		  weechat.plugin.path = "%h/plugins"
+2013-05-07 11:09:43		  weechat.plugin.save_config_on_unload = on
+2013-05-07 11:09:43		[bar] (weechat.conf)
+2013-05-07 11:09:43		  weechat.bar.input.color_bg = default
+2013-05-07 11:09:43		  weechat.bar.input.color_delim = cyan
+2013-05-07 11:09:43		  weechat.bar.input.color_fg = default
+2013-05-07 11:09:43		  weechat.bar.input.conditions = ""
+2013-05-07 11:09:43		  weechat.bar.input.filling_left_right = vertical
+2013-05-07 11:09:43		  weechat.bar.input.filling_top_bottom = horizontal
+2013-05-07 11:09:43		  weechat.bar.input.hidden = off
+2013-05-07 11:09:43		  weechat.bar.input.items = "[input_prompt]+(away),[input_search],[input_paste],input_text"
+2013-05-07 11:09:43		  weechat.bar.input.position = bottom
+2013-05-07 11:09:43		  weechat.bar.input.priority = 1000
+2013-05-07 11:09:43		  weechat.bar.input.separator = off
+2013-05-07 11:09:43		  weechat.bar.input.size = 1
+2013-05-07 11:09:43		  weechat.bar.input.size_max = 0
+2013-05-07 11:09:43		  weechat.bar.input.type = window
+2013-05-07 11:09:43		  weechat.bar.nicklist.color_bg = default
+2013-05-07 11:09:43		  weechat.bar.nicklist.color_delim = cyan
+2013-05-07 11:09:43		  weechat.bar.nicklist.color_fg = default
+2013-05-07 11:09:43		  weechat.bar.nicklist.conditions = "nicklist"
+2013-05-07 11:09:43		  weechat.bar.nicklist.filling_left_right = vertical
+2013-05-07 11:09:43		  weechat.bar.nicklist.filling_top_bottom = columns_vertical
+2013-05-07 11:09:43		  weechat.bar.nicklist.hidden = off
+2013-05-07 11:09:43		  weechat.bar.nicklist.items = "buffer_nicklist"
+2013-05-07 11:09:43		  weechat.bar.nicklist.position = right
+2013-05-07 11:09:43		  weechat.bar.nicklist.priority = 200
+2013-05-07 11:09:43		  weechat.bar.nicklist.separator = on
+2013-05-07 11:09:43		  weechat.bar.nicklist.size = 0
+2013-05-07 11:09:43		  weechat.bar.nicklist.size_max = 0
+2013-05-07 11:09:43		  weechat.bar.nicklist.type = window
+2013-05-07 11:09:43		  weechat.bar.status.color_bg = blue
+2013-05-07 11:09:43		  weechat.bar.status.color_delim = cyan
+2013-05-07 11:09:43		  weechat.bar.status.color_fg = default
+2013-05-07 11:09:43		  weechat.bar.status.conditions = ""
+2013-05-07 11:09:43		  weechat.bar.status.filling_left_right = vertical
+2013-05-07 11:09:43		  weechat.bar.status.filling_top_bottom = horizontal
+2013-05-07 11:09:43		  weechat.bar.status.hidden = off
+2013-05-07 11:09:43		  weechat.bar.status.items = "[time],[buffer_count],[buffer_plugin],buffer_number+:+buffer_name+{buffer_nicklist_count}+buffer_filter,[lag],[hotlist],completion,scroll"  (default: "[time],[buffer_count],[buffer_plugin],buffer_number+:+buffer_name+(buffer_modes)+{buffer_nicklist_count}+buffer_filter,[lag],[hotlist],completion,scroll")
+2013-05-07 11:09:43		  weechat.bar.status.position = bottom
+2013-05-07 11:09:43		  weechat.bar.status.priority = 500
+2013-05-07 11:09:43		  weechat.bar.status.separator = off
+2013-05-07 11:09:43		  weechat.bar.status.size = 1
+2013-05-07 11:09:43		  weechat.bar.status.size_max = 0
+2013-05-07 11:09:43		  weechat.bar.status.type = window
+2013-05-07 11:09:43		  weechat.bar.title.color_bg = blue
+2013-05-07 11:09:43		  weechat.bar.title.color_delim = cyan
+2013-05-07 11:09:43		  weechat.bar.title.color_fg = default
+2013-05-07 11:09:43		  weechat.bar.title.conditions = ""
+2013-05-07 11:09:43		  weechat.bar.title.filling_left_right = vertical
+2013-05-07 11:09:43		  weechat.bar.title.filling_top_bottom = horizontal
+2013-05-07 11:09:43		  weechat.bar.title.hidden = off
+2013-05-07 11:09:43		  weechat.bar.title.items = "buffer_title"
+2013-05-07 11:09:43		  weechat.bar.title.position = top
+2013-05-07 11:09:43		  weechat.bar.title.priority = 500
+2013-05-07 11:09:43		  weechat.bar.title.separator = off
+2013-05-07 11:09:43		  weechat.bar.title.size = 1
+2013-05-07 11:09:43		  weechat.bar.title.size_max = 0
+2013-05-07 11:09:43		  weechat.bar.title.type = window
+2013-05-07 11:09:43		[var] (plugins.conf)
+2013-05-07 11:09:43		  plugins.var.fifo.fifo = "on"
+2013-05-07 11:09:43		  plugins.var.guile.check_license = "on"
+2013-05-07 11:09:43		  plugins.var.lua.check_license = "on"
+2013-05-07 11:09:43		  plugins.var.perl.check_license = "on"
+2013-05-07 11:09:43		  plugins.var.python.check_license = "on"
+2013-05-07 11:09:43		  plugins.var.python.colorize_nicks.blacklist_channels = ""
+2013-05-07 11:09:43		  plugins.var.python.colorize_nicks.blacklist_nicks = "so,root"
+2013-05-07 11:09:43		  plugins.var.python.colorize_nicks.colorize_input = "off"
+2013-05-07 11:09:43		  plugins.var.python.colorize_nicks.min_nick_length = "2"
+2013-05-07 11:09:43		  plugins.var.ruby.check_license = "on"
+2013-05-07 11:09:43		  plugins.var.tcl.check_license = "on"
+2013-05-07 11:09:43		[look] (aspell.conf)
+2013-05-07 11:09:43		  aspell.look.color = lightred
+2013-05-07 11:09:43		[check] (aspell.conf)
+2013-05-07 11:09:43		  aspell.check.commands = "ame,amsg,away,command,cycle,kick,kickban,me,msg,notice,part,query,quit,topic"
+2013-05-07 11:09:43		  aspell.check.default_dict = ""
+2013-05-07 11:09:43		  aspell.check.during_search = off
+2013-05-07 11:09:43		  aspell.check.enabled = off
+2013-05-07 11:09:43		  aspell.check.real_time = off
+2013-05-07 11:09:43		  aspell.check.suggestions = -1
+2013-05-07 11:09:43		  aspell.check.word_min_length = 2
+2013-05-07 11:09:43		[default] (charset.conf)
+2013-05-07 11:09:43		  charset.default.decode = "iso-8859-1"
+2013-05-07 11:09:43		  charset.default.encode = ""
+2013-05-07 11:09:43		[look] (script.conf)
+2013-05-07 11:09:43		  script.look.columns = "%s %n %V %v %u | %d | %t"
+2013-05-07 11:09:43		  script.look.diff_color = on
+2013-05-07 11:09:43		  script.look.diff_command = "auto"
+2013-05-07 11:09:43		  script.look.display_source = on
+2013-05-07 11:09:43		  script.look.quiet_actions = on
+2013-05-07 11:09:43		  script.look.sort = "p,n"
+2013-05-07 11:09:43		  script.look.translate_description = on
+2013-05-07 11:09:43		  script.look.use_keys = on
+2013-05-07 11:09:43		[color] (script.conf)
+2013-05-07 11:09:43		  script.color.status_autoloaded = cyan
+2013-05-07 11:09:43		  script.color.status_held = white
+2013-05-07 11:09:43		  script.color.status_installed = lightcyan
+2013-05-07 11:09:43		  script.color.status_obsolete = lightmagenta
+2013-05-07 11:09:43		  script.color.status_popular = yellow
+2013-05-07 11:09:43		  script.color.status_running = lightgreen
+2013-05-07 11:09:43		  script.color.status_unknown = lightred
+2013-05-07 11:09:43		  script.color.text = default
+2013-05-07 11:09:43		  script.color.text_bg = default
+2013-05-07 11:09:43		  script.color.text_bg_selected = red
+2013-05-07 11:09:43		  script.color.text_date = default
+2013-05-07 11:09:43		  script.color.text_date_selected = white
+2013-05-07 11:09:43		  script.color.text_delimiters = darkgray
+2013-05-07 11:09:43		  script.color.text_description = default
+2013-05-07 11:09:43		  script.color.text_description_selected = white
+2013-05-07 11:09:43		  script.color.text_extension = default
+2013-05-07 11:09:43		  script.color.text_extension_selected = white
+2013-05-07 11:09:43		  script.color.text_name = cyan
+2013-05-07 11:09:43		  script.color.text_name_selected = lightcyan
+2013-05-07 11:09:43		  script.color.text_selected = white
+2013-05-07 11:09:43		  script.color.text_tags = brown
+2013-05-07 11:09:43		  script.color.text_tags_selected = yellow
+2013-05-07 11:09:43		  script.color.text_version = magenta
+2013-05-07 11:09:43		  script.color.text_version_loaded = default
+2013-05-07 11:09:43		  script.color.text_version_loaded_selected = white
+2013-05-07 11:09:43		  script.color.text_version_selected = lightmagenta
+2013-05-07 11:09:43		[scripts] (script.conf)
+2013-05-07 11:09:43		  script.scripts.cache_expire = 60
+2013-05-07 11:09:43		  script.scripts.dir = "%h/script"
+2013-05-07 11:09:43		  script.scripts.hold = ""
+2013-05-07 11:09:43		  script.scripts.url = "http://www.weechat.org/files/plugins.xml.gz"
+2013-05-07 11:09:43		[look] (xfer.conf)
+2013-05-07 11:09:43		  xfer.look.auto_open_buffer = on
+2013-05-07 11:09:43		  xfer.look.progress_bar_size = 20
+2013-05-07 11:09:43		[color] (xfer.conf)
+2013-05-07 11:09:43		  xfer.color.status_aborted = lightred
+2013-05-07 11:09:43		  xfer.color.status_active = lightblue
+2013-05-07 11:09:43		  xfer.color.status_connecting = yellow
+2013-05-07 11:09:43		  xfer.color.status_done = lightgreen
+2013-05-07 11:09:43		  xfer.color.status_failed = lightred
+2013-05-07 11:09:43		  xfer.color.status_waiting = lightcyan
+2013-05-07 11:09:43		  xfer.color.text = default
+2013-05-07 11:09:43		  xfer.color.text_bg = default
+2013-05-07 11:09:43		  xfer.color.text_selected = white
+2013-05-07 11:09:43		[network] (xfer.conf)
+2013-05-07 11:09:43		  xfer.network.blocksize = 65536
+2013-05-07 11:09:43		  xfer.network.fast_send = on
+2013-05-07 11:09:43		  xfer.network.own_ip = ""
+2013-05-07 11:09:43		  xfer.network.port_range = ""
+2013-05-07 11:09:43		  xfer.network.speed_limit = 0
+2013-05-07 11:09:43		  xfer.network.timeout = 300
+2013-05-07 11:09:43		[file] (xfer.conf)
+2013-05-07 11:09:43		  xfer.file.auto_accept_chats = off
+2013-05-07 11:09:43		  xfer.file.auto_accept_files = off
+2013-05-07 11:09:43		  xfer.file.auto_rename = on
+2013-05-07 11:09:43		  xfer.file.auto_resume = on
+2013-05-07 11:09:43		  xfer.file.convert_spaces = on
+2013-05-07 11:09:43		  xfer.file.download_path = "%h/xfer"
+2013-05-07 11:09:43		  xfer.file.upload_path = "~"
+2013-05-07 11:09:43		  xfer.file.use_nick_in_filename = on
+2013-05-07 11:09:43		[look] (rmodifier.conf)
+2013-05-07 11:09:43		  rmodifier.look.hide_char = "*"
+2013-05-07 11:09:43		[modifier] (rmodifier.conf)
+2013-05-07 11:09:43		  rmodifier.modifier.nickserv = "history_add,input_text_display;^(/(msg|quote) +nickserv +(identify|ghost \S+) +)(.*);1,4*"  (default: "")
+2013-05-07 11:09:43		  rmodifier.modifier.oper = "history_add,input_text_display;^(/oper +\S+ +)(.*);1,2*"  (default: "")
+2013-05-07 11:09:43		  rmodifier.modifier.set_pass = "history_add;^(/set +\S*password\S* +)(.*);1,2*"  (default: "")
+2013-05-07 11:09:43		[cmd] (alias.conf)
+2013-05-07 11:09:43		  alias.cmd.AAWAY = "allserv /away"
+2013-05-07 11:09:43		  alias.cmd.AME = "allchan /me"
+2013-05-07 11:09:43		  alias.cmd.AMSG = "allchan /msg *"
+2013-05-07 11:09:43		  alias.cmd.ANICK = "allserv /nick"
+2013-05-07 11:09:43		  alias.cmd.BYE = "quit"
+2013-05-07 11:09:43		  alias.cmd.C = "buffer clear"
+2013-05-07 11:09:43		  alias.cmd.CHAT = "dcc chat"
+2013-05-07 11:09:43		  alias.cmd.CL = "buffer clear"
+2013-05-07 11:09:43		  alias.cmd.CLOSE = "buffer close"
+2013-05-07 11:09:43		  alias.cmd.EXIT = "quit"
+2013-05-07 11:09:43		  alias.cmd.IG = "ignore"
+2013-05-07 11:09:43		  alias.cmd.J = "join"
+2013-05-07 11:09:43		  alias.cmd.K = "kick"
+2013-05-07 11:09:43		  alias.cmd.KB = "kickban"
+2013-05-07 11:09:43		  alias.cmd.LEAVE = "part"
+2013-05-07 11:09:43		  alias.cmd.M = "msg"
+2013-05-07 11:09:43		  alias.cmd.MUB = "unban *"
+2013-05-07 11:09:43		  alias.cmd.N = "names"
+2013-05-07 11:09:43		  alias.cmd.Q = "query"
+2013-05-07 11:09:43		  alias.cmd.REDRAW = "window refresh"
+2013-05-07 11:09:43		  alias.cmd.SAY = "msg *"
+2013-05-07 11:09:43		  alias.cmd.SIGNOFF = "quit"
+2013-05-07 11:09:43		  alias.cmd.T = "topic"
+2013-05-07 11:09:43		  alias.cmd.UB = "unban"
+2013-05-07 11:09:43		  alias.cmd.V = "command core version"
+2013-05-07 11:09:43		  alias.cmd.W = "who"
+2013-05-07 11:09:43		  alias.cmd.WC = "window merge"
+2013-05-07 11:09:43		  alias.cmd.WI = "whois"
+2013-05-07 11:09:43		  alias.cmd.WII = "whois $1 $1"
+2013-05-07 11:09:43		  alias.cmd.WW = "whowas"
+2013-05-07 11:09:43		[look] (irc.conf)
+2013-05-07 11:09:43		  irc.look.buffer_switch_autojoin = on
+2013-05-07 11:09:43		  irc.look.buffer_switch_join = on
+2013-05-07 11:09:43		  irc.look.color_nicks_in_names = off
+2013-05-07 11:09:43		  irc.look.color_nicks_in_nicklist = off
+2013-05-07 11:09:43		  irc.look.color_nicks_in_server_messages = on
+2013-05-07 11:09:43		  irc.look.color_pv_nick_like_channel = on
+2013-05-07 11:09:43		  irc.look.ctcp_time_format = "%a, %d %b %Y %T %z"
+2013-05-07 11:09:43		  irc.look.display_away = local
+2013-05-07 11:09:43		  irc.look.display_ctcp_blocked = on
+2013-05-07 11:09:43		  irc.look.display_ctcp_reply = on
+2013-05-07 11:09:43		  irc.look.display_ctcp_unknown = on
+2013-05-07 11:09:43		  irc.look.display_host_join = on
+2013-05-07 11:09:43		  irc.look.display_host_join_local = on
+2013-05-07 11:09:43		  irc.look.display_host_quit = on
+2013-05-07 11:09:43		  irc.look.display_old_topic = on
+2013-05-07 11:09:43		  irc.look.display_pv_away_once = on
+2013-05-07 11:09:43		  irc.look.display_pv_back = on
+2013-05-07 11:09:43		  irc.look.hide_nickserv_pwd = on
+2013-05-07 11:09:43		  irc.look.highlight_channel = "$nick"
+2013-05-07 11:09:43		  irc.look.highlight_pv = "$nick"
+2013-05-07 11:09:43		  irc.look.highlight_server = "$nick"
+2013-05-07 11:09:43		  irc.look.highlight_tags = "irc_privmsg,irc_notice"
+2013-05-07 11:09:43		  irc.look.item_away_message = on
+2013-05-07 11:09:43		  irc.look.item_channel_modes_hide_key = off
+2013-05-07 11:09:43		  irc.look.item_display_server = buffer_plugin
+2013-05-07 11:09:43		  irc.look.item_nick_modes = on
+2013-05-07 11:09:43		  irc.look.item_nick_prefix = on
+2013-05-07 11:09:43		  irc.look.msgbuffer_fallback = current
+2013-05-07 11:09:43		  irc.look.new_channel_position = none
+2013-05-07 11:09:43		  irc.look.new_pv_position = none
+2013-05-07 11:09:43		  irc.look.nick_color_force = ""
+2013-05-07 11:09:43		  irc.look.nick_color_stop_chars = "_|["
+2013-05-07 11:09:43		  irc.look.nick_completion_smart = speakers
+2013-05-07 11:09:43		  irc.look.nick_mode = prefix
+2013-05-07 11:09:43		  irc.look.nick_mode_empty = off
+2013-05-07 11:09:43		  irc.look.nick_prefix = ""
+2013-05-07 11:09:43		  irc.look.nick_suffix = ""
+2013-05-07 11:09:43		  irc.look.notice_as_pv = auto
+2013-05-07 11:09:43		  irc.look.notify_tags_ison = "notify_message"
+2013-05-07 11:09:43		  irc.look.notify_tags_whois = "notify_message"
+2013-05-07 11:09:43		  irc.look.part_closes_buffer = off
+2013-05-07 11:09:43		  irc.look.raw_messages = 256
+2013-05-07 11:09:43		  irc.look.server_buffer = merge_with_core
+2013-05-07 11:09:43		  irc.look.smart_filter = on
+2013-05-07 11:09:43		  irc.look.smart_filter_delay = 5
+2013-05-07 11:09:43		  irc.look.smart_filter_join = on
+2013-05-07 11:09:43		  irc.look.smart_filter_nick = on
+2013-05-07 11:09:43		  irc.look.smart_filter_quit = on
+2013-05-07 11:09:43		  irc.look.topic_strip_colors = off
+2013-05-07 11:09:43		[color] (irc.conf)
+2013-05-07 11:09:43		  irc.color.input_nick = lightcyan
+2013-05-07 11:09:43		  irc.color.item_away = yellow
+2013-05-07 11:09:43		  irc.color.item_channel_modes = default
+2013-05-07 11:09:43		  irc.color.item_lag_counting = default
+2013-05-07 11:09:43		  irc.color.item_lag_finished = yellow
+2013-05-07 11:09:43		  irc.color.message_join = green
+2013-05-07 11:09:43		  irc.color.message_quit = red
+2013-05-07 11:09:43		  irc.color.mirc_remap = "1,-1:darkgray"
+2013-05-07 11:09:43		  irc.color.nick_prefix = green
+2013-05-07 11:09:43		  irc.color.nick_prefixes = "q:lightred;a:lightcyan;o:lightgreen;h:lightmagenta;v:yellow;*:lightblue"
+2013-05-07 11:09:43		  irc.color.nick_suffix = green
+2013-05-07 11:09:43		  irc.color.notice = green
+2013-05-07 11:09:43		  irc.color.reason_quit = default
+2013-05-07 11:09:43		  irc.color.topic_new = white
+2013-05-07 11:09:43		  irc.color.topic_old = darkgray
+2013-05-07 11:09:43		[network] (irc.conf)
+2013-05-07 11:09:43		  irc.network.alternate_nick = on
+2013-05-07 11:09:43		  irc.network.autoreconnect_delay_growing = 2
+2013-05-07 11:09:43		  irc.network.autoreconnect_delay_max = 1800
+2013-05-07 11:09:43		  irc.network.colors_receive = on
+2013-05-07 11:09:43		  irc.network.colors_send = on
+2013-05-07 11:09:43		  irc.network.lag_check = 60
+2013-05-07 11:09:43		  irc.network.lag_disconnect = 0
+2013-05-07 11:09:43		  irc.network.lag_min_show = 500
+2013-05-07 11:09:43		  irc.network.lag_refresh_interval = 1
+2013-05-07 11:09:43		  irc.network.notify_check_ison = 1
+2013-05-07 11:09:43		  irc.network.notify_check_whois = 5
+2013-05-07 11:09:43		  irc.network.send_unknown_commands = off
+2013-05-07 11:09:43		  irc.network.whois_double_nick = on
+2013-05-07 11:09:43		[server_default] (irc.conf)
+2013-05-07 11:09:43		  irc.server_default.addresses = ""
+2013-05-07 11:09:43		  irc.server_default.anti_flood_prio_high = 2
+2013-05-07 11:09:43		  irc.server_default.anti_flood_prio_low = 2
+2013-05-07 11:09:43		  irc.server_default.autoconnect = off
+2013-05-07 11:09:43		  irc.server_default.autojoin = ""
+2013-05-07 11:09:43		  irc.server_default.autoreconnect = on
+2013-05-07 11:09:43		  irc.server_default.autoreconnect_delay = 10
+2013-05-07 11:09:43		  irc.server_default.autorejoin = off
+2013-05-07 11:09:43		  irc.server_default.autorejoin_delay = 30
+2013-05-07 11:09:43		  irc.server_default.away_check = 0
+2013-05-07 11:09:43		  irc.server_default.away_check_max_nicks = 25
+2013-05-07 11:09:43		  irc.server_default.capabilities = ""
+2013-05-07 11:09:43		  irc.server_default.command = ""
+2013-05-07 11:09:43		  irc.server_default.command_delay = 0
+2013-05-07 11:09:43		  irc.server_default.connection_timeout = 60
+2013-05-07 11:09:43		  irc.server_default.default_msg_part = "WeeChat %v"
+2013-05-07 11:09:43		  irc.server_default.default_msg_quit = "WeeChat %v"
+2013-05-07 11:09:43		  irc.server_default.ipv6 = off  (default: on)
+2013-05-07 11:09:43		  irc.server_default.local_hostname = ""
+2013-05-07 11:09:43		  irc.server_default.nicks = "thermans,thermans1,thermans2,thermans3,thermans4"  (default: "")
+2013-05-07 11:09:43		  irc.server_default.notify = ""
+2013-05-07 11:09:43		  irc.server_default.password = ""
+2013-05-07 11:09:43		  irc.server_default.proxy = ""
+2013-05-07 11:09:43		  irc.server_default.realname = ""
+2013-05-07 11:09:43		  irc.server_default.sasl_mechanism = plain
+2013-05-07 11:09:43		  irc.server_default.sasl_password = ""
+2013-05-07 11:09:43		  irc.server_default.sasl_timeout = 15
+2013-05-07 11:09:43		  irc.server_default.sasl_username = ""
+2013-05-07 11:09:43		  irc.server_default.ssl = off
+2013-05-07 11:09:43		  irc.server_default.ssl_cert = ""
+2013-05-07 11:09:43		  irc.server_default.ssl_dhkey_size = 2048
+2013-05-07 11:09:43		  irc.server_default.ssl_priorities = "NORMAL"
+2013-05-07 11:09:43		  irc.server_default.ssl_verify = on
+2013-05-07 11:09:43		  irc.server_default.username = "thermans"  (default: "")
+2013-05-07 11:09:43		[server] (irc.conf)
+2013-05-07 11:09:43		  irc.server.freenode.addresses = "chat.freenode.net/6667"  (default: (undefined))
+2013-05-07 11:09:43		  irc.server.freenode.anti_flood_prio_high
+2013-05-07 11:09:43		  irc.server.freenode.anti_flood_prio_low
+2013-05-07 11:09:43		  irc.server.freenode.autoconnect
+2013-05-07 11:09:43		  irc.server.freenode.autojoin
+2013-05-07 11:09:43		  irc.server.freenode.autoreconnect
+2013-05-07 11:09:43		  irc.server.freenode.autoreconnect_delay
+2013-05-07 11:09:43		  irc.server.freenode.autorejoin
+2013-05-07 11:09:43		  irc.server.freenode.autorejoin_delay
+2013-05-07 11:09:43		  irc.server.freenode.away_check
+2013-05-07 11:09:43		  irc.server.freenode.away_check_max_nicks
+2013-05-07 11:09:43		  irc.server.freenode.capabilities
+2013-05-07 11:09:43		  irc.server.freenode.command
+2013-05-07 11:09:43		  irc.server.freenode.command_delay
+2013-05-07 11:09:43		  irc.server.freenode.connection_timeout
+2013-05-07 11:09:43		  irc.server.freenode.default_msg_part
+2013-05-07 11:09:43		  irc.server.freenode.default_msg_quit
+2013-05-07 11:09:43		  irc.server.freenode.ipv6
+2013-05-07 11:09:43		  irc.server.freenode.local_hostname
+2013-05-07 11:09:43		  irc.server.freenode.nicks
+2013-05-07 11:09:43		  irc.server.freenode.notify
+2013-05-07 11:09:43		  irc.server.freenode.password
+2013-05-07 11:09:43		  irc.server.freenode.proxy
+2013-05-07 11:09:43		  irc.server.freenode.realname
+2013-05-07 11:09:43		  irc.server.freenode.sasl_mechanism
+2013-05-07 11:09:43		  irc.server.freenode.sasl_password
+2013-05-07 11:09:43		  irc.server.freenode.sasl_timeout
+2013-05-07 11:09:43		  irc.server.freenode.sasl_username
+2013-05-07 11:09:43		  irc.server.freenode.ssl
+2013-05-07 11:09:43		  irc.server.freenode.ssl_cert
+2013-05-07 11:09:43		  irc.server.freenode.ssl_dhkey_size
+2013-05-07 11:09:43		  irc.server.freenode.ssl_priorities
+2013-05-07 11:09:43		  irc.server.freenode.ssl_verify
+2013-05-07 11:09:43		  irc.server.freenode.username
+2013-05-07 11:09:43		  irc.server.oftc.addresses = "irc.oftc.net/6667"  (default: (undefined))
+2013-05-07 11:09:43		  irc.server.oftc.anti_flood_prio_high
+2013-05-07 11:09:43		  irc.server.oftc.anti_flood_prio_low
+2013-05-07 11:09:43		  irc.server.oftc.autoconnect
+2013-05-07 11:09:43		  irc.server.oftc.autojoin
+2013-05-07 11:09:43		  irc.server.oftc.autoreconnect
+2013-05-07 11:09:43		  irc.server.oftc.autoreconnect_delay
+2013-05-07 11:09:43		  irc.server.oftc.autorejoin
+2013-05-07 11:09:43		  irc.server.oftc.autorejoin_delay
+2013-05-07 11:09:43		  irc.server.oftc.away_check
+2013-05-07 11:09:43		  irc.server.oftc.away_check_max_nicks
+2013-05-07 11:09:43		  irc.server.oftc.capabilities
+2013-05-07 11:09:43		  irc.server.oftc.command = "/msg nickserv identify f00bar"  (default: (undefined))
+2013-05-07 11:09:43		  irc.server.oftc.command_delay
+2013-05-07 11:09:43		  irc.server.oftc.connection_timeout
+2013-05-07 11:09:43		  irc.server.oftc.default_msg_part
+2013-05-07 11:09:43		  irc.server.oftc.default_msg_quit
+2013-05-07 11:09:43		  irc.server.oftc.ipv6
+2013-05-07 11:09:43		  irc.server.oftc.local_hostname
+2013-05-07 11:09:43		  irc.server.oftc.nicks = "tibaza"  (default: (undefined))
+2013-05-07 11:09:43		  irc.server.oftc.notify
+2013-05-07 11:09:43		  irc.server.oftc.password
+2013-05-07 11:09:43		  irc.server.oftc.proxy
+2013-05-07 11:09:43		  irc.server.oftc.realname = "Tim Hermans"  (default: (undefined))
+2013-05-07 11:09:43		  irc.server.oftc.sasl_mechanism
+2013-05-07 11:09:43		  irc.server.oftc.sasl_password
+2013-05-07 11:09:43		  irc.server.oftc.sasl_timeout
+2013-05-07 11:09:43		  irc.server.oftc.sasl_username
+2013-05-07 11:09:43		  irc.server.oftc.ssl
+2013-05-07 11:09:43		  irc.server.oftc.ssl_cert
+2013-05-07 11:09:43		  irc.server.oftc.ssl_dhkey_size
+2013-05-07 11:09:43		  irc.server.oftc.ssl_priorities
+2013-05-07 11:09:43		  irc.server.oftc.ssl_verify
+2013-05-07 11:09:43		  irc.server.oftc.username = "thermans"  (default: (undefined))
+2013-05-07 11:09:43		[look] (logger.conf)
+2013-05-07 11:09:43		  logger.look.backlog = 20
+2013-05-07 11:09:43		[color] (logger.conf)
+2013-05-07 11:09:43		  logger.color.backlog_end = darkgray
+2013-05-07 11:09:43		  logger.color.backlog_line = darkgray
+2013-05-07 11:09:43		[file] (logger.conf)
+2013-05-07 11:09:43		  logger.file.auto_log = on
+2013-05-07 11:09:43		  logger.file.flush_delay = 120
+2013-05-07 11:09:43		  logger.file.info_lines = off
+2013-05-07 11:09:43		  logger.file.mask = "$plugin.$name.weechatlog"
+2013-05-07 11:09:43		  logger.file.name_lower_case = on
+2013-05-07 11:09:43		  logger.file.path = "%h/logs/"
+2013-05-07 11:09:43		  logger.file.replacement_char = "_"
+2013-05-07 11:09:43		  logger.file.time_format = "%Y-%m-%d %H:%M:%S"
+2013-05-07 11:09:43		[look] (relay.conf)
+2013-05-07 11:09:43		  relay.look.auto_open_buffer = on
+2013-05-07 11:09:43		  relay.look.raw_messages = 256
+2013-05-07 11:09:43		[color] (relay.conf)
+2013-05-07 11:09:43		  relay.color.client = cyan
+2013-05-07 11:09:43		  relay.color.status_active = lightblue
+2013-05-07 11:09:43		  relay.color.status_auth_failed = lightred
+2013-05-07 11:09:43		  relay.color.status_connecting = yellow
+2013-05-07 11:09:43		  relay.color.status_disconnected = lightred
+2013-05-07 11:09:43		  relay.color.status_waiting_auth = brown
+2013-05-07 11:09:43		  relay.color.text = default
+2013-05-07 11:09:43		  relay.color.text_bg = default
+2013-05-07 11:09:43		  relay.color.text_selected = white
+2013-05-07 11:09:43		[network] (relay.conf)
+2013-05-07 11:09:43		  relay.network.allowed_ips = ""
+2013-05-07 11:09:43		  relay.network.bind_address = ""
+2013-05-07 11:09:43		  relay.network.compression_level = 6
+2013-05-07 11:09:43		  relay.network.ipv6 = on
+2013-05-07 11:09:43		  relay.network.max_clients = 5
+2013-05-07 11:09:43		  relay.network.password = ""
+2013-05-07 11:09:43		  relay.network.ssl_cert_key = "%h/ssl/relay.pem"
+2013-05-07 11:09:43		[irc] (relay.conf)
+2013-05-07 11:09:43		  relay.irc.backlog_max_minutes = 1440
+2013-05-07 11:09:43		  relay.irc.backlog_max_number = 256
+2013-05-07 11:09:43		  relay.irc.backlog_since_last_disconnect = on
+2013-05-07 11:09:43		  relay.irc.backlog_tags = "irc_privmsg"
+2013-05-07 11:09:43		  relay.irc.backlog_time_format = "[%H:%M] "
+2013-05-07 11:09:43		551 options
+2013-05-07 11:10:20		irc: server cloud created
+2013-05-07 11:13:13		fifo: pipe closed
+2013-05-07 11:13:16		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-05-07 15:28:27		fifo: pipe closed
+2013-10-07 13:08:59		python scripts loaded: colorize_nicks
+2013-10-07 13:08:59		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-10-07 13:09:09	=!=	Error with command "connect" (try /help connect)
+2013-10-07 13:09:13		[irc]  /connect  <server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch]
+2013-10-07 13:09:13		                 -all|-auto|-open [-nojoin] [-switch]
+2013-10-07 13:09:13		connect to IRC server(s)
+2013-10-07 13:09:13		    server: server name, which can be:
+2013-10-07 13:09:13		            - internal server name (created by /server add, recommended usage)
+2013-10-07 13:09:13		            - hostname/port or IP/port (this will create a TEMPORARY server), port is 6667 by default
+2013-10-07 13:09:13		            - URL with format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]
+2013-10-07 13:09:13		    option: set option for server (for boolean option, value can be omitted)
+2013-10-07 13:09:13		  nooption: set boolean option to 'off' (for example: -nossl)
+2013-10-07 13:09:13		      -all: connect to all servers defined in configuration
+2013-10-07 13:09:13		     -auto: connect to servers with autoconnect enabled
+2013-10-07 13:09:13		     -open: connect to all opened servers that are not currently connected
+2013-10-07 13:09:13		   -nojoin: do not join any channel (even if autojoin is enabled on server)
+2013-10-07 13:09:13		   -switch: switch to next server address
+2013-10-07 13:09:13		Examples:
+2013-10-07 13:09:13		  /connect freenode
+2013-10-07 13:09:13		  /connect irc.oftc.net/6667
+2013-10-07 13:09:13		  /connect irc6.oftc.net/6667 -ipv6
+2013-10-07 13:09:13		  /connect irc6.oftc.net/6697 -ipv6 -ssl
+2013-10-07 13:09:13		  /connect my.server.org/6697 -ssl -password=test
+2013-10-07 13:09:13		  /connect irc://nick@irc.oftc.net/#channel
+2013-10-07 13:09:13		  /connect -switch
+2013-10-07 13:09:30		irc: server localhost created (temporary server, NOT SAVED!)
+2013-10-07 14:15:43		python: scripts unloaded
+2014-02-02 16:20:20		python scripts loaded: colorize_nicks
+2014-02-02 16:20:20	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-02-02 16:20:20	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-02-02 16:20:20		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, xfer
+2014-02-02 16:20:35	=!=	irc: too few arguments for "query" command
+2014-02-02 16:20:37		python: scripts unloaded
+2014-02-02 16:21:11		python scripts loaded: colorize_nicks
+2014-02-02 16:21:11		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-02-02 17:51:17		python: scripts unloaded
+2014-02-02 18:11:36		python scripts loaded: colorize_nicks
+2014-02-02 18:11:36		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-02-05 18:19:18		python: scripts unloaded

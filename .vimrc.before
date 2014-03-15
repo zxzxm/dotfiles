@@ -1,0 +1,4 @@
+" Before loading Janus, set the leader
+let mapleader = ","
+
+noremap <silent> <CR> :nohlsearch<CR>

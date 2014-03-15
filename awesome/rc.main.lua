@@ -11,18 +11,20 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty   = require("naughty")
 local menubar   = require("menubar")
+-- Utils
+require("utils.run_once")
 -- Other libraries
 -- local keydoc    = require("keydoc")
 local scratch   = require("scratch")
 
 -- Autoruns   ..................................... &autoruns ...
-awful.util.spawn_with_shell("unagi &")
-awful.util.spawn_with_shell("synapse -s &")
--- awful.util.spawn_with_shell("kupfer --no-splash &")
-awful.util.spawn_with_shell("clipit &")
-awful.util.spawn_with_shell("pa-applet &")
-awful.util.spawn_with_shell("xscreensaver -no-splash &")
-awful.util.spawn_with_shell("xflux -z 20910 &")
+run_once("unagi")
+run_once("synapse -s")
+-- run_once("kupfer --no-splash &")
+run_once("clipit")
+run_once("pa-applet")
+run_once("xscreensaver -no-splash")
+run_once("xflux -z 20910")
 
 -- Notification Theme ............................. &notifications ...
 naughty.config.defaults.width                  = 450
@@ -185,7 +187,6 @@ cpuwidget = awful.widget.graph()
 cpuwidget:set_width(graphwidth):set_height(graphheight)
 cpuwidget:set_width(30)
 cpuwidget:set_background_color(beautiful.bg_normal)
--- cpuwidget:set_color("#FF5656")
 cpuwidget:set_color({
   type = "linear",
   from = { 0, graphheight },
@@ -338,11 +339,11 @@ globalkeys = awful.util.table.join(
         function ()
             awful.client.focus.history.previous()
             if client.focus then
-                client.focus:raise()
+               client.focus:raise()
             end
         end),
 
-        awful.key({ modkey,           }, "j",
+    awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
             if client.focus then client.focus:raise() end
@@ -355,9 +356,9 @@ globalkeys = awful.util.table.join(
 
     -- Tags
     -- keydoc.group("Tags"),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext),
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
+    awful.key({ modkey,           }, "Right",  awful.tag.viewnext), -- Next tag
+    awful.key({ modkey,           }, "Left",   awful.tag.viewprev), -- Previous tag
+    awful.key({ modkey,           }, "Escape", awful.tag.history.restore), -- Last tag
 
 
     -- Launchers
@@ -584,6 +585,9 @@ awful.rules.rules = {
     -- Eclipse
     { rule = { class = "Eclipse" },
       properties = { tag = tags[2][5], switchtotag = true } },
+    -- LightTable
+    { rule = { class = "Ltbin" },
+      properties = { tag = tags[1][7], switchtotag = true } },
 
 
     -- Floaters ----------------------------------------------- &floaters ---

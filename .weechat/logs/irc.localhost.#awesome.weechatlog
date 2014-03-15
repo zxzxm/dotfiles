@@ -1,0 +1,35 @@
+2013-10-07 13:09:56	-->	thermans (~thermans@atenderme.com) has joined #awesome
+2013-10-07 13:09:56	--	Topic for #awesome is " Welcome to the land of the awesome, home to the ludicrous | http://awesome.naquadah.org | awesome `Ruby Tuesday' 3.5.1 released | https://flattr.com/thing/48025/awesome-window-manager | Have a look at http://awesome.naquadah.org/wiki/Awesome_3.4_to_3.5 and awesome's stderr before asking questions... | Don't ask to ask, ask!"
+2013-10-07 13:09:56	--	Topic set by psychon (psychon@psybnc.out.znc.in) on Mon, 01 Apr 2013 07:51:21
+2013-10-07 13:09:56	--	Nicks #awesome: [a__ aeroevan aibo Airwave akiva Alice3 alip andres anrxc arnau Artefact2 AstralStorm axrfnu axujen_ Azog b1ackdeath_ babilen bastibl Bausparfuchs Beowulf beuwolf blami blathijs blueyed bob2 bolt bps brambles Brinky bronsen bzed Caelum captnfab cfreak200 codile codsch comboy Coolhand crater2150 crazed- cyborg-one damjan DANtheBEASTman DarkAce-Z DarthRamone dimaursu16 dist Drakevr drone dsmith ecormier edgecase15 Edholm ekeih el_robin ElixirVitae epa evelyette evelyette_ ezekiel farhaven fijimunkii fling FloodServ Fluor framling Ganneff garrett Genolo GermainZ GermanG Guest4404 gustavold hatseflats Heiki Hendrick hrubi Hrym icule infernix isomorphismes ivan` janisg Javafant jd_ Jester01 jhawthorn Jikan JohnnyRun jself KindOne klaernie Knaldgas knix konni krion Kromitvs lesbroot lfaraone linux|pfault LJUNGBY|oj Lysergia mackal MacTavish Marmotte marquicus mastergreg mikejones minde miniml miniyo Morrolan moyam01 mpfusion myf noahm nuck nyov ohcibi OMGOMG PaulePanter pbm pdq peetah_ phryk phyber prt przemoc psychon psyprus qstrahl qstrahl`` qwerty66 r2d2rogers r3m Ram-Z raph_ael Ratty reashlin redShadow[tp] resixian SammysHP Sanchal SArchfall satori sbadia schoko sejo shad0VV shinji simon42 SirCmpwn sitaktif SlutaTramsa snaipperi sochotnicky spacepluk ssvb steeve SteveGriff sunoano swimmer swords tadakuni Takumo tbmatuka tdi tdy tenaglia that thddx thermans togge ToJa92 tom tomaw transacid trewq Vene virako_ WeaselSoup WhoBe Whoop wired wirwe_ yano yogan yoh yumaokao1 z0lty |]
+2013-10-07 13:09:56	--	Channel #awesome: 191 nicks (0 ops, 0 halfops, 0 voices, 191 normals)
+2013-10-07 13:09:58	--	Mode #awesome [+ntc]
+2013-10-07 13:09:58	--	Channel created on Mon, 15 Sep 2008 22:59:49
+2013-10-07 13:10:16	<--	evelyette_ (~evelyette@93-103-107-74.dynamic.t-2.net) has quit (Remote host closed the connection)
+2013-10-07 13:10:33	-->	evelyette_ (~evelyette@93-103-107-74.dynamic.t-2.net) has joined #awesome
+2013-10-07 13:12:07	thermans	Hey guys, simple question:  trying to switch to a tag from the commandline.  Any idea why this does not work? 
+2013-10-07 13:12:08	thermans	echo 'awful.tag.viewonly(tags[1][3])' | awesome-client
+2013-10-07 13:12:17	thermans	error: [string "awful.tag.viewonly(tags[1][3])"]:1: attempt to index global 'awful' (a nil value)
+2013-10-07 13:14:56	<--	dimaursu16 (~dimon@188.138.247.122) has quit (Ping timeout: 480 seconds)
+2013-10-07 13:15:14	-->	hx (~hx@vpn4.hotsplots.net) has joined #awesome
+2013-10-07 13:21:52	-->	normalra (~normal@vipnet4848.mobile.carnet.hr) has joined #awesome
+2013-10-07 13:23:36	<--	ElixirVitae (~Shehrazad@78.174.61.228) has quit (Read error: Operation timed out)
+2013-10-07 13:30:32	GermanG	thermans: no idea about how to do it with awesome-client, did you try wmctrl?
+2013-10-07 13:33:41	-->	tessellated (~mih@77.119.128.98.wireless.dyn.drei.com) has joined #awesome
+2013-10-07 13:33:52	minde	thermans: change local awful = require("awful")-- to: awful = require("awful")
+2013-10-07 13:34:03	minde	then: echo 'tags=awful.tag.gettags(1); awful.tag.viewonly(tags[2])' | awesome-client
+2013-10-07 13:35:08	minde	hmz, works too: echo 'awful.tag.viewonly(tags[2])' | awesome-client
+2013-10-07 13:35:49	<--	evelyette_ (~evelyette@93-103-107-74.dynamic.t-2.net) has quit (Remote host closed the connection)
+2013-10-07 13:36:07	-->	evelyette_ (~evelyette@93-103-107-74.dynamic.t-2.net) has joined #awesome
+2013-10-07 13:37:33	thermans	minde: This worked:  echo 'awful = require("awful"); tags=awful.tag.gettags(1); awful.tag.viewonly(tags[2])' | awesome-client
+2013-10-07 13:38:08	thermans	Thanks!
+2013-10-07 13:39:08	minde	I just created such a script that looks like this http://p.defau.lt/?qVys4yvd8_T2LHy5lJiPzg , and I'm getting weird results... ~ 5300 functions calls per second... is this normal ?
+2013-10-07 13:41:17	thermans	Hmm, actually that killed my <mod4># keybindings
+2013-10-07 13:46:08	minde	thermans: strange, can share your config file somewhere? because for me it works normally
+2013-10-07 13:49:13	thermans	Here you go: https://gist.github.com/nedludd/9b95abc3c62765d664aa
+2013-10-07 13:53:25	-->	doubleutp (~doubleutp@firewall.stashtea.com) has joined #awesome
+2013-10-07 13:56:33	minde	thermans: Sorry, but I do not see any problem... but I guess the problem is with keydoc 
+2013-10-07 14:04:46	<--	mpfusion (~mpfusion@miun105-233.dynamic.miun.se) has quit (Ping timeout: 480 seconds)
+2013-10-07 14:05:58	thermans	Ya, I was thinking that myself.  Gonna try taking it out.  Thanks for looking!
+2013-10-07 14:07:32	-->	dimaursu16 (~dimon@host-static-109-185-145-246.moldtelecom.md) has joined #awesome
+2013-10-07 14:15:41	<--	thermans (~thermans@atenderme.com) has left #awesome (WeeChat 0.4.1)

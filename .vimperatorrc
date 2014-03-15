@@ -1,7 +1,8 @@
 " -*- mode: vimrc-generic -*-
 
 " Colorscheme
-colorscheme tomorrownight
+"colorscheme tomorrownight
+colorscheme zenburn
 
 set verbose=15
 
@@ -10,9 +11,6 @@ set verbose=15
 "
 " Window title (Vimperator by default)
 set titlestring=Firefox
-
-" Editor, C-i invokes it in text fields (replaces "It's All Text")
-"set editor=emacsclient -n -c
 
 " Hint characters
 set hintchars=asdfghjkl;
@@ -36,15 +34,16 @@ set complete=slhbS
 " set newtab=all
 
 " Define where to show requested popup windows 
-set popups=resized
+" set popups=resized
 
-" Hilight previous search pattern matches
+"" Hilight previous search pattern matches
 set hlsearch
 
 " Default search engine is ignored, plugins are used, place yubnub in there and do:
 set defsearch=duckduckgo
 
 " Navigate
+map b <silent> :back<CR>
 map h <silent> :back<CR>
 map l <silent> :forward<CR>
 
@@ -59,6 +58,7 @@ map ,w :js toggle_element('webdeveloper-toolbar')<CR>
 map ,b :js toggle_element('PersonalToolbar')<CR>
 map ,m :js toggle_element('toolbar-menubar')<CR>
 map ,n :js toggle_element('nav-bar')<CR>
+map ,s :set gui=invaddons<CR>
 
 " " Special commands
 
@@ -67,6 +67,6 @@ map ,n :js toggle_element('nav-bar')<CR>
 :map <silent> W :exe ":dict "+content.getSelection()<CR> 
 
 " " Hint properly in gmail et al
-set hinttags="//*[@onclick or @onmouseover or @onmousedown or @onmouseup or @oncommand or @class='lk' or @role='link' or @role='button'] | //input[not(@type='hidden')] | //a | //area | //iframe | //textarea | //button | //select | //xhtml:input[not(@type='hidden')] | //xhtml:a | //xhtml:area | //xhtml:iframe | //xhtml:textarea | //xhtml:button | //xhtml:select | //div[contains(@class,'J-K-I J-J5-Ji')]"
+"set hinttags="//*[@onclick or @onmouseover or @onmousedown or @onmouseup or @oncommand or @class='lk' or @role='link' or @role='button'] | //input[not(@type='hidden')] | //a | //area | //iframe | //textarea | //button | //select | //xhtml:input[not(@type='hidden')] | //xhtml:a | //xhtml:area | //xhtml:iframe | //xhtml:textarea | //xhtml:button | //xhtml:select | //div[contains(@class,'J-K-I J-J5-Ji')]"
 
 " vim: filetype=vim :

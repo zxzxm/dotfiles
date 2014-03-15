@@ -1,0 +1,8 @@
+set nonumber
+set shell=bash
+
+"color Tomorrow-Night
+color zenburn
+
+set t_ti=t_e=
+
