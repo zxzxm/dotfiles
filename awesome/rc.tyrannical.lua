@@ -18,6 +18,7 @@ require("utils.run_once")
 -- local keydoc  = require("keydoc")
 local tyrannical = require("tyrannical")
 local scratch    = require("scratch")
+-- local powerline  = require("powerline")
 
 -- Autoruns   ..................................... &autoruns ...
 run_once("unagi")
@@ -148,7 +149,7 @@ tyrannical.tags = {
       exec_once   = browser,
       layout      = awful.layout.suit.max,      -- Use the max layout
       class = {
-         "Firefox", "Chrome", "luakit"
+         "Firefox", "Chrome", "luakit", "Dwb"
       }
    },
    {
@@ -226,13 +227,13 @@ tyrannical.tags = {
 
 -- Ignore the tag "exclusive" property for the following clients (matched by classes)
 tyrannical.properties.intrusive = {
-   "feh",  "Synapse", "Spacefm", "Keepassx", "KeePass2", "Easystroke", "Lxappearance", "Clipit"
+   "feh",  "Synapse", "Spacefm", "Keepassx", "KeePass2", "Easystroke", "Lxappearance", "Clipit", "Seahorse-ssh-askpass"
 }
 
 -- Ignore the tiled layout for the matching clients
 tyrannical.properties.floating = {
    "MPlayer"      , "feh"             , "Meld"       , "Keepassx"     , "Cheese"         ,
-   "Prefs.py"     , "Nvidia-settings" , "Easystroke" , "KeePass2", "Lxappearance"
+   "Prefs.py"     , "Nvidia-settings" , "Easystroke" , "KeePass2", "Lxappearance", "Seahorse-ssh-askpass"
 }
 
 -- Make the matching clients (by classes) on top of the default layout
@@ -408,6 +409,7 @@ for s = 1, screen.count() do
       -- bottom_right_layout:add(weathericon)
       bottom_right_layout:add(weatherwidget)
       bottom_right_layout:add(datewidget)
+      -- bottom_right_layout:add(powerline_widget)
       bottom_right_layout:add(separator)
       bottom_right_layout:add(wibox.widget.systray())
    end

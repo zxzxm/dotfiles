@@ -8,6 +8,10 @@ set verbose=15
 
 " Options
 "  - Most of the options already have good defaults
+
+" Startup minimally
+set gui=none,tabs
+
 "
 " Window title (Vimperator by default)
 set titlestring=Firefox
@@ -28,7 +32,7 @@ set history=10000
 set showstatuslinks=1
 
 " Show completions and use AwesomeBar (+search plugins)
-set complete=slhbS
+set complete=slhb
 
 " Ex commands output in a new tab by default (prefs, addons...)
 " set newtab=all
@@ -54,11 +58,13 @@ map l <silent> :forward<CR>
   }
 EOF
 
-map ,w :js toggle_element('webdeveloper-toolbar')<CR>
+"map ,w :js toggle_element('webdeveloper-toolbar')<CR>
 map ,b :js toggle_element('PersonalToolbar')<CR>
 map ,m :js toggle_element('toolbar-menubar')<CR>
 map ,n :js toggle_element('nav-bar')<CR>
 map ,s :set gui=invaddons<CR>
+map ,p :emenu Edit.Preferences<CR>
+map ,h :emenu History.Show All History>CR>
 
 " " Special commands
 

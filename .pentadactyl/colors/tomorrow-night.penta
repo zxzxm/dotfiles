@@ -1,10 +1,10 @@
-:" Pentadactyl color file
+" Pentadactyl color file
 " Maintainer:   Maksim Ryzhikov
 " Version: 2.0
 " Name: Ubuntu
 
-hi -a StatusLineNormal						       border-top: 1px normal #343434;
-hi -a StatusLineNormal									 background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
+hi -a StatusLineNormal			    border-top: 1px normal #343434;
+hi -a StatusLineNormal			 background: -moz-linear-gradient(bottom, #3c3b37, #54534f) repeat scroll 0 0 transparent;
 
 hi -l StatusLineNormal StatusLineSecure     background: #81a2be !important;
 hi -l StatusLineNormal StatusLineExtended   background: #b5bd68 !important;

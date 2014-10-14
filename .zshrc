@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-#export ZSH_THEME="robbyrussell"
+export ZSH_THEME="tim"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -28,28 +28,28 @@ export COMPLETION_WAITING_DOTS="true"
 
 # These are the base plugins that are not host specific
 plugins=(
-  cpanm
-  colored-man
-  dirpersist
-  extract
-  fabric
-  history-substring-search
-  gnu-utils
-  last-working-dir
-  mercurial
-  node
-  npm
-  perl
-  pip
-  rails
-  rake
-  rsync
-  svn
-  systemadmin
-  web-search
-  zaw
-  zsh-syntax-highlighting
-  z
+    colored-man
+    common-aliases
+    cpanm
+    dircycle
+    #dirpersist
+    extract
+    fabric
+    history-substring-search
+    gnu-utils
+    #last-working-dir
+    node
+    npm
+    pip
+    rails
+    rake
+    rsync
+    svn
+    systemadmin
+    web-search
+    zaw
+    zsh-syntax-highlighting
+    z
 )
 
 # Mac plugins
@@ -67,7 +67,6 @@ fi
 if [[ $OSTYPE =~ "linux" ]]; then
     plugins+=(
         archlinux
-        cabal
         command-not-found
         dircycle
         systemd
@@ -84,7 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # ".oh-my-zsh/custom" directory because I want to be able to update
 # that from git without disturbing anything
 
-source $ZSH_CUSTOM/custom.zsh
-source $ZSH_CUSTOM/aliases.zsh
+#source $ZSH_CUSTOM/custom.zsh
+#source $ZSH_CUSTOM/aliases.zsh
+#compdef -d git
 
-#[[ $OSTYPE == 'darwin11.4.0' ]] && PATH=/usr/local/Cellar/ccache/3.1.9/libexec:$PATH # ccache
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

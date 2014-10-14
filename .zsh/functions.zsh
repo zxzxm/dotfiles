@@ -1,59 +1,76 @@
-# Proxy into a Cassandra host and run jconsole
-function jc {
-    # set this to the host you'll proxy through.
-    host=$1
+# FUNCTIONS -----------------------------------------------------
 
-    jmxport=7199 # as specified by JMX_PORT in cassandra-env.sh
-    proxy_port=${2:-8123}
-
-    if [ "x$host" = "x" ]; then
-        echo "Usage: jc  [proxy port]"
-        return 1
-    fi
-
-    # start up a background ssh tunnel on the desired port
-    ssh -N -f -D$proxy_port $host
-
-    # if the tunnel failed to come up, fail gracefully.
-    if [ $? -ne 0 ]; then
-        echo "Ssh tunnel failed"
-        return 1
-    fi
-
-    ssh_pid=`ps awwwx | grep "[s]sh -N -f -D$proxy_port" | awk '{print $1}'`
-    echo "ssh pid = $ssh_pid"
-
-    # Fire up jconsole to your remote host
-    jconsole -J-DsocksProxyHost=localhost -J-DsocksProxyPort=$proxy_port \
-        service:jmx:rmi:///jndi/rmi://${host}:${jmxport}/jmxrmi
-
-    # tear down the tunnel
-    kill $ssh_pid
+# mkdir && cd
+function mcd()
+{
+	test -z "$1" && echo mcd: no path given && return
+	test -d "$1" && print "mcd: Directory $1 already exists"
+	mkdir -p -- "$1"
+	cd -- "$1"
 }
 
-# Linux specific stuff ----------------------------------------------------------
-if [[ $OSTYPE == 'linux-gnu' ]]; then
+# Simple calculator
+calc () {
+    test -z "$1" && echo "usage example: calc \"3*6\"" && return
+    #awk "BEGIN{ print $* }"
+    echo $(($*))
+}
 
-    # List all installed packages
-    function pkgs () {
-        yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|  \
-            awk ' BEGIN {FS=":"}/^Name/{printf("\033[1;34m%s\033[0;37m", $2)}/^Description/{print $2}'
-        # yaourt -Qei $(yaourt -Qu|cut -d" " -f 1)|awk ' BEGIN {FS=":"}/^Name/{printf("%s", $2)}/^Description/{print $2}'
-    }
+# print the nth argument
+col() { 
+  awk -- "{print \$$1}";  
+}
 
-    # Show details of an package
-    function pkg () {
-        test -z "$1" && echo "usage: pkg packagename" && return
-        yaourt -Qi $1
-    }
+# only slash should be considered as a word separator:
+slash-backward-kill-word() {
+    local WORDCHARS="${WORDCHARS:s@/@}"
+    # zle backward-word
+    zle backward-kill-word
+}
+zle -N slash-backward-kill-word
 
-    # Find orphaned packages
-    function orphans() {
-        if [[ ! -n $(pacman -Qdt) ]]; then
-            echo "No orphans to remove."
-        else
-            sudo pacman -Rs $(pacman -Qdtq)
-        fi
-    }
+# Kill everything in a word up to its last "/"
+bindkey '^xv' slash-backward-kill-word
 
-fi
+# press esc-m for inserting last typed word again (thanks to caphuso!)
+insert-last-typed-word() { zle insert-last-word -- 0 -1 };
+zle -N insert-last-typed-word
+
+# Insert last typed word
+bindkey "^xm" insert-last-typed-word
+
+# run command line as user root via sudo:
+sudo-command-line() {
+    [[ -z $BUFFER ]] && zle up-history
+    [[ $BUFFER != sudo\ * ]] && BUFFER="sudo $BUFFER"
+    zle end-of-line
+}
+zle -N sudo-command-line
+
+#k# Put the current command line into a \kbd{sudo} call
+bindkey "^x^x" sudo-command-line
+
+# Wrap the command line in a for statement
+make-for-loop() {
+    [[ -z $BUFFER ]] && zle up-history
+    [[ $BUFFER != for\ * ]] && BUFFER="for x in ; do $BUFFER; done"
+}
+zle -N make-for-loop
+
+bindkey "^xf" make-for-loop
+
+### jump behind the first word on the cmdline.
+### useful to add options.
+function jump_after_first_word() {
+    local words
+    words=(${(z)BUFFER})
+
+    if (( ${#words} <= 1 )) ; then
+        CURSOR=${#BUFFER}
+    else
+        CURSOR=${#${words[1]}}
+    fi
+}
+zle -N jump_after_first_word
+
+bindkey '^x1' jump_after_first_word

@@ -25,7 +25,7 @@ set showstatuslinks=status
 set visualbell
 
 " Define where to show requested popup windows 
-set popups=resized
+"set popups=resized
 
 " Command line and search patterns history
 set history=10000
@@ -46,17 +46,27 @@ nmap <silent> b :back<CR>
 nmap <silent> h :back<CR>
 nmap <silent> l :forward<CR>
 
-set defsearch=ddg
+set defsearch=duckduckgo
 
 set titlestring="Firefox"
 
 " Don't close browser when you close the last tab
 :set! browser.tabs.closeWindowWithLastTab=false
 
-" Toggle toolbars
+"" Toggle tool bars
+map ,w <CR>
 map ,b :toolbartoggle Bookmarks Toolbar<CR>
-map ,n :toolbartoggle Navigation Toolbar<CR>
-" map ,m :toolbartoggle Menu Bar<CR>
+map ,m :toolbartoggle Menu Bar<CR>
+map ,n <CR>
+map ,s :toolbartoggle Add-on Bar<CR>
+
+
+
+" Toggle toolbars
+"map ,b :toolbartoggle Bookmarks Toolbar<CR>
+"map ,n :toolbartoggle Navigation Toolbar<CR>
+"map ,s :toolbartoggle Add-on Bar<CR>
+"map ,m :toolbartoggle Menu Bar<CR>
 " map ,w :toolbartoggle Web Developer Toolbar<CR>
 
 " PassKeys

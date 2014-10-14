@@ -7,6 +7,8 @@ let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup=0
 set nospell
 
+let g:Powerline_symbols = 'fancy'
+
 let g:haddock_browser = "firefox"
 
 set foldlevel=999

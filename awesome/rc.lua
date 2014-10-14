@@ -18,6 +18,7 @@ require("utils.run_once")
 -- local keydoc  = require("keydoc")
 local tyrannical = require("tyrannical")
 local scratch    = require("scratch")
+-- local powerline  = require("powerline")
 
 -- Autoruns   ..................................... &autoruns ...
 run_once("unagi")
@@ -26,6 +27,7 @@ run_once("clipit")
 run_once("pa-applet")
 run_once("xscreensaver -no-splash")
 run_once("xflux -z 20910")
+run_once("davmail")
 
 -- Notification Theme ............................. &notifications ...
 naughty.config.defaults.width                  = 450
@@ -120,9 +122,9 @@ tyrannical.tags = {
       position    = 1,
       layout      = awful.layout.suit.tile, -- Use the tile layout
       selected    = true,
-      exec_once   = terminal,
+      -- exec_once   = terminal,
       class       = { --Accept the following classes, refuse everything else (because of "exclusive=true")
-         "urxvt" , "aterm","URxvt","konsole","terminator","gnome-terminal"
+         "urxvt" , "aterm","URxvt","konsole","terminator","gnome-terminal", "vte", "Sakura", "termite", 
       }
    },
    {
@@ -131,7 +133,7 @@ tyrannical.tags = {
       exclusive   = true,
       screen      = 1,
       position    = 2,
-      exec_once   = editor,
+      -- exec_once   = editor,
       clone_on    = 2, -- Create a single instance of this tag on screen 1, but also show it on screen 2
                        -- The tag can be used on both screen, but only one at once
       layout      = awful.layout.suit.max                          ,
@@ -145,10 +147,10 @@ tyrannical.tags = {
       exclusive   = true,
       position    = 3,
       screen      = {1, 2},
-      exec_once   = browser,
+      -- exec_once   = browser,
       layout      = awful.layout.suit.max,      -- Use the max layout
       class = {
-         "Firefox", "Chrome", "luakit"
+         "Firefox", "Google-chrome-unstable", "luakit"
       }
    },
    {
@@ -173,16 +175,26 @@ tyrannical.tags = {
       exclusive   = true,
       layout      = awful.layout.suit.max,
       class       = {
-         "MuPDF"         , "Zathura"         , "Evince"     , "libreoffice-writer"
+         "MuPDF"         , "Zathura"         , "Evince"     , "libreoffice-writer", "libreoffice-calc"
       },
    },
+   {
+      name        = "mail",
+      init        = false,
+      exclusive   = true,
+      layout      = awful.layout.suit.max,
+      class       = {
+         "Thunderbird", "Claws-mail",
+      },
+   },
+
    {
       name        = "ldap",
       init        = false,
       exclusive   = true,
       layout      = awful.layout.suit.floating,
       class       = {
-         "lbe-ui-BrowserAp",
+         "lbe-ui-BrowserAp", "com-ca-directory-jxplorer-JXplorer"
       },
    },
    {
@@ -191,7 +203,7 @@ tyrannical.tags = {
       exclusive   = false,
       layout      = awful.layout.suit.floating,
       class       = {
-         "Vlc", "Ario", "Clementine",
+         "Vlc", "Ario", "Clementine", "Amarok",
       },
    },
    {
@@ -204,12 +216,12 @@ tyrannical.tags = {
       },
    },
    {
-      name        = "gimp",
+      name        = "graphics",
       init        = false,
       exclusive   = true,
       layout      = awful.layout.suit.max,
       class       = {
-         "Gimp-2.8"
+         "Gimp-2.8", "Inkscape"
       },
    },
    {
@@ -221,23 +233,32 @@ tyrannical.tags = {
          "Mplayer", "Smplayer", "Vlc"
       },
    },
+   {
+      name        = "veritas",
+      init        = false,
+      exclusive   = true,
+      layout      = awful.layout.suit.floating,
+      class       = {
+         "VCSGui",
+      },
+   },
 
 }
 
 -- Ignore the tag "exclusive" property for the following clients (matched by classes)
 tyrannical.properties.intrusive = {
-   "feh",  "Synapse", "Spacefm", "Keepassx", "KeePass2", "Easystroke", "Lxappearance", "Clipit"
+   "feh",  "Synapse", "Spacefm", "Pcmanfm", "Keepassx", "KeePass2", "Easystroke", "Lxappearance", "Clipit", "Gcolor3",  "Nautilus", "Dolphin", "Ekiga", "Linphone"
 }
 
 -- Ignore the tiled layout for the matching clients
 tyrannical.properties.floating = {
-   "MPlayer"      , "feh"             , "Meld"       , "Keepassx"     , "Cheese"         ,
-   "Prefs.py"     , "Nvidia-settings" , "Easystroke" , "KeePass2", "Lxappearance"
+   "MPlayer"      , "feh"             , "Meld"       , "Keepassx"     , "Cheese" , "Nautilus", "Dolphin", "Ekiga", 
+   "Prefs.py"     , "Nvidia-settings" , "Easystroke" , "KeePass2", "Lxappearance", "Systemadm", "Gcolor3", "Linphone"
 }
 
 -- Make the matching clients (by classes) on top of the default layout
 tyrannical.properties.ontop = {
-   "Xephyr"       , "Synapse"
+   "Xephyr"       , "Synapse", "Gcolor3", 
 }
 
 -- Force the matching clients (by classes) to be centered on the screen on init
@@ -408,6 +429,7 @@ for s = 1, screen.count() do
       -- bottom_right_layout:add(weathericon)
       bottom_right_layout:add(weatherwidget)
       bottom_right_layout:add(datewidget)
+      -- bottom_right_layout:add(powerline_widget)
       bottom_right_layout:add(separator)
       bottom_right_layout:add(wibox.widget.systray())
    end
@@ -692,6 +714,13 @@ awful.rules.rules = {
    { rule = { class = "Launchy"},
      properties = { border_width = 0 }},
 
+   -- Hide Borders --------------------------------------------
+   { rule = { class = "Nautilus"},
+     properties = { border_width = 0 }},
+
+   { rule = { class = "Dolphin"},
+     properties = { border_width = 0 }},
+
    -- Emacs ---------------------------------------------------
    { rule = { class = "Emacs", name = "Ediff"},
      properties = { floating = true }},
@@ -699,6 +728,15 @@ awful.rules.rules = {
    -- Thunderbird ---------------------------------------------------
    { rule = { class = "Thunderbird", name = "Address Book" },
      properties = { floating = true } },
+   { rule = { class = "Thunderbird", role = "filterlist" },
+     properties = { floating = true } },
+   { rule = { class = "Thunderbird", role = "Preferences" },
+     properties = { floating = true } },
+   { rule = { class = "Thunderbird", role = "Manager" },
+     properties = { floating = true } },
+   { rule = { class = "Thunderbird", role = "search" },
+     properties = { floating = true } },
+
    -- -- Sublime 2
    -- { rule = { class = "sublime_text" },
    --   properties = { tag = tags[2][2], switchtotag = true }},
@@ -714,6 +752,8 @@ awful.rules.rules = {
    -- { rule = { class = "Ltbin" },
    --   properties = { tag = tags[1][7], switchtotag = true } },
 
+   { rule = { class = "Gcolor3"},
+     properties = { border_width = 0 }},
 
    -- Floaters ----------------------------------------------- &floaters ---
    { rule = { class = "VirtualBox" },

@@ -2538,3 +2538,42 @@
 2014-02-02 18:11:36		python scripts loaded: colorize_nicks
 2014-02-02 18:11:36		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
 2014-02-05 18:19:18		python: scripts unloaded
+2014-07-30 11:35:31		python scripts loaded: colorize_nicks
+2014-07-30 11:35:31		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-07-30 11:35:47		python: scripts unloaded
+2014-07-30 11:37:07		python scripts loaded: colorize_nicks
+2014-07-30 11:37:07		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2014-07-30 11:37:42	=!=	Error with command "connect" (try /help connect)
+2014-07-30 11:37:46		[irc]  /connect  <server> [<server>...] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch]
+2014-07-30 11:37:46		                 -all|-auto|-open [-nojoin] [-switch]
+2014-07-30 11:37:46		connect to IRC server(s)
+2014-07-30 11:37:46		    server: server name, which can be:
+2014-07-30 11:37:46		            - internal server name (created by /server add, recommended usage)
+2014-07-30 11:37:46		            - hostname/port or IP/port (this will create a TEMPORARY server), port is 6667 by default
+2014-07-30 11:37:46		            - URL with format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]
+2014-07-30 11:37:46		    option: set option for server (for boolean option, value can be omitted)
+2014-07-30 11:37:46		  nooption: set boolean option to 'off' (for example: -nossl)
+2014-07-30 11:37:46		      -all: connect to all servers defined in configuration
+2014-07-30 11:37:46		     -auto: connect to servers with autoconnect enabled
+2014-07-30 11:37:46		     -open: connect to all opened servers that are not currently connected
+2014-07-30 11:37:46		   -nojoin: do not join any channel (even if autojoin is enabled on server)
+2014-07-30 11:37:46		   -switch: switch to next server address
+2014-07-30 11:37:46		To disconnect from a server or stop any connection attempt, use command /disconnect.
+2014-07-30 11:37:46		Examples:
+2014-07-30 11:37:46		  /connect freenode
+2014-07-30 11:37:46		  /connect irc.oftc.net/6667
+2014-07-30 11:37:46		  /connect irc6.oftc.net/6667 -ipv6
+2014-07-30 11:37:46		  /connect irc6.oftc.net/6697 -ipv6 -ssl
+2014-07-30 11:37:46		  /connect my.server.org/6697 -ssl -password=test
+2014-07-30 11:37:46		  /connect irc://nick@irc.oftc.net/#channel
+2014-07-30 11:37:46		  /connect -switch
+2014-07-30 11:38:10		irc: server cloud-irc.comcast.net created (temporary server, NOT SAVED!)
+2014-07-30 12:26:28		python: scripts unloaded
+2014-08-28 10:20:02		python scripts loaded: colorize_nicks
+2014-08-28 10:20:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-08-28 10:20:18		All servers:
+2014-08-28 10:20:18		   freenode
+2014-08-28 10:20:18		   oftc
+2014-08-28 10:20:18		   cloud
+2014-08-28 10:20:24	=!=	Error with command "/query" (help on command: /help query)
+2014-08-28 10:20:26		python: scripts unloaded

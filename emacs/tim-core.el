@@ -2,7 +2,7 @@
 ;;---------------------------------------------------------------
 ;; Core Stuff
 ;;---------------------------------------------------------------
-;; Last modified: <2013-07-15 14:16:04 (thermans)>
+;; Last modified: <2014-05-16 12:45:47 thermans>
 ;;---------------------------------------------------------------
 
 ;; Disable the startup splash screen
@@ -219,14 +219,9 @@
 (set-default 'woman-fill-frame 't)
 
 ;;; .................................................. &smart-modeline ...
-;;(setq sml/theme 'dark)
-;;(require 'smart-mode-line)
-;;(sml/setup)
-
-;;; ....................................................... &powerline ...
-;; Pretty mode line
-;;(powerline-default-center)
-(powerline-default-theme)
+(setq sml/theme 'dark)
+(require 'smart-mode-line)
+(sml/setup)
 
 ;; Backups  ............................................... &backups ...
 

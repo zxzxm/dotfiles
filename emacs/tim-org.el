@@ -2,7 +2,7 @@
 ;;---------------------------------------------------------------
 ;; Org-mode configuration
 ;;---------------------------------------------------------------
-;; Last Saved Last modified: <2014-02-07 00:52:58 thermans>
+;; Last Saved Last modified: <2014-04-02 20:44:44 thermans>
 ;;----------------------------------------------------------------
 
 (require 'org-protocol)
@@ -33,3 +33,11 @@
 (define-key prelude-mode-map "\C-cn" nil)
 (define-key global-map "\C-cn"
   (lambda () (interactive) (org-capture nil "n")))
+
+
+;; Deft mode
+(require 'deft)
+(setq deft-extension "org")
+(setq deft-directory "~/Dropbox/notes")
+(setq deft-text-mode 'org-mode)
+
