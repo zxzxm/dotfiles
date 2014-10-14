@@ -1,1 +1,0 @@
-fromList [("Run: ",["nm-applet","urxvtd","pidgin"]),("XMonad: ",["xterm","shift\"2\"","view\"1\""])]

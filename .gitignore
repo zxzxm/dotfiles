@@ -11,7 +11,9 @@ awesome/tyrannical
 .xmonad/xmonad.errors
 .xmonad/xmonad.hi
 .xmonad/xmonad.o
+.xmonad/history
+.xmonad/apps/
 .zsh/plugins
-.weechat/logs/
+.weechat/logs/*
 *~
 TAGS
